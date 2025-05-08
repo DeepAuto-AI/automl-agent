@@ -1,6 +1,6 @@
 # AutoML-Agent
 This is the official implementation of **AutoML-Agent: A Multi-Agent LLM Framework for Full-Pipeline AutoML** (ICML 2025) 
-> [[Paper](https://arxiv.org/abs/2410.02958)][Poster]
+> [[Paper](https://arxiv.org/abs/2410.02958)][Poster][[Website](https://deepauto-ai.github.io/automl-agent/)]
 
 ## Setup
 ### Benchmark Datasets
