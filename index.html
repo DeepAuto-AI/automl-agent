@@ -191,7 +191,7 @@
   <div class="hero-body">
     <div class="container">
       <h2 class="title is-3">Experimental Setups and Results</h2>
-      <table class="table">
+      <table class="table is-fullwidth is-hoverable">
       <thead>
       <tr>
       <th><strong>Data Modality</strong></th>
@@ -202,9 +202,9 @@
       <th><strong># Valid</strong></th>
       <th><strong># Test</strong></th>
       <th><strong># Classes</strong></th>
-      <th ><strong>Source</strong></th>
-      <th ><strong>License</strong></th>
-      <th ><strong>Evaluation Metric</strong></th>
+      <th><strong>Source</strong></th>
+      <th><strong>License</strong></th>
+      <th><strong>Evaluation Metric</strong></th>
       </tr>
       </thead>
       <tbody>
@@ -232,7 +232,7 @@
       <td>75</td>
       <td>Kaggle Dataset</td>
       <td>CC0</td>
-      <td>Accuracy</td>
+      <td rowspan="2">Accuracy</td>
       </tr>
       <tr>
       <td></td>
@@ -258,7 +258,7 @@
       <td>4</td>
       <td>Kaggle Dataset</td>
       <td>CC BY 4.0</td>
-      <td>Accuracy</td>
+      <td rowspan="2">Accuracy</td>
       </tr>
       <tr>
       <td></td>
@@ -274,7 +274,7 @@
       <td></td>
       </tr>
       <tr>
-      <td rowspan="2">Tabular (Classic Machine Learning)</td>
+      <td rowspan="6">Tabular (Classic Machine Learning)</td>
       <td>Tabular Classification</td>
       <td><a href="https://www.kaggle.com/datasets/l3llff/banana/data">Banana Quality</a></td>
       <td>7</td>
@@ -284,7 +284,7 @@
       <td>2</td>
       <td>Kaggle Dataset</td>
       <td>Apache 2.0</td>
-      <td>F1</td>
+      <td rowspan="2">F1</td>
       </tr>
       <tr>
       <td></td>
@@ -301,7 +301,7 @@
       </tr>
       <tr>
       <td></td>
-      <td rowspan="2">Tabular Clustering</td>
+      <td>Tabular Clustering</td>
       <td><a href="https://github.com/guosyjlu/DS-Agent">Smoker Status</a></td>
       <td>22</td>
       <td>100,331</td>
@@ -310,7 +310,7 @@
       <td>2</td>
       <td>Kaggle Competition</td>
       <td>N/A</td>
-      <td>RI</td>
+      <td rowspan="2">RI</td>
       </tr>
       <tr>
       <td></td>
@@ -323,11 +323,11 @@
       <td>8</td>
       <td>Research Dataset (UCI ML)</td>
       <td>CC BY 4.0</td>
-      <td>RI</td>
+      <td></td>
       </tr>
       <tr>
       <td></td>
-      <td rowspan="2">Tabular Regression</td>
+      <td>Tabular Regression</td>
       <td><a href="https://github.com/guosyjlu/DS-Agent">Crab Age</a></td>
       <td>8</td>
       <td>53,316</td>
@@ -336,7 +336,7 @@
       <td>N/A</td>
       <td>Kaggle Competition</td>
       <td>CC0</td>
-      <td>RMSLE</td>
+      <td rowspan="2">RMSLE</td>
       </tr>
       <tr>
       <td></td>
@@ -349,7 +349,7 @@
       <td>N/A</td>
       <td>Kaggle Dataset</td>
       <td>MIT</td>
-      <td>RMSLE</td>
+      <td></td>
       </tr>
       <tr>
       <td rowspan="2">Graph (Graph Learning)</td>
@@ -362,7 +362,7 @@
       <td>7</td>
       <td>Research Dataset (Planetoid)</td>
       <td>CC BY 4.0</td>
-      <td>Accuracy</td>
+      <td rowspan="2">Accuracy</td>
       </tr>
       <tr>
       <td></td>
@@ -388,7 +388,7 @@
       <td>N/A</td>
       <td>Research Dataset (TSLib)</td>
       <td>CC BY 4.0</td>
-      <td>RMSLE</td>
+      <td rowspan="2">RMSLE</td>
       </tr>
       <tr>
       <td></td>
@@ -404,7 +404,7 @@
       <td></td>
       </tr>
       <tr>
-      <td colspan="11"><em>Additional Datasets for SELA</em></td>
+      <td colspan="11"><em>Additional Datasets for SELA (Classic Tabular Machine Learning)</em></td>
       <td></td>
       <td></td>
       <td></td>
@@ -417,8 +417,8 @@
       <td></td>
       </tr>
       <tr>
-      <td rowspan="2">Tabular (Classic Machine Learning)</td>
-      <td>Binary Classification</td>
+      <td></td>
+      <td rowspan="2">Binary Classification</td>
       <td><a href="https://github.com/geekan/MetaGPT/tree/main/metagpt/ext/sela">Smoker Status</a></td>
       <td>22</td>
       <td>85997</td>
@@ -427,7 +427,7 @@
       <td>2</td>
       <td>Kaggle Competition</td>
       <td>N/A</td>
-      <td>F1</td>
+      <td rowspan="4">F1</td>
       </tr>
       <tr>
       <td></td>
@@ -479,7 +479,7 @@
       <td>N/A</td>
       <td>OpenML</td>
       <td></td>
-      <td>RMSE</td>
+      <td rowspan="2">RMSE</td>
       </tr>
       <tr>
       <td></td>
