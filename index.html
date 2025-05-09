@@ -157,24 +157,25 @@
 <section class="hero is-small">
   <div class="hero-body">
     <div class="container">
+      <h2 class="title is-3">Framework Overview</h2>
       <div id="results-carousel" class="carousel results-carousel">
        <div class="item">      
-         <img alt="image" src="https://github.com/user-attachments/assets/254117bb-5a52-42ca-8191-2e4dcfb6037f" />
+         <img alt="image" src="static/images/concept.png" />
         <h2 class="subtitle has-text-centered">
           <em>AutoML-Agent</em> receives user’s instructions and delivers optimized deployable models.
         </h2>
       </div>
       <div class="item">
-        <img alt="image" src="https://github.com/user-attachments/assets/101fdf5f-fad4-4109-801b-de7fa7400127" />
+        <img alt="image" src="static/images/compare.png" />
         <h2 class="subtitle has-text-centered">Comparison between <em>AutoML-Agent</em> and existing LLM-based frameworks.</h2>
       </div>
       <div class="item">
-        <img alt="image" src="https://github.com/user-attachments/assets/659cbabb-49b8-40bb-9fac-d68858916500" />
+        <img alt="image" src="static/images/overview.png" />
         <h2 class="subtitle has-text-centered"> Overview of our AutoML-Agent framework. (1) <strong>Initialization stage</strong> aims to receive a valid user instruction using request verification. (2) <strong>Planning stage</strong> focuses on extracting ML related information by parsing the user instruction into a standardized form, and uses it to devise plans accordingly. (3) <strong>Execution stage</strong> executes each action given by the devised plans. Finally, based on the best execution results, AutoML-Agent outputs codes containing deployable model to the user.
        </h2>
      </div>
      <div class="item">
-       <img alt="image" src="https://github.com/user-attachments/assets/38182ee8-55de-4880-b7bc-3b31cc41a593" />
+       <img alt="image" src="static/images/algorithm" />
       <h2 class="subtitle has-text-centered">
         We present the pseudocode of the proposed <em>AutoML-Agent</em> in Algorithm 1
       </h2>
@@ -185,7 +186,334 @@
 </section>
 <!-- End image carousel -->
 
-
+<!-- Image carousel -->
+<section class="hero is-small">
+  <div class="hero-body">
+    <div class="container">
+      <h2 class="title is-3">Experimental Setups and Results</h2>
+      <table>
+      <thead>
+      <tr>
+      <th><strong>Data Modality</strong></th>
+      <th><strong>Downstream Task</strong></th>
+      <th><strong>Dataset Name</strong></th>
+      <th><strong># Features</strong></th>
+      <th><strong># Train</strong></th>
+      <th><strong># Valid</strong></th>
+      <th><strong># Test</strong></th>
+      <th><strong># Classes</strong></th>
+      <th style="text-align:right"><strong>Source</strong></th>
+      <th style="text-align:right"><strong>License</strong></th>
+      <th style="text-align:right"><strong>Evaluation Metric</strong></th>
+      </tr>
+      </thead>
+      <tbody>
+      <tr>
+      <td colspan="11"><em>Main Datasets</em></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td style="text-align:right"></td>
+      <td style="text-align:right"></td>
+      <td style="text-align:right"></td>
+      </tr>
+      <tr>
+      <td>Image (Computer Vision)</td>
+      <td>Image Classification</td>
+      <td><a href="https://www.kaggle.com/datasets/phucthaiv02/butterfly-image-classification">Butterfly Image</a></td>
+      <td>224x224</td>
+      <td>4,549</td>
+      <td>1,299</td>
+      <td>651</td>
+      <td>75</td>
+      <td style="text-align:right">Kaggle Dataset</td>
+      <td style="text-align:right">CC0</td>
+      <td style="text-align:right">Accuracy</td>
+      </tr>
+      <tr>
+      <td></td>
+      <td></td>
+      <td><a href="https://www.kaggle.com/competitions/demo-shopee-iet-competition/data">Shopee-IET</a></td>
+      <td>Varying</td>
+      <td>640</td>
+      <td>160</td>
+      <td>80</td>
+      <td>4</td>
+      <td style="text-align:right">Kaggle Competition</td>
+      <td style="text-align:right">Custom</td>
+      <td style="text-align:right"></td>
+      </tr>
+      <tr>
+      <td>Text (Natural Language Processing)</td>
+      <td>Text Classification</td>
+      <td><a href="https://www.kaggle.com/datasets/saurabhshahane/ecommerce-text-classification">Ecommerce Text</a></td>
+      <td>N/A</td>
+      <td>35,296</td>
+      <td>10,084</td>
+      <td>5,044</td>
+      <td>4</td>
+      <td style="text-align:right">Kaggle Dataset</td>
+      <td style="text-align:right">CC BY 4.0</td>
+      <td style="text-align:right">Accuracy</td>
+      </tr>
+      <tr>
+      <td></td>
+      <td></td>
+      <td><a href="https://github.com/guosyjlu/DS-Agent">Textual Entailment</a></td>
+      <td>N/A</td>
+      <td>3,925</td>
+      <td>982</td>
+      <td>4,908</td>
+      <td>3</td>
+      <td style="text-align:right">Kaggle Dataset</td>
+      <td style="text-align:right">N/A</td>
+      <td style="text-align:right"></td>
+      </tr>
+      <tr>
+      <td>Tabular (Classic Machine Learning)</td>
+      <td>Tabular Classification</td>
+      <td><a href="https://www.kaggle.com/datasets/l3llff/banana/data">Banana Quality</a></td>
+      <td>7</td>
+      <td>5,600</td>
+      <td>1,600</td>
+      <td>800</td>
+      <td>2</td>
+      <td style="text-align:right">Kaggle Dataset</td>
+      <td style="text-align:right">Apache 2.0</td>
+      <td style="text-align:right">F1</td>
+      </tr>
+      <tr>
+      <td></td>
+      <td></td>
+      <td><a href="https://github.com/guosyjlu/DS-Agent">Software Defects</a></td>
+      <td>21</td>
+      <td>73,268</td>
+      <td>18,318</td>
+      <td>91,587</td>
+      <td>2</td>
+      <td style="text-align:right">Kaggle Competition</td>
+      <td style="text-align:right">N/A</td>
+      <td style="text-align:right"></td>
+      </tr>
+      <tr>
+      <td></td>
+      <td>Tabular Clustering</td>
+      <td><a href="https://github.com/guosyjlu/DS-Agent">Smoker Status</a></td>
+      <td>22</td>
+      <td>100,331</td>
+      <td>28,666</td>
+      <td>14,334</td>
+      <td>2</td>
+      <td style="text-align:right">Kaggle Competition</td>
+      <td style="text-align:right">N/A</td>
+      <td style="text-align:right">RI</td>
+      </tr>
+      <tr>
+      <td></td>
+      <td></td>
+      <td><a href="https://archive.ics.uci.edu/dataset/856/higher+education+students+performance+evaluation">Higher Education Students Performance</a></td>
+      <td>31</td>
+      <td>101</td>
+      <td>29</td>
+      <td>15</td>
+      <td>8</td>
+      <td style="text-align:right">Research Dataset (UCI ML)</td>
+      <td style="text-align:right">CC BY 4.0</td>
+      <td style="text-align:right">RI</td>
+      </tr>
+      <tr>
+      <td></td>
+      <td>Tabular Regression</td>
+      <td><a href="https://github.com/guosyjlu/DS-Agent">Crab Age</a></td>
+      <td>8</td>
+      <td>53,316</td>
+      <td>13,329</td>
+      <td>66,646</td>
+      <td>N/A</td>
+      <td style="text-align:right">Kaggle Competition</td>
+      <td style="text-align:right">CC0</td>
+      <td style="text-align:right">RMSLE</td>
+      </tr>
+      <tr>
+      <td></td>
+      <td></td>
+      <td><a href="https://www.kaggle.com/datasets/varshitanalluri/crop-price-prediction-dataset">Crop Price</a></td>
+      <td>8</td>
+      <td>1,540</td>
+      <td>440</td>
+      <td>220</td>
+      <td>N/A</td>
+      <td style="text-align:right">Kaggle Dataset</td>
+      <td style="text-align:right">MIT</td>
+      <td style="text-align:right">RMSLE</td>
+      </tr>
+      <tr>
+      <td>Graph (Graph Learning)</td>
+      <td>Node Classification</td>
+      <td><a href="https://pytorch-geometric.readthedocs.io/en/latest/generated/torch_geometric.datasets.Planetoid.html#torch_geometric.datasets.Planetoid">Cora</a></td>
+      <td>1,433</td>
+      <td>2,708</td>
+      <td>2,708</td>
+      <td>2,708</td>
+      <td>7</td>
+      <td style="text-align:right">Research Dataset (Planetoid)</td>
+      <td style="text-align:right">CC BY 4.0</td>
+      <td style="text-align:right">Accuracy</td>
+      </tr>
+      <tr>
+      <td></td>
+      <td></td>
+      <td><a href="https://pytorch-geometric.readthedocs.io/en/latest/generated/torch_geometric.datasets.Planetoid.html#torch_geometric.datasets.Planetoid">Citeseer</a></td>
+      <td>3,703</td>
+      <td>3,327</td>
+      <td>3,327</td>
+      <td>3,327</td>
+      <td>6</td>
+      <td style="text-align:right">Research Dataset (Planetoid)</td>
+      <td style="text-align:right">N/A</td>
+      <td style="text-align:right"></td>
+      </tr>
+      <tr>
+      <td>Time Series (Time Series Analysis)</td>
+      <td>Time-Series Forecasting</td>
+      <td><a href="https://github.com/thuml/Time-Series-Library">Weather</a></td>
+      <td>21</td>
+      <td>36,887</td>
+      <td>10,539</td>
+      <td>5,270</td>
+      <td>N/A</td>
+      <td style="text-align:right">Research Dataset (TSLib)</td>
+      <td style="text-align:right">CC BY 4.0</td>
+      <td style="text-align:right">RMSLE</td>
+      </tr>
+      <tr>
+      <td></td>
+      <td></td>
+      <td><a href="https://github.com/thuml/Time-Series-Library">Electricity</a></td>
+      <td>321</td>
+      <td>18,412</td>
+      <td>5,260</td>
+      <td>2,632</td>
+      <td>N/A</td>
+      <td style="text-align:right">Research Dataset (TSLib)</td>
+      <td style="text-align:right">CC BY 4.0</td>
+      <td style="text-align:right"></td>
+      </tr>
+      <tr>
+      <td colspan="11"><em>Additional Datasets for SELA</em></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td style="text-align:right"></td>
+      <td style="text-align:right"></td>
+      <td style="text-align:right"></td>
+      </tr>
+      <tr>
+      <td>Tabular (Classic Machine Learning)</td>
+      <td>Binary Classification</td>
+      <td><a href="https://github.com/geekan/MetaGPT/tree/main/metagpt/ext/sela">Smoker Status</a></td>
+      <td>22</td>
+      <td>85997</td>
+      <td>21500</td>
+      <td>143331</td>
+      <td>2</td>
+      <td style="text-align:right">Kaggle Competition</td>
+      <td style="text-align:right">N/A</td>
+      <td style="text-align:right">F1</td>
+      </tr>
+      <tr>
+      <td></td>
+      <td></td>
+      <td><a href="https://github.com/geekan/MetaGPT/tree/main/metagpt/ext/sela">Click Prediction Small</a></td>
+      <td>11</td>
+      <td>19174</td>
+      <td>4794</td>
+      <td>7990</td>
+      <td>2</td>
+      <td style="text-align:right">OpenML</td>
+      <td style="text-align:right"></td>
+      <td style="text-align:right"></td>
+      </tr>
+      <tr>
+      <td></td>
+      <td>Multi-Class Classification</td>
+      <td><a href="https://github.com/geekan/MetaGPT/tree/main/metagpt/ext/sela">MFeat Factors</a></td>
+      <td>216</td>
+      <td>960</td>
+      <td>240</td>
+      <td>400</td>
+      <td>10</td>
+      <td style="text-align:right">OpenML</td>
+      <td style="text-align:right"></td>
+      <td style="text-align:right"></td>
+      </tr>
+      <tr>
+      <td></td>
+      <td></td>
+      <td><a href="https://github.com/geekan/MetaGPT/tree/main/metagpt/ext/sela">Wine Quality White</a></td>
+      <td>11</td>
+      <td>2350</td>
+      <td>588</td>
+      <td>980</td>
+      <td>7</td>
+      <td style="text-align:right">OpenML</td>
+      <td style="text-align:right"></td>
+      <td style="text-align:right"></td>
+      </tr>
+      <tr>
+      <td></td>
+      <td>Regression</td>
+      <td><a href="https://github.com/geekan/MetaGPT/tree/main/metagpt/ext/sela">Colleges</a></td>
+      <td>44</td>
+      <td>3389</td>
+      <td>848</td>
+      <td>1413</td>
+      <td>N/A</td>
+      <td style="text-align:right">OpenML</td>
+      <td style="text-align:right"></td>
+      <td style="text-align:right">RMSE</td>
+      </tr>
+      <tr>
+      <td></td>
+      <td></td>
+      <td><a href="https://github.com/geekan/MetaGPT/tree/main/metagpt/ext/sela">House Prices</a></td>
+      <td>80</td>
+      <td>700</td>
+      <td>176</td>
+      <td>292</td>
+      <td>N/A</td>
+      <td style="text-align:right">Kaggle Competition</td>
+      <td style="text-align:right"></td>
+      </tr>
+      </tbody>
+      </table>
+   
+      <div id="results-carousel" class="carousel results-carousel">
+       <div class="item">      
+         <img alt="image" src="static/images/main_results.png" />
+        <h2 class="subtitle has-text-centered">Performance comparison across all datasets using the SR, NPS, and CS metrics under (a) constraint-free and (b) constraint-aware settings. Higher scores indicate better results.</h2>
+      </div>
+      <div class="item">
+        <img alt="image" src="static/images/extra_results.png" />
+        <h2 class="subtitle has-text-centered">Results of (a) ablation study, (b) hyperparameter study, and (c) comparison with SELA (Chi et al., 2024) in the CS metric.</h2>
+      </div>
+      <div class="item">
+        <img alt="image" src="static/images/cost.png" />
+        <h2 class="subtitle has-text-centered">Average time and monetary cost breakdown.</h2>
+     </div>
+  </div>
+</div>
+</div>
+</section>
+<!-- End image carousel -->
 
 
 <!-- Youtube video -->
