@@ -38,6 +38,7 @@ pip install -r requirements.txt
 
 ### Run AutoML Development
 1. Run the instruction-tuned LoRA adapter ([Download Link](https://www.dropbox.com/scl/fi/9mjm772d99xcr5e0905cx/adapter-mixtral.zip?rlkey=amoq17jhp3ye3sswpqgmzsgoo&st=woamltp6&dl=0)) for Prompt Agent via vLLM. `vllm==0.4.1` is strictly required to get correct parsed results.
+> **Update:** We have implemented an alternative OpenAI version via `parse_openai(..)`
 ```bash
 HF_TOKEN="Your HuggingFace Token" CUDA_VISIBLE_DEVICES="0,1,2,3" python -m vllm.entrypoints.openai.api_server --model mistralai/Mixtral-8x7B-Instruct-v0.1 --enable-lora --lora-modules prompt-llama=./adapter/adapter-mixtral/ --tensor-parallel-size 4
 ```
