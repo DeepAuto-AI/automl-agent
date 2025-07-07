@@ -1,0 +1,1983 @@
+task,instruction,response,quality
+time-series forecasting,"You are solving this machine learning tasks of time-series forecasting: 
+The dataset presented here (the ETTm2 dataset) comprises real-world time series data. We have splitted the dataset into three parts of train, valid, and test. The input is a sequence of past observation with fixed size (INPUT_SEQ_LEN=96, INPUT_DIM=7). Your task is to predict the next future sequence with fixed size (PRED_SEQ_LEN=96, PRED_DIM=7). The evaluation metrics are mean squred error (MSE) and mean absolute error (MAE).
+Now train a time-series forecasting model to get a good performance on the given fixed sequences.","{
+    ""user"": {
+        ""intent"": ""build"",
+        ""expertise"": ""medium""
+    },
+    ""problem"": {
+        ""area"": ""time-series analysis"",
+        ""downstream_task"": ""time-series forecasting"",
+        ""application_domain"": ""real-world time series data"",
+        ""description"": ""You are solving the machine learning tasks of time-series forecasting. The dataset presented here (the ETTm2 dataset) comprises real-world time series data. The input is a sequence of past observation with fixed size (INPUT_SEQ_LEN=96, INPUT_DIM=7). Your task is to predict the next future sequence with fixed size (PRED_SEQ_LEN=96, PRED_DIM=7)."",
+        ""performance_metrics"": [
+            {
+                ""name"": ""MSE"",
+                ""value"": null
+            },
+            {
+                ""name"": ""MAE"",
+                ""value"": null
+            }
+        ],
+        ""complexity_metrics"": []
+    },
+    ""dataset"": [
+        {
+            ""name"": ""ETTm2"",
+            ""modality"": [""time series""],
+            ""target_variables"": [],
+            ""specification"": {
+                ""INPUT_SEQ_LEN"": 96,
+                ""INPUT_DIM"": 7,
+                ""PRED_SEQ_LEN"": 96,
+                ""PRED_DIM"": 7
+            },
+            ""description"": ""The ETTm2 dataset includes real-world time series data split into train, valid, and test sets. The input and output sequences have fixed sizes."",
+            ""preprocessing"": [],
+            ""augmentation"": [],
+            ""visualization"": [],
+            ""source"": ""user-upload""
+        }
+    ],
+    ""model"": [
+        {
+            ""name"": """",
+            ""family"": """",
+            ""type"": ""neural networks"",
+            ""specification"": null,
+            ""description"": ""Train a time-series forecasting model to achieve good performance on the ETTm2 dataset for predicting future sequences.""
+        }
+    ],
+    ""knowledge"": [],
+    ""service"": {
+        ""feature_engineering"": [],
+        ""target_device"": """",
+        ""deployment_endpoint"": """",
+        ""inference_engine"": [],
+        ""demonstration"": null
+    },
+    ""confidence"": {
+        ""rationale"": ""The given instructions were clearly indicative of a time-series forecasting task using a specified dataset with predefined input and output dimensions. The intent to build suggests the need for model training. Medium expertise implies the user has some understanding of the task but may rely on guidance for specifics. The absence of explicit requirements for service deployment and model specifics leaves those sections generalized, aligning with the information provided."",
+        ""score"": 0.9
+    }
+}",2
+time-series forecasting,"You are solving this machine learning tasks of time-series forecasting: 
+The dataset presented here (the Electricity dataset) comprises real-world time series data. We have splitted the dataset into three parts of train, valid, and test. The input is a sequence of past observation with fixed size (INPUT_SEQ_LEN=96, INPUT_DIM=321). Your task is to predict the next future sequence with fixed size (PRED_SEQ_LEN=96, PRED_DIM=321). The evaluation metrics are mean squred error (MSE) and mean absolute error (MAE).
+Now train a time-series forecasting model to get a good performance on the given fixed sequences.","{
+    ""user"": {
+        ""intent"": ""build"",
+        ""expertise"": ""medium""
+    },
+    ""problem"": {
+        ""area"": ""time-series analysis"",
+        ""downstream_task"": ""time-series forecasting"",
+        ""application_domain"": ""energy"",
+        ""description"": ""Train a time-series forecasting model to predict the next future sequence of real-world time series data from the Electricity dataset, based on past observations. The aim is to achieve good performance with specific input and prediction sequence sizes."",
+        ""performance_metrics"": [
+            {""name"": ""MSE"", ""value"": null},
+            {""name"": ""MAE"", ""value"": null}
+        ],
+        ""complexity_metrics"": []
+    },
+    ""dataset"": [
+        {
+            ""name"": ""Electricity"",
+            ""modality"": [""time series""],
+            ""target_variables"": [],
+            ""specification"": {
+                ""INPUT_SEQ_LEN"": 96,
+                ""INPUT_DIM"": 321,
+                ""PRED_SEQ_LEN"": 96,
+                ""PRED_DIM"": 321
+            },
+            ""description"": ""Comprises real-world time series data related to electricity usage, split into train, valid, and test parts."",
+            ""preprocessing"": [],
+            ""augmentation"": [],
+            ""visualization"": [],
+            ""source"": ""user-upload""
+        }
+    ],
+    ""model"": [
+        {
+            ""name"": """",
+            ""family"": """",
+            ""type"": ""neural networks"",
+            ""specification"": null,
+            ""description"": ""A time-series forecasting model to be trained for predicting future sequences of electricity usage.""
+        }
+    ],
+    ""knowledge"": [],
+    ""service"": {
+        ""feature_engineering"": [],
+        ""target_device"": """",
+        ""deployment_endpoint"": """",
+        ""inference_engine"": [],
+        ""demonstration"": null
+    },
+    ""confidence"": {
+        ""rationale"": ""This JSON structure accurately reflects the task of training a model for time-series forecasting in the context of electricity usage data. It outlines the key aspects of the dataset, including its structure and the model's aim. Metrics like MSE and MAE are mentioned without specific targets, reflecting the open-ended nature of model performance improvement. The dataset's detailed specification matches the input and prediction requirements. The instruction does not specify model specifications, visualization, augmentation, or feature engineering details, hence those fields are appropriately filled or marked as null."",
+        ""score"": 0.95
+    }
+}",2
+time-series forecasting,"You are solving this machine learning tasks of time-series forecasting: 
+The dataset presented here (the ILI dataset) comprises real-world time series data. We have splitted the dataset into three parts of train, valid, and test. The input is a sequence of past observation with fixed size (INPUT_SEQ_LEN=36, INPUT_DIM=7). Your task is to predict the next future sequence with fixed size (PRED_SEQ_LEN=24, PRED_DIM=7). The evaluation metrics are mean squred error (MSE) and mean absolute error (MAE).
+Now train a time-series forecasting model to get a good performance on the given fixed sequences.","{
+    ""user"": {
+        ""intent"": ""build"",
+        ""expertise"": ""medium""
+    },
+    ""problem"": {
+        ""area"": ""time-series analysis"",
+        ""downstream_task"": ""time-series forecasting"",
+        ""application_domain"": ""healthcare"",
+        ""description"": ""The task is to train a model on the ILI dataset for time-series forecasting. The dataset is split into train, valid, and test parts. The goal is to predict a future sequence based on a sequence of past observations."",
+        ""performance_metrics"": [
+            {""name"": ""mean squared error"", ""value"": null},
+            {""name"": ""mean absolute error"", ""value"": null}
+        ],
+        ""complexity_metrics"": []
+    },
+    ""dataset"": [
+        {
+            ""name"": ""ILI"",
+            ""modality"": [""time series""],
+            ""target_variables"": [],
+            ""specification"": {
+                ""INPUT_SEQ_LEN"": 36,
+                ""INPUT_DIM"": 7,
+                ""PRED_SEQ_LEN"": 24,
+                ""PRED_DIM"": 7
+            },
+            ""description"": ""Real-world time series data from the ILI dataset, split into train, valid, and test parts."",
+            ""preprocessing"": [],
+            ""augmentation"": [],
+            ""visualization"": [],
+            ""source"": ""user-upload""
+        }
+    ],
+    ""model"": [
+        {
+            ""name"": """",
+            ""family"": """",
+            ""type"": ""neural networks"",
+            ""specification"": null,
+            ""description"": ""A neural network model suitable for time-series forecasting based on sequences of past observations.""
+        }
+    ],
+    ""knowledge"": [],
+    ""service"": {
+        ""feature_engineering"": [],
+        ""target_device"": """",
+        ""deployment_endpoint"": """",
+        ""inference_engine"": [],
+        ""demonstration"": null
+    },
+    ""confidence"": {
+        ""rationale"": ""The parsed information accurately reflects the user's instruction for a time-series forecasting problem using the ILI dataset. Specific details about the input and prediction sequence lengths and dimensions are included, aligning with the task requirements. The choice of neural networks as the model type is appropriate for time-series forecasting. However, specific performance targets were not provided, hence the null values for performance metric expectations."",
+        ""score"": 0.9
+    }
+}",2
+time-series forecasting,"You are solving this machine learning tasks of time series forecasting: 
+The dataset presented here (the Traffic dataset) comprises real-world time series data. We have splitted the dataset into three parts of train, valid, and test. The input is a sequence of past observation with fixed size (INPUT_SEQ_LEN=96, INPUT_DIM=862). Your task is to predict the next future sequence with fixed size (PRED_SEQ_LEN=96, PRED_DIM=862). The evaluation metrics are mean squred error (MSE) and mean absolute error (MAE).
+Now train a time series forecasting model to get a good performance on the given fixed sequences.","{
+  ""user"": {
+    ""intent"": ""build"",
+    ""expertise"": ""medium""
+  },
+  ""problem"": {
+    ""area"": ""time-series analysis"",
+    ""downstream_task"": ""time-series forecasting"",
+    ""application_domain"": ""traffic data analysis"",
+    ""description"": ""Train a time series forecasting model to predict future traffic sequence based on past observations. The task involves handling real-world time series data, split into training, validation, and test sets."",
+    ""performance_metrics"": [
+      {
+        ""name"": ""mean squared error"",
+        ""value"": null
+      },
+      {
+        ""name"": ""mean absolute error"",
+        ""value"": null
+      }
+    ],
+    ""complexity_metrics"": []
+  },
+  ""dataset"": [
+    {
+      ""name"": ""Traffic"",
+      ""modality"": [""time series""],
+      ""target_variables"": [],
+      ""specification"": {
+        ""INPUT_SEQ_LEN"": 96,
+        ""INPUT_DIM"": 862,
+        ""PRED_SEQ_LEN"": 96,
+        ""PRED_DIM"": 862
+      },
+      ""description"": ""The dataset comprises real-world time series data for traffic analysis, split into train, valid, and test parts."",
+      ""preprocessing"": [],
+      ""augmentation"": [],
+      ""visualization"": [],
+      ""source"": ""user-upload""
+    }
+  ],
+  ""model"": [
+    {
+      ""name"": """",
+      ""family"": """",
+      ""type"": ""neural networks"",
+      ""specification"": null,
+      ""description"": ""A model capable of time series forecasting with fixed input and output sequence lengths.""
+    }
+  ],
+  ""knowledge"": [],
+  ""service"": {
+    ""feature_engineering"": [],
+    ""target_device"": """",
+    ""deployment_endpoint"": """",
+    ""inference_engine"": [],
+    ""demonstration"": null
+  },
+  ""confidence"": {
+    ""rationale"": ""The JSON is structured according to the user's instruction, aligning with the provided template and the instruction's specifics about a time series forecasting task involving the Traffic dataset. Key elements such as problem area, task, dataset specifics, and performance metrics are directly derived from the instruction. Absence of certain details like model name, and explicit performance metric values is due to their absence in the instruction. This structured response captures all relevant information for solving the given problem."",
+    ""score"": 0.95
+  }
+}",2
+time-series forecasting,"You are solving this machine learning tasks of time-series forecasting: 
+The dataset presented here (the Weather dataset) comprises real-world time-series data. We have splitted the dataset into three parts of train, valid, and test. The input is a sequence of past observation with fixed size (INPUT_SEQ_LEN=96, INPUT_DIM=21). Your task is to predict the next future sequence with fixed size (PRED_SEQ_LEN=96, PRED_DIM=21). The evaluation metric is mean squred loss (MSE) and mean absolute error (MAE).
+Now train a time-series forecasting model to get a good performance on the given fixed sequences.","{
+    ""user"": {
+        ""intent"": ""build"",
+        ""expertise"": ""medium""
+    },
+    ""problem"": {
+        ""area"": ""time-series analysis"",
+        ""downstream_task"": ""time-series forecasting"",
+        ""application_domain"": ""weather forecasting"",
+        ""description"": ""The task is to forecast future weather conditions based on past observations. The dataset is split into train, validation, and test parts, with a specified input and prediction sequence length and dimension."",
+        ""performance_metrics"": [
+            {
+                ""name"": ""mean squared error"",
+                ""value"": null
+            },
+            {
+                ""name"": ""mean absolute error"",
+                ""value"": null
+            }
+        ],
+        ""complexity_metrics"": []
+    },
+    ""dataset"": [
+        {
+            ""name"": ""Weather"",
+            ""modality"": [""time series""],
+            ""target_variables"": [],
+            ""specification"": {
+                ""INPUT_SEQ_LEN"": 96,
+                ""INPUT_DIM"": 21,
+                ""PRED_SEQ_LEN"": 96,
+                ""PRED_DIM"": 21
+            },
+            ""description"": ""A real-world time-series dataset comprising weather conditions, split into train, valid, and test parts."",
+            ""preprocessing"": [],
+            ""augmentation"": [],
+            ""visualization"": [],
+            ""source"": ""user-upload""
+        }
+    ],
+    ""model"": [
+        {
+            ""name"": """",
+            ""family"": """",
+            ""type"": ""neural networks"",
+            ""specification"": null,
+            ""description"": ""A time-series forecasting model to be trained for predicting future weather conditions based on the given dataset.""
+        }
+    ],
+    ""knowledge"": [],
+    ""service"": {
+        ""feature_engineering"": [],
+        ""target_device"": """",
+        ""deployment_endpoint"": """",
+        ""inference_engine"": [],
+        ""demonstration"": null
+    },
+    ""confidence"": {
+        ""rationale"": ""The JSON has been structured according to the provided instruction and schema files. The intent is clearly to build a model, given the task involves training a model for time-series forecasting. The problem area, downstream task, and specific details about the dataset and model requirements have been included. The performance metrics are specified without exact values as the instruction does not provide them. Certain fields are left empty or null where the instruction does not provide specific information."",
+        ""score"": 0.95
+    }
+}",2
+time-series forecasting,"Utilize the LSTM network for our energy consumption dataset. The goal is to forecast hourly consumption for the next 72 hours. Please ensure the model can run predictions quickly, aiming for response times less than 500 milliseconds per forecast.","{
+    ""user"": {
+        ""intent"": ""build"",
+        ""expertise"": ""medium""
+    },
+    ""problem"": {
+        ""area"": ""time-series analysis"",
+        ""downstream_task"": ""time-series forecasting"",
+        ""application_domain"": ""energy"",
+        ""description"": ""Utilize the LSTM network for our energy consumption dataset. The goal is to forecast hourly consumption for the next 72 hours."",
+        ""performance_metrics"": [],
+        ""complexity_metrics"": [
+            {
+                ""name"": ""response time"",
+                ""value"": 0.5,
+                ""unit"": ""seconds""
+            }
+        ]
+    },
+    ""dataset"": [
+        {
+            ""name"": ""energy consumption"",
+            ""modality"": [""time series""],
+            ""target_variables"": [],
+            ""specification"": {""frequency"":""hourly"", ""prediction_length"": 72},
+            ""description"": ""A dataset that includes hourly energy consumption data."",
+            ""preprocessing"": [],
+            ""augmentation"": [],
+            ""visualization"": [],
+            ""source"": ""user-upload""
+        }
+    ],
+    ""model"": [
+        {
+            ""name"": ""LSTM"",
+            ""family"": ""Recurrent Neural Networks"",
+            ""type"": ""neural networks"",
+            ""specification"": null,
+            ""description"": ""A LSTM network designed for forecasting hourly energy consumption.""
+        }
+    ],
+    ""knowledge"": [],
+    ""service"": {
+        ""feature_engineering"": [],
+        ""target_device"": """",
+        ""deployment_endpoint"": """",
+        ""inference_engine"": [],
+        ""demonstration"": null
+    },
+    ""confidence"": {
+        ""rationale"": ""The instruction was clearly asking to build a model (LSTM network) for forecasting energy consumption, which indicates a 'build' intent. Given the specific task of time-series forecasting in the energy domain, relevant details such as the application domain, model type, and dataset modality are included based on the provided instruction. The requirement for quick predictions (less than 500 milliseconds per forecast) is captured under complexity metrics. Some fields are left empty or as null because the instruction did not provide explicit information for them."",
+        ""score"": 0.95
+    }
+}",2
+time-series forecasting,"I want a deep learning approach, specifically a CNN-LSTM model, for the urban traffic flow dataset. Forecast the hourly traffic volume for the next month. Highlight how the model handles peak hours and weekends differently.","{
+    ""user"": {
+        ""intent"": ""build"",
+        ""expertise"": ""medium""
+    },
+    ""problem"": {
+        ""area"": ""time-series analysis"",
+        ""downstream_task"": ""time-series forecasting"",
+        ""application_domain"": ""urban traffic management"",
+        ""description"": ""Develop a deep learning model, specifically a CNN-LSTM, to forecast the hourly traffic volume for the next month, with a focus on handling peak hours and weekends differently."",
+        ""performance_metrics"": [],
+        ""complexity_metrics"": []
+    },
+    ""dataset"": [
+        {
+            ""name"": ""urban traffic flow dataset"",
+            ""modality"": [""time series""],
+            ""target_variables"": [""hourly traffic volume""],
+            ""specification"": {""frequency"":""hourly"", ""prediction_length"": null},
+            ""description"": ""A dataset containing urban traffic flow information, to be used for forecasting hourly traffic volume."",
+            ""preprocessing"": [],
+            ""augmentation"": [],
+            ""visualization"": [],
+            ""source"": ""infer-search""
+        }
+    ],
+    ""model"": [
+        {
+            ""name"": ""CNN-LSTM"",
+            ""family"": ""hybrid neural networks"",
+            ""type"": ""neural networks"",
+            ""specification"": null,
+            ""description"": ""A convolutional neural network (CNN) combined with a long short-term memory (LSTM) network for time-series forecasting of urban traffic flow.""
+        }
+    ],
+    ""knowledge"": [],
+    ""service"": {
+        ""feature_engineering"": [],
+        ""target_device"": """",
+        ""deployment_endpoint"": """",
+        ""inference_engine"": [],
+        ""demonstration"": null
+    },
+    ""confidence"": {
+        ""rationale"": ""The given instruction has been parsed based on the provided template with a specific focus on developing a CNN-LSTM model for urban traffic flow forecasting. The user's intent is to build a model, indicated by the specification of a model type and the application domain. The expertise level is assumed to be medium, as the user specifies a particular model architecture but does not provide detailed specifications. The main challenge was to infer certain fields like 'performance_metrics', 'complexity_metrics', and specifics about 'dataset.source' without explicit instructions. These are assumed based on common practices in the field."",
+        ""score"": 0.8
+    }
+}",2
+time-series forecasting,Please apply a DeepAR model to the dataset of monthly rainfall amounts to predict rainfall for the next year across several regions. The model should incorporate external variables like El Niño indices. Prioritize model accuracy and include a mechanism for continuous learning from new data.,"{
+    ""user"": {
+        ""intent"": ""build"",
+        ""expertise"": ""medium""
+    },
+    ""problem"": {
+        ""area"": ""time-series analysis"",
+        ""downstream_task"": ""time-series forecasting"",
+        ""application_domain"": ""environmental science"",
+        ""description"": ""Apply a DeepAR model to the dataset of monthly rainfall amounts to predict rainfall for the next year across several regions, incorporating external variables like El Niño indices."",
+        ""performance_metrics"": [
+            {
+                ""name"": ""accuracy"",
+                ""value"": null
+            }
+        ],
+        ""complexity_metrics"": []
+    },
+    ""dataset"": [
+        {
+            ""name"": """",
+            ""modality"": [""time series""],
+            ""target_variables"": [""rainfall""],
+            ""specification"": {""frequency"":""monthly"", ""prediction_length"": 12},
+            ""description"": ""Monthly rainfall amounts across several regions with external variables like El Niño indices."",
+            ""preprocessing"": [],
+            ""augmentation"": [],
+            ""visualization"": [],
+            ""source"": ""infer-search""
+        }
+    ],
+    ""model"": [
+        {
+            ""name"": ""DeepAR"",
+            ""family"": """",
+            ""type"": ""neural networks"",
+            ""specification"": null,
+            ""description"": ""DeepAR model to forecast monthly rainfall amounts, incorporating external variables like El Niño indices.""
+        }
+    ],
+    ""knowledge"": [],
+    ""service"": {
+        ""feature_engineering"": [],
+        ""target_device"": """",
+        ""deployment_endpoint"": """",
+        ""inference_engine"": [],
+        ""demonstration"": """"
+    },
+    ""confidence"": {
+        ""rationale"": ""The provided JSON structure accurately reflects the user's request to build a time-series forecasting model using DeepAR for predicting rainfall with an emphasis on model accuracy and continuous learning. The user's expertise level is set to 'medium' based on the specific request for using external variables like El Niño indices, which indicates a moderate understanding of environmental modeling. The intent 'build' is chosen because the user's instruction clearly outlines a requirement for model development. Performance metric is focused on accuracy, which is prioritized in the instruction. However, exact performance targets or complexity metrics are not specified in the request. The 'infer-search' dataset source indicates that while the user has described the dataset characteristics, no specific dataset name or source is provided."",
+        ""score"": 0.9
+    }
+}",2
+time-series forecasting,"Use the state-of-the-art time series model for forecasting the number of daily active users on our mobile application dataset. The model should dynamically adjust to new trends and seasonalities, with an emphasis on minimizing overfitting.","{
+    ""user"": {
+        ""intent"": ""build"",
+        ""expertise"": ""medium""
+    },
+    ""problem"": {
+        ""area"": ""time-series analysis"",
+        ""downstream_task"": ""time-series forecasting"",
+        ""application_domain"": ""mobile applications"",
+        ""description"": ""Use the state-of-the-art time series model for forecasting the number of daily active users on our mobile application dataset. The model should dynamically adjust to new trends and seasonalities, with an emphasis on minimizing overfitting."",
+        ""performance_metrics"": [],
+        ""complexity_metrics"": []
+    },
+    ""dataset"": [
+        {
+            ""name"": ""mobile application dataset"",
+            ""modality"": [""time series""],
+            ""target_variables"": [""number of daily active users""],
+            ""specification"": {""frequency"":""daily"", ""prediction_length"": null},
+            ""description"": ""Dataset containing daily active users data for a mobile application."",
+            ""preprocessing"": [],
+            ""augmentation"": [],
+            ""visualization"": [],
+            ""source"": ""user-upload""
+        }
+    ],
+    ""model"": [
+        {
+            ""name"": """",
+            ""family"": """",
+            ""type"": ""neural networks"",
+            ""specification"": null,
+            ""description"": ""A state-of-the-art time series model that dynamically adjusts to new trends and seasonalities, minimizing overfitting.""
+        }
+    ],
+    ""knowledge"": [],
+    ""service"": {
+        ""feature_engineering"": [],
+        ""target_device"": """",
+        ""deployment_endpoint"": """",
+        ""inference_engine"": [],
+        ""demonstration"": null
+    },
+    ""confidence"": {
+        ""rationale"": ""The JSON structure accurately captures the essence of the instruction, focusing on building a neural network model for time-series forecasting within the mobile application domain. It specifies the user's intention to use a state-of-the-art model for predicting daily active users, emphasizing dynamic adjustment to trends and seasonality while minimizing overfitting. The 'medium' expertise level indicates the user's understanding of AI/ML, suggesting they can engage with advanced modeling concepts. Specifications for performance and complexity metrics, preprocessing, augmentation, and visualization steps are not explicitly mentioned in the instruction, hence their absence. The confidence score reflects a high degree of certainty in the relevance and completeness of the captured information for developing a solution aligned with the user's goals."",
+        ""score"": 0.95
+    }
+}",2
+time-series forecasting,"Implement a WaveNet model for the audio dataset of urban sounds. The task is to forecast the sound levels for the next 24 hours, allowing city planners to manage noise pollution effectively. Highlight the model's ability to differentiate between sound types.","{
+    ""user"": {
+        ""intent"": ""build"",
+        ""expertise"": ""medium""
+    },
+    ""problem"": {
+        ""area"": ""time-series analysis"",
+        ""downstream_task"": ""time-series forecasting"",
+        ""application_domain"": ""urban planning"",
+        ""description"": ""Implement a WaveNet model for the audio dataset of urban sounds. The task is to forecast the sound levels for the next 24 hours, allowing city planners to manage noise pollution effectively."",
+        ""performance_metrics"": [],
+        ""complexity_metrics"": []
+    },
+    ""dataset"": [
+        {
+            ""name"": ""urban sounds"",
+            ""modality"": [""audio""],
+            ""target_variables"": [""sound levels""],
+            ""specification"": {""frequency"":""hourly"", ""prediction_length"": 24},
+            ""description"": ""Audio dataset of urban sounds."",
+            ""preprocessing"": [],
+            ""augmentation"": [],
+            ""visualization"": [],
+            ""source"": ""infer-search""
+        }
+    ],
+    ""model"": [
+        {
+            ""name"": ""WaveNet"",
+            ""family"": """",
+            ""type"": ""neural networks"",
+            ""specification"": null,
+            ""description"": ""WaveNet model capable of differentiating between sound types and forecasting sound levels for the next 24 hours.""
+        }
+    ],
+    ""knowledge"": [],
+    ""service"": {
+        ""feature_engineering"": [],
+        ""target_device"": """",
+        ""deployment_endpoint"": """",
+        ""inference_engine"": [],
+        ""demonstration"": null
+    },
+    ""confidence"": {
+        ""rationale"": ""The instruction clearly specifies building a model, specifically a WaveNet model, for forecasting urban sound levels, which fits into 'time-series forecasting' under 'time-series analysis'. The application domain of 'urban planning' is derived from the goal of managing noise pollution. The dataset and model details are extracted directly from the instructions. The user's expertise is assumed to be 'medium' due to the specific mention of a complex model like WaveNet. No specific metrics, preprocessing, augmentation, or deployment details are provided, hence the relevant sections are left empty or with placeholders."",
+        ""score"": 0.95
+    }
+}",2
+time-series forecasting,"I've got this dataset on the daily temperatures of cities around the globe. Could you show me how to use an AI model, maybe something simple, to predict the temperature for tomorrow?",,1
+time-series forecasting,I found a dataset of monthly rainfall in different regions and want to predict future rainfall. Can you help me set up a model? I don't really know what to choose.,,1
+time-series forecasting,"For my science fair project, I'm looking at the patterns of solar energy production. I have daily data on energy production. Is there a simple model that can help me predict the energy output for the next week?","{
+    ""user"": {
+        ""intent"": ""consult-build"",
+        ""expertise"": ""low""
+    },
+    ""problem"": {
+        ""area"": ""time-series analysis"",
+        ""downstream_task"": ""time-series forecasting"",
+        ""application_domain"": ""energy"",
+        ""description"": ""For my science fair project, I'm looking at the patterns of solar energy production. I have daily data on energy production. Is there a simple model that can help me predict the energy output for the next week?"",
+        ""performance_metrics"": [],
+        ""complexity_metrics"": []
+    },
+    ""dataset"": [
+        {
+            ""name"": """",
+            ""modality"": [""time series""],
+            ""target_variables"": [""energy output""],
+            ""specification"": null,
+            ""description"": ""Daily data on solar energy production for analyzing patterns and predicting future output."",
+            ""preprocessing"": [],
+            ""augmentation"": [],
+            ""visualization"": [],
+            ""source"": ""user-upload""
+        }
+    ],
+    ""model"": [
+        {
+            ""name"": """",
+            ""family"": """",
+            ""type"": ""statistical models"",
+            ""specification"": null,
+            ""description"": ""A simple model for predicting solar energy output based on daily production data.""
+        }
+    ],
+    ""knowledge"": [],
+    ""service"": {
+        ""feature_engineering"": [],
+        ""target_device"": """",
+        ""deployment_endpoint"": """",
+        ""inference_engine"": [],
+        ""demonstration"": null
+    },
+    ""confidence"": {
+        ""rationale"": ""The user's intent seems to be seeking advice on building a simple model for their science fair project, indicating a consult-build intent with a low expertise level in AI/ML. The problem area is identified as time-series analysis with the specific task of forecasting, relevant to the energy domain. The dataset described by the user is a time series of daily solar energy production data. The model type suggested is statistical, considering the user's request for simplicity. No specific performance or complexity metrics, preprocessing, augmentation, or visualization steps were mentioned, so these fields are left empty or null. The confidence score reflects a careful interpretation of the user's needs based on the provided instruction."",
+        ""score"": 0.9
+    }
+}
+",1
+time-series forecasting,"Can we use machine learning to predict how many people will visit a website? I have data on daily website visits. I'm not sure which AI model to use, but I want something that will give me quick results.",,1
+time-series forecasting,"For our real estate market dataset, develop a spatio-temporal model to forecast housing prices by neighborhood for the next year. The model should account for economic indicators, crime rates, and school district quality, prioritizing interpretability and actionable insights.",,1
+time-series forecasting,I'm interested in understanding how we can anticipate the demand for our products over the next year to better manage our inventory. Is there a way to automate this process?,,0
+time-series forecasting,Can we analyze past trends in raw material costs to anticipate future price changes? It would help in negotiating contracts and managing our supply chain more effectively.,,0
+time-series forecasting,Is there a system that could help us predict peak periods for our services? This information would be invaluable for scheduling staff and optimizing our operations.,"{
+    ""user"": {
+        ""intent"": ""consult"",
+        ""expertise"": ""low""
+    },
+    ""problem"": {
+        ""area"": ""time-series analysis"",
+        ""downstream_task"": ""time-series forecasting"",
+        ""application_domain"": ""service industry"",
+        ""description"": ""Is there a system that could help us predict peak periods for our services? This information would be invaluable for scheduling staff and optimizing our operations."",
+        ""performance_metrics"": [],
+        ""complexity_metrics"": []
+    },
+    ""dataset"": [
+        {
+            ""name"": """",
+            ""modality"": [""time series""],
+            ""target_variables"": [],
+            ""specification"": null,
+            ""description"": """",
+            ""preprocessing"": [],
+            ""augmentation"": [],
+            ""visualization"": [],
+            ""source"": ""infer-search""
+        }
+    ],
+    ""model"": [
+        {
+            ""name"": """",
+            ""family"": """",
+            ""type"": ""neural networks"",
+            ""specification"": null,
+            ""description"": """"
+        }
+    ],
+    ""knowledge"": [],
+    ""service"": {
+        ""feature_engineering"": [],
+        ""target_device"": ""cloud"",
+        ""deployment_endpoint"": """",
+        ""inference_engine"": [],
+        ""demonstration"": null
+    },
+    ""confidence"": {
+        ""rationale"": ""The user's request is parsed into the 'consult' intent as it seeks advice on a predictive system for peak periods. The problem is categorized under 'time-series analysis' with a 'time-series forecasting' task, appropriate for predicting service peak times. The application domain is identified as 'service industry'. The dataset modality is set to 'time series', crucial for forecasting tasks, with an 'infer-search' source indicating the need for relevant time-series data. A neural network model type is suggested due to its effectiveness in time-series forecasting. The target deployment is assumed to be 'cloud' for scalability. The rationale and chosen fields are designed to match the user's described need without explicit details, indicating a degree of inference."",
+        ""score"": 0.8
+    }
+}
+",0
+time-series forecasting,I've been wondering if there's a method to forecast customer demand for our products. Knowing this in advance could really streamline our inventory and production planning.,,0
+time-series forecasting,I need to know how our sales are going to trend in the next quarter. This will directly impact our marketing spend and supply chain decisions.,,0
+time-series classification,"You are solving this machine learning tasks of time-series classification: 
+The dataset presented here (the Ethanol Concentration dataset) comprises real-world time series data. We have splitted the dataset into three parts of train, valid, and test. The input is a sequence of observed features (INPUT_SEQ_LEN=1751, INPUT_DIM=3). Your task is to predict the labels for the given sequence, where the label is in range of {0, 1, 2, 3}. The evaluation metric is accuracy.
+Now train a time-series classification model to get a good performance on the given fixed sequences.","{
+    ""user"": {
+        ""intent"": ""build"",
+        ""expertise"": ""medium""
+    },
+    ""problem"": {
+        ""area"": ""time-series analysis"",
+        ""downstream_task"": ""time-series classification"",
+        ""application_domain"": ""real-world time series data"",
+        ""description"": ""The task involves predicting labels for a given sequence from the Ethanol Concentration dataset, which contains real-world time series data. The dataset is divided into train, valid, and test parts."",
+        ""performance_metrics"": [
+            {
+                ""name"": ""accuracy"",
+                ""value"": null
+            }
+        ],
+        ""complexity_metrics"": []
+    },
+    ""dataset"": [
+        {
+            ""name"": ""Ethanol Concentration dataset"",
+            ""modality"": [""time series""],
+            ""target_variables"": [""label""],
+            ""specification"": {
+                ""INPUT_SEQ_LEN"": 1751,
+                ""INPUT_DIM"": 3,
+                ""label"": [0, 1, 2, 3]
+            },
+            ""description"": ""The dataset comprises real-world time series data, split into three parts: train, valid, and test. The input is a sequence of observed features with a sequence length of 1751 and dimension of 3."",
+            ""preprocessing"": [],
+            ""augmentation"": [],
+            ""visualization"": [],
+            ""source"": ""user-upload""
+        }
+    ],
+    ""model"": [
+        {
+            ""name"": """",
+            ""family"": """",
+            ""type"": ""neural networks"",
+            ""specification"": null,
+            ""description"": ""A time-series classification model is to be trained to predict labels for given sequences.""
+        }
+    ],
+    ""knowledge"": [],
+    ""service"": {
+        ""feature_engineering"": [],
+        ""target_device"": """",
+        ""deployment_endpoint"": """",
+        ""inference_engine"": [],
+        ""demonstration"": null
+    },
+    ""confidence"": {
+        ""rationale"": ""The JSON structure accurately reflects the user's instruction for building a time-series classification model with the Ethanol Concentration dataset. Key details about the dataset and task, such as the input sequence length and dimensions, label range, and evaluation metric, are included. The model type is specified as neural networks due to the nature of the task. This JSON is crafted to provide a clear overview of the task requirements and expected outcomes without assuming specific model architecture details or performance metrics values, which are dependent on the experimental setup and results."",
+        ""score"": 0.95
+    }
+}",2
+time-series classification,"You are solving this machine learning tasks of time-series classification: 
+The dataset presented here (the Handwriting dataset) comprises real-world time series data. We have splitted the dataset into three parts of train, valid and test. The input is a sequence of observed features (INPUT_SEQ_LEN=152, INPUT_DIM=3). Your task is to predict the labels for the given sequence, where the label is in range of {0, 1, ..., 25}. The evaluation metric is accuracy.
+Now train a time-series classification model to get a good performance on the given fixed sequences.","{
+    ""user"": {
+        ""intent"": ""build"",
+        ""expertise"": ""medium""
+    },
+    ""problem"": {
+        ""area"": ""time-series analysis"",
+        ""downstream_task"": ""time-series classification"",
+        ""application_domain"": ""handwriting recognition"",
+        ""description"": ""Train a time-series classification model to predict labels for a given sequence of observed features, with the aim of achieving high accuracy on the Handwriting dataset."",
+        ""performance_metrics"": [
+            {
+                ""name"": ""accuracy"",
+                ""value"": null
+            }
+        ],
+        ""complexity_metrics"": []
+    },
+    ""dataset"": [
+        {
+            ""name"": ""Handwriting dataset"",
+            ""modality"": [""time series""],
+            ""target_variables"": [""label""],
+            ""specification"": {
+                ""INPUT_SEQ_LEN"": 152,
+                ""INPUT_DIM"": 3
+            },
+            ""description"": ""The dataset comprises real-world time series data, split into train, valid, and test parts, for handwriting recognition."",
+            ""preprocessing"": [],
+            ""augmentation"": [],
+            ""visualization"": [],
+            ""source"": ""user-upload""
+        }
+    ],
+    ""model"": [
+        {
+            ""name"": """",
+            ""family"": """",
+            ""type"": ""neural networks"",
+            ""specification"": null,
+            ""description"": """"
+        }
+    ],
+    ""knowledge"": [],
+    ""service"": {
+        ""feature_engineering"": [],
+        ""target_device"": """",
+        ""deployment_endpoint"": """",
+        ""inference_engine"": [],
+        ""demonstration"": """"
+    },
+    ""confidence"": {
+        ""rationale"": ""The JSON reflects the instruction for building a time-series classification model for handwriting recognition, aiming for high accuracy. The user's intent, expertise, and specifics of the problem, dataset, and expected model type are aligned with the instruction. However, some values are set to null or empty when the instruction didn't specify them explicitly, such as the exact performance metric value, which leaves room for model evaluation based on dataset performance."",
+        ""score"": 0.9
+    }
+}",2
+time-series classification,"You are solving this machine learning tasks of time series classification: 
+The dataset presented here (the Heartbeat dataset) comprises real-world time-series data. We have splitted the dataset into three parts of train, valid, and test. The input is a sequence of observed features (INPUT_SEQ_LEN=405, INPUT_DIM=61). Your task is to predict the labels for the given sequence, where the label is in range of {0, 1}. The evaluation metric is accuracy.
+Now train a time series classification model to get a good performance on the given fixed sequences.","{
+    ""user"": {
+        ""intent"": ""build"",
+        ""expertise"": ""medium""
+    },
+    ""problem"": {
+        ""area"": ""time-series analysis"",
+        ""downstream_task"": ""time-series classification"",
+        ""application_domain"": ""healthcare"",
+        ""description"": ""You are tasked with solving a machine learning problem involving the classification of time-series data. The data is derived from the Heartbeat dataset, consisting of real-world sequences. The goal is to predict binary labels for each sequence based on observed features."",
+        ""performance_metrics"": [
+            {
+                ""name"": ""accuracy"",
+                ""value"": null
+            }
+        ],
+        ""complexity_metrics"": []
+    },
+    ""dataset"": [
+        {
+            ""name"": ""Heartbeat"",
+            ""modality"": [""time series""],
+            ""target_variables"": [""label""],
+            ""specification"": {
+                ""INPUT_SEQ_LEN"": 405,
+                ""INPUT_DIM"": 61
+            },
+            ""description"": ""The dataset comprises real-world time-series data related to heartbeats, divided into train, valid, and test splits. The input is a sequence of observed features with each sequence having a length of 405 and each feature having a dimension of 61."",
+            ""preprocessing"": [],
+            ""augmentation"": [],
+            ""visualization"": [],
+            ""source"": ""user-upload""
+        }
+    ],
+    ""model"": [
+        {
+            ""name"": """",
+            ""family"": """",
+            ""type"": ""neural networks"",
+            ""specification"": null,
+            ""description"": ""A time series classification model that is expected to perform well on fixed sequences of the Heartbeat dataset.""
+        }
+    ],
+    ""knowledge"": [],
+    ""service"": {
+        ""feature_engineering"": [],
+        ""target_device"": """",
+        ""deployment_endpoint"": """",
+        ""inference_engine"": [],
+        ""demonstration"": null
+    },
+    ""confidence"": {
+        ""rationale"": ""The given instruction prompt was parsed into the JSON format based on the provided template and instruction details. The classification task, dataset specifics, and required performance metric (accuracy) are all directly derived from the instruction. Any unspecified details, such as model specifications and source of the dataset, were inferred where possible. The 'build' intent reflects the instruction to develop a model, and 'medium' expertise is assumed given the technical nature of the task."",
+        ""score"": 0.9
+    }
+}",2
+time-series classification,"You are solving this machine learning tasks of time-series classification: 
+The dataset presented here (the Self Regulation SCP1 dataset) comprises real-world time-series data. We have splitted the dataset into three parts of train, valid, and test. The input is a sequence of observed features (INPUT_SEQ_LEN=896, INPUT_DIM=6). Your task is to predict the labels for the given sequence, where the label is in range of {0, 1}. The evaluation metric is accuracy.
+Now train a time-series classification model to get a good performance on the given fixed sequences.","{
+    ""user"": {
+        ""intent"": ""build"",
+        ""expertise"": ""medium""
+    },
+    ""problem"": {
+        ""area"": ""time-series analysis"",
+        ""downstream_task"": ""time-series classification"",
+        ""application_domain"": ""healthcare"",
+        ""description"": ""You are tasked with building a time-series classification model using the Self Regulation SCP1 dataset, which consists of real-world time-series data. The model should accurately predict labels within a range of {0, 1} for a given sequence of observed features."",
+        ""performance_metrics"": [
+            {
+                ""name"": ""accuracy"",
+                ""value"": null
+            }
+        ],
+        ""complexity_metrics"": []
+    },
+    ""dataset"": [
+        {
+            ""name"": ""Self Regulation SCP1"",
+            ""modality"": [""time series""],
+            ""target_variables"": [],
+            ""specification"": {
+                ""INPUT_SEQ_LEN"": 896,
+                ""INPUT_DIM"": 6
+            },
+            ""description"": ""A real-world time-series dataset split into train, valid, and test parts, with the input being a sequence of observed features and the task to predict labels within {0, 1}."",
+            ""preprocessing"": [],
+            ""augmentation"": [],
+            ""visualization"": [],
+            ""source"": ""user-upload""
+        }
+    ],
+    ""model"": [
+        {
+            ""name"": """",
+            ""family"": """",
+            ""type"": ""neural networks"",
+            ""specification"": null,
+            ""description"": ""A neural network model to classify time-series data from the Self Regulation SCP1 dataset into labels within the range of {0, 1}.""
+        }
+    ],
+    ""knowledge"": [],
+    ""service"": {
+        ""feature_engineering"": [],
+        ""target_device"": """",
+        ""deployment_endpoint"": """",
+        ""inference_engine"": [],
+        ""demonstration"": null
+    },
+    ""confidence"": {
+        ""rationale"": ""The information provided aligns closely with the instruction prompt, detailing a specific task of time-series classification using the Self Regulation SCP1 dataset. The problem area, dataset specifics, and model type are derived directly from the instruction. Performance is focused on accuracy, as explicitly mentioned, but no specific target value is provided, leaving it open for optimization. The model type suggested, neural networks, is suitable for time-series classification tasks. Some details, such as target device or deployment specifics, are not provided in the instruction, leading to their omission in this response."",
+        ""score"": 0.9
+    }
+}",2
+time-series classification,"You are solving this machine learning tasks of time series classification: 
+The dataset presented here (the UWave Gesture Library dataset) comprises real-world time series data. We have splitted the dataset into three parts of train, valid and test. The input is a sequence of observed features (INPUT_SEQ_LEN=315, INPUT_DIM=3). Your task is to predict the labels for the given sequence, where the label is in range of {0, 1, ..., 7}. The evaluation metric is accuracy.
+Now train a time series classification model to get a good performance on the given fixed sequences.","{
+    ""user"": {
+        ""intent"": ""build"",
+        ""expertise"": ""medium""
+    },
+    ""problem"": {
+        ""area"": ""time-series analysis"",
+        ""downstream_task"": ""time-series classification"",
+        ""application_domain"": ""gesture recognition"",
+        ""description"": ""The task involves training a model for time series classification using the UWave Gesture Library dataset, which contains real-world time series data. The goal is to predict the labels for a given sequence where the label ranges from 0 to 7."",
+        ""performance_metrics"": [
+            {
+                ""name"": ""accuracy"",
+                ""value"": null
+            }
+        ],
+        ""complexity_metrics"": []
+    },
+    ""dataset"": [
+        {
+            ""name"": ""UWave Gesture Library"",
+            ""modality"": [""time series""],
+            ""target_variables"": [""label""],
+            ""specification"": {
+                ""INPUT_SEQ_LEN"": 315,
+                ""INPUT_DIM"": 3
+            },
+            ""description"": ""The dataset comprises real-world time series data, split into train, valid, and test parts. The input is a sequence of observed features with a sequence length of 315 and dimension of 3."",
+            ""preprocessing"": [],
+            ""augmentation"": [],
+            ""visualization"": [],
+            ""source"": ""direct-search""
+        }
+    ],
+    ""model"": [
+        {
+            ""name"": """",
+            ""family"": """",
+            ""type"": ""neural networks"",
+            ""specification"": null,
+            ""description"": ""The model to be trained should perform time series classification on the given dataset to predict labels ranging from 0 to 7.""
+        }
+    ],
+    ""knowledge"": [],
+    ""service"": {
+        ""feature_engineering"": [],
+        ""target_device"": """",
+        ""deployment_endpoint"": """",
+        ""inference_engine"": [],
+        ""demonstration"": null
+    },
+    ""confidence"": {
+        ""rationale"": ""The information provided is based on the instructions for solving a time series classification task using the UWave Gesture Library dataset. The user's intent is clearly to build a model for this specific task, with a focus on neural networks due to the nature of the problem. The dataset and task specifications are directly derived from the instruction, ensuring accuracy in parsing. There might be additional specifications or preferences for model training, feature engineering, and deployment details that were not explicitly mentioned in the instruction."",
+        ""score"": 0.9
+    }
+}",2
+time-series classification,"For the Urban Sound Classification project, we need a model that utilizes Mel-Frequency Cepstral Coefficients (MFCC) features and a CNN architecture to distinguish between different types of urban sounds. Performance metrics should include accuracy and F1 score, with extra consideration for the model's ability to function in noisy environments.","{
+    ""user"": {
+        ""intent"": ""build"",
+        ""expertise"": ""medium""
+    },
+    ""problem"": {
+        ""area"": ""time-series analysis"",
+        ""downstream_task"": ""time-series classification"",
+        ""application_domain"": ""urban sound classification"",
+        ""description"": ""For the Urban Sound Classification project, we need a model that utilizes Mel-Frequency Cepstral Coefficients (MFCC) features and a CNN architecture to distinguish between different types of urban sounds."",
+        ""performance_metrics"": [
+            {
+                ""name"": ""accuracy"",
+                ""value"": null
+            },
+            {
+                ""name"": ""F1 score"",
+                ""value"": null
+            }
+        ],
+        ""complexity_metrics"": []
+    },
+    ""dataset"": [
+        {
+            ""name"": """",
+            ""modality"": [""audio""],
+            ""target_variables"": [],
+            ""specification"": null,
+            ""description"": ""Dataset of urban sounds."",
+            ""preprocessing"": [""MFCC""],
+            ""augmentation"": [],
+            ""visualization"": [],
+            ""source"": ""infer-search""
+        }
+    ],
+    ""model"": [
+        {
+            ""name"": """",
+            ""family"": ""CNN"",
+            ""type"": ""neural networks"",
+            ""specification"": null,
+            ""description"": ""A CNN model utilizing Mel-Frequency Cepstral Coefficients (MFCC) features for classifying different types of urban sounds.""
+        }
+    ],
+    ""knowledge"": [],
+    ""service"": {
+        ""feature_engineering"": [""MFCC""],
+        ""target_device"": """",
+        ""deployment_endpoint"": """",
+        ""inference_engine"": [],
+        ""demonstration"": null
+    },
+    ""confidence"": {
+        ""rationale"": ""The JSON structure is crafted following the instruction, aligning with the schema definitions. The problem description, metrics, and model type are specified based on the user's needs. A higher level of detail or specific values for some fields (e.g., accuracy value) were not provided in the instruction, hence left as null where appropriate. The selection of time-series analysis and classification matches the task's nature with audio data. Further specifics on the dataset source or exact performance metric values could enhance this template if provided."",
+        ""score"": 0.9
+    }
+}",2
+time-series classification,"Design a model using the Dynamic Time Warping (DTW) algorithm for the Sign Language Time Series dataset to classify sign language gestures. The model must ensure high precision and recall, especially for subtle gesture differences, to support effective communication for the hearing impaired.","{
+    ""user"": {
+        ""intent"": ""build"",
+        ""expertise"": ""medium""
+    },
+    ""problem"": {
+        ""area"": ""time-series analysis"",
+        ""downstream_task"": ""time-series classification"",
+        ""application_domain"": ""healthcare"",
+        ""description"": ""Design a model using the Dynamic Time Warping (DTW) algorithm for the Sign Language Time Series dataset to classify sign language gestures. The model must ensure high precision and recall, especially for subtle gesture differences, to support effective communication for the hearing impaired."",
+        ""performance_metrics"": [
+            {
+                ""name"": ""precision"",
+                ""value"": null
+            },
+            {
+                ""name"": ""recall"",
+                ""value"": null
+            }
+        ],
+        ""complexity_metrics"": []
+    },
+    ""dataset"": [
+        {
+            ""name"": ""Sign Language Time Series"",
+            ""modality"": [""time series""],
+            ""target_variables"": [],
+            ""specification"": null,
+            ""description"": ""A dataset comprising time series data for sign language gestures."",
+            ""preprocessing"": [],
+            ""augmentation"": [],
+            ""visualization"": [],
+            ""source"": ""direct-search""
+        }
+    ],
+    ""model"": [
+        {
+            ""name"": """",
+            ""family"": ""Dynamic Time Warping"",
+            ""type"": ""classical machine learning"",
+            ""specification"": null,
+            ""description"": ""A model based on the Dynamic Time Warping (DTW) algorithm designed to classify sign language gestures accurately, especially distinguishing subtle gesture differences.""
+        }
+    ],
+    ""knowledge"": [],
+    ""service"": {
+        ""feature_engineering"": [],
+        ""target_device"": """",
+        ""deployment_endpoint"": """",
+        ""inference_engine"": [],
+        ""demonstration"": null
+    },
+    ""confidence"": {
+        ""rationale"": ""The JSON structure is aligned with the provided template and instruction prompt. It specifies the intent to build a model with medium user expertise in AI/ML. The problem is accurately categorized under 'time-series analysis' with the specific task of 'time-series classification' in the healthcare domain. Performance metrics such as precision and recall are highlighted without specified values, suggesting a focus on these for model evaluation. The dataset section is tailored to the 'Sign Language Time Series' dataset with direct-search as the source. The model section elaborates on using the Dynamic Time Warping algorithm, appropriately categorized under 'classical machine learning'. Confidence in this parsed information is high, as it closely adheres to the instruction prompt and template schema."",
+        ""score"": 0.95
+    }
+}",2
+time-series classification,"We're looking for a Deep Belief Network (DBN) approach to analyze the Human Activity Recognition dataset. The model should accurately classify different physical activities from wearable sensor data, with a particular focus on minimizing energy consumption for deployment on mobile devices.","{
+  ""user"": {
+    ""intent"": ""build"",
+    ""expertise"": ""medium""
+  },
+  ""problem"": {
+    ""area"": ""time-series analysis"",
+    ""downstream_task"": ""time-series classification"",
+    ""application_domain"": ""healthcare and fitness"",
+    ""description"": ""We're looking for a Deep Belief Network (DBN) approach to analyze the Human Activity Recognition dataset. The model should accurately classify different physical activities from wearable sensor data, with a particular focus on minimizing energy consumption for deployment on mobile devices."",
+    ""performance_metrics"": [
+      {
+        ""name"": ""accuracy"",
+        ""value"": null
+      }
+    ],
+    ""complexity_metrics"": [
+      {
+        ""name"": ""energy consumption"",
+        ""value"": null
+      }
+    ]
+  },
+  ""dataset"": [
+    {
+      ""name"": ""Human Activity Recognition"",
+      ""modality"": [""time series""],
+      ""target_variables"": [],
+      ""specification"": null,
+      ""description"": ""A dataset consisting of wearable sensor data used to classify different physical activities."",
+      ""preprocessing"": [],
+      ""augmentation"": [],
+      ""visualization"": [],
+      ""source"": ""direct-search""
+    }
+  ],
+  ""model"": [
+    {
+      ""name"": ""Deep Belief Network"",
+      ""family"": """",
+      ""type"": ""neural networks"",
+      ""specification"": null,
+      ""description"": ""A DBN model tailored for analyzing wearable sensor data for activity classification, with a focus on minimizing energy consumption.""
+    }
+  ],
+  ""knowledge"": [],
+  ""service"": {
+    ""feature_engineering"": [],
+    ""target_device"": ""mobile devices"",
+    ""deployment_endpoint"": """",
+    ""inference_engine"": [],
+    ""demonstration"": null
+  },
+  ""confidence"": {
+    ""rationale"": ""The instruction prompt has been parsed according to the provided template and all relevant sections have been filled out based on the instruction. The user's intent is clearly to build a model (Deep Belief Network) for the classification of time-series data from wearable sensors, indicating a medium level of expertise in AI and ML. The dataset, model specifications, and problem area are aligned with the instruction. However, specific performance metrics values and complexity metrics values were not provided in the instruction, leading to some fields being filled with null values indicating that optimization towards these metrics is desired rather than specifying exact target values."",
+    ""score"": 0.9
+  }
+}",2
+time-series classification,"The project involves using the EEG Brainwave dataset to classify cognitive states using Support Vector Machines (SVM). Emphasis should be on reducing model training time without compromising accuracy, as the application is intended for real-time brain-computer interface systems.","{
+    ""user"": {
+        ""intent"": ""build"",
+        ""expertise"": ""medium""
+    },
+    ""problem"": {
+        ""area"": ""time-series analysis"",
+        ""downstream_task"": ""time-series classification"",
+        ""application_domain"": ""healthcare"",
+        ""description"": ""The project involves using the EEG Brainwave dataset to classify cognitive states using Support Vector Machines (SVM). Emphasis should be on reducing model training time without compromising accuracy, as the application is intended for real-time brain-computer interface systems."",
+        ""performance_metrics"": [
+            {
+                ""name"": ""accuracy"",
+                ""value"": null
+            }
+        ],
+        ""complexity_metrics"": [
+            {
+                ""name"": ""training time"",
+                ""value"": null
+            }
+        ]
+    },
+    ""dataset"": [
+        {
+            ""name"": ""EEG Brainwave"",
+            ""modality"": [""time series""],
+            ""target_variables"": [],
+            ""specification"": null,
+            ""description"": ""A dataset consisting of EEG brainwave data used to classify cognitive states."",
+            ""preprocessing"": [],
+            ""augmentation"": [],
+            ""visualization"": [],
+            ""source"": ""direct-search""
+        }
+    ],
+    ""model"": [
+        {
+            ""name"": ""Support Vector Machines (SVM)"",
+            ""family"": ""classical machine learning"",
+            ""type"": ""classical machine learning"",
+            ""specification"": null,
+            ""description"": ""SVM model intended for real-time classification of cognitive states from EEG data.""
+        }
+    ],
+    ""knowledge"": [],
+    ""service"": {
+        ""feature_engineering"": [],
+        ""target_device"": """",
+        ""deployment_endpoint"": """",
+        ""inference_engine"": [],
+        ""demonstration"": null
+    },
+    ""confidence"": {
+        ""rationale"": ""The given instructions have been parsed accurately into the template structure. The emphasis on reducing model training time without compromising accuracy, along with the use of the EEG Brainwave dataset and SVM for time-series classification in healthcare, has been highlighted as per the instruction. The focus on real-time applications for brain-computer interface systems is also addressed. No specific performance metric values or preprocessing steps were provided, reflecting the instruction's emphasis on exploring SVM's potential with efficiency in mind."",
+        ""score"": 0.95
+    }
+}",2
+time-series classification,"For the Seismic Activity Prediction project, we require a model that can classify seismic signals and predict volcanic eruptions. Preference will be given to models that can provide early warnings with a high degree of certainty, using Recurrent Neural Networks (RNN) for real-time data analysis.","{
+    ""user"": {
+        ""intent"": ""build"",
+        ""expertise"": ""medium""
+    },
+    ""problem"": {
+        ""area"": ""time-series analysis"",
+        ""downstream_task"": ""time-series classification"",
+        ""application_domain"": ""geophysics"",
+        ""description"": ""For the Seismic Activity Prediction project, we require a model that can classify seismic signals and predict volcanic eruptions. Preference will be given to models that can provide early warnings with a high degree of certainty."",
+        ""performance_metrics"": [],
+        ""complexity_metrics"": []
+    },
+    ""dataset"": [
+        {
+            ""name"": """",
+            ""modality"": [""time series""],
+            ""target_variables"": [],
+            ""specification"": null,
+            ""description"": ""Seismic signals for predicting volcanic eruptions."",
+            ""preprocessing"": [],
+            ""augmentation"": [],
+            ""visualization"": [],
+            ""source"": ""infer-search""
+        }
+    ],
+    ""model"": [
+        {
+            ""name"": """",
+            ""family"": ""Recurrent Neural Networks"",
+            ""type"": ""neural networks"",
+            ""specification"": null,
+            ""description"": ""Models that can provide early warnings with a high degree of certainty, using Recurrent Neural Networks (RNN) for real-time data analysis.""
+        }
+    ],
+    ""knowledge"": [],
+    ""service"": {
+        ""feature_engineering"": [],
+        ""target_device"": """",
+        ""deployment_endpoint"": """",
+        ""inference_engine"": [],
+        ""demonstration"": """"
+    },
+    ""confidence"": {
+        ""rationale"": ""The JSON structure follows the template and is tailored to the given instruction. The intent is identified as 'build' due to the requirement for a model development. Expertise level is assumed to be 'medium' based on the specificity of the instruction. The problem area and downstream task align with time-series analysis and classification, given the focus on seismic signal classification for eruption prediction. RNNs are highlighted under model specifications to reflect the preference for real-time analysis capabilities. Data and model descriptions are derived directly from the instruction. Additional details like performance metrics and dataset specifics weren't provided in the instruction, hence the omission."",
+        ""score"": 0.9
+    }
+}",2
+time-series classification,Can you show me how to classify time-series data with the Wafer dataset? I'm not sure about the best model to use here.,,1
+time-series classification,"For my project, I want to classify sequences from the MIT-BIH Arrhythmia Dataset.",,1
+time-series classification,"For a school project, I'm thinking about using time-series data to classify different genres of music. I'm not sure which dataset to use or what model would work best. Any advice?","{
+    ""user"": {
+        ""intent"": ""consult-build"",
+        ""expertise"": ""low""
+    },
+    ""problem"": {
+        ""area"": ""time-series analysis"",
+        ""downstream_task"": ""time-series classification"",
+        ""application_domain"": ""music"",
+        ""description"": ""For a school project, I'm thinking about using time-series data to classify different genres of music. I'm not sure which dataset to use or what model would work best. Any advice?"",
+        ""performance_metrics"": [],
+        ""complexity_metrics"": []
+    },
+    ""dataset"": [
+        {
+            ""name"": """",
+            ""modality"": [""audio"", ""time series""],
+            ""target_variables"": [],
+            ""specification"": null,
+            ""description"": ""The dataset should contain time-series data representing different genres of music for the purpose of classification."",
+            ""preprocessing"": [],
+            ""augmentation"": [],
+            ""visualization"": [],
+            ""source"": ""infer-search""
+        }
+    ],
+    ""model"": [
+        {
+            ""name"": """",
+            ""family"": """",
+            ""type"": ""neural networks"",
+            ""specification"": null,
+            ""description"": ""A model suitable for classifying different genres of music based on time-series data.""
+        }
+    ],
+    ""knowledge"": [],
+    ""service"": {
+        ""feature_engineering"": [],
+        ""target_device"": """",
+        ""deployment_endpoint"": """",
+        ""inference_engine"": [],
+        ""demonstration"": null
+    },
+    ""confidence"": {
+        ""rationale"": ""The user's intent seems to be seeking advice for building a model that classifies music genres using time-series data, indicating a consult-build intent. The problem area and downstream task are identified as time-series analysis and classification, respectively, tailored to the music domain. Since the user hasn't specified a dataset or a model, suggestions are made based on the problem's nature. The confidence in these choices reflects an understanding of the user's requirements and the common approaches to similar problems."",
+        ""score"": 0.9
+    }
+}",1
+time-series classification,I want to classify different types of activities people do based on accelerometer data. I'm not really sure about which dataset to use or which models are the best for this kind of task. Any suggestions?,,1
+time-series classification,I have this transnational data set which contains all the transactions occurring between 01/12/2010 and 09/12/2011 for a UK-based and registered non-store online retail. Any suggestion on doing with this dataset?,,1
+time-series classification,"Our fitness app collects a lot of user activity data, and we're curious if there's a way to predict when users are likely to drop off or increase their activity. This could help us create more targeted engagement strategies.",,0
+time-series classification,Our airline struggles with flight cancellations and delays due to various factors. Is there a method to analyze historical flight data to better predict and manage future disruptions?,,0
+time-series classification,Can we know what people are doing based on sensor data? Please recommend any model?,"{
+    ""user"": {
+        ""intent"": ""consult"",
+        ""expertise"": ""low""
+    },
+    ""problem"": {
+        ""area"": ""time-series analysis"",
+        ""downstream_task"": ""time-series classification"",
+        ""application_domain"": ""sensor data analysis"",
+        ""description"": ""The user is interested in understanding if it's possible to infer people's activities based on sensor data and seeks recommendations for models that could achieve this."",
+        ""performance_metrics"": [],
+        ""complexity_metrics"": []
+    },
+    ""dataset"": [
+        {
+            ""name"": """",
+            ""modality"": [""time series""],
+            ""target_variables"": [],
+            ""specification"": null,
+            ""description"": """",
+            ""preprocessing"": [],
+            ""augmentation"": [],
+            ""visualization"": [],
+            ""source"": ""infer-search""
+        }
+    ],
+    ""model"": [
+        {
+            ""name"": """",
+            ""family"": """",
+            ""type"": ""neural networks"",
+            ""specification"": null,
+            ""description"": ""Recommendation for a model that can classify activities based on sensor data. Neural networks are suggested due to their capability in handling time-series data effectively.""
+        }
+    ],
+    ""knowledge"": [],
+    ""service"": {
+        ""feature_engineering"": [],
+        ""target_device"": """",
+        ""deployment_endpoint"": """",
+        ""inference_engine"": [],
+        ""demonstration"": null
+    },
+    ""confidence"": {
+        ""rationale"": ""The instruction suggests a consultative intent focusing on the possibility of inferring people's activities from sensor data, indicative of a time-series classification problem within the time-series analysis area. Given the non-specific nature of the query regarding datasets, models, or technical specifications, assumptions were made based on common practices in sensor data analysis. Neural networks are recommended due to their proven success in similar tasks. The low expertise level suggests a broad, initial exploration into the subject. Confidence in these mappings stems from aligning the user's inquiry with common AI/ML problem-solving paradigms, though specifics on dataset or model preferences were not provided, warranting a moderate confidence score."",
+        ""score"": 0.75
+    }
+}
+",0
+time-series classification,I have a list of customers' log data. Any suggestion on how to find the potential customer that will purchase our products?,,0
+time-series classification,We're interested in how weather impacts our outdoor event attendance. Is there a way to analyze historical attendance data alongside weather patterns to predict future event success?,,0
+time-series anomaly detection,"The 'SeismicActivityRecording' dataset needs a Convolutional Neural Network (CNN) tailored to pick up unusual seismic patterns indicating potential earthquake activities, prioritizing early detection.","{
+    ""user"": {
+        ""intent"": ""build"",
+        ""expertise"": ""medium""
+    },
+    ""problem"": {
+        ""area"": ""time-series analysis"",
+        ""downstream_task"": ""time-series anomaly detection"",
+        ""application_domain"": ""geoscience"",
+        ""description"": ""The 'SeismicActivityRecording' dataset needs a Convolutional Neural Network (CNN) tailored to pick up unusual seismic patterns indicating potential earthquake activities, prioritizing early detection."",
+        ""performance_metrics"": [],
+        ""complexity_metrics"": []
+    },
+    ""dataset"": [
+        {
+            ""name"": ""SeismicActivityRecording"",
+            ""modality"": [""time series""],
+            ""target_variables"": [],
+            ""specification"": null,
+            ""description"": ""A dataset containing time-series data of seismic activities for the purpose of detecting unusual patterns indicative of potential earthquakes."",
+            ""preprocessing"": [],
+            ""augmentation"": [],
+            ""visualization"": [],
+            ""source"": ""direct-search""
+        }
+    ],
+    ""model"": [
+        {
+            ""name"": """",
+            ""family"": ""CNN"",
+            ""type"": ""neural networks"",
+            ""specification"": null,
+            ""description"": ""A Convolutional Neural Network designed specifically to identify unusual seismic patterns for early earthquake detection.""
+        }
+    ],
+    ""knowledge"": [],
+    ""service"": {
+        ""feature_engineering"": [],
+        ""target_device"": """",
+        ""deployment_endpoint"": """",
+        ""inference_engine"": [],
+        ""demonstration"": null
+    },
+    ""confidence"": {
+        ""rationale"": ""The JSON format is carefully designed to encapsulate all aspects of the instruction, specifically tailoring a CNN for early detection of earthquakes through anomaly detection in seismic activity data. The 'medium' expertise level suggests a user with some understanding of the field, aligning with the request for a specialized model. The focus on 'time-series analysis' and 'time-series anomaly detection' matches the goal of detecting unusual patterns in seismic data, which is crucial for earthquake prediction. The dataset and model sections are filled out according to the given instructions, emphasizing the importance of early detection and the specific use of a CNN for this task. The absence of specific performance and complexity metrics suggests flexibility in these areas, focusing instead on the model's effectiveness in unusual pattern detection."",
+        ""score"": 0.95
+    }
+}",2
+time-series anomaly detection,"For the 'ElectricGridLoad' dataset, employ a Stacked Autoencoder to predict and identify anomalies in power demand and supply, with a focus on reducing false positives to avoid unnecessary grid adjustments.","{
+    ""user"": {
+        ""intent"": ""build"",
+        ""expertise"": ""medium""
+    },
+    ""problem"": {
+        ""area"": ""time-series analysis"",
+        ""downstream_task"": ""time-series anomaly detection"",
+        ""application_domain"": ""energy"",
+        ""description"": ""Employ a Stacked Autoencoder to predict and identify anomalies in power demand and supply, with a focus on reducing false positives to avoid unnecessary grid adjustments."",
+        ""performance_metrics"": [
+            {
+                ""name"": ""false positive rate"",
+                ""value"": null
+            }
+        ],
+        ""complexity_metrics"": []
+    },
+    ""dataset"": [
+        {
+            ""name"": ""ElectricGridLoad"",
+            ""modality"": [
+                ""time series""
+            ],
+            ""target_variables"": [],
+            ""specification"": null,
+            ""description"": ""A dataset containing time-series data of power demand and supply."",
+            ""preprocessing"": [],
+            ""augmentation"": [],
+            ""visualization"": [],
+            ""source"": ""direct-search""
+        }
+    ],
+    ""model"": [
+        {
+            ""name"": ""Stacked Autoencoder"",
+            ""family"": ""autoencoder"",
+            ""type"": ""neural networks"",
+            ""specification"": null,
+            ""description"": ""A neural network model specialized in identifying anomalies within time-series data, focusing on reducing false positives.""
+        }
+    ],
+    ""knowledge"": [],
+    ""service"": {
+        ""feature_engineering"": [],
+        ""target_device"": """",
+        ""deployment_endpoint"": """",
+        ""inference_engine"": [],
+        ""demonstration"": null
+    },
+    ""confidence"": {
+        ""rationale"": ""The JSON structure is filled based on the provided instruction with a focus on building a model for anomaly detection in time-series data related to electric grid load. The emphasis on reducing false positives is reflected in the performance metrics. The description fields are populated to clearly define the problem and model based on the user's instruction. Some fields are left with default or null values due to the lack of specific details in the instruction."",
+        ""score"": 0.85
+    }
+}",2
+time-series anomaly detection,"On the 'AerospaceTelemetry' dataset, develop a model using Robust Random Cut Forest (RRCF) for anomaly detection in spacecraft component performance data, ensuring quick response capabilities for mission-critical decisions.","{
+    ""user"": {
+        ""intent"": ""build"",
+        ""expertise"": ""medium""
+    },
+    ""problem"": {
+        ""area"": ""time-series analysis"",
+        ""downstream_task"": ""time-series anomaly detection"",
+        ""application_domain"": ""aerospace"",
+        ""description"": ""Develop a model using Robust Random Cut Forest (RRCF) for anomaly detection in spacecraft component performance data, ensuring quick response capabilities for mission-critical decisions."",
+        ""performance_metrics"": [],
+        ""complexity_metrics"": [
+            {
+                ""name"": ""response time"",
+                ""value"": null
+            }
+        ]
+    },
+    ""dataset"": [
+        {
+            ""name"": ""AerospaceTelemetry"",
+            ""modality"": [""time series""],
+            ""target_variables"": [],
+            ""specification"": null,
+            ""description"": ""Dataset containing spacecraft component performance data."",
+            ""preprocessing"": [],
+            ""augmentation"": [],
+            ""visualization"": [],
+            ""source"": ""direct-search""
+        }
+    ],
+    ""model"": [
+        {
+            ""name"": ""Robust Random Cut Forest"",
+            ""family"": ""ensemble models"",
+            ""type"": ""classical machine learning"",
+            ""specification"": null,
+            ""description"": ""A model to be developed for anomaly detection in the 'AerospaceTelemetry' dataset focusing on spacecraft component performance data.""
+        }
+    ],
+    ""knowledge"": [],
+    ""service"": {
+        ""feature_engineering"": [],
+        ""target_device"": """",
+        ""deployment_endpoint"": """",
+        ""inference_engine"": [],
+        ""demonstration"": null
+    },
+    ""confidence"": {
+        ""rationale"": ""The 'user.intent' is set to 'build' because the instruction explicitly mentions developing a model. The 'expertise' level is assumed to be 'medium' considering the specific model mentioned (RRCF) implies some familiarity with machine learning. The 'problem', 'dataset', and 'model' sections are filled out to reflect the details given in the instruction. Complexity metrics include 'response time' as a null value to emphasize the importance of quick response without specifying an exact target, aligning with the requirement for 'mission-critical decisions.'"",
+        ""score"": 0.95
+    }
+}",2
+time-series anomaly detection,"For the 'HealthcareMonitoring' dataset, implement a One-Class SVM to highlight unusual patient vitals or activity levels, which could suggest medical attention is needed. Privacy-preserving processing techniques are essential.","{
+  ""user"": {
+    ""intent"": ""build"",
+    ""expertise"": ""medium""
+  },
+  ""problem"": {
+    ""area"": ""time-series analysis"",
+    ""downstream_task"": ""time-series anomaly detection"",
+    ""application_domain"": ""healthcare"",
+    ""description"": ""Implement a One-Class SVM to highlight unusual patient vitals or activity levels, which could suggest medical attention is needed. Privacy-preserving processing techniques are essential."",
+    ""performance_metrics"": [],
+    ""complexity_metrics"": []
+  },
+  ""dataset"": [
+    {
+      ""name"": ""HealthcareMonitoring"",
+      ""modality"": [""time series""],
+      ""target_variables"": [],
+      ""specification"": null,
+      ""description"": ""A dataset containing patient vitals or activity levels for monitoring healthcare."",
+      ""preprocessing"": [""privacy-preserving techniques""],
+      ""augmentation"": [],
+      ""visualization"": [],
+      ""source"": ""direct-search""
+    }
+  ],
+  ""model"": [
+    {
+      ""name"": ""One-Class SVM"",
+      ""family"": ""support vector machine"",
+      ""type"": ""classical machine learning"",
+      ""specification"": null,
+      ""description"": ""A model to detect anomalies in patient vitals or activity levels indicating the need for medical attention.""
+    }
+  ],
+  ""knowledge"": [],
+  ""service"": {
+    ""feature_engineering"": [],
+    ""target_device"": """",
+    ""deployment_endpoint"": """",
+    ""inference_engine"": [],
+    ""demonstration"": null
+  },
+  ""confidence"": {
+    ""rationale"": ""The JSON structure is meticulously filled out based on the provided instruction, with careful consideration of the areas of 'time-series analysis' and the use of a specific model (One-Class SVM) within the healthcare application domain. Special emphasis is placed on privacy-preserving techniques in preprocessing, aligning with the requirement for handling sensitive patient data. The intent and expertise levels are inferred from the context, with 'medium' expertise assumed due to the mention of a specific model and domain-specific application. Adjustments or additions were made thoughtfully to adhere to the template schema and the specificity of the instruction."",
+    ""score"": 0.9
+  }
+}",2
+time-series anomaly detection,"Pretrain a recent time-series anomaly detection model with server datasets, such as ASD and PSM. I will deploy it on my server to detect anomalous server traffic patterns.","{
+    ""user"": {
+        ""intent"": ""build"",
+        ""expertise"": ""medium""
+    },
+    ""problem"": {
+        ""area"": ""time-series analysis"",
+        ""downstream_task"": ""time-series anomaly detection"",
+        ""application_domain"": ""cybersecurity"",
+        ""description"": ""Pretrain a recent time-series anomaly detection model with server datasets, such as ASD and PSM. I will deploy it on my server to detect anomalous server traffic patterns."",
+        ""performance_metrics"": [],
+        ""complexity_metrics"": []
+    },
+    ""dataset"": [
+        {
+            ""name"": ""ASD"",
+            ""modality"": [""time series""],
+            ""target_variables"": [],
+            ""specification"": null,
+            ""description"": ""A server dataset for anomaly detection."",
+            ""preprocessing"": [],
+            ""augmentation"": [],
+            ""visualization"": [],
+            ""source"": ""direct-search""
+        },
+        {
+            ""name"": ""PSM"",
+            ""modality"": [""time series""],
+            ""target_variables"": [],
+            ""specification"": null,
+            ""description"": ""A server dataset for anomaly detection."",
+            ""preprocessing"": [],
+            ""augmentation"": [],
+            ""visualization"": [],
+            ""source"": ""direct-search""
+        }
+    ],
+    ""model"": [
+        {
+            ""name"": """",
+            ""family"": """",
+            ""type"": ""neural networks"",
+            ""specification"": null,
+            ""description"": ""A recent time-series anomaly detection model to be pretrained with ASD and PSM datasets.""
+        }
+    ],
+    ""knowledge"": [],
+    ""service"": {
+        ""feature_engineering"": [],
+        ""target_device"": ""server"",
+        ""deployment_endpoint"": """",
+        ""inference_engine"": [],
+        ""demonstration"": null
+    },
+    ""confidence"": {
+        ""rationale"": ""The instruction clearly indicates a desire to build ('pretrain') a model, hence the intent is set to 'build'. The user's expertise is assumed to be 'medium' based on their interest in deploying a model and discussing specific datasets. The problem area and task are derived directly from the instruction, focusing on time-series anomaly detection within the cybersecurity domain, specifically for server traffic. The inclusion of ASD and PSM datasets suggests a moderate familiarity with the domain, and the requirement to deploy the model on a server is reflected in the 'service' section. No specific performance or complexity metrics are provided, nor are there detailed requirements for dataset preprocessing, augmentation, or model specifications, thus these sections are left broad or null."",
+        ""score"": 0.9
+    }
+}",2
+time-series anomaly detection,"Using the 'Aircraft Engine Telemetry' dataset, our goal is to implement a Hybrid Model combining LSTM and Autoencoders for predicting failures before they occur. The model must process data in near real-time and be highly accurate to avoid costly false alarms.","{
+    ""user"": {
+        ""intent"": ""build"",
+        ""expertise"": ""medium""
+    },
+    ""problem"": {
+        ""area"": ""time-series analysis"",
+        ""downstream_task"": ""time-series anomaly detection"",
+        ""application_domain"": ""aviation"",
+        ""description"": ""Using the 'Aircraft Engine Telemetry' dataset, our goal is to implement a Hybrid Model combining LSTM and Autoencoders for predicting failures before they occur. The model must process data in near real-time and be highly accurate to avoid costly false alarms."",
+        ""performance_metrics"": [
+            {
+                ""name"": ""accuracy"",
+                ""value"": null
+            },
+            {
+                ""name"": ""false alarm rate"",
+                ""value"": null
+            }
+        ],
+        ""complexity_metrics"": [
+            {
+                ""name"": ""inference time"",
+                ""value"": null
+           }
+        ]
+    },
+    ""dataset"": [
+        {
+            ""name"": ""Aircraft Engine Telemetry"",
+            ""modality"": [
+                ""time series""
+            ],
+            ""target_variables"": [],
+            ""specification"": null,
+            ""description"": ""Dataset containing telemetry data from aircraft engines to predict failures."",
+            ""preprocessing"": [],
+            ""augmentation"": [],
+            ""visualization"": [],
+            ""source"": ""direct-search""
+        }
+    ],
+    ""model"": [
+        {
+            ""name"": ""Hybrid Model of LSTM and Autoencoders"",
+            ""family"": ""neural networks"",
+            ""type"": ""neural networks"",
+            ""specification"": null,
+            ""description"": ""A hybrid model that combines LSTM and Autoencoders for predicting aircraft engine failures before they occur, ensuring the system processes data in near real-time with high accuracy to minimize false alarms.""
+        }
+    ],
+    ""knowledge"": [],
+    ""service"": {
+        ""feature_engineering"": [],
+        ""target_device"": """",
+        ""deployment_endpoint"": """",
+        ""inference_engine"": [],
+        ""demonstration"": null
+    },
+    ""confidence"": {
+        ""rationale"": ""The provided JSON is structured based on the instruction to build a predictive model using a specific dataset with an emphasis on time-series analysis in the aviation domain. The hybrid model's specifics, such as combining LSTM and Autoencoders, and the focus on near real-time processing for accuracy, are directly derived from the user's instructions. The absence of explicit performance metric values and some unspecified fields (e.g., target device, detailed preprocessing steps) reflects the instruction's lack of detail in these areas, not an omission in the parsing process."",
+        ""score"": 0.9
+    }
+}",2
+time-series anomaly detection,I plan to run a unsupervised time-series anomaly detection model on the 250 Hexagon ML/UCR Time Series Anomaly Detection datasets. I want the average accuracy to be above 70%. Lightweight transformer models are preferred.,"{
+  ""user"": {
+    ""intent"": ""build"",
+    ""expertise"": ""medium""
+  },
+  ""problem"": {
+    ""area"": ""time-series analysis"",
+    ""downstream_task"": ""time-series anomaly detection"",
+    ""application_domain"": ""machine learning"",
+    ""description"": ""I plan to run a unsupervised time-series anomaly detection model on the 250 Hexagon ML/UCR Time Series Anomaly Detection datasets."",
+    ""performance_metrics"": [
+      {
+        ""name"": ""accuracy"",
+        ""value"": 0.7
+      }
+    ],
+    ""complexity_metrics"": []
+  },
+  ""dataset"": [
+    {
+      ""name"": ""Hexagon ML/UCR Time Series Anomaly Detection"",
+      ""modality"": [""time series""],
+      ""target_variables"": [],
+      ""specification"": null,
+      ""description"": ""250 Hexagon ML/UCR Time Series Anomaly Detection datasets for running unsupervised anomaly detection."",
+      ""preprocessing"": [],
+      ""augmentation"": [],
+      ""visualization"": [],
+      ""source"": ""direct-search""
+    }
+  ],
+  ""model"": [
+    {
+      ""name"": """",
+      ""family"": ""transformer"",
+      ""type"": ""neural networks"",
+      ""specification"": null,
+      ""description"": ""Lightweight transformer models are preferred for the unsupervised time-series anomaly detection task.""
+    }
+  ],
+  ""knowledge"": [],
+  ""service"": {
+    ""feature_engineering"": [],
+    ""target_device"": """",
+    ""deployment_endpoint"": """",
+    ""inference_engine"": [],
+    ""demonstration"": """"
+  },
+  ""confidence"": {
+    ""rationale"": ""The JSON structure is carefully structured to reflect the user's requirements for running an unsupervised time-series anomaly detection model on the Hexagon ML/UCR datasets, aiming for an average accuracy above 70% and a preference for lightweight transformer models. The 'intent' is set to 'build' indicating the user's aim to develop a model, and 'expertise' is assumed to be 'medium' based on the specific requirements provided. The dataset and model details are meticulously crafted to match the instruction. No complexity metrics were specified in the prompt, thus the related section remains empty. The confidence level is set high due to a clear understanding of the user's requirements and the explicit instructions provided."",
+    ""score"": 0.95
+  }
+}",2
+time-series anomaly detection,"Analyze the 'AtmosphericCO2Levels' dataset using Multivariate Anomaly Detection techniques to identify abnormal CO2 concentration spikes. The goal is to monitor environmental health, requiring the model to differentiate between natural fluctuations and true anomalies.","{
+    ""user"": {
+        ""intent"": ""build"",
+        ""expertise"": ""medium""
+    },
+    ""problem"": {
+        ""area"": ""time-series analysis"",
+        ""downstream_task"": ""time-series anomaly detection"",
+        ""application_domain"": ""environmental health monitoring"",
+        ""description"": ""Analyze the 'AtmosphericCO2Levels' dataset using Multivariate Anomaly Detection techniques to identify abnormal CO2 concentration spikes. The goal is to monitor environmental health, requiring the model to differentiate between natural fluctuations and true anomalies."",
+        ""performance_metrics"": [],
+        ""complexity_metrics"": []
+    },
+    ""dataset"": [
+        {
+            ""name"": ""AtmosphericCO2Levels"",
+            ""modality"": [""time series""],
+            ""target_variables"": [""CO2 concentration""],
+            ""specification"": null,
+            ""description"": ""A dataset containing time-series data of atmospheric CO2 concentrations intended for monitoring environmental health and identifying abnormal spikes."",
+            ""preprocessing"": [],
+            ""augmentation"": [],
+            ""visualization"": [],
+            ""source"": ""direct-search""
+        }
+    ],
+    ""model"": [
+        {
+            ""name"": """",
+            ""family"": """",
+            ""type"": ""neural networks"",
+            ""specification"": null,
+            ""description"": ""A Multivariate Anomaly Detection model that can differentiate between natural fluctuations and true anomalies in CO2 concentration levels.""
+        }
+    ],
+    ""knowledge"": [],
+    ""service"": {
+        ""feature_engineering"": [],
+        ""target_device"": """",
+        ""deployment_endpoint"": """",
+        ""inference_engine"": [],
+        ""demonstration"": null
+    },
+    ""confidence"": {
+        ""rationale"": ""The JSON response follows the provided instruction and the template schema closely, identifying key aspects of the task such as the dataset, problem area, and model type. It clearly outlines the user's intent to build a model for time-series anomaly detection within the context of environmental health monitoring, leveraging the 'AtmosphericCO2Levels' dataset. While performance and complexity metrics, along with detailed model specifications, were not provided in the instruction, the essential components necessary for understanding and initiating the task were captured. The ambiguity around specific metrics or model details reflects the general nature of the instruction rather than a deficiency in the parsing."",
+        ""score"": 0.9
+    }
+}",2
+time-series anomaly detection,"The 'CreditCardFraudDetection' dataset necessitates the use of One-Class SVMs for identifying fraudulent transactions. Expectations include high detection accuracy with minimal false positives, crucial for maintaining customer trust.","{
+    ""user"": {
+        ""intent"": ""build"",
+        ""expertise"": ""medium""
+    },
+    ""problem"": {
+        ""area"": ""time-series analysis"",
+        ""downstream_task"": ""time-series anomaly detection"",
+        ""application_domain"": ""finance"",
+        ""description"": ""The 'CreditCardFraudDetection' dataset necessitates the use of One-Class SVMs for identifying fraudulent transactions. Expectations include high detection accuracy with minimal false positives, crucial for maintaining customer trust."",
+        ""performance_metrics"": [
+            {
+                ""name"": ""accuracy"",
+                ""value"": null
+            },
+            {
+                ""name"": ""false positive rate"",
+                ""value"": null
+            }
+        ],
+        ""complexity_metrics"": []
+    },
+    ""dataset"": [
+        {
+            ""name"": ""CreditCardFraudDetection"",
+            ""modality"": [""time series""],
+            ""target_variables"": [],
+            ""specification"": null,
+            ""description"": ""Dataset for identifying fraudulent transactions in credit card usage."",
+            ""preprocessing"": [],
+            ""augmentation"": [],
+            ""visualization"": [],
+            ""source"": ""direct-search""
+        }
+    ],
+    ""model"": [
+        {
+            ""name"": ""One-Class SVM"",
+            ""family"": ""SVM"",
+            ""type"": ""classical machine learning"",
+            ""specification"": null,
+            ""description"": ""A One-Class SVM model for detecting anomalies in the dataset.""
+        }
+    ],
+    ""knowledge"": [],
+    ""service"": {
+        ""feature_engineering"": [],
+        ""target_device"": """",
+        ""deployment_endpoint"": """",
+        ""inference_engine"": [],
+        ""demonstration"": null
+    },
+    ""confidence"": {
+        ""rationale"": ""The JSON is constructed following the provided instruction and the template schema, focusing on creating a model (One-Class SVM) for time-series anomaly detection in the finance domain (CreditCardFraudDetection dataset) with an emphasis on high detection accuracy and minimal false positives. The lack of specific values for performance metrics (detection accuracy and false positive rate) is noted, assuming these are key focuses without exact target values provided. The structure aligns with the instruction's requirement for dataset and model specifics, leaving some fields null or unspecified where information was not explicitly provided."",
+        ""score"": 0.9
+    }
+}",2
+time-series anomaly detection,"For the 'SubmarineAcousticSignals' dataset, explore the use of Wavelet Transform combined with Anomaly Detection algorithms to identify underwater threats. The task demands high precision in differentiating between normal and suspicious acoustic patterns.","{
+    ""user"": {
+        ""intent"": ""build"",
+        ""expertise"": ""medium""
+    },
+    ""problem"": {
+        ""area"": ""time-series analysis"",
+        ""downstream_task"": ""time-series anomaly detection"",
+        ""application_domain"": ""defense"",
+        ""description"": ""For the 'SubmarineAcousticSignals' dataset, explore the use of Wavelet Transform combined with Anomaly Detection algorithms to identify underwater threats. The task demands high precision in differentiating between normal and suspicious acoustic patterns."",
+        ""performance_metrics"": [
+            {
+                ""name"": ""precision"",
+                ""value"": null
+            }
+        ],
+        ""complexity_metrics"": []
+    },
+    ""dataset"": [
+        {
+            ""name"": ""SubmarineAcousticSignals"",
+            ""modality"": [""audio""],
+            ""target_variables"": [],
+            ""specification"": null,
+            ""description"": ""A dataset consisting of acoustic signals recorded in a submarine environment, aimed for the detection of underwater threats through anomaly detection methods."",
+            ""preprocessing"": [""Wavelet Transform""],
+            ""augmentation"": [],
+            ""visualization"": [],
+            ""source"": ""direct-search""
+        }
+    ],
+    ""model"": [
+        {
+            ""name"": """",
+            ""family"": """",
+            ""type"": ""classical machine learning"",
+            ""specification"": null,
+            ""description"": ""The model should leverage the Wavelet Transform as a preprocessing step to enhance feature extraction for effective anomaly detection in acoustic signals, aiming to differentiate between normal and suspicious patterns with high precision.""
+        }
+    ],
+    ""knowledge"": [],
+    ""service"": {
+        ""feature_engineering"": [""Wavelet Transform""],
+        ""target_device"": """",
+        ""deployment_endpoint"": """",
+        ""inference_engine"": [],
+        ""demonstration"": null
+    },
+    ""confidence"": {
+        ""rationale"": ""The JSON is structured based on the user's instructions to use the 'SubmarineAcousticSignals' dataset for time-series anomaly detection with a focus on high precision. The task involves exploring Wavelet Transform in combination with anomaly detection algorithms. Given the nature of the task, classical machine learning models are suggested, considering their effectiveness in time-series analysis and anomaly detection. The emphasis on 'Wavelet Transform' for preprocessing is captured under both the dataset and service sections. The user's expertise is assumed to be 'medium' based on the task's specificity and technical requirements."",
+        ""score"": 0.95
+    }
+}",2
+time-series anomaly detection,"With the 'WearableFitnessTrackers' dataset, I expect a model using Transfer Learning from existing anomaly detection models to identify abnormal user health or activity patterns. It's essential that the model can adjust to new types of wearables and data formats as the technology evolves.",,1
+time-series anomaly detection,I've got a dataset of daily temperatures from various cities around the globe over the last 10 years. I need to find any unusual patterns or anomalies in this temperature data. Could you suggest which model to use?,,1
+time-series anomaly detection,I have a dataset containing the hourly power consumption of a small town for the last three years. I'm supposed to find any discrepancies or unusual consumption patterns that might indicate problems or fraud. I'm new to time-series analysis. Could you point me toward the appropriate model to use?,"{
+    ""user"": {
+        ""intent"": ""consult-build"",
+        ""expertise"": ""low""
+    },
+    ""problem"": {
+        ""area"": ""time-series analysis"",
+        ""downstream_task"": ""time-series anomaly detection"",
+        ""application_domain"": ""energy consumption"",
+        ""description"": ""I have a dataset containing the hourly power consumption of a small town for the last three years. I'm supposed to find any discrepancies or unusual consumption patterns that might indicate problems or fraud. I'm new to time-series analysis. Could you point me toward the appropriate model to use?"",
+        ""performance_metrics"": [],
+        ""complexity_metrics"": []
+    },
+    ""dataset"": [
+        {
+            ""name"": """",
+            ""modality"": [""time series""],
+            ""target_variables"": [],
+            ""specification"": null,
+            ""description"": ""The dataset contains hourly power consumption data of a small town for the last three years."",
+            ""preprocessing"": [],
+            ""augmentation"": [],
+            ""visualization"": [],
+            ""source"": ""user-upload""
+        }
+    ],
+    ""model"": [
+        {
+            ""name"": """",
+            ""family"": """",
+            ""type"": """",
+            ""specification"": null,
+            ""description"": ""The user is seeking advice on selecting an appropriate model for analyzing time-series data to find anomalies or unusual patterns in energy consumption.""
+        }
+    ],
+    ""knowledge"": [],
+    ""service"": {
+        ""feature_engineering"": [],
+        ""target_device"": """",
+        ""deployment_endpoint"": """",
+        ""inference_engine"": [],
+        ""demonstration"": null
+    },
+    ""confidence"": {
+        ""rationale"": ""This JSON structure is created based on the user's request for consultation on selecting an appropriate model for time-series anomaly detection in energy consumption data. The user's low expertise in AI/ML and specific interest in time-series analysis have been accounted for. Given the instruction's focus, all necessary sections are filled with relevant details. The instruction does not provide explicit information about performance or complexity metrics, model specifications, or detailed dataset preprocessing needs, hence the respective sections are appropriately generic or left empty."",
+        ""score"": 0.95
+    }
+}",1
+time-series anomaly detection,"For a school project, I need to detect anomalies in website traffic data using a Transformer-based model. The dataset may include metrics like page views, unique visitors, and session duration, updated daily. Include any preprocessing steps and model parameters that might help improve detection accuracy.",,1
+time-series anomaly detection,I have this transnational data set which contains all the transactions occurring between 01/12/2010 and 09/12/2011 for a UK-based and registered non-store online retail. It seems that the data set does not contain any labelled instances. Any suggestion on doing with this dataset?,,1
+time-series anomaly detection,I'm noticing unusual spikes in our monthly sales data that don't align with seasonal trends or marketing campaigns. I need a way to automatically flag these so we can investigate potential causes or data entry errors.,,0
+time-series anomaly detection,"It seems that we have encountered machine failures recently. We are also recording manufacturing data in our factory. However, we don't know how to use it. Any suggestions?",,0
+time-series anomaly detection,"Our website traffic has been fluctuating wildly, and it's not clear why. I need a system that can alert us to these changes as they happen, especially out-of-the-ordinary peaks or drops, so we can better understand visitor behavior or detect potential security issues.","{
+  ""user"": {
+    ""intent"": ""build"",
+    ""expertise"": ""medium""
+  },
+  ""problem"": {
+    ""area"": ""time-series analysis"",
+    ""downstream_task"": ""time-series anomaly detection"",
+    ""application_domain"": ""web analytics"",
+    ""description"": ""Our website traffic has been fluctuating wildly, and it's not clear why. I need a system that can alert us to these changes as they happen, especially out-of-the-ordinary peaks or drops, so we can better understand visitor behavior or detect potential security issues."",
+    ""performance_metrics"": [],
+    ""complexity_metrics"": []
+  },
+  ""dataset"": [
+    {
+      ""name"": """",
+      ""modality"": [""time series""],
+      ""target_variables"": [],
+      ""specification"": null,
+      ""description"": ""Website traffic dataset that contains fluctuations."",
+      ""preprocessing"": [],
+      ""augmentation"": [],
+      ""visualization"": [],
+      ""source"": ""infer-search""
+    }
+  ],
+  ""model"": [
+    {
+      ""name"": """",
+      ""family"": """",
+      ""type"": ""neural networks"",
+      ""specification"": null,
+      ""description"": ""A model that can detect out-of-the-ordinary peaks or drops.""
+    }
+  ],
+  ""knowledge"": [],
+  ""service"": {
+    ""feature_engineering"": [],
+    ""target_device"": ""cloud"",
+    ""deployment_endpoint"": """",
+    ""inference_engine"": [],
+    ""demonstration"": null
+  },
+  ""confidence"": {
+    ""rationale"": ""The instruction clearly indicates a need for building a system to detect anomalies in time-series data (website traffic) in real-time, which aligns with a 'build' intent and suggests a medium level of AI and ML technical knowledge. Time-series analysis, specifically anomaly detection, is chosen as it directly addresses the need to identify unusual traffic patterns. The user's description emphasizes the application in web analytics, fitting the problem description and dataset modality. Given the lack of specific performance metrics, model details, and dataset information, these sections are intentionally left flexible or empty to allow for further specification based on additional user input or data analysis."",
+    ""score"": 0.9
+  }
+}
+",0
+time-series anomaly detection,"In agricultural management, we monitor soil moisture levels to ensure optimal crop growth. However, unexpected readings can sometimes occur, suggesting equipment malfunctions or environmental factors. A system to highlight these anomalies would be invaluable.",,0
+time-series anomaly detection,"In the context of financial auditing, I'm interested in a method to identify transactions that deviate significantly from established patterns, which could indicate errors or fraudulent activities, without having to manually review thousands of entries.",,0

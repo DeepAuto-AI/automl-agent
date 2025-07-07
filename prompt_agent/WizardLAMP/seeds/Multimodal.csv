@@ -1,0 +1,692 @@
+task,instruction,response,quality
+visual question answering,"For the COCO dataset, we require a Transformer-based model tailored for visual question answering tasks. The model must efficiently handle both image understanding and natural language processing to provide accurate answers. Expectations include a minimum accuracy of 75% on the validation set, with inference times not exceeding 250ms per query.",,2
+visual question answering,"Utilize the VQA 2.0 dataset to develop a dual-pathway convolutional neural network. This model should integrate visual and textual inputs seamlessly for improved question answering capabilities. Aim for a top-1 accuracy rate above 70%, with a strong emphasis on reducing overfitting through innovative regularization techniques.",,2
+visual question answering,"Develop a hybrid model using the Birds-to-Words dataset for answering questions about birds' images. This niche task combines fine-grained visual classification with natural language processing. The goal is to accurately describe bird species, behaviors, and habitats in response to user queries, with a precision target of 75%.",,2
+visual question answering,"Deploy a visual question answering system using the Places dataset, with a model focusing on Attention-based Neural Networks. This project targets understanding of scene context and its application in answering environmental questions. Performance metrics should include not only accuracy but also the quality of explanations provided by the system.",,2
+visual question answering,"Use the YouTube-8M dataset to create a video-based visual question answering system. This system should leverage 3D CNNs and Transformer networks to understand video content and answer related questions. Focus on a wide range of topics from these videos, ensuring the system can handle dynamic content with an emphasis on accuracy and timeliness of responses.","{
+  ""user"": {
+    ""intent"": ""build"",
+    ""expertise"": ""high""
+  },
+  ""problem"": {
+    ""area"": ""multimodal learning"",
+    ""downstream_task"": ""visual question answering"",
+    ""application_domain"": ""entertainment"",
+    ""description"": ""Create a video-based visual question answering system using the YouTube-8M dataset. The system should utilize 3D CNNs and Transformer networks to understand video content and answer questions related to it. The focus should be on a broad range of topics, ensuring the system can handle dynamic content with an emphasis on accuracy and timeliness of responses."",
+    ""performance_metrics"": [
+      {
+        ""name"": ""accuracy"",
+        ""value"": null
+      },
+      {
+        ""name"": ""response time"",
+        ""value"": null
+      }
+    ],
+    ""complexity_metrics"": []
+  },
+  ""dataset"": [
+    {
+      ""name"": ""YouTube-8M"",
+      ""modality"": [""video"", ""text""],
+      ""target_variables"": [],
+      ""specification"": null,
+      ""description"": ""A large-scale video dataset for understanding video content, used to train the visual question answering system."",
+      ""preprocessing"": [],
+      ""augmentation"": [],
+      ""visualization"": [],
+      ""source"": ""direct-search""
+    }
+  ],
+  ""model"": [
+    {
+      ""name"": """",
+      ""family"": ""3D CNN"",
+      ""type"": ""neural networks"",
+      ""specification"": null,
+      ""description"": ""The system should leverage 3D CNNs for extracting spatial-temporal features from video content.""
+    },
+    {
+      ""name"": """",
+      ""family"": ""Transformers"",
+      ""type"": ""neural networks"",
+      ""specification"": null,
+      ""description"": ""The system utilizes Transformer networks for understanding the sequence of events and the context within the video to answer questions accurately.""
+    }
+  ],
+  ""knowledge"": [],
+  ""service"": {
+    ""feature_engineering"": [],
+    ""target_device"": """",
+    ""deployment_endpoint"": """",
+    ""inference_engine"": [],
+    ""demonstration"": null
+  },
+  ""confidence"": {
+    ""rationale"": ""The JSON structure is tailored to fit the provided instruction, aligning with the template's categories and options. The multimodal learning area and visual question answering task directly correspond to the instruction's essence. The YouTube-8M dataset and the use of 3D CNNs and Transformer networks are specified as per the user's direction. Performance metrics like accuracy and response time are included as crucial factors, though their expected values are left undefined, reflecting the open-ended nature of the instruction. This response prioritizes creating a robust framework for developing a system capable of dynamic content handling, accuracy, and timeliness in answering video-based questions."",
+    ""score"": 0.9
+  }
+}",2
+visual question answering,"For an engaging user experience, combine the Flickr30k dataset with a model leveraging Visual Transformers. The project aims at developing a system capable of answering questions about social events, places, and people depicted in photographs. Prioritize engaging and contextually rich responses, with a benchmark accuracy of at least 65%.","{
+  ""user"": {
+    ""intent"": ""build"",
+    ""expertise"": ""medium""
+  },
+  ""problem"": {
+    ""area"": ""multimodal learning"",
+    ""downstream_task"": ""visual question answering"",
+    ""application_domain"": ""social events, places, and people in photographs"",
+    ""description"": ""The project aims at developing a system capable of answering questions about social events, places, and people depicted in photographs for an engaging user experience."",
+    ""performance_metrics"": [
+      {
+        ""name"": ""accuracy"",
+        ""value"": 0.65
+      }
+    ],
+    ""complexity_metrics"": []
+  },
+  ""dataset"": [
+    {
+      ""name"": ""Flickr30k"",
+      ""modality"": [
+        ""image"",
+        ""text""
+      ],
+      ""target_variables"": [],
+      ""specification"": null,
+      ""description"": ""Flickr30k dataset contains images with accompanying text descriptions, useful for training visual question answering models."",
+      ""preprocessing"": [],
+      ""augmentation"": [],
+      ""visualization"": [],
+      ""source"": ""direct-search""
+    }
+  ],
+  ""model"": [
+    {
+      ""name"": """",
+      ""family"": ""Visual Transformers"",
+      ""type"": ""neural networks"",
+      ""specification"": null,
+      ""description"": ""A model leveraging Visual Transformers to interpret and answer questions about images, focusing on social events, places, and people.""
+    }
+  ],
+  ""knowledge"": [],
+  ""service"": {
+    ""feature_engineering"": [],
+    ""target_device"": """",
+    ""deployment_endpoint"": """",
+    ""inference_engine"": [],
+    ""demonstration"": """"
+  },
+  ""confidence"": {
+    ""rationale"": ""The instruction prompt has been parsed according to the given JSON template, focusing on developing a visual question answering system using the Flickr30k dataset and Visual Transformers. The aim is to provide contextually rich responses to questions about social events, places, and people in photographs, with a target accuracy of at least 65%. The parsed information aligns with the instruction prompt, following the structure and details of the provided template and schema files."",
+    ""score"": 1.0
+  }
+}",2
+visual question answering,"Employ the AI2D dataset for a model focusing on diagram understanding and question answering. This project requires a specialized approach that can interpret diagrams, graphs, and schematic illustrations. Performance expectations include high accuracy in both recognizing diagram components and understanding their interconnections, targeting an accuracy rate of 60% on diagram-based questions.",,2
+visual question answering,"Utilize the TextVQA dataset for developing a model that can read and comprehend text within images to answer questions. Employ a combination of OCR technologies and deep learning to address this challenge. The model should demonstrate proficiency in handling real-world images containing text in various fonts and backgrounds, aiming for a 70% accuracy in text-based answers.",,2
+visual question answering,"For the DAQUAR dataset, develop an ensemble model that combines LSTM networks with a CNN backbone. This combination should leverage both the spatial hierarchies learned by CNNs and the sequential processing power of LSTMs for answering questions about indoor scenes. Target to achieve a 50% accuracy rate, acknowledging the dataset's complexity and limited size.",,2
+visual question answering,"I'm looking for a model developed on the GQA dataset, employing an attention-based mechanism to enhance the visual question answering process. The model should not only understand the visual elements but also the contextual relationships between objects in the scene. Aim to surpass a 60% accuracy benchmark on complex questions that require logical deduction.",,2
+visual question answering,"For a project using the ImageCLEF dataset, construct a multilingual visual question answering model capable of handling queries in multiple languages. This requires integrating advanced NLP techniques with robust image analysis capabilities. A key requirement is the model's ability to maintain consistent performance across languages, with a benchmark accuracy of 65% in at least three different languages.",,1
+visual question answering,I've read about Transformers being used for language stuff. Can we use them for pictures too? Maybe to make an AI that answers funny questions about cartoons?,,1
+visual question answering,"For a school project, I'm thinking about using the TextVQA dataset to make an AI that reads text in pictures and answers questions about it. I don't know much about the models, but it should be really accurate.","{
+    ""user"": {
+        ""intent"": ""build"",
+        ""expertise"": ""low""
+    },
+    ""problem"": {
+        ""area"": ""multimodal learning"",
+        ""downstream_task"": ""visual question answering"",
+        ""application_domain"": ""education"",
+        ""description"": ""For a school project, I'm thinking about using the TextVQA dataset to make an AI that reads text in pictures and answers questions about it."",
+        ""performance_metrics"": [
+            {
+                ""name"": ""accuracy"",
+                ""value"": null
+            }
+        ],
+        ""complexity_metrics"": []
+    },
+    ""dataset"": [
+        {
+            ""name"": ""TextVQA"",
+            ""modality"": [
+                ""image"",
+                ""text""
+            ],
+            ""target_variables"": [],
+            ""specification"": null,
+            ""description"": ""The TextVQA dataset for training an AI to read text in pictures and answer questions about it."",
+            ""preprocessing"": [],
+            ""augmentation"": [],
+            ""visualization"": [],
+            ""source"": ""direct-search""
+        }
+    ],
+    ""model"": [
+        {
+            ""name"": """",
+            ""family"": """",
+            ""type"": ""neural networks"",
+            ""specification"": null,
+            ""description"": ""The model should be really accurate for reading text in pictures and answering questions about it.""
+        }
+    ],
+    ""knowledge"": [],
+    ""service"": {
+        ""feature_engineering"": [],
+        ""target_device"": """",
+        ""deployment_endpoint"": """",
+        ""inference_engine"": [],
+        ""demonstration"": null
+    },
+    ""confidence"": {
+        ""rationale"": ""The instruction was parsed according to the provided schema, focusing on creating a model for the visual question answering task using the TextVQA dataset. Since the user's expertise level is low and no specific models or detailed requirements were mentioned, assumptions were made to align with the user's intent of building a model with high accuracy. The 'accuracy' metric was set without a specific value as the user desires a highly accurate model but does not specify a threshold."",
+        ""score"": 0.8
+    }
+}",1
+visual question answering,"I'm interested in using the Stanford Cars dataset for a project. Can we make an AI that knows a lot about cars from pictures? I'm not sure about the technical stuff, but I want it to be fast and know everything about cars.",,1
+visual question answering,"Develop a visual question answering model with the Food-101 dataset. The challenge is to accurately answer questions regarding food types, ingredients, and preparation methods. Aim for a comprehensive understanding of diverse cuisines, with a success rate of at least 75% in correctly identifying and describing dishes.",,1
+visual question answering,We have a large archive of customer photos showing how they use our products in real life. Can we create a tool that helps our support team automatically understand and respond to customer inquiries based on these photos?,,0
+visual question answering,Our security team receives thousands of hours of surveillance footage. Is there a way to automatically answer specific questions about activities or objects seen in the footage to enhance our monitoring efficiency?,,0
+visual question answering,Could we leverage technology to automatically interpret and answer questions from images of documents and forms submitted by our clients? This would greatly reduce our administrative workload.,"{
+  ""user"": {
+    ""intent"": ""build"",
+    ""expertise"": ""medium""
+  },
+  ""problem"": {
+    ""area"": ""multimodal learning"",
+    ""downstream_task"": ""visual question answering"",
+    ""application_domain"": ""administrative management"",
+    ""description"": ""Could we leverage technology to automatically interpret and answer questions from images of documents and forms submitted by our clients? This would greatly reduce our administrative workload."",
+    ""performance_metrics"": [],
+    ""complexity_metrics"": []
+  },
+  ""dataset"": [
+    {
+      ""name"": """",
+      ""modality"": [""image"", ""text""],
+      ""target_variables"": [],
+      ""specification"": null,
+      ""description"": ""Images of documents and forms submitted by clients, alongside questions related to the content of these images."",
+      ""preprocessing"": [""image normalization"", ""text extraction""],
+      ""augmentation"": [],
+      ""visualization"": [],
+      ""source"": ""user-upload""
+    }
+  ],
+  ""model"": [
+    {
+      ""name"": """",
+      ""family"": """",
+      ""type"": ""neural networks"",
+      ""specification"": null,
+      ""description"": """"
+    }
+  ],
+  ""knowledge"": [],
+  ""service"": {
+    ""feature_engineering"": [],
+    ""target_device"": """",
+    ""deployment_endpoint"": """",
+    ""inference_engine"": [],
+    ""demonstration"": null
+  },
+  ""confidence"": {
+    ""rationale"": ""The instruction explicitly describes the intent to build a system capable of interpreting and answering questions from images, indicating a 'build' intent. Given the nature of processing images and text, 'multimodal learning' with a 'visual question answering' task is identified. The application domain is deduced as 'administrative management' due to the focus on reducing administrative workload through automation. Specifics about datasets, models, and technical metrics are not provided, hence the placeholders are filled with default or null values where applicable. The confidence score is not at the maximum due to the lack of detailed requirements on performance and complexity metrics, as well as specific model architecture or dataset specifications."",
+    ""score"": 0.8
+  }
+}",0
+visual question answering,We manage a vast library of historical archives. I'm wondering if there's a way to quickly answer public inquiries about the content and context of images in our collection without manual search.,,0
+visual question answering,"We're interested in a system that can browse through our real estate portfolio's photos and provide instant answers about property features, conditions, and possible valuations to streamline client inquiries.",,0
+multimodal emotion recognition,"Utilize the 'FaceVoiceText' dataset to develop a multimodal deep learning system that combines facial expressions, voice tone, and textual analysis for emotion detection. The system should use transfer learning from pre-trained models where possible and achieve a response time under 300 milliseconds per query.",,2
+multimodal emotion recognition,"Build a multimodal emotion recognition framework using the 'SentiCombo' dataset, incorporating BERT for text and ResNet for images. The framework should dynamically weigh modalities based on their relevance to the task at hand, aiming for an F1-score above 0.85 across all emotion categories.",,2
+multimodal emotion recognition,"Implement a cross-modal attention mechanism for the 'EmotionFusion' dataset, enabling the model to selectively focus on more informative signals—whether textual, auditory, or visual—for better emotion prediction. Performance must not degrade when one modality is weaker or noisier than others.",,2
+multimodal emotion recognition,"For our next project, we'll be working with the Affective Text and Image Emotion dataset. We aim to deploy a convolutional neural network (CNN) for image processing combined with a long short-term memory (LSTM) network for textual emotion recognition. Please ensure the model achieves at least 85% accuracy on our validation set, with a response time under 200ms for real-time applications.",,2
+multimodal emotion recognition,I'd like to see a proposal for utilizing the Multimodal EmotionLines Dataset (MELD). Our focus should be on developing a hybrid model that leverages transformers and CNNs to understand the nuances of emotion in both dialogue and facial expressions. Target a F1 score of over 0.8 for each emotion category.,"{
+  ""user"": {
+    ""intent"": ""build"",
+    ""expertise"": ""medium""
+  },
+  ""problem"": {
+    ""area"": ""multimodal learning"",
+    ""downstream_task"": ""multimodal emotion recognition"",
+    ""application_domain"": ""affective computing"",
+    ""description"": ""Developing a hybrid model using transformers and CNNs to analyze emotion in dialogue and facial expressions."",
+    ""performance_metrics"": [
+      {
+        ""name"": ""F1 score"",
+        ""value"": 0.8
+      }
+    ],
+    ""complexity_metrics"": []
+  },
+  ""dataset"": [
+    {
+      ""name"": ""Multimodal EmotionLines Dataset (MELD)"",
+      ""modality"": [""text"", ""image""],
+      ""target_variables"": [],
+      ""specification"": null,
+      ""description"": ""A dataset for understanding emotion in dialogue and facial expressions."",
+      ""preprocessing"": [],
+      ""augmentation"": [],
+      ""visualization"": [],
+      ""source"": ""direct-search""
+    }
+  ],
+  ""model"": [
+    {
+      ""name"": ""Hybrid Transformer-CNN Model"",
+      ""family"": ""Hybrid"",
+      ""type"": ""neural networks"",
+      ""specification"": null,
+      ""description"": ""A hybrid model that integrates transformers for text and CNNs for images to recognize emotions.""
+    }
+  ],
+  ""knowledge"": [],
+  ""service"": {
+    ""feature_engineering"": [],
+    ""target_device"": """",
+    ""deployment_endpoint"": """",
+    ""inference_engine"": [],
+    ""demonstration"": null
+  },
+  ""confidence"": {
+    ""rationale"": ""The JSON structure accurately captures the user's instructions for building a hybrid model to perform multimodal emotion recognition using the specified dataset and targeting a specific performance metric. The intent is clear (build), and the problem area, dataset, and model type are specified according to the instructions. Performance metrics are clearly defined, though complexity metrics were not mentioned in the instruction and thus are left empty. The model's detailed description is inferred from the instruction to create a comprehensive overview."",
+    ""score"": 0.95
+  }
+}",2
+multimodal emotion recognition,We're looking into the CMU Multimodal Opinion Sentiment and Emotion Intensity (CMU-MOSEI) dataset for our next venture. The challenge is to integrate BERT for language understanding with a custom CNN for video sentiment analysis. I expect the system to differentiate between at least seven different emotions with a precision rate exceeding 90%.,"{
+  ""user"": {
+    ""intent"": ""build"",
+    ""expertise"": ""high""
+  },
+  ""problem"": {
+    ""area"": ""multimodal learning"",
+    ""downstream_task"": ""multimodal emotion recognition"",
+    ""application_domain"": ""opinion sentiment analysis"",
+    ""description"": ""Integrate BERT for language understanding with a custom CNN for video sentiment analysis to differentiate between at least seven different emotions."",
+    ""performance_metrics"": [
+      {
+        ""name"": ""precision"",
+        ""value"": 0.9
+      }
+    ],
+    ""complexity_metrics"": []
+  },
+  ""dataset"": [
+    {
+      ""name"": ""CMU Multimodal Opinion Sentiment and Emotion Intensity (CMU-MOSEI)"",
+      ""modality"": [""text"", ""video""],
+      ""target_variables"": [""emotions""],
+      ""specification"": null,
+      ""description"": ""A dataset for emotion recognition integrating BERT and a custom CNN for language and video analysis respectively."",
+      ""preprocessing"": [],
+      ""augmentation"": [],
+      ""visualization"": [],
+      ""source"": ""direct-search""
+    }
+  ],
+  ""model"": [
+    {
+      ""name"": ""BERT"",
+      ""family"": ""Transformers"",
+      ""type"": ""neural networks"",
+      ""specification"": null,
+      ""description"": ""BERT model for language understanding.""
+    },
+    {
+      ""name"": ""Custom CNN"",
+      ""family"": ""Convolutional Neural Networks"",
+      ""type"": ""neural networks"",
+      ""specification"": null,
+      ""description"": ""Custom CNN model for video sentiment analysis.""
+    }
+  ],
+  ""knowledge"": [],
+  ""service"": {
+    ""feature_engineering"": [],
+    ""target_device"": """",
+    ""deployment_endpoint"": """",
+    ""inference_engine"": [],
+    ""demonstration"": null
+  },
+  ""confidence"": {
+    ""rationale"": ""The JSON structure is created based on the given instruction prompt using the provided template. The intent is set to 'build' as the user wants to develop a system integrating BERT and a custom CNN for emotion recognition. The area of 'multimodal learning' and task of 'multimodal emotion recognition' accurately reflect the problem. The use of the CMU-MOSEI dataset, integration of BERT and a custom CNN, and the requirement for a precision rate exceeding 90% are all captured as per the instructions."",
+    ""score"": 1.0
+  }
+}",2
+multimodal emotion recognition,"For an upcoming pilot, tap into the Audio-Visual Emotion Challenge (AVEC) dataset. We're aiming to combine 3D CNNs with attention mechanisms to process both audio and visual cues. The goal is to not only recognize basic emotions but also to detect subtler mood states with at least 75% accuracy.",,2
+multimodal emotion recognition,"Delve into the SENTIbank dataset, where the challenge is to interpret complex emotions from visual-textual data. Employ a multi-modal transformer architecture that enhances feature extraction capabilities. Ensure the solution can be integrated seamlessly into existing customer service platforms, with robustness against varied expressions of sentiment.",,2
+multimodal emotion recognition,"The task is to harness the IEMOCAP dataset, focusing on capturing the complexity of human emotions through audio-visual data using a fusion of CNNs for visual features and RNNs for audio features. Balance between performance and computational efficiency is crucial, targeting low-resource devices.",,2
+multimodal emotion recognition,"For the 'EmoSound' project, we need a hybrid CNN-RNN model capable of extracting and learning features from audio-visual data to classify emotions accurately. Ensure the model can process video input and separate audio tracks simultaneously, targeting a precision of at least 90% on our validation set.",,2
+multimodal emotion recognition,I read about the EmotiW challenge. Can we participate in that? What kind of data and models do we need? I'm not sure about the specifics but want to learn more.,,1
+multimodal emotion recognition,I'm planning a project that involves detecting emotions from a combination of text and images. I don't know which datasets to look at or which models would be best for this task.,,1
+multimodal emotion recognition,I'm interested in using the IEMOCAP dataset for emotion detection. I'm not sure about the models. Let me know what you think.,"{
+    ""user"": {
+        ""intent"": ""consult-build"",
+        ""expertise"": ""low""
+    },
+    ""problem"": {
+        ""area"": ""multimodal learning"",
+        ""downstream_task"": ""multimodal emotion recognition"",
+        ""application_domain"": ""emotion detection"",
+        ""description"": ""I'm interested in using the IEMOCAP dataset for emotion detection. I'm not sure about the models. Let me know what you think."",
+        ""performance_metrics"": [],
+        ""complexity_metrics"": []
+    },
+    ""dataset"": [
+        {
+            ""name"": ""IEMOCAP"",
+            ""modality"": [""audio"", ""text"", ""video""],
+            ""target_variables"": [],
+            ""specification"": null,
+            ""description"": ""The IEMOCAP dataset is intended for use in multimodal emotion recognition tasks, involving audio, text, and video modalities."",
+            ""preprocessing"": [],
+            ""augmentation"": [],
+            ""visualization"": [],
+            ""source"": ""direct-search""
+        }
+    ],
+    ""model"": [
+        {
+            ""name"": """",
+            ""family"": """",
+            ""type"": """",
+            ""specification"": null,
+            ""description"": ""The user is unsure about which models to use for the task of emotion detection using the IEMOCAP dataset.""
+        }
+    ],
+    ""knowledge"": [],
+    ""service"": {
+        ""feature_engineering"": [],
+        ""target_device"": """",
+        ""deployment_endpoint"": """",
+        ""inference_engine"": [],
+        ""demonstration"": null
+    },
+    ""confidence"": {
+        ""rationale"": ""The JSON is structured according to the user's instruction, focusing on the consult-build intent for a multimodal learning task, specifically multimodal emotion recognition using the IEMOCAP dataset. The user's expertise is considered low, indicating they need guidance on model selection. The dataset details are filled in based on the provided information, and model details are left intentionally vague to reflect the user's uncertainty."",
+        ""score"": 0.8
+    }
+}",1
+multimodal emotion recognition,"Can we build a model that uses both speech and body language to detect emotions? I don't have a specific dataset or model family in mind, but I think it would be a cool project!",,1
+multimodal emotion recognition,"I'm curious about analyzing video for emotion recognition. Is there a dataset for that? And which model should we use? Something about Deep Learning, maybe?",,1
+multimodal emotion recognition,"Our team needs a solution to better understand client reactions during video meetings, especially when we're discussing new proposals. Can we leverage technology to help interpret these reactions more effectively?",,0
+multimodal emotion recognition,We've noticed that email communications with our clients don't always capture the full sentiment of their messages. Is there a method to assess both the text and the tone of voice in their voice mails for a fuller understanding?,,0
+multimodal emotion recognition,"We've been manually reviewing our sales pitches for effectiveness, but this process is subjective and time-consuming. Is there a technology that can help us analyze both the content of the pitch and the client's reactions to improve our strategies?","{
+    ""user"": {
+        ""intent"": ""consult-build"",
+        ""expertise"": ""low""
+    },
+    ""problem"": {
+        ""area"": ""multimodal learning"",
+        ""downstream_task"": ""multimodal emotion recognition"",
+        ""application_domain"": ""sales and marketing"",
+        ""description"": ""We've been manually reviewing our sales pitches for effectiveness, but this process is subjective and time-consuming. Is there a technology that can help us analyze both the content of the pitch and the client's reactions to improve our strategies?"",
+        ""performance_metrics"": [],
+        ""complexity_metrics"": []
+    },
+    ""dataset"": [
+        {
+            ""name"": """",
+            ""modality"": [""text"", ""audio"", ""video""],
+            ""target_variables"": [],
+            ""specification"": null,
+            ""description"": ""Dataset that contains content of sales pitches and client's reactions."",
+            ""preprocessing"": [],
+            ""augmentation"": [],
+            ""visualization"": [],
+            ""source"": ""user-upload""
+        }
+    ],
+    ""model"": [
+        {
+            ""name"": """",
+            ""family"": """",
+            ""type"": """",
+            ""specification"": null,
+            ""description"": ""Model that analyzes both the content of the pitch and the client's reactions.""
+        }
+    ],
+    ""knowledge"": [],
+    ""service"": {
+        ""feature_engineering"": [],
+        ""target_device"": """",
+        ""deployment_endpoint"": """",
+        ""inference_engine"": [],
+        ""demonstration"": null
+    },
+    ""confidence"": {
+        ""rationale"": ""The JSON reflects the user's request for technology that can analyze sales pitches and client reactions using multimodal emotion recognition. The 'consult-build' intent indicates seeking advice on potential solutions and possibly building a model. The low expertise level suggests a simplified explanation is needed. Multimodal learning with the 'multimodal emotion recognition' task is appropriate for analyzing textual content and emotional reactions in audio and video formats. Since the instruction does not provide specific details on datasets, models, metrics, or deployment, these fields are left generic or empty, adhering to the available information."",
+        ""score"": 0.75
+    }
+}",0
+multimodal emotion recognition,Our online retail platform wants to better understand customer reviews by not just analyzing the text but also the sentiment behind video reviews. What kind of solution would allow us to integrate these insights for a better customer experience?,,0
+multimodal emotion recognition,"During our online presentations, we collect a lot of data through chat and video engagement. Is there a way to synthesize this information to gauge audience interest and sentiment more accurately?",,0
+multimodal forgery detection,"For our upcoming project on digital content verification, we require a deep dive into the 'DeepFake Video Dataset'. Utilize convolutional neural networks (CNNs) and recurrent neural networks (RNNs) to identify video forgeries. The task involves distinguishing between genuine and altered video clips. Aim for at least 95% accuracy with a processing time not exceeding 2 seconds per clip.",,2
+multimodal forgery detection,Utilize the 'Multi-Source Document Forgery Dataset' for our next fraud detection tool. Explore transformer models capable of analyzing text and image data simultaneously. The goal is to detect inconsistencies and forgeries in various document types. Ensure the model supports real-time analysis with at least 98% precision.,,2
+multimodal forgery detection,"Our task involves the 'Biometric Identity Forgery Dataset', focusing on detecting forged facial and fingerprint data. Employ a fusion of CNNs for image data and Siamese networks for comparing biometric features. Strive for a balance between detection accuracy (target 97%) and system responsiveness, ensuring verification within 1 second.",,2
+multimodal forgery detection,"We need a solution that combines text and image data to detect fake news articles. Integrate datasets like FakeNewsNet and DeepFake Detection Challenge (DFDC) dataset. Employ a transformer-based model like BERT for text and a ResNet for images, aiming for an integrated approach. High precision is essential to minimize false positives.",,2
+multimodal forgery detection,Create a multimodal model to detect tampered documents. Use the DocTamper dataset and focus on a fusion model that combines features from both text and image analysis. The model should accurately flag any alterations in text or imagery within documents. Expectations include a 90% detection rate and a user-friendly interface for non-experts.,"{
+  ""user"": {
+    ""intent"": ""build"",
+    ""expertise"": ""medium""
+  },
+  ""problem"": {
+    ""area"": ""multimodal learning"",
+    ""downstream_task"": ""multimodal forgery detection"",
+    ""application_domain"": ""document verification"",
+    ""description"": ""Create a multimodal model to detect tampered documents. The model should leverage both text and image analysis to identify any alterations in documents, aiming for a high detection rate."",
+    ""performance_metrics"": [
+      {
+        ""name"": ""accuracy"",
+        ""value"": 0.9
+      }
+    ],
+    ""complexity_metrics"": []
+  },
+  ""dataset"": [
+    {
+      ""name"": ""DocTamper"",
+      ""modality"": [""text"", ""image""],
+      ""target_variables"": [],
+      ""specification"": null,
+      ""description"": ""A dataset specifically designed for the detection of tampered documents, including both textual and imagery data."",
+      ""preprocessing"": [],
+      ""augmentation"": [],
+      ""visualization"": [],
+      ""source"": ""direct-search""
+    }
+  ],
+  ""model"": [
+    {
+      ""name"": """",
+      ""family"": """",
+      ""type"": ""neural networks"",
+      ""specification"": null,
+      ""description"": ""A fusion model that combines features from both text and image analysis to accurately detect tampered documents.""
+    }
+  ],
+  ""knowledge"": [],
+  ""service"": {
+    ""feature_engineering"": [],
+    ""target_device"": """",
+    ""deployment_endpoint"": """",
+    ""inference_engine"": [],
+    ""demonstration"": ""A user-friendly interface for non-experts to interact with the model for tampered document detection.""
+  },
+  ""confidence"": {
+    ""rationale"": ""The information provided closely follows the given instruction and adheres to the structure of the template. The model's goal, the use of the DocTamper dataset, and the expectation for a high detection rate are all clearly articulated. The instruction's emphasis on a user-friendly interface for non-experts has been included in the 'service' section. Although specific details about model architecture and deployment platform are not provided, this is consistent with the instruction's level of detail."",
+    ""score"": 0.9
+  }
+}",2
+multimodal forgery detection,Utilize the 'Multimodal Person Authentication Dataset' for building a model that combines face and voice recognition technologies to detect identity fraud. We're leaning towards using a fusion of CNN and LSTM models. The goal is to minimize false positives without compromising detection speed.,"{
+  ""user"": {
+    ""intent"": ""build"",
+    ""expertise"": ""medium""
+  },
+  ""problem"": {
+    ""area"": ""multimodal learning"",
+    ""downstream_task"": ""multimodal forgery detection"",
+    ""application_domain"": ""security"",
+    ""description"": ""Utilize the 'Multimodal Person Authentication Dataset' for building a model that combines face and voice recognition technologies to detect identity fraud. We're leaning towards using a fusion of CNN and LSTM models. The goal is to minimize false positives without compromising detection speed."",
+    ""performance_metrics"": [
+      {
+        ""name"": ""false positive rate"",
+        ""value"": null
+      }
+    ],
+    ""complexity_metrics"": [
+      {
+        ""name"": ""detection speed"",
+        ""value"": null
+      }
+    ]
+  },
+  ""dataset"": [
+    {
+      ""name"": ""Multimodal Person Authentication"",
+      ""modality"": [
+        ""image"",
+        ""audio""
+      ],
+      ""target_variables"": [],
+      ""specification"": null,
+      ""description"": ""A dataset for building a model that combines face and voice recognition technologies for identity fraud detection."",
+      ""preprocessing"": [],
+      ""augmentation"": [],
+      ""visualization"": [],
+      ""source"": ""direct-search""
+    }
+  ],
+  ""model"": [
+    {
+      ""name"": """",
+      ""family"": ""fusion"",
+      ""type"": ""neural networks"",
+      ""specification"": null,
+      ""description"": ""A fusion of CNN and LSTM models to utilize both face and voice recognition for identity fraud detection.""
+    }
+  ],
+  ""knowledge"": [],
+  ""service"": {
+    ""feature_engineering"": [],
+    ""target_device"": """",
+    ""deployment_endpoint"": """",
+    ""inference_engine"": [],
+    ""demonstration"": null
+  },
+  ""confidence"": {
+    ""rationale"": ""The JSON is structured according to the given instruction prompt and the provided templates. The user's intent to build a model for multimodal forgery detection using a specific dataset and model fusion approach is clearly reflected. However, specific performance metrics values and complexity metrics units were not provided, leaving those fields with null values. This JSON format captures the essence of the task, using inference from the given instructions where explicit details were not provided."",
+    ""score"": 0.9
+  }
+}",2
+multimodal forgery detection,Utilize the 'Audio-visual Lip-sync DeepFake Dataset' for developing a system that detects discrepancies between spoken words and lip movement in videos. The model should leverage the latest advancements in deep learning for real-time processing.,,2
+multimodal forgery detection,Focus on the 'Vehicle Identity Forgery Dataset' for detecting tampered vehicle identification numbers (VINs) and documents. Employ OCR technologies combined with CNNs to ensure high accuracy in recognizing and verifying text and images.,,2
+multimodal forgery detection,The task involves detecting manipulated voice recordings in the 'Audio DeepFake Detection Dataset'. Consider using a combination of CNNs for feature extraction and RNNs for temporal sequence analysis. Ensure the system is capable of identifying subtle manipulations.,,2
+multimodal forgery detection,The 'AudioVisual Speech Forgery Dataset' is our focus for detecting speech synthesis and manipulation. Implement a multimodal approach combining CNNs for visual lip movement analysis and Long Short-Term Memory (LSTM) networks for audio. Your task is to synchronize detection efforts to identify mismatches between audio and video signals. Efficiency and low false positive rates are crucial.,,2
+multimodal forgery detection,"For our upcoming hackathon, we're considering tackling the problem of fake video detection. We plan to use the 'DFDC Preview Dataset'. Do you think a simple machine learning model could work, or do we need something more advanced?",,1
+multimodal forgery detection,I'd like to develop an application that can detect fraudulent signatures in scanned documents. I've located a dataset with genuine and forged signatures. What's the simplest AI approach to start with for a beginner like me?,,1
+multimodal forgery detection,"I read about transformers being used for text problems. Can they also work for detecting video forgeries in the 'Celeb-DF' dataset? I'm not sure about the specifics, but it needs to be better than just guessing.","{
+  ""user"": {
+    ""intent"": ""consult-build"",
+    ""expertise"": ""low""
+  },
+  ""problem"": {
+    ""area"": ""multimodal learning"",
+    ""downstream_task"": ""multimodal forgery detection"",
+    ""application_domain"": ""security"",
+    ""description"": ""Explore the capability of transformers for detecting video forgeries in the 'Celeb-DF' dataset, aiming for accuracy beyond mere guessing."",
+    ""performance_metrics"": [],
+    ""complexity_metrics"": []
+  },
+  ""dataset"": [
+    {
+      ""name"": ""Celeb-DF"",
+      ""modality"": [""video""],
+      ""target_variables"": [],
+      ""specification"": null,
+      ""description"": ""A dataset containing real and forged celebrity video data, intended for the development and evaluation of video forgery detection algorithms."",
+      ""preprocessing"": [],
+      ""augmentation"": [],
+      ""visualization"": [],
+      ""source"": ""direct-search""
+    }
+  ],
+  ""model"": [
+    {
+      ""name"": """",
+      ""family"": ""transformers"",
+      ""type"": ""neural networks"",
+      ""specification"": null,
+      ""description"": ""Investigate the use of transformer models for the task of video forgery detection, considering their success in other domains.""
+    }
+  ],
+  ""knowledge"": [],
+  ""service"": {
+    ""feature_engineering"": [],
+    ""target_device"": """",
+    ""deployment_endpoint"": """",
+    ""inference_engine"": [],
+    ""demonstration"": null
+  },
+  ""confidence"": {
+    ""rationale"": ""The instruction provided indicates an exploratory interest in applying transformer models to detect forgeries in video data, specifically within the 'Celeb-DF' dataset. The user's query focuses on multimodal forgery detection, a task under multimodal learning, aiming to surpass basic guessing in performance. The lack of specificity regarding performance metrics, model details, and preprocessing steps suggests a broad exploration rather than a precise project definition, which is consistent with the user's self-identified low expertise level. Additional details, such as specific transformer models to be tested or desired performance benchmarks, could further refine the project scope."",
+    ""score"": 0.75
+  }
+}",1
+multimodal forgery detection,Develop a sophisticated system to detect fake audiovisual content targeting public figures. Use a dataset combining real and synthetically altered speeches and appearances. The model should employ deepfake detection techniques and be capable of providing evidence-based analyses for authenticity verification.,,1
+multimodal forgery detection,"Explore the 'Financial Document Multimodal Forgery Dataset' using a combination of NLP techniques and image processing algorithms. The objective is to identify fraudulent signatures and manipulated figures in financial documents. Prioritize precision and recall, aiming for a performance benchmark of 95% in both metrics, with a focus on minimizing false negatives.",,1
+multimodal forgery detection,"In our line of work, ensuring the authenticity of digital content is paramount. We're seeing an increase in sophisticated counterfeits across various media. Could we explore a solution that helps us identify these, enhancing our security measures without getting into the technicalities?",,0
+multimodal forgery detection,"For our online marketplace, ensuring that product images and descriptions are truthful is key to maintaining user trust. We're seeking an automated solution to vet these materials for any signs of forgery or deception.",,0
+multimodal forgery detection,"In the education field, we're seeing an increasing number of manipulated academic records and certificates. It's vital that we have a way to automatically verify these documents to uphold our institution's credibility and the value of our degrees.","{
+    ""user"": {
+        ""intent"": ""build"",
+        ""expertise"": ""medium""
+    },
+    ""problem"": {
+        ""area"": ""multimodal learning"",
+        ""downstream_task"": ""multimodal forgery detection"",
+        ""application_domain"": ""education"",
+        ""description"": ""In the education field, we're seeing an increasing number of manipulated academic records and certificates. It's vital that we have a way to automatically verify these documents to uphold our institution's credibility and the value of our degrees."",
+        ""performance_metrics"": [],
+        ""complexity_metrics"": []
+    },
+    ""dataset"": [
+        {
+            ""name"": """",
+            ""modality"": [""text"", ""image""],
+            ""target_variables"": [],
+            ""specification"": null,
+            ""description"": ""The dataset should contain academic records and certificates with both genuine and manipulated examples. These documents will likely include textual information (e.g., names, grades, institution details) and visual elements (e.g., logos, signatures, stamps)."",
+            ""preprocessing"": [],
+            ""augmentation"": [],
+            ""visualization"": [],
+            ""source"": ""infer-search""
+        }
+    ],
+    ""model"": [
+        {
+            ""name"": """",
+            ""family"": """",
+            ""type"": ""neural networks"",
+            ""specification"": null,
+            ""description"": ""The model should be capable of analyzing and correlating information from both text and image modalities to detect any form of manipulation in academic records and certificates.""
+        }
+    ],
+    ""knowledge"": [],
+    ""service"": {
+        ""feature_engineering"": [],
+        ""target_device"": """",
+        ""deployment_endpoint"": """",
+        ""inference_engine"": [],
+        ""demonstration"": null
+    },
+    ""confidence"": {
+        ""rationale"": ""The JSON structure was created based on the provided instruction focusing on the need for a multimodal forgery detection system in the education sector. The user's intent appears to be the development of a model capable of identifying manipulations in academic documents, leveraging both text and image data. The medium expertise level indicates an understanding of AI/ML concepts but perhaps not deep technical knowledge for implementation. No specific datasets, models, or performance metrics were mentioned, thus general suggestions are made based on the nature of the problem. Further refinement would require additional details on specific requirements, such as the types of forgeries encountered or examples of the documents in question."",
+        ""score"": 0.85
+    }
+}",0
+multimodal forgery detection,"In light of increasing digital fraud, we need a system that ensures the authenticity of online content, including videos, images, and audio files. This system should protect our brand and our customers from deceptive practices without requiring technical knowledge from our team.",,0
+multimodal forgery detection,"In the real estate sector, accurate and trustworthy property images and descriptions are crucial. We are in need of a tool that can verify the authenticity of such multimedia content, ensuring that what we present to our clients is genuine and reliable.",,0

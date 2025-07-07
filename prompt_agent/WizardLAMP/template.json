@@ -1,0 +1,52 @@
+{
+    "user": {
+        "intent": "", // Underlying user intent of the given instruction. The possible options are ['build' indicates that the user wants to build a model, 'consult-build' indicates that the user wants to get some advice with the potential model, 'consult' indicates that the user wants to get some suggestions for a particular problem, 'inquire' indicates that the user wants to know something in general, 'unclear' indicates that the user does not specify anything informative to understand].
+        "expertise": "" // User's expertise level regarding AI and ML in-depth technical knowledge. The possible options are ['low', 'medium', 'high'].
+    },
+    "problem": {
+        "area": "", // Research area of the given instruction. The possible options are ['computer vision', 'graph machine learning', 'natural language processing', 'time-series analysis', 'tabular data analysis', 'recommendation systems', 'multimodal learning'].
+        "downstream_task": "", // Downstream task under the research area that the user wants to complete. The possible options are: ['image classification', 'object detection', 'image segmentation'] for computer vision, [ 'text classification', 'machine translation', 'question answering'] for natural language processing, ['node classification', 'link prediction', 'community detection'] for graph machine learning, [ 'time-series forecasting', 'time-series classification', 'time-series anomaly detection'] for time-series analysis, [ 'tabular classification', 'tabular regression', 'tabular clustering'] for tabular data analysis, [ 'matrix factorization', 'click-through rate', 'sequential recommendation'] for recommendation systems, and [ 'visual question answering', 'multimodal emotion recognition', 'multimodal forgery detection'] for multimodal learning."
+        "application_domain": "", // Application, business, or industrial domain relvant to the given instruction.
+        "description": "", // Descriptive summary of the given instruction regarding the problem to be solved in detail.
+        "performance_metrics": [], // A list of performance-related metrics, such as accuracy, precision, recall, mean absolute error, and so on in {'name': metric_name, 'value': expected_value in decimals} format.
+        "complexity_metrics": [] // A list of time and space complexity metrics, such as inference time, response time, memory size, and so on in {'name': metric_name, 'value': expected_value in a specified unit, 'unit': unit of the metric} format.
+    },
+    // User's requirements for datasets to be used for testing and probably training with the given tasks. A list of datasets can be provided if the given instruction requires more than one specific dataset.
+    "dataset": [
+        {
+            "name": "", // The dataset name (if provided) from the given instruction.
+            "modality": [], // A list of data modalities to be processed based on the given instruction. The possible options are [ 'text', 'image', 'audio', 'video', 'multimodal', 'time series', 'graph', 'tabular'].
+            "target_variables": [], // A list of target variable(s), such as target column name to be used for classification or regression. It is used to as the target objects that user wants to identify, classify, detect, or predict. It can be an empty list if the given downstream task does not require labeled instances or unknown.
+            "specification": null, // An object describing the specifications (e.g., dataset size, dimension, length, and so on) of the given datasets. It will be null object if the dataset specification is not provided.
+            "description": "", // Descriptive summary of the given dataset in detail.
+            "preprocessing": [], // A list of required preprocessing steps for the given dataset specified by the user's instruction.
+            "augmentation": [], // A list of required data augmentation techniques for the given dataset specified by the user's instruction.
+            "visualization": [], // A list of required visualization steps for the given dataset specified by the user's instruction.
+            "source": "" // Source of the given dataset. The possible options are ['user-upload' indicates that the user will directly upload the dataset, 'user-link' indicates that the user will provide a URL link to fetch dataset from an external source, 'direct-search' indicates that the user provide the exact name of the dataset to search for, 'infer-search' indicates that the user only provide the descriptions or characteristics of the desired dataset].
+        }
+    ],
+    // User's requirements for AutoML model development to be used for solving the given problem. A list of models can be provided if the given instruction requires more than one specific model.
+    "model": [
+        {
+            "name": "", // The model name (if provided) from the given instruction.
+            "family": "", // The model family name (if provided) from the given instruction.
+            "type": "", // The model type (if provided) from the given instruction. The possible options are: ['neural networks', 'classical machine learning', 'ensemble models', 'statistical models']
+            "specification": null, // An object describing the specifications (e.g., number of parameters, number of FLOPs, train speed, inference time, and so on) of the given model name (if provided) or the specifications of the expected model required by the user's instruction.
+            "description": "" // Descriptive summary of the given model or the expected model in detail.
+        }
+    ],
+    "knowledge": [], // Additional knowledge or insights useful for solving the given problem directly provided by the user's instruction.
+    // User's requirements for final steps of the model, such as fine-tuning and deploying the selected model.
+    "service": {
+        "feature_engineering": [], // A list of required feature engineering steps before final model training and testing given by the user's instruction.
+        "target_device": "", // The target device name or target computing environment type (e.g., edge device, IoT device, mobile, cloud, PC, and so on) to deploy the model for the given problem and user's instruction.
+        "deployment_endpoint": "", // The potential deployment endpoint service.
+        "inference_engine": [], // A list of specific inference engines or methods given by the user's instruction and the target computing environment.
+        "demonstration": null // The requirements about how to make a demonstration of the given problem and instruction.
+    },
+    // Confidence based on the correctness and completeness of the above information with respect to the given user's instruction.
+    "confidence": {
+        "rationale": "", // Your rationales regarding the correctness and completeness of the parsed information. Please answer why you think the above information is correct and should be included in the response. If important significant information is missing, point it out here and tell me why the missing information is significant and how to complete it.
+        "score": 0.0 // Your confidence score within range [0.0, 1.0] indicating how much you are confident that the above parsed information is valid, correct, and complete in order to successfully and effectively solve the given problem. It is totally okay to have a low confidence, which can help us indicate the ambiguity and incompleteness in the given instruction for the task and problem to be solved.
+    }
+}

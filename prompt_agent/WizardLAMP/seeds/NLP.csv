@@ -1,0 +1,1975 @@
+task,instruction,response,quality
+text classification,I want you to build a high-quality model for text review classification using IMDB datasets to classify a movie review text into either positive or negative sentiment. I want the classification test accuracy at least 95%.,"{
+    ""user"": {
+        ""intent"": ""build"",
+        ""expertise"": ""medium""
+    },
+    ""problem"": {
+        ""area"": ""natural language processing"",
+        ""downstream_task"": ""text classification"",
+        ""application_domain"": ""movie reviews sentiment analysis"",
+        ""description"": ""Build a high-quality model for text review classification using IMDB datasets to classify a movie review text into either positive or negative sentiment."",
+        ""performance_metrics"": [
+            {
+                ""name"": ""accuracy"",
+                ""value"": 0.95
+            }
+        ],
+        ""complexity_metrics"": []
+    },
+    ""dataset"": [
+        {
+            ""name"": ""IMDB datasets"",
+            ""modality"": [
+                ""text""
+            ],
+            ""target_variables"": [],
+            ""specification"": null,
+            ""description"": ""IMDB datasets for movie review text classification into positive or negative sentiment."",
+            ""preprocessing"": [],
+            ""augmentation"": [],
+            ""visualization"": [],
+            ""source"": ""direct-search""
+        }
+    ],
+    ""model"": [
+        {
+            ""name"": """",
+            ""family"": """",
+            ""type"": ""neural networks"",
+            ""specification"": null,
+            ""description"": ""A model to classify movie review texts into positive or negative sentiment with at least 95% test accuracy.""
+        }
+    ],
+    ""knowledge"": [],
+    ""service"": {
+        ""feature_engineering"": [],
+        ""target_device"": """",
+        ""deployment_endpoint"": """",
+        ""inference_engine"": [],
+        ""demonstration"": null
+    },
+    ""confidence"": {
+        ""rationale"": ""The instruction provided a clear task of building a text classification model specifically for sentiment analysis of movie reviews using the IMDB datasets, aiming for a test accuracy of at least 95%. The instruction did not specify the user's expertise level in-depth, but the request suggests a medium level of understanding of model development requirements. The task is explicitly in the domain of natural language processing, with performance metrics clearly stated. There is no explicit mention of dataset specifications, model specifications, complexity metrics, or deployment details, hence these fields are filled accordingly with assumptions or left empty as appropriate."",
+        ""score"": 0.9
+    }
+}",2
+text classification,"You are solving this machine learning tasks of text classification: 
+The dataset presented here (the Airline reviews) comprises customer feedback for British Airways. Here, we provide the textual reviews. Your task is to predict the corresponding rating in the range of {1, ..., 10} given the reviews in the test set. The evaluation metric is root mean squared error (RMSE). 
+Now train a language model to get a good performance.","{
+    ""user"": {
+        ""intent"": ""build"",
+        ""expertise"": ""medium""
+    },
+    ""problem"": {
+        ""area"": ""natural language processing"",
+        ""downstream_task"": ""text classification"",
+        ""application_domain"": ""customer feedback analysis"",
+        ""description"": ""Predict the rating (1 to 10) for airline reviews based on the textual content of the reviews. The dataset comprises customer feedback for British Airways."",
+        ""performance_metrics"": [
+            {
+                ""name"": ""RMSE"",
+                ""value"": null
+            }
+        ],
+        ""complexity_metrics"": []
+    },
+    ""dataset"": [
+        {
+            ""name"": ""Airline reviews"",
+            ""modality"": [""text""],
+            ""target_variables"": [""rating""],
+            ""specification"": null,
+            ""description"": ""The dataset contains textual reviews from customers of British Airways. The task is to predict the corresponding rating ranging from 1 to 10."",
+            ""preprocessing"": [],
+            ""augmentation"": [],
+            ""visualization"": [],
+            ""source"": ""user-upload""
+        }
+    ],
+    ""model"": [
+        {
+            ""name"": """",
+            ""family"": """",
+            ""type"": ""neural networks"",
+            ""specification"": null,
+            ""description"": ""Train a language model to classify text reviews into corresponding ratings from 1 to 10.""
+        }
+    ],
+    ""knowledge"": [],
+    ""service"": {
+        ""feature_engineering"": [],
+        ""target_device"": """",
+        ""deployment_endpoint"": """",
+        ""inference_engine"": [],
+        ""demonstration"": null
+    },
+    ""confidence"": {
+        ""rationale"": ""The provided instruction was clear about the task of predicting a rating from textual reviews using a language model, within the context of natural language processing. It specifically mentioned the need for a model that can be evaluated using RMSE as a performance metric. The dataset's details, such as its name and the modality of the data, were inferred based on the description. The intent 'build' was selected since the user is directed to construct a model, and the expertise level was assumed to be 'medium' given the nature of the task. The absence of specific model names or configurations suggests a generic approach to model selection, thus a language model within the 'neural networks' type is suggested."",
+        ""score"": 0.9
+    }
+}",2
+text classification,"You are solving this machine learning tasks of text classification: 
+The dataset presented here (the BoolQ dataset) comprises a series of passage-question pairs. Given a passage and a question, your task is to identify whether the question can be inferred from the passage, with 0 as False and 1 as True. The evaluation metric is accuracy.
+Now train a language model to get a good performance. ","{
+    ""user"": {
+        ""intent"": ""build"",
+        ""expertise"": ""medium""
+    },
+    ""problem"": {
+        ""area"": ""natural language processing"",
+        ""downstream_task"": ""text classification"",
+        ""application_domain"": ""question answering"",
+        ""description"": ""The task involves classifying whether a question can be inferred from a given passage using the BoolQ dataset, with binary classification (0: False, 1: True)."",
+        ""performance_metrics"": [
+            {
+                ""name"": ""accuracy"",
+                ""value"": null
+            }
+        ],
+        ""complexity_metrics"": []
+    },
+    ""dataset"": [
+        {
+            ""name"": ""BoolQ dataset"",
+            ""modality"": [""text""],
+            ""target_variables"": [],
+            ""specification"": null,
+            ""description"": ""The dataset comprises a series of passage-question pairs for the task of determining if the question can be inferred from the passage."",
+            ""preprocessing"": [],
+            ""augmentation"": [],
+            ""visualization"": [],
+            ""source"": ""user-upload""
+        }
+    ],
+    ""model"": [
+        {
+            ""name"": """",
+            ""family"": """",
+            ""type"": ""neural networks"",
+            ""specification"": null,
+            ""description"": ""A language model to be trained for classifying passage-question pairs into binary outcomes (True or False).""
+        }
+    ],
+    ""knowledge"": [],
+    ""service"": {
+        ""feature_engineering"": [],
+        ""target_device"": """",
+        ""deployment_endpoint"": """",
+        ""inference_engine"": [],
+        ""demonstration"": null
+    },
+    ""confidence"": {
+        ""rationale"": ""The JSON structure has been filled according to the provided instructions, mapping directly from the task's requirements. The choice of 'neural networks' for the model type reflects the common approach for such NLP classification tasks. Some fields are left blank or null where the instruction doesn't specify details (e.g., model name, target device). The user's intent is interpreted as 'build' given the task of training a model, with 'medium' expertise assumed based on the task's complexity. The absence of specific performance metric values or complex metric requirements is due to the instruction's focus on model training without detailed optimization targets."",
+        ""score"": 0.9
+    }
+}",2
+text classification,"You are solving this machine learning tasks of text classification: 
+The dataset presented here (the ChatGPT prompt dataset) comprises a series of sentences. Given the text, your task is to predict the label of it in range of {0, 1, ..., 7}. The evaluation metric is accuracy.
+Now train a language model to get a good performance. ","{
+    ""user"": {
+        ""intent"": ""build"",
+        ""expertise"": ""medium""
+    },
+    ""problem"": {
+        ""area"": ""natural language processing"",
+        ""downstream_task"": ""text classification"",
+        ""application_domain"": ""generic"",
+        ""description"": ""You are solving this machine learning tasks of text classification: The dataset presented here (the ChatGPT prompt dataset) comprises a series of sentences. Given the text, your task is to predict the label of it in range of {0, 1, ..., 7}."",
+        ""performance_metrics"": [
+            {
+                ""name"": ""accuracy"",
+                ""value"": null
+            }
+        ],
+        ""complexity_metrics"": []
+    },
+    ""dataset"": [
+        {
+            ""name"": ""ChatGPT prompt dataset"",
+            ""modality"": [""text""],
+            ""target_variables"": [],
+            ""specification"": null,
+            ""description"": ""A series of sentences for text classification, where the task is to predict the label of the text in the range of {0, 1, ..., 7}."",
+            ""preprocessing"": [],
+            ""augmentation"": [],
+            ""visualization"": [],
+            ""source"": ""user-upload""
+        }
+    ],
+    ""model"": [
+        {
+            ""name"": """",
+            ""family"": """",
+            ""type"": ""neural networks"",
+            ""specification"": null,
+            ""description"": ""Train a language model to classify texts into one of eight categories {0, 1, ..., 7}.""
+        }
+    ],
+    ""knowledge"": [],
+    ""service"": {
+        ""feature_engineering"": [],
+        ""target_device"": """",
+        ""deployment_endpoint"": """",
+        ""inference_engine"": [],
+        ""demonstration"": null
+    },
+    ""confidence"": {
+        ""rationale"": ""The instruction prompt is directly about building a model for text classification within the domain of natural language processing. The user's task involves using the 'ChatGPT prompt dataset' to predict labels ranging from 0 to 7 for a given text. The evaluation metric specified is accuracy, and the data modality involved is text. There's no explicit mention of user expertise, but the task suggests a medium level of understanding in machine learning. The description and details provided match closely with the instruction, with some assumptions made due to the lack of specificity in certain areas, such as the exact performance metric values."",
+        ""score"": 0.85
+    }
+}",2
+text classification,"You are solving this machine learning tasks of text classification: 
+The dataset presented here (the DAIGT dataset) comprises a series of texts. Given the text, your task is to identify whether it is generated by an AI, with 0 as human and 1 as AI. The evaluation metric is accuracy.
+Now train a language model to get a good performance. ","{
+    ""user"": {
+        ""intent"": ""build"",
+        ""expertise"": ""medium""
+    },
+    ""problem"": {
+        ""area"": ""natural language processing"",
+        ""downstream_task"": ""text classification"",
+        ""application_domain"": ""machine learning"",
+        ""description"": ""Identify whether a text is generated by an AI or a human. 0 represents human-generated text, and 1 represents AI-generated text."",
+        ""performance_metrics"": [
+            {
+                ""name"": ""accuracy"",
+                ""value"": null
+            }
+        ],
+        ""complexity_metrics"": []
+    },
+    ""dataset"": [
+        {
+            ""name"": ""DAIGT dataset"",
+            ""modality"": [""text""],
+            ""target_variables"": [""generated_by_AI""],
+            ""specification"": null,
+            ""description"": ""A series of texts to identify if generated by an AI or a human."",
+            ""preprocessing"": [],
+            ""augmentation"": [],
+            ""visualization"": [],
+            ""source"": ""user-upload""
+        }
+    ],
+    ""model"": [
+        {
+            ""name"": """",
+            ""family"": """",
+            ""type"": ""neural networks"",
+            ""specification"": null,
+            ""description"": ""A language model to classify texts as AI-generated or human-generated.""
+        }
+    ],
+    ""knowledge"": [],
+    ""service"": {
+        ""feature_engineering"": [],
+        ""target_device"": """",
+        ""deployment_endpoint"": """",
+        ""inference_engine"": [],
+        ""demonstration"": null
+    },
+    ""confidence"": {
+        ""rationale"": ""The JSON structure is crafted based on the provided instruction, adhering to the structure outlined in the schema files. The intent is 'build' as the task involves creating a model. Expertise level is assumed 'medium' as the task requires some knowledge of ML. The problem area is 'natural language processing', with 'text classification' as the downstream task. The DAIGT dataset and the goal of identifying AI vs. human-generated text are clearly defined. A neural network is suggested as a suitable model type for this kind of text classification task, though specific model details are not given. Accuracy is the chosen performance metric as per the instruction, with no specific target value provided. This structure should meet the requirements for initiating a project to solve the given task."",
+        ""score"": 0.9
+    }
+}",2
+text classification,"You are solving this machine learning tasks of text classification: 
+The dataset presented here (the Textual Entailment) comprises a series of labeled text pairs. Given two texts, your task is to predict the relationship of the text pair of neutral (0), contradiction (1) or entailment (2). The evaluation metric is accuracy.
+Now train a language model to get a good performance. ","{
+  ""user"": {
+    ""intent"": ""build"",
+    ""expertise"": ""medium""
+  },
+  ""problem"": {
+    ""area"": ""natural language processing"",
+    ""downstream_task"": ""text classification"",
+    ""application_domain"": ""textual analysis"",
+    ""description"": ""Predict the relationship of text pairs as neutral, contradiction, or entailment."",
+    ""performance_metrics"": [
+      {
+        ""name"": ""accuracy"",
+        ""value"": null
+      }
+    ],
+    ""complexity_metrics"": []
+  },
+  ""dataset"": [
+    {
+      ""name"": ""Textual Entailment"",
+      ""modality"": [
+        ""text""
+      ],
+      ""target_variables"": [
+        ""relationship""
+      ],
+      ""specification"": null,
+      ""description"": ""A series of labeled text pairs to predict their relationship."",
+      ""preprocessing"": [],
+      ""augmentation"": [],
+      ""visualization"": [],
+      ""source"": ""user-upload""
+    }
+  ],
+  ""model"": [
+    {
+      ""name"": """",
+      ""family"": """",
+      ""type"": ""neural networks"",
+      ""specification"": null,
+      ""description"": ""A language model to classify text pairs into categories of neutral, contradiction, or entailment.""
+    }
+  ],
+  ""knowledge"": [],
+  ""service"": {
+    ""feature_engineering"": [],
+    ""target_device"": """",
+    ""deployment_endpoint"": """",
+    ""inference_engine"": [],
+    ""demonstration"": null
+  },
+  ""confidence"": {
+    ""rationale"": ""The JSON structure has been filled out based on the instruction provided. It is assumed that the user's intent is to build a model for text classification in the NLP area, focusing on textual entailment. Medium expertise is inferred as the task requires understanding of specific NLP tasks. The dataset name and task are explicitly mentioned, making them straightforward to include. The choice of 'neural networks' as model type is based on the common approach to such NLP tasks. The absence of specific metrics values, dataset specifications, and model details are noted; these would ideally be specified for a more detailed plan."",
+    ""score"": 0.9
+  }
+}",2
+text classification,"You are solving this machine learning tasks of text classification: 
+The dataset presented here (the WebMD Review dataset) comprises a series of textual reviews. Given the text, your task is to identify whether it is positive, with 0 as negative and 1 as positive. The evaluation metric is accuracy.
+Now train a language model to get a good performance. ","{
+    ""user"": {
+        ""intent"": ""build"",
+        ""expertise"": ""medium""
+    },
+    ""problem"": {
+        ""area"": ""natural language processing"",
+        ""downstream_task"": ""text classification"",
+        ""application_domain"": ""healthcare"",
+        ""description"": ""The task involves training a language model to classify textual reviews from the WebMD Review dataset as either positive or negative based on the content of the reviews. The goal is to accurately categorize the sentiment of each review."",
+        ""performance_metrics"": [
+            {
+                ""name"": ""accuracy"",
+                ""value"": null
+            }
+        ],
+        ""complexity_metrics"": []
+    },
+    ""dataset"": [
+        {
+            ""name"": ""WebMD Review dataset"",
+            ""modality"": [
+                ""text""
+            ],
+            ""target_variables"": [],
+            ""specification"": null,
+            ""description"": ""A series of textual reviews that need to be classified into positive or negative categories."",
+            ""preprocessing"": [],
+            ""augmentation"": [],
+            ""visualization"": [],
+            ""source"": ""user-upload""
+        }
+    ],
+    ""model"": [
+        {
+            ""name"": """",
+            ""family"": """",
+            ""type"": ""neural networks"",
+            ""specification"": null,
+            ""description"": ""A language model that will be trained to classify the reviews into positive or negative.""
+        }
+    ],
+    ""knowledge"": [],
+    ""service"": {
+        ""feature_engineering"": [],
+        ""target_device"": """",
+        ""deployment_endpoint"": """",
+        ""inference_engine"": [],
+        ""demonstration"": """"
+    },
+    ""confidence"": {
+        ""rationale"": ""The JSON structure has been filled out following the provided template and based on the instructions given. The user's intent is to build a model, indicated by the instruction to train a language model. The problem area and downstream task have been specified as NLP and text classification, respectively, which aligns with the task of sentiment analysis of text reviews. The dataset and model sections are completed based on the instructions, focusing on the requirement to use a language model for classifying text from the WebMD Review dataset. The performance metric specified is accuracy, as it's directly mentioned. Some fields have been left empty or with null values where the instruction does not provide specific details, such as the exact performance metric value or model specifications."",
+        ""score"": 0.9
+    }
+}",2
+text classification,"We need a solution for detecting spam messages within the SMS Spam Collection dataset. Given the nature of our real-time messaging application, the model must be lightweight yet efficient, possibly a streamlined LSTM or GRU architecture. The expected classification accuracy is above 95%, with a latency below 100 milliseconds per message on mobile devices.","{
+    ""user"": {
+        ""intent"": ""build"",
+        ""expertise"": ""medium""
+    },
+    ""problem"": {
+        ""area"": ""natural language processing"",
+        ""downstream_task"": ""text classification"",
+        ""application_domain"": ""real-time messaging"",
+        ""description"": ""We need a solution for detecting spam messages within the SMS Spam Collection dataset. Given the nature of our real-time messaging application, the model must be lightweight yet efficient, possibly a streamlined LSTM or GRU architecture."",
+        ""performance_metrics"": [
+            {
+                ""name"": ""accuracy"",
+                ""value"": 0.95
+            }
+        ],
+        ""complexity_metrics"": [
+            {
+                ""name"": ""latency"",
+                ""value"": 100,
+                ""unit"": ""milliseconds""
+            }
+        ]
+    },
+    ""dataset"": [
+        {
+            ""name"": ""SMS Spam Collection"",
+            ""modality"": [""text""],
+            ""target_variables"": [],
+            ""specification"": null,
+            ""description"": ""A dataset for spam message detection tasks."",
+            ""preprocessing"": [],
+            ""augmentation"": [],
+            ""visualization"": [],
+            ""source"": ""direct-search""
+        }
+    ],
+    ""model"": [
+        {
+            ""name"": """",
+            ""family"": ""LSTM or GRU"",
+            ""type"": ""neural networks"",
+            ""specification"": null,
+            ""description"": ""A streamlined LSTM or GRU architecture suitable for lightweight and efficient spam message detection in real-time applications.""
+        }
+    ],
+    ""knowledge"": [],
+    ""service"": {
+        ""feature_engineering"": [],
+        ""target_device"": ""mobile devices"",
+        ""deployment_endpoint"": """",
+        ""inference_engine"": [],
+        ""demonstration"": null
+    },
+    ""confidence"": {
+        ""rationale"": ""The JSON response is structured based on the provided template and the specific requirements detailed in the instruction. The chosen values and fields accurately reflect the user's request for building a lightweight yet efficient model for spam message detection, with specific performance and complexity metrics. The designation of 'medium' expertise acknowledges the technical nature of the request without assuming in-depth knowledge of neural network architecture. The absence of detailed model specifications is due to the instruction's lack of explicit details, focusing instead on broader model characteristics and desired outcomes."",
+        ""score"": 0.95
+    }
+}",2
+text classification,"Our financial news categorization task requires parsing articles from the Reuters-21578 dataset. The objective is to classify articles into various financial topics using a fastText model for its balance of speed and accuracy. An accuracy of 85% is the target, with significant emphasis on minimizing false positives in categories related to market-moving news.","{
+    ""user"": {
+        ""intent"": ""build"",
+        ""expertise"": ""medium""
+    },
+    ""problem"": {
+        ""area"": ""natural language processing"",
+        ""downstream_task"": ""text classification"",
+        ""application_domain"": ""financial news categorization"",
+        ""description"": ""Our task involves parsing articles from the Reuters-21578 dataset to classify them into various financial topics. We aim to use a fastText model for classification due to its balance of speed and accuracy."",
+        ""performance_metrics"": [
+            {
+                ""name"": ""accuracy"",
+                ""value"": 0.85
+            }
+        ],
+        ""complexity_metrics"": []
+    },
+    ""dataset"": [
+        {
+            ""name"": ""Reuters-21578"",
+            ""modality"": [
+                ""text""
+            ],
+            ""target_variables"": [],
+            ""specification"": null,
+            ""description"": ""The Reuters-21578 dataset contains news articles that need to be parsed and classified into various financial topics."",
+            ""preprocessing"": [],
+            ""augmentation"": [],
+            ""visualization"": [],
+            ""source"": ""direct-search""
+        }
+    ],
+    ""model"": [
+        {
+            ""name"": ""fastText"",
+            ""family"": """",
+            ""type"": ""neural networks"",
+            ""specification"": null,
+            ""description"": ""A fastText model is preferred for its balance of speed and accuracy in classifying text data into categories.""
+        }
+    ],
+    ""knowledge"": [],
+    ""service"": {
+        ""feature_engineering"": [],
+        ""target_device"": """",
+        ""deployment_endpoint"": """",
+        ""inference_engine"": [],
+        ""demonstration"": null
+    },
+    ""confidence"": {
+        ""rationale"": ""The provided JSON structure accurately reflects the user's instructions, including the intent to build a model (fastText) for classifying financial news articles from the Reuters-21578 dataset into various financial topics. The target performance metric is accurately captured (accuracy of 85%), emphasizing the importance of minimizing false positives in market-moving news categories. The instruction's specificity regarding the dataset and model leaves little room for ambiguity, justifying a high confidence score."",
+        ""score"": 1.0
+    }
+}",2
+text classification,"Our project focuses on classifying scientific papers by field and subfield using the arXiv dataset. We're considering a hierarchical attention network (HAN) model due to its ability to capture the nuanced differences between scientific disciplines. We expect at least an 88% F1 score across categories, with additional emphasis on the model's ability to scale and update as new papers are published.","{
+  ""user"": {
+    ""intent"": ""build"",
+    ""expertise"": ""medium""
+  },
+  ""problem"": {
+    ""area"": ""natural language processing"",
+    ""downstream_task"": ""text classification"",
+    ""application_domain"": ""academic research"",
+    ""description"": ""Our project focuses on classifying scientific papers by field and subfield using the arXiv dataset. We're considering a hierarchical attention network (HAN) model due to its ability to capture the nuanced differences between scientific disciplines."",
+    ""performance_metrics"": [
+      {
+        ""name"": ""F1 score"",
+        ""value"": 0.88
+      }
+    ],
+    ""complexity_metrics"": []
+  },
+  ""dataset"": [
+    {
+      ""name"": ""arXiv"",
+      ""modality"": [""text""],
+      ""target_variables"": [],
+      ""specification"": null,
+      ""description"": ""A dataset comprising scientific papers for the purpose of classifying them by field and subfield."",
+      ""preprocessing"": [],
+      ""augmentation"": [],
+      ""visualization"": [],
+      ""source"": ""direct-search""
+    }
+  ],
+  ""model"": [
+    {
+      ""name"": ""Hierarchical Attention Network"",
+      ""family"": """",
+      ""type"": ""neural networks"",
+      ""specification"": null,
+      ""description"": ""A model selected for its ability to understand the nuances in scientific papers, which is crucial for accurate classification by fields and subfields.""
+    }
+  ],
+  ""knowledge"": [],
+  ""service"": {
+    ""feature_engineering"": [],
+    ""target_device"": """",
+    ""deployment_endpoint"": """",
+    ""inference_engine"": [],
+    ""demonstration"": null
+  },
+  ""confidence"": {
+    ""rationale"": ""The parsed JSON follows the given instruction closely, considering the intent to build a model, the specified area of interest, and the performance metrics. While the user's expertise is assumed to be medium based on the nature of the request, some assumptions were made regarding the dataset source and the lack of specified complexity metrics, feature engineering steps, and deployment specifics. The choice of model type and the focus on a specific dataset (arXiv) are based directly on the instruction. The absence of detailed specifications for the model and dataset reflects the broad scope of the instruction."",
+    ""score"": 0.9
+  }
+}",2
+text classification,"My goal is to sort patient feedback into different categories of care quality using text data from online reviews. I'm new to NLP and not sure which model to use for categorizing feedback. Also, I'm concerned about making sure the model runs quickly enough to process thousands of reviews.",,1
+text classification,I want to analyze Twitter data to find patterns in sentiment during major events. I've got a dataset of tweets but am overwhelmed by the model options. Is there an easy-to-use model that can handle this sort of task?,,1
+text classification,"I'm working on a project with the 20 Newsgroups dataset. The task is to organize these posts into groups, but I'm stuck on which model to pick. I'm also worried about how long it might take to train.","{
+    ""user"": {
+        ""intent"": ""consult-build"",
+        ""expertise"": ""medium""
+    },
+    ""problem"": {
+        ""area"": ""natural language processing"",
+        ""downstream_task"": ""text classification"",
+        ""application_domain"": ""newsgroups classification"",
+        ""description"": ""I'm working on a project with the 20 Newsgroups dataset. The task is to organize these posts into groups, but I'm stuck on which model to pick. I'm also worried about how long it might take to train."",
+        ""performance_metrics"": [],
+        ""complexity_metrics"": []
+    },
+    ""dataset"": [
+        {
+            ""name"": ""20 Newsgroups"",
+            ""modality"": [""text""],
+            ""target_variables"": [],
+            ""specification"": null,
+            ""description"": ""A collection of approximately 20,000 newsgroup documents, partitioned across 20 different newsgroups."",
+            ""preprocessing"": [],
+            ""augmentation"": [],
+            ""visualization"": [],
+            ""source"": ""direct-search""
+        }
+    ],
+    ""model"": [
+        {
+            ""name"": """",
+            ""family"": """",
+            ""type"": """",
+            ""specification"": null,
+            ""description"": ""The user is considering different models for organizing posts into groups within the 20 Newsgroups dataset but is unsure which to pick and concerned about training time.""
+        }
+    ],
+    ""knowledge"": [],
+    ""service"": {
+        ""feature_engineering"": [],
+        ""target_device"": """",
+        ""deployment_endpoint"": """",
+        ""inference_engine"": [],
+        ""demonstration"": null
+    },
+    ""confidence"": {
+        ""rationale"": ""This JSON response has been crafted based on the instruction to organize the 20 Newsgroups dataset into groups, indicating a 'consult-build' intent with 'medium' expertise. The task falls under 'natural language processing' with 'text classification' as the downstream task, specifically within the 'newsgroups classification' domain. The dataset specified is the '20 Newsgroups', a well-known collection for such tasks. The model section is left open-ended to align with the user's request for advice on model selection and concerns about training time, which are common considerations at a 'medium' level of expertise. Confidence in this structured response is moderate, reflecting a careful interpretation of the provided instruction and an alignment with the template schema's specifications."",
+        ""score"": 0.75
+    }
+}",1
+text classification,I'm interested in building something that can identify fake news articles. I stumbled upon the FakeNewsNet dataset but am stuck on how to proceed. What's a good beginner model for text classification that I could use here?,,1
+text classification,"I'd like to classify textual reviews into star ratings. I was thinking about using a multi-layer perceptron. How many layers are enough, and how fast can it classify reviews?",,1
+text classification,"Our team is swamped with emails daily, and we’re struggling to keep up. Is there a way to automatically categorize these emails by urgency or topic? This would help us prioritize our responses and ensure nothing critical falls through the cracks.",,0
+text classification,I have a lot of review texts posted by the customers in our online store website. What can I do with them to better understand my customers?,,0
+text classification,"We're drowning in paperwork, especially when it comes to processing claims and service requests. If there's a system that can automatically read and sort these documents based on their content, it would drastically cut down our processing time and reduce errors.","{
+    ""user"": {
+        ""intent"": ""build"",
+        ""expertise"": ""low""
+    },
+    ""problem"": {
+        ""area"": ""natural language processing"",
+        ""downstream_task"": ""text classification"",
+        ""application_domain"": ""administrative document processing"",
+        ""description"": ""We're drowning in paperwork, especially when it comes to processing claims and service requests. If there's a system that can automatically read and sort these documents based on their content, it would drastically cut down our processing time and reduce errors."",
+        ""performance_metrics"": [],
+        ""complexity_metrics"": []
+    },
+    ""dataset"": [
+        {
+            ""name"": """",
+            ""modality"": [""text""],
+            ""target_variables"": [],
+            ""specification"": null,
+            ""description"": ""Document dataset related to claims and service requests."",
+            ""preprocessing"": [],
+            ""augmentation"": [],
+            ""visualization"": [],
+            ""source"": ""user-upload""
+        }
+    ],
+    ""model"": [
+        {
+            ""name"": """",
+            ""family"": """",
+            ""type"": ""neural networks"",
+            ""specification"": null,
+            ""description"": ""A model that can automatically read and sort documents based on their content.""
+        }
+    ],
+    ""knowledge"": [],
+    ""service"": {
+        ""feature_engineering"": [],
+        ""target_device"": """",
+        ""deployment_endpoint"": """",
+        ""inference_engine"": [],
+        ""demonstration"": null
+    },
+    ""confidence"": {
+        ""rationale"": ""The provided instruction was clear in expressing a need for a system capable of automatically reading and sorting administrative documents such as claims and service requests. Given the nature of the task involving document processing and content-based sorting, it was interpreted as a text classification problem under the area of natural language processing. The intent was classified as 'build' due to the explicit desire for system development. The user's expertise level is assumed to be 'low', considering the request does not specify any technical detail about the implementation. The dataset modality is set to 'text' as the system is expected to process written documents. All other fields were filled out based on the available information and the schema's structure, although specific details were not provided in the instruction."",
+        ""score"": 0.85
+    }
+}",0
+text classification,I want to ensure our product descriptions and marketing materials are resonating with our target audience. Is there a way to automatically analyze customer reactions to different product launches or marketing campaigns to guide our future strategies?,,0
+text classification,"We have a vast archive of market research reports and need an efficient way to sort them by industry relevance and emerging trends. If there's a method to streamline this process, it could significantly enhance our strategic planning and competitive analysis efforts.",,0
+machine translation,"For our next project, we're targeting the Common Crawl dataset to develop a transformer-based machine translation system. The goal is to achieve seamless translation between English and Japanese. Please ensure the model can handle colloquial expressions with at least a 95% accuracy rate.","{
+  ""user"": {
+    ""intent"": ""build"",
+    ""expertise"": ""medium""
+  },
+  ""problem"": {
+    ""area"": ""natural language processing"",
+    ""downstream_task"": ""machine translation"",
+    ""application_domain"": ""data science"",
+    ""description"": ""Develop a transformer-based machine translation system targeting the Common Crawl dataset for seamless translation between English and Japanese, handling colloquial expressions."",
+    ""performance_metrics"": [
+      {
+        ""name"": ""accuracy"",
+        ""value"": 0.95
+      }
+    ],
+    ""complexity_metrics"": []
+  },
+  ""dataset"": [
+    {
+      ""name"": ""Common Crawl"",
+      ""modality"": [
+        ""text""
+      ],
+      ""target_variables"": [],
+      ""specification"": null,
+      ""description"": ""A comprehensive dataset of web pages for developing a machine translation system."",
+      ""preprocessing"": [],
+      ""augmentation"": [],
+      ""visualization"": [],
+      ""source"": ""direct-search""
+    }
+  ],
+  ""model"": [
+    {
+      ""name"": """",
+      ""family"": ""Transformer"",
+      ""type"": ""neural networks"",
+      ""specification"": null,
+      ""description"": ""A transformer-based model designed for high accuracy in translating between English and Japanese, with a specific focus on colloquial expressions.""
+    }
+  ],
+  ""knowledge"": [],
+  ""service"": {
+    ""feature_engineering"": [],
+    ""target_device"": """",
+    ""deployment_endpoint"": """",
+    ""inference_engine"": [],
+    ""demonstration"": """"
+  },
+  ""confidence"": {
+    ""rationale"": ""The instruction was thoroughly analyzed and mapped into the provided JSON schema based on its content. The intent to build a specific machine translation model, the requirement for handling a specific dataset (Common Crawl), and the performance target (95% accuracy) were explicitly stated. The user's expertise level is assumed to be 'medium' based on the specificity of the task and the knowledge of domain-specific datasets and models. The confidence score reflects the adherence to the instruction and the completeness of information given the details provided."",
+    ""score"": 0.95
+  }
+}",2
+machine translation,I need a bidirectional LSTM model trained on the Europarl v7 dataset for translating between Spanish and English. Focus on achieving low latency in translations for real-time communication applications. Aim for response times under 300 milliseconds.,"{
+    ""user"": {
+        ""intent"": ""build"",
+        ""expertise"": ""medium""
+    },
+    ""problem"": {
+        ""area"": ""natural language processing"",
+        ""downstream_task"": ""machine translation"",
+        ""application_domain"": ""real-time communication"",
+        ""description"": ""I need a bidirectional LSTM model trained on the Europarl v7 dataset for translating between Spanish and English. Focus on achieving low latency in translations for real-time communication applications. Aim for response times under 300 milliseconds."",
+        ""performance_metrics"": [],
+        ""complexity_metrics"": [
+            {
+                ""name"": ""response time"",
+                ""value"": 0.3,
+                ""unit"": ""seconds""
+            }
+        ]
+    },
+    ""dataset"": [
+        {
+            ""name"": ""Europarl v7"",
+            ""modality"": [""text""],
+            ""target_variables"": [],
+            ""specification"": null,
+            ""description"": ""A dataset for translating between Spanish and English."",
+            ""preprocessing"": [],
+            ""augmentation"": [],
+            ""visualization"": [],
+            ""source"": ""direct-search""
+        }
+    ],
+    ""model"": [
+        {
+            ""name"": """",
+            ""family"": ""LSTM"",
+            ""type"": ""neural networks"",
+            ""specification"": null,
+            ""description"": ""A bidirectional LSTM model for Spanish-English translation.""
+        }
+    ],
+    ""knowledge"": [],
+    ""service"": {
+        ""feature_engineering"": [],
+        ""target_device"": ""real-time communication applications"",
+        ""deployment_endpoint"": """",
+        ""inference_engine"": [],
+        ""demonstration"": """"
+    },
+    ""confidence"": {
+        ""rationale"": ""The JSON structure is crafted following the template and specifically tailored to the user's request of building a bidirectional LSTM model for translating between Spanish and English, focusing on low latency for real-time applications. The request's emphasis on low latency is reflected in the 'complexity_metrics' section, aiming for a response time under 300 milliseconds. The dataset section is filled based on the explicit mention of the Europarl v7 dataset, suitable for the task. While the instruction is clear on the task, model type, dataset, and application domain, it does not specify performance metrics or advanced model specifications, leading to some fields being left as default or null, aligning with the provided template's structure and fields."",
+        ""score"": 0.95
+    }
+}",2
+machine translation,"We're looking at utilizing the WMT19 news commentary dataset for a machine translation challenge. The task is to create a state-of-the-art seq2seq model that can translate Russian to English. Include an evaluation on BLEU score metrics, targeting a score above 40.","{
+    ""user"": {
+        ""intent"": ""build"",
+        ""expertise"": ""medium""
+    },
+    ""problem"": {
+        ""area"": ""natural language processing"",
+        ""downstream_task"": ""machine translation"",
+        ""application_domain"": ""academic research"",
+        ""description"": ""We're looking at utilizing the WMT19 news commentary dataset for a machine translation challenge. The task is to create a state-of-the-art seq2seq model that can translate Russian to English."",
+        ""performance_metrics"": [
+            {
+                ""name"": ""BLEU score"",
+                ""value"": 40
+            }
+        ],
+        ""complexity_metrics"": []
+    },
+    ""dataset"": [
+        {
+            ""name"": ""WMT19 news commentary dataset"",
+            ""modality"": [""text""],
+            ""target_variables"": [],
+            ""specification"": null,
+            ""description"": ""Dataset for machine translation challenge, translating Russian to English."",
+            ""preprocessing"": [],
+            ""augmentation"": [],
+            ""visualization"": [],
+            ""source"": ""direct-search""
+        }
+    ],
+    ""model"": [
+        {
+            ""name"": """",
+            ""family"": ""state-of-the-art seq2seq model"",
+            ""type"": ""neural networks"",
+            ""specification"": null,
+            ""description"": ""A seq2seq model to translate Russian to English.""
+        }
+    ],
+    ""knowledge"": [],
+    ""service"": {
+        ""feature_engineering"": [],
+        ""target_device"": """",
+        ""deployment_endpoint"": """",
+        ""inference_engine"": [],
+        ""demonstration"": null
+    },
+    ""confidence"": {
+        ""rationale"": ""The instruction clearly asks for building a machine translation model, specifying the use of a seq2seq approach and targeting translations from Russian to English using the WMT19 dataset. The intent to build and the medium expertise level are inferred from the specifics of the task and dataset. The performance metric specified is the BLEU score, aiming for a score above 40. No explicit details were provided on computational complexity, model family, or deployment specifications, hence their absence. The response captures all mentioned details while adhering to the template's structure."",
+        ""score"": 0.95
+    }
+}",2
+machine translation,Leverage the OpenSubtitles dataset to train a translation model focused on conversational context. The model should use a BERT-based architecture for English to Mandarin translations. Ensure it can interpret and translate slang and idiomatic expressions with high precision.,"{
+    ""user"": {
+        ""intent"": ""build"",
+        ""expertise"": ""medium""
+    },
+    ""problem"": {
+        ""area"": ""natural language processing"",
+        ""downstream_task"": ""machine translation"",
+        ""application_domain"": ""conversational AI"",
+        ""description"": ""Leverage the OpenSubtitles dataset to train a translation model focused on conversational context. The model should interpret and translate slang and idiomatic expressions with high precision."",
+        ""performance_metrics"": [],
+        ""complexity_metrics"": []
+    },
+    ""dataset"": [
+        {
+            ""name"": ""OpenSubtitles"",
+            ""modality"": [""text""],
+            ""target_variables"": [],
+            ""specification"": null,
+            ""description"": ""A dataset for training a translation model, with a focus on conversational context, including slang and idiomatic expressions."",
+            ""preprocessing"": [],
+            ""augmentation"": [],
+            ""visualization"": [],
+            ""source"": ""direct-search""
+        }
+    ],
+    ""model"": [
+        {
+            ""name"": """",
+            ""family"": ""BERT"",
+            ""type"": ""neural networks"",
+            ""specification"": null,
+            ""description"": ""A BERT-based architecture for English to Mandarin translations, focused on conversational context including slang and idiomatic expressions.""
+        }
+    ],
+    ""knowledge"": [],
+    ""service"": {
+        ""feature_engineering"": [],
+        ""target_device"": """",
+        ""deployment_endpoint"": """",
+        ""inference_engine"": [],
+        ""demonstration"": null
+    },
+    ""confidence"": {
+        ""rationale"": ""The JSON structure adheres to the provided template, incorporating the user's intent to build a model, specifying the task, dataset, and model details based on the instruction. While performance and complexity metrics aren't specified, the focus on high precision for slang and idiomatic expressions hints at the importance of qualitative assessment in model evaluation. The confidence in this parsing might vary due to the absence of specific quantitative targets for performance and complexity."",
+        ""score"": 0.85
+    }
+}",2
+machine translation,"We require a machine translation model that supports low-resource languages, starting with Swahili to English. Use the Masakhane dataset and experiment with a mixture of Transformer and RNN models. The goal is to surpass current benchmarks by at least 5% in BLEU scores.","{
+    ""user"": {
+        ""intent"": ""build"",
+        ""expertise"": ""medium""
+    },
+    ""problem"": {
+        ""area"": ""natural language processing"",
+        ""downstream_task"": ""machine translation"",
+        ""application_domain"": ""linguistics"",
+        ""description"": ""We require a machine translation model that supports low-resource languages, starting with Swahili to English. Use the Masakhane dataset and experiment with a mixture of Transformer and RNN models. The goal is to surpass current benchmarks by at least 5% in BLEU scores."",
+        ""performance_metrics"": [
+            {
+                ""name"": ""BLEU score"",
+                ""value"": null
+            }
+        ],
+        ""complexity_metrics"": []
+    },
+    ""dataset"": [
+        {
+            ""name"": ""Masakhane"",
+            ""modality"": [""text""],
+            ""target_variables"": [],
+            ""specification"": null,
+            ""description"": ""A dataset supporting machine translation for low-resource languages, with an initial focus on Swahili to English."",
+            ""preprocessing"": [],
+            ""augmentation"": [],
+            ""visualization"": [],
+            ""source"": ""direct-search""
+        }
+    ],
+    ""model"": [
+        {
+            ""name"": """",
+            ""family"": """",
+            ""type"": ""neural networks"",
+            ""specification"": null,
+            ""description"": ""A mixture of Transformer and RNN models to be experimented with for the task of Swahili to English machine translation.""
+        }
+    ],
+    ""knowledge"": [],
+    ""service"": {
+        ""feature_engineering"": [],
+        ""target_device"": """",
+        ""deployment_endpoint"": """",
+        ""inference_engine"": [],
+        ""demonstration"": null
+    },
+    ""confidence"": {
+        ""rationale"": ""The information provided aligns well with the user's request for building a machine translation model for low-resource languages, specifically from Swahili to English. The Masakhane dataset is specified, along with the intent to use both Transformer and RNN models to achieve a goal of surpassing current benchmarks by at least 5% in BLEU scores. However, detailed specifications of the model or dataset, such as dataset size or model parameters, are not provided in the instruction, leaving them to be inferred or determined during the model development process."",
+        ""score"": 0.9
+    }
+}",2
+machine translation,"Please develop a fast, efficient machine translation tool using the TED Talks dataset. The model should use Transformer-XL for English to Portuguese translations. Focus on optimizing it for handheld devices, with battery usage and memory footprint in mind.","{
+    ""user"": {
+        ""intent"": ""build"",
+        ""expertise"": ""medium""
+    },
+    ""problem"": {
+        ""area"": ""natural language processing"",
+        ""downstream_task"": ""machine translation"",
+        ""application_domain"": ""software"",
+        ""description"": ""Develop a fast, efficient machine translation tool using the TED Talks dataset, specifically for English to Portuguese translations. The model should utilize Transformer-XL and be optimized for handheld devices, considering battery usage and memory footprint."",
+        ""performance_metrics"": [],
+        ""complexity_metrics"": [
+            {
+                ""name"": ""battery usage"",
+                ""value"": null
+            },
+            {
+                ""name"": ""memory footprint"",
+                ""value"": null
+            }
+        ]
+    },
+    ""dataset"": [
+        {
+            ""name"": ""TED Talks dataset"",
+            ""modality"": [""text""],
+            ""target_variables"": [],
+            ""specification"": null,
+            ""description"": ""Dataset of TED Talks for training a machine translation model from English to Portuguese."",
+            ""preprocessing"": [],
+            ""augmentation"": [],
+            ""visualization"": [],
+            ""source"": ""direct-search""
+        }
+    ],
+    ""model"": [
+        {
+            ""name"": ""Transformer-XL"",
+            ""family"": ""Transformer"",
+            ""type"": ""neural networks"",
+            ""specification"": null,
+            ""description"": ""Transformer-XL model specifically for English to Portuguese machine translation, optimized for handheld devices.""
+        }
+    ],
+    ""knowledge"": [],
+    ""service"": {
+        ""feature_engineering"": [],
+        ""target_device"": ""handheld devices"",
+        ""deployment_endpoint"": """",
+        ""inference_engine"": [],
+        ""demonstration"": null
+    },
+    ""confidence"": {
+        ""rationale"": ""The information parsed is in alignment with the provided instruction, focusing on the development of a machine translation tool using Transformer-XL for English to Portuguese translations, optimized for handheld devices. The instruction specifically mentions the TED Talks dataset and concerns over battery usage and memory footprint, which are addressed. There is uncertainty in specific performance metrics and detailed specifications for the model, dataset, and deployment which were not explicitly provided in the instruction."",
+        ""score"": 0.9
+    }
+}",2
+machine translation,Design a translation system using the ParaCrawl corpus that employs a dual encoder approach to handle English to Dutch translations. Aim for a system that not only translates accurately but also retains the emotional tone of the original text.,"{
+    ""user"": {
+        ""intent"": ""build"",
+        ""expertise"": ""medium""
+    },
+    ""problem"": {
+        ""area"": ""natural language processing"",
+        ""downstream_task"": ""machine translation"",
+        ""application_domain"": ""text translation"",
+        ""description"": ""Design a translation system using the ParaCrawl corpus that employs a dual encoder approach to handle English to Dutch translations. Aim for a system that not only translates accurately but also retains the emotional tone of the original text."",
+        ""performance_metrics"": [],
+        ""complexity_metrics"": []
+    },
+    ""dataset"": [
+        {
+            ""name"": ""ParaCrawl"",
+            ""modality"": [""text""],
+            ""target_variables"": [],
+            ""specification"": null,
+            ""description"": ""A corpus used for building a translation system that employs a dual encoder approach for English to Dutch translations, focusing on accuracy and emotional tone retention."",
+            ""preprocessing"": [],
+            ""augmentation"": [],
+            ""visualization"": [],
+            ""source"": ""direct-search""
+        }
+    ],
+    ""model"": [
+        {
+            ""name"": """",
+            ""family"": ""dual encoder models"",
+            ""type"": ""neural networks"",
+            ""specification"": null,
+            ""description"": ""A dual encoder model designed for translating English to Dutch, focusing on retaining the emotional tone of the original text.""
+        }
+    ],
+    ""knowledge"": [],
+    ""service"": {
+        ""feature_engineering"": [],
+        ""target_device"": """",
+        ""deployment_endpoint"": """",
+        ""inference_engine"": [],
+        ""demonstration"": """"
+    },
+    ""confidence"": {
+        ""rationale"": ""The JSON is structured according to the template, focusing on creating a natural language processing system for machine translation using the ParaCrawl dataset and a dual encoder approach. It covers the intent, expertise, problem description, dataset, and model specifics based on the instruction. Confidence is high that this structure meets the requirements but acknowledges that specific performance and complexity metrics, along with more detailed model specifications, could be further defined with additional information."",
+        ""score"": 0.95
+    }
+}",2
+machine translation,"We need a translation system optimized for e-commerce product descriptions, translating from Chinese to English using the Taobao dataset. The model should be based on the U-Net architecture, with a strong focus on accuracy and fluency in the retail and fashion domains. We're aiming for a BLEU score of at least 37 and the ability to integrate with existing e-commerce platforms for seamless real-time translation of product listings.","{
+    ""user"": {
+        ""intent"": ""build"",
+        ""expertise"": ""medium""
+    },
+    ""problem"": {
+        ""area"": ""natural language processing"",
+        ""downstream_task"": ""machine translation"",
+        ""application_domain"": ""e-commerce, retail, fashion"",
+        ""description"": ""We need a translation system optimized for e-commerce product descriptions, translating from Chinese to English using the Taobao dataset. The model should be based on the U-Net architecture, with a strong focus on accuracy and fluency in the retail and fashion domains."",
+        ""performance_metrics"": [
+            {
+                ""name"": ""BLEU score"",
+                ""value"": 37.0
+            }
+        ],
+        ""complexity_metrics"": [{""name"": ""response time"", ""value"": 1.0, ""unit"": ""second""}]
+    },
+    ""dataset"": [
+        {
+            ""name"": ""Taobao"",
+            ""modality"": [""text""],
+            ""target_variables"": [],
+            ""specification"": null,
+            ""description"": ""A dataset for translating e-commerce product descriptions from Chinese to English, specifically tailored for the retail and fashion domains."",
+            ""preprocessing"": [],
+            ""augmentation"": [],
+            ""visualization"": [],
+            ""source"": ""direct-search""
+        }
+    ],
+    ""model"": [
+        {
+            ""name"": """",
+            ""family"": ""U-Net"",
+            ""type"": ""neural networks"",
+            ""specification"": null,
+            ""description"": ""A U-Net architecture based model optimized for translating e-commerce product descriptions from Chinese to English, with a focus on accuracy and fluency in the retail and fashion domains.""
+        }
+    ],
+    ""knowledge"": [],
+    ""service"": {
+        ""feature_engineering"": [],
+        ""target_device"": """",
+        ""deployment_endpoint"": """",
+        ""inference_engine"": [],
+        ""demonstration"": """"
+    },
+    ""confidence"": {
+        ""rationale"": ""The JSON accurately captures the user's request for developing a machine translation system based on the U-Net architecture for e-commerce product descriptions, translating from Chinese to English, using the Taobao dataset. It's aimed at achieving a BLEU score of at least 37, with integration capabilities for e-commerce platforms. Key details from the instruction, such as the model architecture, dataset, domain specificity, and performance metrics, are all properly incorporated. There's minimal ambiguity, thus ensuring a high level of confidence in this structured representation."",
+        ""score"": 0.95
+    }
+}",2
+machine translation,"Design a machine translation model that leverages the OPUS dataset for English to Russian translations. Preference is for a model within the RNN family, specifically optimized for conversational and informal text. The goal is to achieve a BLEU score of 33, with extra points for handling slang and idiomatic expressions well. Model latency should not exceed 300 milliseconds per sentence, ensuring a responsive user experience.","{
+    ""user"": {
+        ""intent"": ""build"",
+        ""expertise"": ""medium""
+    },
+    ""problem"": {
+        ""area"": ""natural language processing"",
+        ""downstream_task"": ""machine translation"",
+        ""application_domain"": ""conversational and informal text"",
+        ""description"": ""Design a machine translation model that leverages the OPUS dataset for English to Russian translations, optimized for conversational and informal text."",
+        ""performance_metrics"": [
+            {
+                ""name"": ""BLEU score"",
+                ""value"": 33
+            }
+        ],
+        ""complexity_metrics"": [
+            {
+                ""name"": ""latency"",
+                ""value"": 300,
+                ""unit"": ""milliseconds""
+            }
+        ]
+    },
+    ""dataset"": [
+        {
+            ""name"": ""OPUS"",
+            ""modality"": [""text""],
+            ""target_variables"": [],
+            ""description"": ""A dataset for English to Russian machine translation, focusing on conversational and informal text."",
+            ""preprocessing"": [],
+            ""augmentation"": [],
+            ""visualization"": [],
+            ""source"": ""direct-search""
+        }
+    ],
+    ""model"": [
+        {
+            ""name"": """",
+            ""family"": ""RNN"",
+            ""type"": ""neural networks"",
+            ""description"": ""An RNN model optimized for conversational and informal text translation from English to Russian.""
+        }
+    ],
+    ""knowledge"": [],
+    ""service"": {
+        ""feature_engineering"": [],
+        ""target_device"": """",
+        ""deployment_endpoint"": """",
+        ""inference_engine"": [],
+        ""demonstration"": """"
+    },
+    ""confidence"": {
+        ""rationale"": ""The JSON structure is carefully structured to align with the instruction's emphasis on designing an RNN-based machine translation model for English to Russian, using the OPUS dataset. The performance metric of achieving a BLEU score of 33 and the complexity metric specifying model latency underscore the model's expected efficiency and effectiveness. The choice of RNN family is highlighted to cater to the preference for handling conversational and informal texts, especially considering the capability to manage slang and idiomatic expressions."",
+        ""score"": 0.9
+    }
+}",2
+machine translation,"I'm interested in creating a low-resource language translation tool, focusing on the Quechua-Spanish language pair using the JW300 dataset. Given the scarcity of data, a model from the LSTM family, enhanced with attention mechanisms, would be preferable. The model should demonstrate adaptability to linguistic nuances and achieve a BLEU score of at least 30. Furthermore, it should be lightweight enough to run on mobile devices.","{
+    ""user"": {
+        ""intent"": ""build"",
+        ""expertise"": ""medium""
+    },
+    ""problem"": {
+        ""area"": ""natural language processing"",
+        ""downstream_task"": ""machine translation"",
+        ""application_domain"": ""language translation"",
+        ""description"": ""Creating a low-resource language translation tool focusing on Quechua-Spanish using the JW300 dataset. The tool should handle linguistic nuances and be optimized for mobile devices."",
+        ""performance_metrics"": [
+            {
+                ""name"": ""BLEU score"",
+                ""value"": 0.30
+            }
+        ],
+        ""complexity_metrics"": [
+            {
+                ""name"": ""model size"",
+                ""value"": null
+            }
+        ]
+    },
+    ""dataset"": [
+        {
+            ""name"": ""JW300"",
+            ""modality"": [""text""],
+            ""target_variables"": [],
+            ""specification"": null,
+            ""description"": ""A dataset for low-resource language translation, specifically for Quechua-Spanish."",
+            ""preprocessing"": [],
+            ""augmentation"": [],
+            ""visualization"": [],
+            ""source"": ""direct-search""
+        }
+    ],
+    ""model"": [
+        {
+            ""name"": """",
+            ""family"": ""LSTM"",
+            ""type"": ""neural networks"",
+            ""specification"": null,
+            ""description"": ""An LSTM-based model enhanced with attention mechanisms for translating between Quechua and Spanish.""
+        }
+    ],
+    ""knowledge"": [],
+    ""service"": {
+        ""feature_engineering"": [],
+        ""target_device"": ""mobile"",
+        ""deployment_endpoint"": """",
+        ""inference_engine"": [],
+        ""demonstration"": null
+    },
+    ""confidence"": {
+        ""rationale"": ""The instruction was carefully parsed to match the template. The focus on a specific language pair and dataset, along with performance and complexity requirements, aligns with a typical machine learning project setup. There might be ambiguity about the specific 'model size' metric since 'lightweight' is qualitative; further clarification would enhance precision."",
+        ""score"": 0.95
+    }
+}",2
+machine translation,Our objective is to create a neural machine translation model using the MultiUN dataset. The focus will be on Arabic to English translations. We expect the model to be fine-tuned for legal and technical documents with an accuracy threshold of 98%.,,1
+machine translation,Please construct a translation tool using the GigaWord dataset aimed at academic papers translation from Chinese to English. Employ a cutting-edge neural machine translation architecture that ensures terminological consistency and is capable of learning from correction loops.,,1
+machine translation,"For a personal project, I want to translate Korean web novels into English. What model should I use? I haven't picked out a dataset yet, and I'm a bit lost on the technical requirements. I'd like the translations to be relatively quick and readable.","{
+  ""user"": {
+    ""intent"": ""consult-build"",
+    ""expertise"": ""low""
+  },
+  ""problem"": {
+    ""area"": ""natural language processing"",
+    ""downstream_task"": ""machine translation"",
+    ""application_domain"": ""web novels translation"",
+    ""description"": ""For a personal project, the user wants to translate Korean web novels into English. They haven't picked out a dataset yet and are a bit lost on the technical requirements. They would like the translations to be relatively quick and readable."",
+    ""performance_metrics"": [],
+    ""complexity_metrics"": [
+      {
+        ""name"": ""inference time"",
+        ""value"": null
+      }
+    ]
+  },
+  ""dataset"": [
+    {
+      ""name"": """",
+      ""modality"": [""text""],
+      ""target_variables"": [],
+      ""specification"": null,
+      ""description"": ""The user has not specified a dataset for translating Korean web novels into English, indicating they are still searching for an appropriate dataset."",
+      ""preprocessing"": [],
+      ""augmentation"": [],
+      ""visualization"": [],
+      ""source"": ""infer-search""
+    }
+  ],
+  ""model"": [
+    {
+      ""name"": """",
+      ""family"": """",
+      ""type"": ""neural networks"",
+      ""specification"": null,
+      ""description"": ""The user is seeking advice on selecting a model for translating Korean web novels into English. Given the lack of dataset and technical details, recommending a neural network-based model could be beneficial due to their success in similar tasks.""
+    }
+  ],
+  ""knowledge"": [],
+  ""service"": {
+    ""feature_engineering"": [],
+    ""target_device"": """",
+    ""deployment_endpoint"": """",
+    ""inference_engine"": [],
+    ""demonstration"": null
+  },
+  ""confidence"": {
+    ""rationale"": ""The user's intent appears to be 'consult-build', given their aim to embark on a personal project involving model selection for language translation without specific dataset or model in mind. The expertise level is set to 'low' since the user expressed uncertainty about dataset selection and technical requirements. Recommendations and specifications are intentionally kept broad and flexible due to the user's early project stage and acknowledged uncertainty. Absence of detailed metrics or datasets in the instruction limits the precision of recommendations, thus influencing the provided confidence score."",
+    ""score"": 0.75
+  }
+}",1
+machine translation,"I'm fascinated by the challenge of translating between dialects of the same language, like American English to British English. Is there a dataset or model that specializes in such nuances? I'm not sure about the specifics but aiming for high precision in the nuances of dialects.",,1
+machine translation,I stumbled upon a dataset called Tatoeba while browsing for translation data. It seems rich in sentence pairs for many languages. Can we use this for creating a French to German translation tool? I'm not really sure about the model to use or how to measure its success.,,1
+machine translation,"We're expanding our operations into South America next quarter, and I need a way to communicate with our partners in Brazil and Argentina without language barriers. I've heard AI can help with such things, but I'm not sure how. Can it make our English documents understandable there instantly?",,0
+machine translation,"As part of our global marketing strategy, we want to launch our product in Japan, Germany, and France simultaneously. The catch is, all our materials are in English. Is there some kind of technology solution that could adapt our content to each local language while keeping the original tone and meaning?",,0
+machine translation,Our customer support team is facing challenges with incoming queries from non-English speaking users. It's crucial for us to provide timely and accurate responses. I've read about AI solutions that could help bridge the language gap. How can we implement something like this to improve our support?,"{
+    ""user"": {
+        ""intent"": ""consult-build"",
+        ""expertise"": ""low""
+    },
+    ""problem"": {
+        ""area"": ""natural language processing"",
+        ""downstream_task"": ""machine translation"",
+        ""application_domain"": ""customer support"",
+        ""description"": ""Our customer support team is facing challenges with incoming queries from non-English speaking users. It's crucial for us to provide timely and accurate responses. I've read about AI solutions that could help bridge the language gap. How can we implement something like this to improve our support?"",
+        ""performance_metrics"": [{""name"":""BLEU"", ""value"": null}],
+        ""complexity_metrics"": [{""name"": ""response time"", ""value"": null}]
+    },
+    ""dataset"": [
+        {
+            ""name"": """",
+            ""modality"": [""text""],
+            ""target_variables"": [],
+            ""specification"": null,
+            ""description"": ""Text datasets that can be used for non-English to English translation."",
+            ""preprocessing"": [],
+            ""augmentation"": [],
+            ""visualization"": [],
+            ""source"": ""infer-search""
+        }
+    ],
+    ""model"": [
+        {
+            ""name"": """",
+            ""family"": """",
+            ""type"": ""neural networks"",
+            ""specification"": null,
+            ""description"": ""A machine translation model for non-English to English translation.""
+        }
+    ],
+    ""knowledge"": [],
+    ""service"": {
+        ""feature_engineering"": [],
+        ""target_device"": ""cloud"",
+        ""deployment_endpoint"": """",
+        ""inference_engine"": [],
+        ""demonstration"": null
+    },
+    ""confidence"": {
+        ""rationale"": ""The instruction implies a consultation followed by a potential build phase, focusing on a natural language processing solution, particularly machine translation, to address customer support challenges with non-English queries. The expertise level is assumed low based on the general inquiry about AI solutions without specifying technical details. The problem area and task are derived directly from the context, while other fields like dataset and model specifics are set to accommodate a broad approach suitable for the initial consulting phase. Performance and complexity metrics are not mentioned, so they're left blank. The response design follows the template's structure and intends to fulfill the user's request for information on improving customer support through AI."",
+        ""score"": 0.85
+    }
+}
+",0
+machine translation,"Our legal department regularly deals with contracts and documents in different languages, which slows down our review and negotiation processes significantly. We're looking for an automated way to translate these documents accurately and quickly. Accuracy is paramount, as any mistakes could have serious legal implications. What options are available?",,0
+machine translation,"I manage a team of international researchers, and we're always sharing scientific papers and findings. However, the language barrier sometimes slows our progress. I need a tool that can instantly translate these complex documents while maintaining the integrity of the scientific language and terminology.",,0
+question answering,"For our upcoming project, we need to train a question-answering model using the SQuAD 2.0 dataset. The model should belong to the BERT family, specifically, we're interested in using RoBERTa due to its performance on similar tasks. Accuracy is paramount, and we expect it to exceed a 90% F1 score. Speed is less of a concern, but predictions should still be returned in under two seconds.","{
+    ""user"": {
+        ""intent"": ""build"",
+        ""expertise"": ""medium""
+    },
+    ""problem"": {
+        ""area"": ""natural language processing"",
+        ""downstream_task"": ""question answering"",
+        ""application_domain"": """",
+        ""description"": ""Train a question-answering model using the SQuAD 2.0 dataset. The model should belong to the BERT family, specifically, we're interested in using RoBERTa due to its performance on similar tasks."",
+        ""performance_metrics"": [
+            {
+                ""name"": ""F1 score"",
+                ""value"": 0.9
+            }
+        ],
+        ""complexity_metrics"": [
+            {
+                ""name"": ""inference time"",
+                ""value"": 2,
+                ""unit"": ""seconds""
+            }
+        ]
+    },
+    ""dataset"": [
+        {
+            ""name"": ""SQuAD 2.0"",
+            ""modality"": [
+                ""text""
+            ],
+            ""target_variables"": [],
+            ""specification"": null,
+            ""description"": ""SQuAD 2.0 dataset for question answering tasks."",
+            ""preprocessing"": [],
+            ""augmentation"": [],
+            ""visualization"": [],
+            ""source"": ""direct-search""
+        }
+    ],
+    ""model"": [
+        {
+            ""name"": ""RoBERTa"",
+            ""family"": ""BERT"",
+            ""type"": ""neural networks"",
+            ""specification"": null,
+            ""description"": ""Using RoBERTa model from the BERT family for its performance on question answering tasks.""
+        }
+    ],
+    ""knowledge"": [],
+    ""service"": {
+        ""feature_engineering"": [],
+        ""target_device"": """",
+        ""deployment_endpoint"": """",
+        ""inference_engine"": [],
+        ""demonstration"": null
+    },
+    ""confidence"": {
+        ""rationale"": ""The JSON structure adheres to the given template and accurately captures the user's instruction. No specific application domain was mentioned, hence left blank. Confidence is high since the instruction is clear and the requirements are well-defined within the provided template's capabilities."",
+        ""score"": 0.95
+    }
+}",2
+question answering,"Could you design a question-answering system that leverages the TriviaQA dataset? We're looking for a model that can handle both factoid and complex questions, suggesting a transformer-based approach, possibly GPT-3, for its versatility. Please ensure the model can handle a high query volume, aiming for sub-second response times.","{
+    ""user"": {
+        ""intent"": ""build"",
+        ""expertise"": ""medium""
+    },
+    ""problem"": {
+        ""area"": ""natural language processing"",
+        ""downstream_task"": ""question answering"",
+        ""application_domain"": ""general"",
+        ""description"": ""Design a question-answering system leveraging the TriviaQA dataset, capable of handling both factoid and complex questions. The system should utilize a transformer-based approach, suggesting the use of GPT-3 for its versatility, to manage high query volumes with sub-second response times."",
+        ""performance_metrics"": [],
+        ""complexity_metrics"": [
+            {
+                ""name"": ""response time"",
+                ""value"": 1.0,
+                ""unit"": ""seconds""
+            }
+        ]
+    },
+    ""dataset"": [
+        {
+            ""name"": ""TriviaQA"",
+            ""modality"": [""text""],
+            ""target_variables"": [],
+            ""specification"": null,
+            ""description"": ""A dataset for developing and evaluating question answering systems."",
+            ""preprocessing"": [],
+            ""augmentation"": [],
+            ""visualization"": [],
+            ""source"": ""direct-search""
+        }
+    ],
+    ""model"": [
+        {
+            ""name"": ""GPT-3"",
+            ""family"": ""transformer"",
+            ""type"": ""neural networks"",
+            ""specification"": null,
+            ""description"": ""A transformer-based model suggested for its versatility in handling both factoid and complex questions with high efficiency.""
+        }
+    ],
+    ""knowledge"": [],
+    ""service"": {
+        ""feature_engineering"": [],
+        ""target_device"": ""cloud"",
+        ""deployment_endpoint"": """",
+        ""inference_engine"": [],
+        ""demonstration"": """"
+    },
+    ""confidence"": {
+        ""rationale"": ""The JSON structure accurately represents the instruction to build a natural language processing system for question answering using the TriviaQA dataset with GPT-3, aiming for high efficiency in handling queries. Specific requirements like handling high query volumes with sub-second response times are reflected in the complexity metrics. Some details like specific performance metrics, deployment endpoint, and demonstration requirements are not provided in the instruction and are thus left blank or default."",
+        ""score"": 0.95
+    }
+}",2
+question answering,"We're focusing on a multilingual question-answering task, targeting the MLQA dataset. Please use a mBERT or XLM-R model for this purpose. It's crucial that the model supports at least five languages (including English, Spanish, and Mandarin), with an emphasis on achieving high accuracy across all languages, particularly in low-resource scenarios.","{
+    ""user"": {
+        ""intent"": ""build"",
+        ""expertise"": ""high""
+    },
+    ""problem"": {
+        ""area"": ""natural language processing"",
+        ""downstream_task"": ""question answering"",
+        ""application_domain"": ""multilingual NLP"",
+        ""description"": ""We're focusing on a multilingual question-answering task, targeting the MLQA dataset. Please use a mBERT or XLM-R model for this purpose. It's crucial that the model supports at least five languages (including English, Spanish, and Mandarin), with an emphasis on achieving high accuracy across all languages, particularly in low-resource scenarios."",
+        ""performance_metrics"": [],
+        ""complexity_metrics"": []
+    },
+    ""dataset"": [
+        {
+            ""name"": ""MLQA"",
+            ""modality"": [""text""],
+            ""target_variables"": [],
+            ""specification"": null,
+            ""description"": ""The MLQA dataset is targeted for the multilingual question-answering task."",
+            ""preprocessing"": [],
+            ""augmentation"": [],
+            ""visualization"": [],
+            ""source"": ""direct-search""
+        }
+    ],
+    ""model"": [
+        {
+            ""name"": ""mBERT or XLM-R"",
+            ""family"": ""transformer-based models"",
+            ""type"": ""neural networks"",
+            ""specification"": null,
+            ""description"": ""Either mBERT or XLM-R model is required for the multilingual question-answering task, supporting at least five languages including English, Spanish, and Mandarin.""
+        }
+    ],
+    ""knowledge"": [],
+    ""service"": {
+        ""feature_engineering"": [],
+        ""target_device"": """",
+        ""deployment_endpoint"": """",
+        ""inference_engine"": [],
+        ""demonstration"": null
+    },
+    ""confidence"": {
+        ""rationale"": ""The JSON response is structured based on the given instruction, following the template and providing details in accordance with the request about utilizing a multilingual model for a question-answering task on the MLQA dataset. The user's intent to build and their high expertise level were inferred from the specific requirements and familiarity with the MLQA dataset and models like mBERT or XLM-R. The problem area, dataset, and model sections were directly addressed by the user's instruction, while other fields were left empty or null where the instruction did not provide explicit details."",
+        ""score"": 0.95
+    }
+}",2
+question answering,"Our objective is to develop a lightweight question-answering model suitable for mobile devices, using the TinyBERT architecture. The dataset of choice is the NewsQA. Performance is critical, with an expectation of over 85% accuracy and a response time that doesn't exceed 500 milliseconds.","{
+  ""user"": {
+    ""intent"": ""build"",
+    ""expertise"": ""medium""
+  },
+  ""problem"": {
+    ""area"": ""natural language processing"",
+    ""downstream_task"": ""question answering"",
+    ""application_domain"": ""mobile devices"",
+    ""description"": ""Our objective is to develop a lightweight question-answering model suitable for mobile devices, using the TinyBERT architecture. The dataset of choice is the NewsQA."",
+    ""performance_metrics"": [
+      {
+        ""name"": ""accuracy"",
+        ""value"": 0.85
+      }
+    ],
+    ""complexity_metrics"": [
+      {
+        ""name"": ""response time"",
+        ""value"": 500,
+        ""unit"": ""milliseconds""
+      }
+    ]
+  },
+  ""dataset"": [
+    {
+      ""name"": ""NewsQA"",
+      ""modality"": [""text""],
+      ""target_variables"": [],
+      ""specification"": null,
+      ""description"": ""NewsQA dataset is chosen for developing the question-answering model."",
+      ""preprocessing"": [],
+      ""augmentation"": [],
+      ""visualization"": [],
+      ""source"": ""direct-search""
+    }
+  ],
+  ""model"": [
+    {
+      ""name"": ""TinyBERT"",
+      ""family"": ""BERT"",
+      ""type"": ""neural networks"",
+      ""specification"": null,
+      ""description"": ""TinyBERT architecture is selected for its suitability for mobile devices due to its lightweight nature.""
+    }
+  ],
+  ""knowledge"": [],
+  ""service"": {
+    ""feature_engineering"": [],
+    ""target_device"": ""mobile"",
+    ""deployment_endpoint"": """",
+    ""inference_engine"": [],
+    ""demonstration"": null
+  },
+  ""confidence"": {
+    ""rationale"": ""The JSON format follows the provided template closely, translating the instruction into structured information. The instruction focuses on developing a question-answering model with specific performance and complexity metrics, using a particular dataset and model architecture. The user's intent is clearly to build a model ('build'), and the medium expertise level is inferred from the specificity and technical nature of the instruction. All required fields have been filled out based on the given instruction, making this response both complete and accurate according to the template."",
+    ""score"": 1.0
+  }
+}",2
+question answering,"Please create a question-answering model that can assist in medical diagnosis, using the BioASQ dataset. We suggest using a BioBERT model for its proven effectiveness in biomedical contexts. The system should prioritize accuracy and provide references to medical literature in its responses.","{
+    ""user"": {
+        ""intent"": ""build"",
+        ""expertise"": ""medium""
+    },
+    ""problem"": {
+        ""area"": ""natural language processing"",
+        ""downstream_task"": ""question answering"",
+        ""application_domain"": ""healthcare"",
+        ""description"": ""Please create a question-answering model that can assist in medical diagnosis, using the BioASQ dataset. We suggest using a BioBERT model for its proven effectiveness in biomedical contexts. The system should prioritize accuracy and provide references to medical literature in its responses."",
+        ""performance_metrics"": [
+            {
+                ""name"": ""accuracy"",
+                ""value"": null
+            }
+        ],
+        ""complexity_metrics"": []
+    },
+    ""dataset"": [
+        {
+            ""name"": ""BioASQ"",
+            ""modality"": [
+                ""text""
+            ],
+            ""target_variables"": [],
+            ""specification"": null,
+            ""description"": ""A dataset for biomedical question answering."",
+            ""preprocessing"": [],
+            ""augmentation"": [],
+            ""visualization"": [],
+            ""source"": ""direct-search""
+        }
+    ],
+    ""model"": [
+        {
+            ""name"": ""BioBERT"",
+            ""family"": ""BERT"",
+            ""type"": ""neural networks"",
+            ""specification"": null,
+            ""description"": ""A BERT model pre-trained on large-scale biomedical corpora.""
+        }
+    ],
+    ""knowledge"": [
+        ""BioBERT's effectiveness in biomedical contexts.""
+    ],
+    ""service"": {
+        ""feature_engineering"": [],
+        ""target_device"": ""cloud"",
+        ""deployment_endpoint"": """",
+        ""inference_engine"": [],
+        ""demonstration"": null
+    },
+    ""confidence"": {
+        ""rationale"": ""The JSON structure has been created based on the provided instruction and closely follows the template and schema guidelines. The areas of 'natural language processing' and 'question answering' are directly relevant to the described task. The 'BioASQ' dataset and 'BioBERT' model are specifically named and match the user's requirements. This setup focuses on the healthcare domain, reflecting the application of medical diagnosis assistance. The absence of specific performance metric values reflects the open-ended nature of the task's success criteria, focusing on accuracy without a predefined target. Adjustments or additional specifications, especially regarding deployment or demonstration requirements, were not provided in the instruction, leading to some fields being left generic or null."",
+        ""score"": 0.95
+    }
+}",2
+question answering,"Our project aims at a question-answering system for customer service in the e-commerce sector, utilizing the AmazonQA dataset. Use a DistilBERT model for a balance between performance and efficiency, with an emphasis on understanding user intent and sentiment. A response time under one second is crucial for maintaining user engagement.","{
+  ""user"": {
+    ""intent"": ""build"",
+    ""expertise"": ""medium""
+  },
+  ""problem"": {
+    ""area"": ""natural language processing"",
+    ""downstream_task"": ""question answering"",
+    ""application_domain"": ""e-commerce"",
+    ""description"": ""Our project aims at a question-answering system for customer service in the e-commerce sector, utilizing the AmazonQA dataset. The system should be able to understand user intent and sentiment effectively."",
+    ""performance_metrics"": [],
+    ""complexity_metrics"": [
+      {
+        ""name"": ""response time"",
+        ""value"": 1,
+        ""unit"": ""second""
+      }
+    ]
+  },
+  ""dataset"": [
+    {
+      ""name"": ""AmazonQA"",
+      ""modality"": [""text""],
+      ""target_variables"": [],
+      ""specification"": null,
+      ""description"": ""A dataset for question-answering systems in the e-commerce sector."",
+      ""preprocessing"": [],
+      ""augmentation"": [],
+      ""visualization"": [],
+      ""source"": ""direct-search""
+    }
+  ],
+  ""model"": [
+    {
+      ""name"": ""DistilBERT"",
+      ""family"": ""Transformers"",
+      ""type"": ""neural networks"",
+      ""specification"": null,
+      ""description"": ""Use a DistilBERT model for a balance between performance and efficiency, with an emphasis on understanding user intent and sentiment.""
+    }
+  ],
+  ""knowledge"": [],
+  ""service"": {
+    ""feature_engineering"": [],
+    ""target_device"": """",
+    ""deployment_endpoint"": """",
+    ""inference_engine"": [],
+    ""demonstration"": null
+  },
+  ""confidence"": {
+    ""rationale"": ""The given instruction was parsed according to the provided template, focusing on building a question-answering system for the e-commerce sector using the AmazonQA dataset and a DistilBERT model. The emphasis was placed on performance efficiency and the capability to understand user intent and sentiment, with a specified requirement for response time. However, some fields like 'performance_metrics' were left empty due to lack of explicit instructions regarding specific target values. Adjustments or more detailed requirements from the user could refine these aspects."",
+    ""score"": 0.9
+  }
+}",2
+question answering,"For our legal department, we need a question-answering system capable of parsing and interpreting legal documents, using the LegalQA dataset. The chosen model should be an adapted version of DeBERTa, optimized for legal jargon. It must ensure compliance with data protection laws and prioritize accuracy and explainability of its answers.","{
+    ""user"": {
+        ""intent"": ""build"",
+        ""expertise"": ""high""
+    },
+    ""problem"": {
+        ""area"": ""natural language processing"",
+        ""downstream_task"": ""question answering"",
+        ""application_domain"": ""legal"",
+        ""description"": ""For our legal department, we need a question-answering system capable of parsing and interpreting legal documents, using the LegalQA dataset. The chosen model should be an adapted version of DeBERTa, optimized for legal jargon. It must ensure compliance with data protection laws and prioritize accuracy and explainability of its answers."",
+        ""performance_metrics"": [
+            {
+                ""name"": ""accuracy"",
+                ""value"": null
+            },
+            {
+                ""name"": ""explainability"",
+                ""value"": null
+            }
+        ],
+        ""complexity_metrics"": []
+    },
+    ""dataset"": [
+        {
+            ""name"": ""LegalQA"",
+            ""modality"": [""text""],
+            ""target_variables"": [],
+            ""specification"": null,
+            ""description"": ""A dataset for question answering in the legal domain, intended for parsing and interpreting legal documents."",
+            ""preprocessing"": [],
+            ""augmentation"": [],
+            ""visualization"": [],
+            ""source"": ""direct-search""
+        }
+    ],
+    ""model"": [
+        {
+            ""name"": ""DeBERTa"",
+            ""family"": ""Transformer'"",
+            ""type"": ""neural networks"",
+            ""specification"": null,
+            ""description"": ""An adapted version of DeBERTa optimized for legal jargon, focusing on compliance with data protection laws and prioritizing accuracy and explainability of its answers.""
+        }
+    ],
+    ""knowledge"": [],
+    ""service"": {
+        ""feature_engineering"": [],
+        ""target_device"": """",
+        ""deployment_endpoint"": """",
+        ""inference_engine"": [],
+        ""demonstration"": null
+    },
+    ""confidence"": {
+        ""rationale"": ""The JSON structure was closely followed according to the provided template and the specific user instruction. The intent was determined as 'build' due to the user's desire to construct a model. The user's expertise is considered 'high' given the specific requirements about model adaptation and legal compliance. Key components such as the problem area, dataset, and model were directly derived from the instruction. Metrics like accuracy and explainability were included as they are explicitly prioritized. The absence of specified values for some fields is acknowledged, reflecting the instruction's lack of explicit numerical targets or specifications."",
+        ""score"": 0.9
+    }
+}",2
+question answering,"We are aiming to enhance our travel app with a question-answering feature, using the TravelQA dataset. The model should ideally be a lightweight version of T5, optimized for quick facts and recommendations about destinations. Accuracy is important, but the speed of response is critical to user satisfaction.","{
+    ""user"": {
+        ""intent"": ""build"",
+        ""expertise"": ""medium""
+    },
+    ""problem"": {
+        ""area"": ""natural language processing"",
+        ""downstream_task"": ""question answering"",
+        ""application_domain"": ""travel"",
+        ""description"": ""We are aiming to enhance our travel app with a question-answering feature, using the TravelQA dataset. The model should ideally be a lightweight version of T5, optimized for quick facts and recommendations about destinations."",
+        ""performance_metrics"": [
+            {
+                ""name"": ""accuracy"",
+                ""value"": null
+            }
+        ],
+        ""complexity_metrics"": [
+            {
+                ""name"": ""response time"",
+                ""value"": null,
+                ""unit"": ""seconds""
+            }
+        ]
+    },
+    ""dataset"": [
+        {
+            ""name"": ""TravelQA"",
+            ""modality"": [
+                ""text""
+            ],
+            ""target_variables"": [],
+            ""specification"": null,
+            ""description"": ""A dataset for question-answering in the context of travel."",
+            ""preprocessing"": [],
+            ""augmentation"": [],
+            ""visualization"": [],
+            ""source"": ""direct-search""
+        }
+    ],
+    ""model"": [
+        {
+            ""name"": ""T5"",
+            ""family"": ""Transformer"",
+            ""type"": ""neural networks"",
+            ""specification"": null,
+            ""description"": ""A lightweight version of T5 optimized for quick facts and recommendations about destinations.""
+        }
+    ],
+    ""knowledge"": [],
+    ""service"": {
+        ""feature_engineering"": [],
+        ""target_device"": """",
+        ""deployment_endpoint"": """",
+        ""inference_engine"": [],
+        ""demonstration"": """"
+    },
+    ""confidence"": {
+        ""rationale"": ""The provided JSON structure follows the instruction prompt closely, reflecting the intent to build a model within the natural language processing area, specifically for question answering. It correctly identifies the use of the TravelQA dataset for a travel-related application, aiming for a lightweight T5 model to ensure quick and accurate responses. The focus on accuracy and response time as key metrics aligns with the instruction's emphasis on user satisfaction through speed and reliability of information. While the exact values for performance and complexity metrics are not provided, the placeholders allow for flexibility in optimization targets during the model development process."",
+        ""score"": 0.9
+    }
+}",2
+question answering,"For a real-time news analysis application, we're looking at implementing a question-answering model that can digest the latest news articles, using the Newsroom dataset. It should be built on the latest iteration of the Transformer model for cutting-edge performance, with a focus on speed and accuracy in delivering current events-related answers.","{
+    ""user"": {
+        ""intent"": ""build"",
+        ""expertise"": ""medium""
+    },
+    ""problem"": {
+        ""area"": ""natural language processing"",
+        ""downstream_task"": ""question answering"",
+        ""application_domain"": ""news analysis"",
+        ""description"": ""Implement a question-answering model to analyze real-time news articles for current events-related questions using the Newsroom dataset."",
+        ""performance_metrics"": [
+            {
+                ""name"": ""accuracy"",
+                ""value"": null
+            }
+        ],
+        ""complexity_metrics"": [            {
+                ""name"": ""response time"",
+                ""value"": null
+            }]
+    },
+    ""dataset"": [
+        {
+            ""name"": ""Newsroom"",
+            ""modality"": [""text""],
+            ""target_variables"": [],
+            ""specification"": null,
+            ""description"": ""A dataset for analyzing news articles in real-time."",
+            ""preprocessing"": [],
+            ""augmentation"": [],
+            ""visualization"": [],
+            ""source"": ""direct-search""
+        }
+    ],
+    ""model"": [
+        {
+            ""name"": """",
+            ""family"": ""Transformer"",
+            ""type"": ""neural networks"",
+            ""specification"": null,
+            ""description"": ""A model based on the latest iteration of the Transformer architecture for high performance in speed and accuracy.""
+        }
+    ],
+    ""service"": {
+        ""feature_engineering"": [],
+        ""target_device"": """",
+        ""deployment_endpoint"": """",
+        ""inference_engine"": [],
+        ""demonstration"": null
+    },
+    ""confidence"": {
+        ""rationale"": ""The instruction was clear on the need for a question-answering model based on the latest Transformer architecture, focused on news analysis with the Newsroom dataset. User expertise was inferred as medium due to the specific model architecture knowledge. Performance metrics were specified as speed and accuracy without specific values, reflecting a focus on these aspects. Complexity metrics were not detailed, and no specific requirements for deployment were mentioned. Hence, those sections were left with default or null values."",
+        ""score"": 0.9
+    }
+}",2
+question answering,"We need a question-answering system that caters to children's educational content, using the KidsQA dataset. The system should employ a model that's fine-tuned for simplicity and clarity in explanations, possibly a variant of BERT optimized for educational content. The interface must be kid-friendly, with interactive elements to maintain engagement.","{
+    ""user"": {
+        ""intent"": ""build"",
+        ""expertise"": ""medium""
+    },
+    ""problem"": {
+        ""area"": ""natural language processing"",
+        ""downstream_task"": ""question answering"",
+        ""application_domain"": ""education"",
+        ""description"": ""We need a question-answering system that caters to children's educational content, using the KidsQA dataset. The system should employ a model that's fine-tuned for simplicity and clarity in explanations, possibly a variant of BERT optimized for educational content. The interface must be kid-friendly, with interactive elements to maintain engagement."",
+        ""performance_metrics"": [],
+        ""complexity_metrics"": []
+    },
+    ""dataset"": [
+        {
+            ""name"": ""KidsQA"",
+            ""modality"": [""text""],
+            ""target_variables"": [],
+            ""specification"": null,
+            ""description"": ""A dataset for children's educational content, intended for use in developing a question-answering system."",
+            ""preprocessing"": [],
+            ""augmentation"": [],
+            ""visualization"": [],
+            ""source"": ""direct-search""
+        }
+    ],
+    ""model"": [
+        {
+            ""name"": """",
+            ""family"": ""BERT"",
+            ""type"": ""neural networks"",
+            ""specification"": null,
+            ""description"": ""A variant of BERT optimized for simplicity and clarity, suitable for children's educational content.""
+        }
+    ],
+    ""knowledge"": [],
+    ""service"": {
+        ""feature_engineering"": [],
+        ""target_device"": """",
+        ""deployment_endpoint"": """",
+        ""inference_engine"": [],
+        ""demonstration"": """"
+    },
+    ""confidence"": {
+        ""rationale"": ""The JSON accurately captures the instruction's details, aligning with the provided template. It specifies the NLP area, question-answering task, and the use of the KidsQA dataset. The focus on educational content and a kid-friendly interface is noted. The model section hints at a BERT variant, appropriate for the described system. Lack of specific metrics or technical specifications reflects the instruction's focus on conceptual design over detailed implementation requirements."",
+        ""score"": 0.9
+    }
+}",2
+question answering,I want to apply a BERT-based model for question-answering problems. Can you provide me a pretrained model?,,1
+question answering,"I heard about this dataset called FinQA for financial questions. Can we do something with that? I'm not sure about the model, but something that can handle numbers and financial terms well would be important. I guess it should also be pretty accurate, since it's dealing with money-related questions.",,1
+question answering,I want to try creating a chatbot that can answer customer questions using the AmazonQA dataset. Is there a simple model we can start with? I'm not looking for anything too complex. Just something that gets the job done and can answer quickly.,"{
+  ""user"": {
+    ""intent"": ""consult-build"",
+    ""expertise"": ""low""
+  },
+  ""problem"": {
+    ""area"": ""natural language processing"",
+    ""downstream_task"": ""question answering"",
+    ""application_domain"": ""customer service"",
+    ""description"": ""I want to try creating a chatbot that can answer customer questions using the AmazonQA dataset. Is there a simple model we can start with? I'm not looking for anything too complex. Just something that gets the job done and can answer quickly."",
+    ""performance_metrics"": [],
+    ""complexity_metrics"": [
+      {
+        ""name"": ""inference time"",
+        ""value"": null
+      }
+    ]
+  },
+  ""dataset"": [
+    {
+      ""name"": ""AmazonQA"",
+      ""modality"": [
+        ""text""
+      ],
+      ""target_variables"": [],
+      ""specification"": null,
+      ""description"": ""A dataset for question answering based on Amazon customer questions and answers."",
+      ""preprocessing"": [],
+      ""augmentation"": [],
+      ""visualization"": [],
+      ""source"": ""direct-search""
+    }
+  ],
+  ""model"": [
+    {
+      ""name"": """",
+      ""family"": """",
+      ""type"": ""neural networks"",
+      ""specification"": null,
+      ""description"": ""A simple model that is capable of answering customer questions quickly and effectively without being too complex.""
+    }
+  ],
+  ""knowledge"": [],
+  ""service"": {
+    ""feature_engineering"": [],
+    ""target_device"": """",
+    ""deployment_endpoint"": """",
+    ""inference_engine"": [],
+    ""demonstration"": null
+  },
+  ""confidence"": {
+    ""rationale"": ""The information provided aligns with the user's request for a consultation on building a simple chatbot model using the AmazonQA dataset for customer service. The selected model type and deployment target are based on the need for quick responses and simplicity, as indicated. The user's expertise level and intent were inferred from the request for a straightforward solution without detailed technical specifications. Complexity metrics focus on inference time to ensure the model's responsiveness. Some fields are left blank or unspecified, reflecting the user's request for simplicity and a focus on a starting point rather than detailed requirements."",
+    ""score"": 0.9
+  }
+}",1
+question answering,"For my project, I was thinking about doing something with multilingual questions. Is there a dataset for that? And what model should I use? I've only heard of BERT and GPT, so something along those lines but for multiple languages would be cool.",,1
+question answering,"I'm curious if we can use the SciQ dataset for a question-answering task. I don't know much about models, but is there one that's particularly good for science questions? I'd like it to be fairly straightforward to use, as I'm still learning.",,1
+question answering,"We're exploring ways to quickly get insights from customer feedback collected through various channels. It's crucial that our team can ask specific questions about this feedback and receive instant, accurate answers to make informed decisions. Ideally, this would work with the massive amount of data we have without requiring manual sorting.",,0
+question answering,"Our financial analysts spend a lot of time digging through reports to answer questions about market performance and competitor metrics. A system that could automatically provide these answers from our report database would be a game-changer, reducing the time needed for research and allowing more time for analysis.",,0
+question answering,"In the logistics department, we're overwhelmed with data regarding shipping times, costs, and routes. A system where we could just ask a question like 'What's the average shipping cost to X region in Q2?' and get an immediate answer would optimize our operations and planning.","{
+    ""user"": {
+        ""intent"": ""consult"",
+        ""expertise"": ""medium""
+    },
+    ""problem"": {
+        ""area"": ""natural language processing"",
+        ""downstream_task"": ""question answering"",
+        ""application_domain"": ""logistics"",
+        ""description"": ""In the logistics department, overwhelmed with data regarding shipping times, costs, and routes, seeking a solution to query specific data insights like the average shipping cost to a particular region in a specific quarter (Q2) quickly."",
+        ""performance_metrics"": [],
+        ""complexity_metrics"": []
+    },
+    ""dataset"": [
+        {
+            ""name"": """",
+            ""modality"": [""text""],
+            ""target_variables"": [],
+            ""specification"": null,
+            ""description"": ""Data concerning shipping times, costs, and routes within the logistics domain, requiring quick access to specific insights such as average shipping costs to certain regions during particular periods (e.g., Q2)."",
+            ""preprocessing"": [],
+            ""augmentation"": [],
+            ""visualization"": [],
+            ""source"": ""user-upload""
+        }
+    ],
+    ""model"": [
+        {
+            ""name"": """",
+            ""family"": """",
+            ""type"": ""neural networks"",
+            ""specification"": null,
+            ""description"": ""A model capable of understanding and processing natural language queries to extract specific insights from large datasets regarding shipping logistics, such as costs, times, and routes.""
+        }
+    ],
+    ""knowledge"": [],
+    ""service"": {
+        ""feature_engineering"": [],
+        ""target_device"": ""cloud"",
+        ""deployment_endpoint"": """",
+        ""inference_engine"": [],
+        ""demonstration"": null
+    },
+    ""confidence"": {
+        ""rationale"": ""The instruction prompt clearly indicates the need for a consultative approach to address a specific problem within the logistics domain, utilizing natural language processing for question answering. The specified user's expertise and the application domain suggest an intermediate understanding of AI and ML technologies. The absence of explicit performance and complexity metrics, as well as model specifications, reflects the consultative nature of the inquiry, focusing on exploring potential solutions rather than detailing technical requirements. The designation of 'cloud' as the target device implies an expectation for a scalable and accessible solution."",
+        ""score"": 0.9
+    }
+}
+",0
+question answering,"In our weekly meetings, we often discuss market trends based on recent reports and news articles. Is there a method by which we could input these documents and then easily retrieve specific information on demand? The ability to ask questions and get relevant information summarized would significantly streamline our strategic planning process.",,0
+question answering,"Our HR department receives numerous questions about policies, benefits, and procedures. It would be beneficial to have a solution where staff can input their questions and get immediate, accurate answers based on our internal documentation, reducing the workload on our HR team.",,0

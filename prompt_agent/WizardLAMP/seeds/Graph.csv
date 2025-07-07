@@ -1,0 +1,1069 @@
+task,instruction,response,quality
+node classification,"For the CORA dataset, I need a Graph Convolutional Network (GCN) model aimed at node classification tasks. The model should achieve at least 85% accuracy. Pay special attention to overfitting, and ensure the training time does not exceed 2 hours on a standard GPU.","{
+    ""user"": {
+        ""intent"": ""build"",
+        ""expertise"": ""medium""
+    },
+    ""problem"": {
+        ""area"": ""graph machine learning"",
+        ""downstream_task"": ""node classification"",
+        ""application_domain"": """",
+        ""description"": ""Build a Graph Convolutional Network (GCN) model for node classification tasks on the CORA dataset, ensuring the model achieves at least 85% accuracy. Overfitting should be carefully managed, and the training time must not exceed 2 hours on a standard GPU."",
+        ""performance_metrics"": [
+            {
+                ""name"": ""accuracy"",
+                ""value"": 0.85
+            }
+        ],
+        ""complexity_metrics"": [
+            {
+                ""name"": ""training time"",
+                ""value"": 2,
+                ""unit"": ""hours""
+            }
+        ]
+    },
+    ""dataset"": [
+        {
+            ""name"": ""CORA"",
+            ""modality"": [
+                ""graph""
+            ],
+            ""target_variables"": [],
+            ""specification"": null,
+            ""description"": ""The CORA dataset for graph machine learning tasks, specifically for node classification."",
+            ""preprocessing"": [],
+            ""augmentation"": [],
+            ""visualization"": [],
+            ""source"": ""direct-search""
+        }
+    ],
+    ""model"": [
+        {
+            ""name"": """",
+            ""family"": ""Graph Convolutional Network"",
+            ""type"": ""neural networks"",
+            ""specification"": null,
+            ""description"": ""A Graph Convolutional Network (GCN) model designed for node classification tasks on the CORA dataset.""
+        }
+    ],
+    ""knowledge"": [],
+    ""service"": {
+        ""feature_engineering"": [],
+        ""target_device"": ""standard GPU"",
+        ""deployment_endpoint"": """",
+        ""inference_engine"": [],
+        ""demonstration"": null
+    },
+    ""confidence"": {
+        ""rationale"": ""The instruction was parsed to fit the template's categories, including specifying the 'build' intent for model construction, the problem area, dataset details, and model specifics. The user's requirement for managing overfitting and the training time constraint are captured under 'problem' and 'model' sections. This structured format captures all essential elements of the instruction, supporting the objective of building a GCN model for the CORA dataset within the specified constraints."",
+        ""score"": 1.0
+    }
+}",2
+node classification,We're focusing on the PubMed dataset. Develop a GraphSAGE model tailored for node classification with an emphasis on generalization across similar unseen datasets. Ensure the model is lightweight and can be deployed in a real-time setting with inference times below 50ms per node.,"{
+    ""user"": {
+        ""intent"": ""build"",
+        ""expertise"": ""high""
+    },
+    ""problem"": {
+        ""area"": ""graph machine learning"",
+        ""downstream_task"": ""node classification"",
+        ""application_domain"": ""healthcare"",
+        ""description"": ""Develop a GraphSAGE model tailored for node classification with an emphasis on generalization across similar unseen datasets. Ensure the model is lightweight and can be deployed in a real-time setting."",
+        ""performance_metrics"": [],
+        ""complexity_metrics"": [
+            {
+                ""name"": ""inference time"",
+                ""value"": 0.05,
+                ""unit"": ""seconds""
+            }
+        ]
+    },
+    ""dataset"": [
+        {
+            ""name"": ""PubMed"",
+            ""modality"": [""graph""],
+            ""target_variables"": [],
+            ""specification"": null,
+            ""description"": ""Focusing on the PubMed dataset for developing a node classification model."",
+            ""preprocessing"": [],
+            ""augmentation"": [],
+            ""visualization"": [],
+            ""source"": ""direct-search""
+        }
+    ],
+    ""model"": [
+        {
+            ""name"": ""GraphSAGE"",
+            ""family"": """",
+            ""type"": ""neural networks"",
+            ""specification"": null,
+            ""description"": ""A lightweight GraphSAGE model for real-time node classification in the healthcare domain, capable of generalizing across similar unseen datasets.""
+        }
+    ],
+    ""knowledge"": [],
+    ""service"": {
+        ""feature_engineering"": [],
+        ""target_device"": ""cloud"",
+        ""deployment_endpoint"": """",
+        ""inference_engine"": [],
+        ""demonstration"": null
+    },
+    ""confidence"": {
+        ""rationale"": ""The JSON accurately captures the user's instructions based on the provided template and schema. While performance metrics were not specified, the emphasis on a lightweight model for real-time deployment is captured under the complexity metrics. The focus on the PubMed dataset, specific to graph data modality, aligns with the instruction. The intent and expertise level indicate a clear direction towards building a solution in the healthcare application domain, utilizing graph machine learning for node classification."",
+        ""score"": 0.95
+    }
+}",2
+node classification,"Implement a node classification model using the NELL dataset with a Hypergraph Neural Network. The model should be robust against noise and capable of dealing with the dataset's multi-relational nature. Expected accuracy is over 85%, and please document the model's sensitivity to hyperparameter changes.","{
+    ""user"": {
+        ""intent"": ""build"",
+        ""expertise"": ""high""
+    },
+    ""problem"": {
+        ""area"": ""graph machine learning"",
+        ""downstream_task"": ""node classification"",
+        ""application_domain"": ""academic"",
+        ""description"": ""Implement a node classification model using the NELL dataset with a Hypergraph Neural Network. The model should be robust against noise and capable of dealing with the dataset's multi-relational nature."",
+        ""performance_metrics"": [
+            {
+                ""name"": ""accuracy"",
+                ""value"": 0.85
+            }
+        ],
+        ""complexity_metrics"": []
+    },
+    ""dataset"": [
+        {
+            ""name"": ""NELL"",
+            ""modality"": [""graph""],
+            ""target_variables"": [],
+            ""specification"": null,
+            ""description"": ""A multi-relational graph dataset for node classification."",
+            ""preprocessing"": [],
+            ""augmentation"": [],
+            ""visualization"": [],
+            ""source"": ""direct-search""
+        }
+    ],
+    ""model"": [
+        {
+            ""name"": """",
+            ""family"": ""Hypergraph Neural Network"",
+            ""type"": ""neural networks"",
+            ""specification"": null,
+            ""description"": ""A neural network model designed for node classification on hypergraphs, specifically tailored for the NELL dataset.""
+        }
+    ],
+    ""knowledge"": [
+        ""The NELL dataset's multi-relational nature requires a model capable of handling complex graph structures."",
+        ""Model robustness against noise is critical for achieving high accuracy.""
+    ],
+    ""service"": {
+        ""feature_engineering"": [],
+        ""target_device"": """",
+        ""deployment_endpoint"": """",
+        ""inference_engine"": [],
+        ""demonstration"": """"
+    },
+    ""confidence"": {
+        ""rationale"": ""The JSON response is tailored to the provided instruction, following the schema and template requirements closely. Information regarding the user's intent, problem area, dataset, and model is directly derived from the instruction, ensuring relevance and accuracy. The confidence score is high due to the clear instruction and a direct mapping to the template structure. However, details like the specific features of the Hypergraph Neural Network or the precise preprocessing steps for the NELL dataset are not fully described, as the instruction didn't provide these specifics."",
+        ""score"": 0.95
+    }
+}",2
+node classification,"We need a node classification model for the Coauthorship Science dataset, employing a Hierarchical Graph Neural Network (HGNN). The goal is to classify authors based on their research domains.","{
+    ""user"": {
+        ""intent"": ""build"",
+        ""expertise"": ""medium""
+    },
+    ""problem"": {
+        ""area"": ""graph machine learning"",
+        ""downstream_task"": ""node classification"",
+        ""application_domain"": ""academic coauthorship"",
+        ""description"": ""We need a node classification model for the Coauthorship Science dataset, employing a Hierarchical Graph Neural Network (HGNN). The goal is to classify authors based on their research domains."",
+        ""performance_metrics"": [],
+        ""complexity_metrics"": []
+    },
+    ""dataset"": [
+        {
+            ""name"": ""Coauthorship Science"",
+            ""modality"": [""graph""],
+            ""target_variables"": [""research domains""],
+            ""specification"": null,
+            ""description"": ""A dataset representing coauthorship networks, where nodes are authors and edges represent coauthorship relations. The task is to classify authors based on their research domains."",
+            ""preprocessing"": [],
+            ""augmentation"": [],
+            ""visualization"": [],
+            ""source"": ""direct-search""
+        }
+    ],
+    ""model"": [
+        {
+            ""name"": ""Hierarchical Graph Neural Network"",
+            ""family"": ""Graph Neural Networks"",
+            ""type"": ""neural networks"",
+            ""specification"": null,
+            ""description"": ""A Hierarchical Graph Neural Network model suitable for node classification tasks on graph-structured data. Specifically designed for the Coauthorship Science dataset to classify authors by research domain.""
+        }
+    ],
+    ""knowledge"": [],
+    ""service"": {
+        ""feature_engineering"": [],
+        ""target_device"": """",
+        ""deployment_endpoint"": """",
+        ""inference_engine"": [],
+        ""demonstration"": null
+    },
+    ""confidence"": {
+        ""rationale"": ""The JSON structure has been accurately filled based on the provided instruction, following the given template and schema. The 'user' section reflects the intent to build a model and an assumed medium level of expertise based on the specific request. 'Problem', 'dataset', and 'model' sections are filled according to the task details. Missing details, such as performance and complexity metrics, are left empty as they were not specified in the instruction. This structured JSON is designed to guide the model building process specifically for the described graph machine learning task."",
+        ""score"": 0.9
+    }
+}",2
+node classification,"For the Enron Email dataset, implement a node classification model with a Relational Graph Convolutional Network (RGCN). The aim is to categorize employees based on their communication patterns. Efficiency and scalability are key, with a target to process thousands of nodes without significant latency.","{
+    ""user"": {
+        ""intent"": ""build"",
+        ""expertise"": ""medium""
+    },
+    ""problem"": {
+        ""area"": ""graph machine learning"",
+        ""downstream_task"": ""node classification"",
+        ""application_domain"": ""communication"",
+        ""description"": ""For the Enron Email dataset, implement a node classification model with a Relational Graph Convolutional Network (RGCN). The aim is to categorize employees based on their communication patterns. Efficiency and scalability are key, with a target to process thousands of nodes without significant latency."",
+        ""performance_metrics"": [],
+        ""complexity_metrics"": [
+            {
+                ""name"": ""latency"",
+                ""value"": null
+            }
+        ]
+    },
+    ""dataset"": [
+        {
+            ""name"": ""Enron Email"",
+            ""modality"": [""text"", ""graph""],
+            ""target_variables"": [],
+            ""specification"": null,
+            ""description"": ""The Enron Email dataset contains communication patterns among Enron employees. It is intended to be used for categorizing employees based on these patterns."",
+            ""preprocessing"": [],
+            ""augmentation"": [],
+            ""visualization"": [],
+            ""source"": ""direct-search""
+        }
+    ],
+    ""model"": [
+        {
+            ""name"": ""Relational Graph Convolutional Network (RGCN)"",
+            ""family"": ""neural networks"",
+            ""type"": ""neural networks"",
+            ""specification"": null,
+            ""description"": ""A Relational Graph Convolutional Network (RGCN) model to be implemented for node classification on the Enron Email dataset, aiming for efficiency and scalability.""
+        }
+    ],
+    ""knowledge"": [],
+    ""service"": {
+        ""feature_engineering"": [],
+        ""target_device"": """",
+        ""deployment_endpoint"": """",
+        ""inference_engine"": [],
+        ""demonstration"": null
+    },
+    ""confidence"": {
+        ""rationale"": ""The JSON structure provided follows the given instruction closely, ensuring that each segment of the instruction is reflected in the appropriate sections of the template. No specific performance metrics were mentioned in the instruction, hence that section remains empty. Latency is emphasized as a key concern but without a specified target value, so it is included as a complexity metric with an unspecified value to indicate the focus on minimizing latency. The user's intent to build a model and their intermediate expertise level are inferred from the nature of the task described."",
+        ""score"": 0.95
+    }
+}",2
+node classification,Employ the Mouse Brain Connectivity dataset to create a node classification model using a Graph Wavelet Neural Network (GWNN). The focus is on identifying different neuron types with high precision and recall. The model should also be able to handle the complex spatial relationships inherent in brain connectivity data.,"{
+    ""user"": {
+        ""intent"": ""build"",
+        ""expertise"": ""high""
+    },
+    ""problem"": {
+        ""area"": ""graph machine learning"",
+        ""downstream_task"": ""node classification"",
+        ""application_domain"": ""biological sciences"",
+        ""description"": ""Employ the Mouse Brain Connectivity dataset to create a node classification model using a Graph Wavelet Neural Network (GWNN). The focus is on identifying different neuron types with high precision and recall. The model should also be able to handle the complex spatial relationships inherent in brain connectivity data."",
+        ""performance_metrics"": [
+            {
+                ""name"": ""precision"",
+                ""value"": null
+            },
+            {
+                ""name"": ""recall"",
+                ""value"": null
+            }
+        ],
+        ""complexity_metrics"": []
+    },
+    ""dataset"": [
+        {
+            ""name"": ""Mouse Brain Connectivity"",
+            ""modality"": [""graph""],
+            ""target_variables"": [""neuron types""],
+            ""specification"": null,
+            ""description"": ""A dataset containing brain connectivity data for mouse brains, used for identifying different neuron types."",
+            ""preprocessing"": [],
+            ""augmentation"": [],
+            ""visualization"": [],
+            ""source"": ""direct-search""
+        }
+    ],
+    ""model"": [
+        {
+            ""name"": ""Graph Wavelet Neural Network"",
+            ""family"": ""graph convolutional networks"",
+            ""type"": ""neural networks"",
+            ""specification"": null,
+            ""description"": ""A model leveraging graph wavelets to handle the complex spatial relationships in brain connectivity data for neuron type classification.""
+        }
+    ],
+    ""knowledge"": [],
+    ""service"": {
+        ""feature_engineering"": [],
+        ""target_device"": """",
+        ""deployment_endpoint"": """",
+        ""inference_engine"": [],
+        ""demonstration"": null
+    },
+    ""confidence"": {
+        ""rationale"": ""The information provided follows the user's instruction, focusing on building a node classification model using GWNN on the Mouse Brain Connectivity dataset for identifying neuron types. The instruction's main points are included, such as dataset details, model specifics, and the emphasis on precision and recall as performance metrics."",
+        ""score"": 0.9
+    }
+}",2
+node classification,Utilize the YouTube Algebric Connectivity dataset for a node classification task using a Significance Graph Neural Network (SGNN). The model must distinguish between different types of content creators with at least 80% accuracy. Highlight the model's ability to handle sparse data.,"{
+    ""user"": {
+        ""intent"": ""build"",
+        ""expertise"": ""medium""
+    },
+    ""problem"": {
+        ""area"": ""graph machine learning"",
+        ""downstream_task"": ""node classification"",
+        ""application_domain"": ""social media analysis"",
+        ""description"": ""Utilize the YouTube Algebric Connectivity dataset for a node classification task using a Significance Graph Neural Network (SGNN). The model must distinguish between different types of content creators with at least 80% accuracy. Highlight the model's ability to handle sparse data."",
+        ""performance_metrics"": [
+            {
+                ""name"": ""accuracy"",
+                ""value"": 0.8
+            }
+        ],
+        ""complexity_metrics"": []
+    },
+    ""dataset"": [
+        {
+            ""name"": ""YouTube Algebric Connectivity"",
+            ""modality"": [""graph""],
+            ""target_variables"": [],
+            ""specification"": null,
+            ""description"": ""Dataset for a node classification task focusing on YouTube content creators."",
+            ""preprocessing"": [],
+            ""augmentation"": [],
+            ""visualization"": [],
+            ""source"": ""direct-search""
+        }
+    ],
+    ""model"": [
+        {
+            ""name"": ""Significance Graph Neural Network (SGNN)"",
+            ""family"": ""graph neural networks"",
+            ""type"": ""neural networks"",
+            ""specification"": null,
+            ""description"": ""A neural network model designed specifically for graph data, aimed at distinguishing different types of YouTube content creators.""
+        }
+    ],
+    ""knowledge"": [],
+    ""service"": {
+        ""feature_engineering"": [],
+        ""target_device"": """",
+        ""deployment_endpoint"": """",
+        ""inference_engine"": [],
+        ""demonstration"": null
+    },
+    ""confidence"": {
+        ""rationale"": ""The parsed JSON follows the structure of the provided template and the instruction prompt. It accurately represents the task of building a model using the specified dataset and model type, along with the required performance metric. There is no specific information about the target device, deployment endpoint, or inference engines, which aligns with the instruction's lack of detail in these areas."",
+        ""score"": 0.95
+    }
+}",2
+node classification,"For our next project on the Amazon Co-purchase Graph, I want a Spectral Convolution on Graphs (ChebNet) model. This node classification task should not only be accurate but also scalable, as the dataset is massive. Aim for 90% accuracy, and the model must handle dynamic updates efficiently.","{
+    ""user"": {
+        ""intent"": ""build"",
+        ""expertise"": ""medium""
+    },
+    ""problem"": {
+        ""area"": ""graph machine learning"",
+        ""downstream_task"": ""node classification"",
+        ""application_domain"": ""e-commerce"",
+        ""description"": ""For our next project on the Amazon Co-purchase Graph, I want a Spectral Convolution on Graphs (ChebNet) model. This node classification task should not only be accurate but also scalable, as the dataset is massive. The model must handle dynamic updates efficiently."",
+        ""performance_metrics"": [
+            {
+                ""name"": ""accuracy"",
+                ""value"": 0.9
+            }
+        ],
+        ""complexity_metrics"": []
+    },
+    ""dataset"": [
+        {
+            ""name"": ""Amazon Co-purchase Graph"",
+            ""modality"": [""graph""],
+            ""target_variables"": [],
+            ""specification"": null,
+            ""description"": ""A massive dataset representing co-purchase relationships on Amazon."",
+            ""preprocessing"": [],
+            ""augmentation"": [],
+            ""visualization"": [],
+            ""source"": ""direct-search""
+        }
+    ],
+    ""model"": [
+        {
+            ""name"": ""ChebNet"",
+            ""family"": ""Spectral Graph Convolution"",
+            ""type"": ""neural networks"",
+            ""specification"": null,
+            ""description"": ""A model for node classification on the Amazon Co-purchase Graph, designed to be scalable and efficiently handle dynamic updates.""
+        }
+    ],
+    ""knowledge"": [],
+    ""service"": {
+        ""feature_engineering"": [],
+        ""target_device"": """",
+        ""deployment_endpoint"": """",
+        ""inference_engine"": [],
+        ""demonstration"": null
+    },
+    ""confidence"": {
+        ""rationale"": ""The instruction explicitly calls for the development of a ChebNet model for a node classification task on the Amazon Co-purchase Graph, targeting a performance metric of 90% accuracy. It emphasizes the need for scalability and efficiency in handling dynamic updates, which is critical given the dataset's size. No specific preprocessing, augmentation, visualization steps, or deployment details were provided, which is why those fields remain empty or unspecified. The user's intent and expertise level are inferred from the task's nature and specificity."",
+        ""score"": 0.95
+    }
+}",2
+node classification,"For the High School Dynamic Contact Network, develop a Temporal Graph Network (TGN) for node classification, identifying key actors within social interactions. The model should efficiently handle the dynamic nature of the dataset and provide insights into changing social structures over time.","{
+  ""user"": {
+    ""intent"": ""build"",
+    ""expertise"": ""medium""
+  },
+  ""problem"": {
+    ""area"": ""graph machine learning"",
+    ""downstream_task"": ""node classification"",
+    ""application_domain"": ""social network analysis"",
+    ""description"": ""Develop a Temporal Graph Network (TGN) for identifying key actors within social interactions in a High School Dynamic Contact Network. The model should handle the dynamic nature of the dataset and provide insights into changing social structures over time."",
+    ""performance_metrics"": [],
+    ""complexity_metrics"": []
+  },
+  ""dataset"": [
+    {
+      ""name"": ""High School Dynamic Contact Network"",
+      ""modality"": [""graph""],
+      ""target_variables"": [],
+      ""specification"": null,
+      ""description"": ""A dynamic dataset representing social interactions within a high school, capturing the evolving nature of contacts over time."",
+      ""preprocessing"": [],
+      ""augmentation"": [],
+      ""visualization"": [],
+      ""source"": ""direct-search""
+    }
+  ],
+  ""model"": [
+    {
+      ""name"": ""Temporal Graph Network (TGN)"",
+      ""family"": """",
+      ""type"": ""neural networks"",
+      ""specification"": null,
+      ""description"": ""A neural network model designed to efficiently handle dynamic graph data, aimed at classifying nodes to identify key actors within a high school's social network.""
+    }
+  ],
+  ""knowledge"": [],
+  ""service"": {
+    ""feature_engineering"": [],
+    ""target_device"": """",
+    ""deployment_endpoint"": """",
+    ""inference_engine"": [],
+    ""demonstration"": null
+  },
+  ""confidence"": {
+    ""rationale"": ""The instruction was parsed following the given templates closely, aligning with the user's intent to build a model for node classification within a dynamic social network dataset. Specific details such as the model type (TGN) and dataset name were directly derived from the instruction, ensuring alignment with the user's requirements. The absence of specified performance and complexity metrics, as well as detailed preprocessing steps, reflects the generic nature of the instruction, which did not provide these details. The selection of 'infer-search' as the dataset source acknowledges that the user has not provided a specific source, suggesting a need for further research or clarification."",
+    ""score"": 0.9
+  }
+}",2
+node classification,"For the DBLP citation network, I'm interested in a model that uses Edge Convolution (EdgeConv) for node classification. The model should accurately categorize research papers into their respective fields of study, aiming for an F1 score of at least 0.85. Considerations should be made for computational efficiency.","{
+    ""user"": {
+        ""intent"": ""build"",
+        ""expertise"": ""medium""
+    },
+    ""problem"": {
+        ""area"": ""graph machine learning"",
+        ""downstream_task"": ""node classification"",
+        ""application_domain"": ""academic research"",
+        ""description"": ""Develop a model using Edge Convolution (EdgeConv) for classifying research papers into their respective fields of study based on the DBLP citation network."",
+        ""performance_metrics"": [
+            {
+                ""name"": ""F1 score"",
+                ""value"": 0.85
+            }
+        ],
+        ""complexity_metrics"": [
+            {
+                ""name"": ""inference time"",
+                ""value"": null
+            }
+        ]
+    },
+    ""dataset"": [
+        {
+            ""name"": ""DBLP citation network"",
+            ""modality"": [""graph""],
+            ""target_variables"": [""fields of study""],
+            ""specification"": null,
+            ""description"": ""A network dataset where nodes represent research papers and edges represent citations. The goal is to classify papers into their fields of study."",
+            ""preprocessing"": [],
+            ""augmentation"": [],
+            ""visualization"": [],
+            ""source"": ""direct-search""
+        }
+    ],
+    ""model"": [
+        {
+            ""name"": """",
+            ""family"": ""EdgeConv"",
+            ""type"": ""neural networks"",
+            ""specification"": null,
+            ""description"": ""A graph neural network model utilizing Edge Convolution (EdgeConv) for node classification in the DBLP citation network.""
+        }
+    ],
+    ""knowledge"": [],
+    ""service"": {
+        ""feature_engineering"": [],
+        ""target_device"": """",
+        ""deployment_endpoint"": """",
+        ""inference_engine"": [],
+        ""demonstration"": """"
+    },
+    ""confidence"": {
+        ""rationale"": ""The information provided directly addresses the user's request for a model development task with specific performance metrics and computational efficiency considerations. The user's level of expertise suggests an understanding of the complexities involved in such a task. The chosen model and dataset are aligned with the instruction's domain and task specifics. Although the computational efficiency metric is mentioned, specific values or thresholds were not provided, implying a general goal of optimization without rigid constraints."",
+        ""score"": 0.9
+    }
+}",2
+node classification,My advisor mentioned the Karate Club dataset for my class project. He said something about node classification. What model should I use and how do I know if it's working well?,,1
+node classification,I stumbled upon the SNAP Patents dataset and thought about classifying patents. ,,1
+node classification,"For my project, I want to do something with the CiteSeer dataset. It sounds cool! How do we get started on this for classifying documents, and what kind of results can we expect?","{
+    ""user"": {
+        ""intent"": ""consult-build"",
+        ""expertise"": ""low""
+    },
+    ""problem"": {
+        ""area"": ""graph machine learning"",
+        ""downstream_task"": ""node classification"",
+        ""application_domain"": ""academic document classification"",
+        ""description"": ""For my project, I want to do something with the CiteSeer dataset. It sounds cool! How do we get started on this for classifying documents, and what kind of results can we expect?"",
+        ""performance_metrics"": [],
+        ""complexity_metrics"": []
+    },
+    ""dataset"": [
+        {
+            ""name"": ""CiteSeer"",
+            ""modality"": [""text"", ""graph""],
+            ""target_variables"": [],
+            ""specification"": null,
+            ""description"": ""A dataset consisting of scientific publications categorized into a predefined set of topics, represented in a citation graph format where documents are nodes and citations are edges."",
+            ""preprocessing"": [],
+            ""augmentation"": [],
+            ""visualization"": [],
+            ""source"": ""direct-search""
+        }
+    ],
+    ""model"": [
+        {
+            ""name"": """",
+            ""family"": """",
+            ""type"": ""neural networks"",
+            ""specification"": null,
+            ""description"": """"
+        }
+    ],
+    ""knowledge"": [],
+    ""service"": {
+        ""feature_engineering"": [],
+        ""target_device"": """",
+        ""deployment_endpoint"": """",
+        ""inference_engine"": [],
+        ""demonstration"": null
+    },
+    ""confidence"": {
+        ""rationale"": ""The user's intent is to consult and build a model for classifying academic documents using the CiteSeer dataset, indicating a combination of consulting and building (consult-build). The expertise level is set to low, assuming the user is not deeply familiar with the specifics of machine learning or graph machine learning. The problem area is graph machine learning, specifically node classification, which fits the user's intent to classify documents in the CiteSeer dataset. The dataset description is based on what is typical for CiteSeer. The model type is neural networks by default since the task often benefits from such models, though specifics are left open due to lack of detail. The confidence score and rationale reflect the assumptions made to fit the user's request into the provided template."",
+        ""score"": 0.8
+    }
+}",1
+node classification,"I was thinking about doing node classification. Someone in class mentioned Graph Isomorphism Networks (GIN). Does that make sense here? How complex is it to implement?""",,1
+node classification,"The task involves the PPI (Protein-Protein Interaction) network, requiring a Diffusion Convolutional Neural Network (DCNN) for node classification. It’s crucial the model can deal with the network's heterogeneity and scale. Performance metrics should include both precision and recall, aiming for a score above 0.9 in both.",,1
+node classification,We're sitting on a goldmine of data regarding professional interactions within our organization. I wonder if there's a method to discover who are the central figures in fostering collaboration and innovation across departments.,,0
+node classification,"Considering the vast amount of transaction data we have, could we somehow determine the most influential products in driving sales networks? Understanding these pivotal products could revolutionize our inventory management.",,0
+node classification,"Our educational institution wants to foster stronger connections between alumni. Could you help us understand which alumni act as bridges in our network, facilitating more effective engagement strategies?","{
+    ""user"": {
+        ""intent"": ""consult-build"",
+        ""expertise"": ""medium""
+    },
+    ""problem"": {
+        ""area"": ""graph machine learning"",
+        ""downstream_task"": ""node classification"",
+        ""application_domain"": ""education"",
+        ""description"": ""Our educational institution wants to foster stronger connections between alumni. The goal is to identify key individuals within the alumni network who act as bridges, thereby enabling more effective engagement strategies."",
+        ""performance_metrics"": [],
+        ""complexity_metrics"": []
+    },
+    ""dataset"": [
+        {
+            ""name"": """",
+            ""modality"": [""graph""],
+            ""target_variables"": [],
+            ""specification"": null,
+            ""description"": ""The dataset should represent the alumni network, where nodes are alumni and edges represent connections between them. It should capture relevant attributes of the alumni that might influence their role as connectors in the network."",
+            ""preprocessing"": [],
+            ""augmentation"": [],
+            ""visualization"": [],
+            ""source"": ""user-upload""
+        }
+    ],
+    ""model"": [
+        {
+            ""name"": """",
+            ""family"": """",
+            ""type"": ""neural networks"",
+            ""specification"": null,
+            ""description"": """"
+        }
+    ],
+    ""knowledge"": [],
+    ""service"": {
+        ""feature_engineering"": [],
+        ""target_device"": """",
+        ""deployment_endpoint"": """",
+        ""inference_engine"": [],
+        ""demonstration"": null
+    },
+    ""confidence"": {
+        ""rationale"": ""The provided JSON configuration accurately reflects the user's instruction by specifying the 'consult-build' intent for developing a solution within the domain of 'graph machine learning', specifically focusing on the 'node classification' task. The application domain is correctly identified as 'education', aiming to enhance alumni engagement by identifying pivotal connectors within the network. The dataset section is tailored to expect a graph-based representation of the alumni network, aligning with the task's nature. Although the instruction does not specify performance or complexity metrics, models, or detailed dataset descriptions, the JSON structure is designed to accommodate further specifics as they become available. The configuration is intended to guide the development of a solution that meets the educational institution's needs, with a medium confidence score reflecting the assumption-based filling of gaps in the provided instruction."",
+        ""score"": 0.7
+    }
+}",0
+node classification,"In the realm of social media marketing, understanding who the trendsetters are could significantly enhance our campaign's reach. Is it possible to automatically identify these influential accounts?",,0
+node classification,"We have this network of suppliers and partners, and I'm trying to understand who are the key players in ensuring our supply chain remains robust. Can you help identify these crucial nodes within our network to ensure better partnership decisions?",,0
+link prediction,"For the Cora dataset, please deploy a Graph Convolutional Network (GCN) to predict missing links between papers. Aim for an AUC score of at least 0.95. The model should not only predict accurately but also infer within 200 milliseconds per query.",,2
+link prediction,"Using the PubMed Diabetes dataset, I need a Graph Attention Network (GAT) implemented for link prediction between diabetes-related research papers. Please ensure the model achieves a precision of over 0.90. Additionally, it should be capable of handling incremental data updates efficiently.",,2
+link prediction,"For the Facebook Large Page-Page Network dataset, use a Node2Vec approach to predict future connections between pages. We are looking for a balance between precision and recall, with both metrics exceeding 0.85. The model must be scalable to accommodate the network's growth.",,2
+link prediction,Deploy a SEAL model on the DBLP dataset for predicting co-authorship links. The model should achieve an F1 score of at least 0.87. It's crucial that the model can update predictions in real time as new papers are published.,,2
+link prediction,Implement a PIN (Predictive Interaction Network) model for the Yeast Protein Interaction Network for link prediction. The model should efficiently handle the biological network's complexity and provide insights into potential protein interactions.,"{
+    ""user"": {
+        ""intent"": ""build"",
+        ""expertise"": ""high""
+    },
+    ""problem"": {
+        ""area"": ""graph machine learning"",
+        ""downstream_task"": ""link prediction"",
+        ""application_domain"": ""biological network analysis"",
+        ""description"": ""Implement a PIN (Predictive Interaction Network) model for the Yeast Protein Interaction Network for link prediction. The model should efficiently handle the biological network's complexity and provide insights into potential protein interactions."",
+        ""performance_metrics"": [],
+        ""complexity_metrics"": []
+    },
+    ""dataset"": [
+        {
+            ""name"": ""Yeast Protein Interaction Network"",
+            ""modality"": [""graph""],
+            ""target_variables"": [],
+            ""specification"": null,
+            ""description"": ""A dataset representing the Yeast Protein Interaction Network, to be used for link prediction with the PIN model."",
+            ""preprocessing"": [],
+            ""augmentation"": [],
+            ""visualization"": [],
+            ""source"": ""direct-search""
+        }
+    ],
+    ""model"": [
+        {
+            ""name"": ""Predictive Interaction Network (PIN)"",
+            ""family"": """",
+            ""type"": ""neural networks"",
+            ""specification"": null,
+            ""description"": ""A neural network model designed for predicting potential interactions in the Yeast Protein Interaction Network, focusing on handling the network's complexity.""
+        }
+    ],
+    ""knowledge"": [],
+    ""service"": {
+        ""feature_engineering"": [],
+        ""target_device"": """",
+        ""deployment_endpoint"": """",
+        ""inference_engine"": [],
+        ""demonstration"": null
+    },
+    ""confidence"": {
+        ""rationale"": ""The instruction was parsed according to the given templates and instructions. No specific performance or complexity metrics were mentioned, so these fields were left empty. The 'dataset' section was filled out with information inferred from the instruction, emphasizing the focus on the Yeast Protein Interaction Network for link prediction. The 'model' section specifies the PIN model as a neural network for handling the biological network's complexity, consistent with the instruction. Confidence in the completion and correctness of this information is high, although specifics about model architecture, metrics, and deployment details could further refine the response."",
+        ""score"": 0.9
+    }
+}",2
+link prediction,"For the Tencent Weibo social network, devise a graph machine learning model using the Attention-based Graph Neural Network (AGNN) for link prediction. Aim to maximize the model's ability to discern nuanced social connections.","{
+    ""user"": {
+        ""intent"": ""build"",
+        ""expertise"": ""high""
+    },
+    ""problem"": {
+        ""area"": ""graph machine learning"",
+        ""downstream_task"": ""link prediction"",
+        ""application_domain"": ""social network analysis"",
+        ""description"": ""For the Tencent Weibo social network, devise a graph machine learning model using the Attention-based Graph Neural Network (AGNN) for link prediction. Aim to maximize the model's ability to discern nuanced social connections."",
+        ""performance_metrics"": [],
+        ""complexity_metrics"": []
+    },
+    ""dataset"": [
+        {
+            ""name"": ""Tencent Weibo social network"",
+            ""modality"": [""graph""],
+            ""target_variables"": [],
+            ""specification"": null,
+            ""description"": ""The dataset should represent the Tencent Weibo social network, with users as nodes and their interactions as edges, to be used for link prediction."",
+            ""preprocessing"": [],
+            ""augmentation"": [],
+            ""visualization"": [],
+            ""source"": ""direct-search""
+        }
+    ],
+    ""model"": [
+        {
+            ""name"": ""Attention-based Graph Neural Network"",
+            ""family"": ""Graph Neural Networks"",
+            ""type"": ""neural networks"",
+            ""specification"": null,
+            ""description"": ""A graph machine learning model leveraging attention mechanisms to improve the prediction of nuanced social connections in the Tencent Weibo social network.""
+        }
+    ],
+    ""knowledge"": [],
+    ""service"": {
+        ""feature_engineering"": [],
+        ""target_device"": """",
+        ""deployment_endpoint"": """",
+        ""inference_engine"": [],
+        ""demonstration"": null
+    },
+    ""confidence"": {
+        ""rationale"": ""The JSON response closely follows the provided instruction and aligns with the format specified in the template. The user's intent is clearly to build a model, with high expertise in AI and ML, indicating a complex and technical task. The problem is within the graph machine learning area, specifically focusing on link prediction in the context of social network analysis. The dataset and model sections are tailored to this task, with the AGNN model being a central requirement. The performance and complexity metrics are left unspecified in the instruction, thus reflected as empty in the JSON. The absence of specific metrics or dataset specifications in the instruction limits the completeness of those sections. Confidence is high in the response's alignment with the user's intent and the instruction's details."",
+        ""score"": 0.95
+    }
+}",2
+link prediction,Employ the SIGN (Scalable Inception Graph Neural Networks) model on the Internet Autonomous Systems network dataset for predicting network linkages. The model must efficiently process large-scale graph data and provide predictions with minimal latency.,,2
+link prediction,"Implement a Hypergraph Neural Network model for the Legal Citation Network, focusing on predicting future citations among legal documents. The model should accurately capture the complex, multi-dimensional relationships inherent in legal texts.",,2
+link prediction,"Construct a Knowledge Graph Embedding model for the Wikidata knowledge graph, focusing on link prediction to discover new entity relationships. The model should support multi-relational graph data.",,2
+link prediction,"For the GitHub developer collaboration network, develop a model based on the Graph Auto-Encoder (GAE) framework for link prediction, with a special emphasis on detecting potential future collaborations. Include metrics on precision and recall.",,2
+link prediction,"I was thinking, can we predict which movies people will watch together on MovieLens using some kind of neural network? I'm not really sure about the details, but it sounds cool.",,1
+link prediction,Can you use machine learning to predict links in a social network for a school project? We have data like the Tencent Weibo network. I'm not sure about the models or the metrics we should aim for.,,1
+link prediction,"Is it possible to use a simple model to predict connections in a citation network, like the Citeseer dataset?","{
+    ""user"": {
+        ""intent"": ""inquire"",
+        ""expertise"": ""low""
+    },
+    ""problem"": {
+        ""area"": ""graph machine learning"",
+        ""downstream_task"": ""link prediction"",
+        ""application_domain"": ""citation network analysis"",
+        ""description"": ""Is it possible to use a simple model to predict connections in a citation network, like the Citeseer dataset?"",
+        ""performance_metrics"": [],
+        ""complexity_metrics"": []
+    },
+    ""dataset"": [
+        {
+            ""name"": ""Citeseer"",
+            ""modality"": [""graph""],
+            ""target_variables"": [],
+            ""specification"": null,
+            ""description"": ""A citation network dataset."",
+            ""preprocessing"": [],
+            ""augmentation"": [],
+            ""visualization"": [],
+            ""source"": ""direct-search""
+        }
+    ],
+    ""model"": [
+        {
+            ""name"": """",
+            ""family"": """",
+            ""type"": ""classical machine learning"",
+            ""specification"": null,
+            ""description"": ""A simple model for link prediction in citation networks.""
+        }
+    ],
+    ""knowledge"": [],
+    ""service"": {
+        ""feature_engineering"": [],
+        ""target_device"": """",
+        ""deployment_endpoint"": """",
+        ""inference_engine"": [],
+        ""demonstration"": null
+    },
+    ""confidence"": {
+        ""rationale"": ""The instruction suggests an inquiry about the feasibility of using a simple model for link prediction in citation networks, specifically mentioning the Citeseer dataset. The user's expertise is assumed to be low based on the nature of the question. The problem area is identified as graph machine learning with a focus on the link prediction downstream task. The dataset section includes specifics about the Citeseer dataset. Given the inquiry's nature, the model type is broadly classified under 'classical machine learning' to align with the question about simplicity. However, specifics about the model, such as its name or family, are not provided in the instruction, leading to some fields being left blank or generic."",
+        ""score"": 0.9
+    }
+}",1
+link prediction,"Can we predict friendships in the Facebook dataset? I'm not sure about the metrics, but I guess it should be pretty accurate?",,1
+link prediction,"For my class project, I need to use the Protein-Protein Interaction dataset. I think the task is link prediction? What model should I use for that? Something not too complicated, please.",,1
+link prediction,We aim to streamline our internal project management by predicting which departments and teams will need to collaborate on projects in the upcoming quarter. Can this be automated in some way?,,0
+link prediction,"In our supply chain network, we need a way to foresee potential partnerships and supplier connections that we might be missing. Is there a method to identify these opportunities automatically?",,0
+link prediction,"I want an application that can identify which of our employees are most likely to work well together on projects, based on their past collaborations and areas of expertise. This could greatly improve our project management efficiency.","{
+    ""user"": {
+        ""intent"": ""build"",
+        ""expertise"": ""medium""
+    },
+    ""problem"": {
+        ""area"": ""graph machine learning"",
+        ""downstream_task"": ""link prediction"",
+        ""application_domain"": ""project management"",
+        ""description"": ""I want an application that can identify which of our employees are most likely to work well together on projects, based on their past collaborations and areas of expertise. This could greatly improve our project management efficiency."",
+        ""performance_metrics"": [],
+        ""complexity_metrics"": []
+    },
+    ""dataset"": [
+        {
+            ""name"": """",
+            ""modality"": [""graph""],
+            ""target_variables"": [],
+            ""specification"": null,
+            ""description"": ""The dataset should contain information about employees' past collaborations and areas of expertise, structured in a way that allows the application to predict potential future collaborations."",
+            ""preprocessing"": [],
+            ""augmentation"": [],
+            ""visualization"": [],
+            ""source"": ""infer-search""
+        }
+    ],
+    ""model"": [
+        {
+            ""name"": """",
+            ""family"": """",
+            ""type"": ""neural networks"",
+            ""specification"": null,
+            ""description"": """"
+        }
+    ],
+    ""knowledge"": [],
+    ""service"": {
+        ""feature_engineering"": [],
+        ""target_device"": """",
+        ""deployment_endpoint"": """",
+        ""inference_engine"": [],
+        ""demonstration"": null
+    },
+    ""confidence"": {
+        ""rationale"": ""The JSON structure is designed to reflect the user's intent and requirements based on the instruction prompt. It specifies the graph machine learning area with a focus on link prediction as the downstream task, which aligns with the goal of identifying potential collaborations among employees. The dataset description and preprocessing steps are tailored to ensure that the data used will support the application's objectives. The model type is kept generic, with a neural networks approach suggested due to its relevance in graph machine learning tasks. User expertise is assumed to be medium based on the specific request and understanding of the potential application's impact."",
+        ""score"": 0.9
+    }
+}",0
+link prediction,Can we develop a system that suggests potential new suppliers or manufacturers to businesses within our platform based on their current networks and transaction histories?,,0
+link prediction,We're looking to streamline our recruitment process by identifying which candidates might connect well with our existing teams based on their backgrounds and our employees' profiles. Any insights on how to achieve this?,,0
+community detection,"For the Zachary's Karate Club dataset, I'd like you to apply a Graph Convolutional Network (GCN) model to identify distinct communities. Ensure the model distinguishes between the instructor's and the administrator's groups with at least 90% accuracy. Speed of execution is less critical, but please keep it under a minute.",,2
+community detection,"Using the Les Miserables character co-occurrence dataset, implement a Graph Attention Network (GAN) for community detection. The goal is to cluster characters based on their interactions. Aim for high precision and recall, and document any unique clusters of lesser-known characters.",,2
+community detection,Utilize the Protein-protein interaction (PPI) network and implement a DeepWalk model for community detection. Focus on uncovering functional modules within the protein interactions. The model should incorporate node features for enhanced accuracy.,,2
+community detection,"Employ the SNAP Large Dataset with a Node2Vec approach for community detection. The objective is to identify clusters of users with similar connectivity patterns. The model needs to be optimized for both accuracy and speed, aiming for a balance between the two.",,2
+community detection,"For the CiteSeer citation network, use a Label Propagation algorithm to detect research communities. The focus is on uncovering naturally forming research groups without predefined labels. The algorithm should be adaptable to new nodes without extensive retraining.","{
+  ""user"": {
+    ""intent"": ""build"",
+    ""expertise"": ""medium""
+  },
+  ""problem"": {
+    ""area"": ""graph machine learning"",
+    ""downstream_task"": ""community detection"",
+    ""application_domain"": ""academic research"",
+    ""description"": ""For the CiteSeer citation network, use a Label Propagation algorithm to detect research communities. The focus is on uncovering naturally forming research groups without predefined labels. The algorithm should be adaptable to new nodes without extensive retraining."",
+    ""performance_metrics"": [],
+    ""complexity_metrics"": []
+  },
+  ""dataset"": [
+    {
+      ""name"": ""CiteSeer citation network"",
+      ""modality"": [""graph""],
+      ""target_variables"": [],
+      ""specification"": null,
+      ""description"": ""A citation network dataset used for detecting research communities within the academic domain, focusing on the structure and connections between documents."",
+      ""preprocessing"": [],
+      ""augmentation"": [],
+      ""visualization"": [],
+      ""source"": ""direct-search""
+    }
+  ],
+  ""model"": [
+    {
+      ""name"": ""Label Propagation algorithm"",
+      ""family"": """",
+      ""type"": ""classical machine learning"",
+      ""specification"": null,
+      ""description"": ""A graph-based algorithm used for community detection that labels nodes based on their neighbors' labels. It should adapt to new nodes without extensive retraining, suitable for dynamically growing networks.""
+    }
+  ],
+  ""knowledge"": [],
+  ""service"": {
+    ""feature_engineering"": [],
+    ""target_device"": """",
+    ""deployment_endpoint"": """",
+    ""inference_engine"": [],
+    ""demonstration"": null
+  },
+  ""confidence"": {
+    ""rationale"": ""The JSON accurately reflects the instruction to build a model for community detection in the CiteSeer citation network using the Label Propagation algorithm. The focus on adaptability to new nodes without extensive retraining is specified in the model description. This setup aligns with the provided instructions and utilizes appropriate categories from the schema."",
+    ""score"": 0.95
+  }
+}",2
+community detection,"On the Dolphin social network, please implement a Stochastic Block Model (SBM) for community detection. The challenge here is to accurately reflect the social structures and hierarchies within the dolphin communities, aiming for a model that can predict social ties with at least an 85% accuracy rate.","{
+  ""user"": {
+    ""intent"": ""build"",
+    ""expertise"": ""medium""
+  },
+  ""problem"": {
+    ""area"": ""graph machine learning"",
+    ""downstream_task"": ""community detection"",
+    ""application_domain"": ""social network analysis"",
+    ""description"": ""On the Dolphin social network, implement a Stochastic Block Model (SBM) for community detection to accurately reflect the social structures and hierarchies within the dolphin communities."",
+    ""performance_metrics"": [
+      {
+        ""name"": ""accuracy"",
+        ""value"": 0.85
+      }
+    ],
+    ""complexity_metrics"": []
+  },
+  ""dataset"": [
+    {
+      ""name"": ""Dolphin social network"",
+      ""modality"": [
+        ""graph""
+      ],
+      ""target_variables"": [],
+      ""specification"": null,
+      ""description"": ""A network representing social ties between dolphins, aiming to identify communities within."",
+      ""preprocessing"": [],
+      ""augmentation"": [],
+      ""visualization"": [],
+      ""source"": ""direct-search""
+    }
+  ],
+  ""model"": [
+    {
+      ""name"": ""Stochastic Block Model"",
+      ""family"": ""statistical models"",
+      ""type"": ""statistical models"",
+      ""specification"": null,
+      ""description"": ""A model to detect communities in the Dolphin social network based on statistical principles.""
+    }
+  ],
+  ""knowledge"": [],
+  ""service"": {
+    ""feature_engineering"": [],
+    ""target_device"": """",
+    ""deployment_endpoint"": """",
+    ""inference_engine"": [],
+    ""demonstration"": null
+  },
+  ""confidence"": {
+    ""rationale"": ""The instruction explicitly mentions the use of a Stochastic Block Model (SBM) for community detection in a dolphin social network with the goal of achieving at least 85% accuracy in predicting social ties. This scenario fits into the 'graph machine learning' area with a 'community detection' downstream task. The information provided is derived directly from the instruction, ensuring relevance and adherence to the user's request. Given the specificity of the task and the provided details, the generated JSON structure confidently aligns with the user's instruction, utilizing the provided templates as a reference."",
+    ""score"": 0.95
+  }
+}",2
+community detection,"For the Cora dataset, I'm interested in implementing a Graph Convolutional Network (GCN) to identify clusters of similar research papers. The task should optimize for high accuracy in community detection, aiming for at least 90% precision. Let's also ensure the model runs efficiently, completing its analysis within seconds on a standard workstation.",,2
+community detection,"Utilize the Political Blogs dataset to apply a modularity optimization approach for detecting communities. This project aims to reveal ideological divides and should include an analysis of the network's polarization. Efficiency is less of a concern here, but please pay special attention to the interpretability of the results.",,2
+community detection,Implement a Graph Attention Network (GAT) on the Facebook Large Page-Page Network dataset for community detection. The model should not only accurately identify communities but also provide insights into the importance of various page connections. Performance metrics should include both accuracy and the interpretability of the model's attention mechanisms.,,2
+community detection,Take the U.S. Supreme Court Citation network and implement a Community-Affiliation Graph Model (CAGM) for detecting communities among cases. The goal is to understand how legal precedents cluster around certain legal issues or principles.,,2
+community detection,"I'm interested in using the CiteSeer dataset for a community detection task. I've only worked with traditional machine learning models before, so I'm not sure which algorithm would be best for graph data.",,1
+community detection,"I've read about Graph Convolutional Networks (GCNs), but I'm not sure how to use it on which data. Any advice?",,1
+community detection,I want to explore the Protein-Protein Interaction network for detecting biological communities. I've read about deep learning but don't know if it's suitable here. Can we do it in a way that's manageable for a beginner?,"{
+  ""user"": {
+    ""intent"": ""consult-build"",
+    ""expertise"": ""low""
+  },
+  ""problem"": {
+    ""area"": ""graph machine learning"",
+    ""downstream_task"": ""community detection"",
+    ""application_domain"": ""biological"",
+    ""description"": ""I want to explore the Protein-Protein Interaction network for detecting biological communities. I've read about deep learning but don't know if it's suitable here. Can we do it in a way that's manageable for a beginner?"",
+    ""performance_metrics"": [],
+    ""complexity_metrics"": []
+  },
+  ""dataset"": [
+    {
+      ""name"": """",
+      ""modality"": [""graph""],
+      ""target_variables"": [],
+      ""specification"": null,
+      ""description"": ""A dataset representing Protein-Protein Interaction networks."",
+      ""preprocessing"": [],
+      ""augmentation"": [],
+      ""visualization"": [],
+      ""source"": ""infer-search""
+    }
+  ],
+  ""model"": [
+    {
+      ""name"": """",
+      ""family"": """",
+      ""type"": ""neural networks"",
+      ""specification"": null,
+      ""description"": ""A beginner-friendly deep learning model suitable for community detection in Protein-Protein Interaction networks.""
+    }
+  ],
+  ""knowledge"": [],
+  ""service"": {
+    ""feature_engineering"": [],
+    ""target_device"": """",
+    ""deployment_endpoint"": """",
+    ""inference_engine"": [],
+    ""demonstration"": null
+  },
+  ""confidence"": {
+    ""rationale"": ""This JSON structure accurately captures the user's intent to explore community detection in Protein-Protein Interaction networks, considering their beginner expertise level and curiosity about the suitability of deep learning for this task. The description provides a clear overview of the user's requirements, emphasizing a beginner-friendly approach and the exploration of deep learning models. The dataset and model sections are crafted to align with the user's instruction, specifying a graph modality for the dataset and a neural network type for the model, tailored for someone at a beginner level. The confidence score reflects a high degree of alignment with the given instruction, considering the user's context and the specificity of their request."",
+    ""score"": 0.95
+  }
+}",1
+community detection,I'm curious if there's a way to identify communities in a dataset of video game players based on their playing habits. I don't know much about the different models.,,1
+community detection,Could you suggest a model for detecting communities in the Amazon co-purchase graph?,,1
+community detection,We're interested in understanding how our customers naturally group together based on their purchasing behavior. Can we uncover these patterns to better target our marketing efforts?,,0
+community detection,Our goal is to improve customer service by recognizing groups of users with similar issues or complaints. Is there a way to automatically categorize these without predefined categories?,,0
+community detection,We're considering developing new service lines and want to understand if there are existing customer clusters that might be more receptive to certain types of services. How can we go about identifying these groups?,"{
+  ""user"": {
+    ""intent"": ""consult"",
+    ""expertise"": ""medium""
+  },
+  ""problem"": {
+    ""area"": ""graph machine learning"",
+    ""downstream_task"": ""community detection"",
+    ""application_domain"": ""business development"",
+    ""description"": ""We're considering developing new service lines and want to understand if there are existing customer clusters that might be more receptive to certain types of services. How can we go about identifying these groups?"",
+    ""performance_metrics"": [],
+    ""complexity_metrics"": []
+  },
+  ""dataset"": [
+    {
+      ""name"": """",
+      ""modality"": [""graph""],
+      ""target_variables"": [],
+      ""specification"": null,
+      ""description"": """",
+      ""preprocessing"": [],
+      ""augmentation"": [],
+      ""visualization"": [],
+      ""source"": ""user-upload""
+    }
+  ],
+  ""model"": [
+    {
+      ""name"": """",
+      ""family"": """",
+      ""type"": ""neural networks"",
+      ""specification"": null,
+      ""description"": ""Model that identifies customer cluster groups.""
+    }
+  ],
+  ""knowledge"": [],
+  ""service"": {
+    ""feature_engineering"": [],
+    ""target_device"": ""cloud"",
+    ""deployment_endpoint"": """",
+    ""inference_engine"": [],
+    ""demonstration"": null
+  },
+  ""confidence"": {
+    ""rationale"": ""The JSON response is tailored to reflect the user's request to explore customer clustering for business development using graph machine learning, specifically through community detection. The user's medium expertise level suggests they have a general understanding but might need guidance on specifics, hence the 'consult' intent. The problem description is directly taken from the user's question to accurately capture their need for understanding customer clusters. Graph data modality is chosen as it fits the community detection task. Neural networks are selected for the model type due to their ability to handle complex graph structures, although the user didn't specify a preference. The cloud deployment is assumed for scalability in business applications. The confidence section addresses the alignment of the response with the user's query while acknowledging the need for further specifics in areas like dataset source and model specifics."",
+    ""score"": 0.9
+  }
+}",0
+community detection,Can we discover natural groupings among our email subscribers to tailor our communication more effectively? We believe this could improve open rates and overall engagement.,,0
+community detection,"In the context of risk management, it's vital for us to spot any clusters of financial transactions that exhibit unusual patterns. This could significantly aid in fraud detection and prevention strategies.",,0

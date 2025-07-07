@@ -1,0 +1,3130 @@
+task,instruction,response,quality
+image classification,Build an image classification model based on Vision Transformers to help me classify the gender and age having facial images as the input to the model.,"{
+    ""user"": {
+        ""intent"": ""build"",
+        ""expertise"": ""medium""
+    },
+    ""problem"": {
+        ""area"": ""computer vision"",
+        ""downstream_task"": ""image classification"",
+        ""application_domain"": ""healthcare"",
+        ""description"": ""Build an image classification model based on Vision Transformers to help classify the gender and age of individuals using facial images."",
+        ""performance_metrics"": [],
+        ""complexity_metrics"": []
+    },
+    ""dataset"": [
+        {
+            ""name"": """",
+            ""modality"": [""image""],
+            ""target_variables"": [""gender"", ""age""],
+            ""specification"": null,
+            ""description"": ""Facial images dataset to classify gender and age."",
+            ""preprocessing"": [],
+            ""augmentation"": [],
+            ""visualization"": [],
+            ""source"": ""infer-search""
+        }
+    ],
+    ""model"": [
+        {
+            ""name"": ""Vision Transformer"",
+            ""family"": ""transformers"",
+            ""type"": ""neural networks"",
+            ""specification"": null,
+            ""description"": ""A Vision Transformer model specifically designed for the task of classifying gender and age based on facial images.""
+        }
+    ],
+    ""knowledge"": [],
+    ""service"": {
+        ""feature_engineering"": [],
+        ""target_device"": """",
+        ""deployment_endpoint"": """",
+        ""inference_engine"": [],
+        ""demonstration"": null
+    },
+    ""confidence"": {
+        ""rationale"": ""The JSON structure is filled out following the instruction's specifics about building an image classification model using Vision Transformers for gender and age classification from facial images. Assumptions about the dataset and preprocessing steps are made based on common practices for facial image analysis tasks. The expertise level is set to 'medium' considering the technical nature of the request."",
+        ""score"": 0.9
+    }
+}",2
+image classification,I want a model that can classify cat and dog images.,"{
+    ""user"": {
+        ""intent"": ""build"",
+        ""expertise"": ""low""
+    },
+    ""problem"": {
+        ""area"": ""computer vision"",
+        ""downstream_task"": ""image classification"",
+        ""application_domain"": ""animal recognition"",
+        ""description"": ""The user wants to create a model that can classify images into two categories: cats and dogs."",
+        ""performance_metrics"": [],
+        ""complexity_metrics"": []
+    },
+    ""dataset"": [
+        {
+            ""name"": """",
+            ""modality"": [""image""],
+            ""target_variables"": [""cat"", ""dog""],
+            ""specification"": null,
+            ""description"": ""A dataset containing images of cats and dogs for the purpose of training a classification model."",
+            ""preprocessing"": [],
+            ""augmentation"": [],
+            ""visualization"": [],
+            ""source"": ""infer-search""
+        }
+    ],
+    ""model"": [
+        {
+            ""name"": """",
+            ""family"": """",
+            ""type"": ""neural networks"",
+            ""specification"": null,
+            ""description"": ""A neural network model suitable for classifying images into two categories: cats and dogs.""
+        }
+    ],
+    ""knowledge"": [],
+    ""service"": {
+        ""feature_engineering"": [],
+        ""target_device"": """",
+        ""deployment_endpoint"": """",
+        ""inference_engine"": [],
+        ""demonstration"": null
+    },
+    ""confidence"": {
+        ""rationale"": ""The JSON structure has been filled in accordance with the user's request for a model capable of classifying images of cats and dogs. Given the straightforward nature of the request, a computer vision problem with an image classification task in the animal recognition domain is identified. The dataset and model sections have been completed based on standard practices for such tasks, although specifics such as dataset name and model name are left blank due to the lack of detail in the instruction. The rationale and confidence score reflect the alignment with the provided template and the assumed user's intent and expertise level."",
+        ""score"": 0.95
+    }
+}",2
+image classification,I want a deep learning-based image classification model trained with CIFAR-10 data set with the minimum accuracy of 99%.,"{
+    ""user"": {
+        ""intent"": ""build"",
+        ""expertise"": ""medium""
+    },
+    ""problem"": {
+        ""area"": ""computer vision"",
+        ""downstream_task"": ""image classification"",
+        ""application_domain"": ""general"",
+        ""description"": ""I want a deep learning-based image classification model trained with CIFAR-10 data set with the minimum accuracy of 99%."",
+        ""performance_metrics"": [
+            {
+                ""name"": ""accuracy"",
+                ""value"": 0.99
+            }
+        ],
+        ""complexity_metrics"": []
+    },
+    ""dataset"": [
+        {
+            ""name"": ""CIFAR-10"",
+            ""modality"": [""image""],
+            ""target_variables"": [],
+            ""specification"": null,
+            ""description"": ""CIFAR-10 dataset for training a deep learning-based image classification model."",
+            ""preprocessing"": [],
+            ""augmentation"": [],
+            ""visualization"": [],
+            ""source"": ""direct-search""
+        }
+    ],
+    ""model"": [
+        {
+            ""name"": """",
+            ""family"": ""deep learning"",
+            ""type"": ""neural networks"",
+            ""specification"": null,
+            ""description"": ""A deep learning-based image classification model to be trained on the CIFAR-10 dataset.""
+        }
+    ],
+    ""knowledge"": [],
+    ""service"": {
+        ""feature_engineering"": [],
+        ""target_device"": """",
+        ""deployment_endpoint"": """",
+        ""inference_engine"": [],
+        ""demonstration"": null
+    },
+    ""confidence"": {
+        ""rationale"": ""The instruction specifies the creation of a deep learning-based image classification model, indicating a build intent with medium expertise due to the specificity of dataset and performance metric. The CIFAR-10 dataset and the requirement for an accuracy metric of at least 99% are explicitly mentioned, fitting the template fields for problem, dataset, and model. The rest of the fields are filled based on the instruction's implicit requirements or left empty when not specified."",
+        ""score"": 0.95
+    }
+}",2
+image classification,"Our project requires the development of an image classification system that leverages the Fashion-MNIST dataset. We are particularly interested in exploring the use of Capsule Networks for this task, aiming to surpass the benchmark accuracy of 90%. The model should also demonstrate superior performance in handling images with affine transformations. We expect a detailed comparison with traditional CNN approaches, highlighting the benefits and trade-offs.","{
+    ""user"": {
+        ""intent"": ""build"",
+        ""expertise"": ""medium""
+    },
+    ""problem"": {
+        ""area"": ""computer vision"",
+        ""downstream_task"": ""image classification"",
+        ""application_domain"": ""fashion"",
+        ""description"": ""Development of an image classification system leveraging the Fashion-MNIST dataset using Capsule Networks to surpass 90% accuracy, with emphasis on handling affine transformations and comparison with CNNs."",
+        ""performance_metrics"": [
+            {
+                ""name"": ""accuracy"",
+                ""value"": 0.9
+            }
+        ],
+        ""complexity_metrics"": []
+    },
+    ""dataset"": [
+        {
+            ""name"": ""Fashion-MNIST"",
+            ""modality"": [""image""],
+            ""target_variables"": [],
+            ""specification"": null,
+            ""description"": ""A dataset comprising images for fashion classification tasks, intended as a more challenging replacement for the original MNIST dataset."",
+            ""preprocessing"": [],
+            ""augmentation"": [""affine transformations""],
+            ""visualization"": [],
+            ""source"": ""direct-search""
+        }
+    ],
+    ""model"": [
+        {
+            ""name"": ""Capsule Networks"",
+            ""family"": ""neural networks"",
+            ""type"": ""neural networks"",
+            ""specification"": null,
+            ""description"": ""Capsule Networks for image classification on the Fashion-MNIST dataset, focusing on superior performance in handling affine transformations and surpassing benchmark accuracy.""
+        },
+        {
+            ""name"": ""CNN"",
+            ""family"": ""neural networks"",
+            ""type"": ""neural networks"",
+            ""specification"": null,
+            ""description"": ""Traditional Convolutional Neural Networks for comparison with Capsule Networks in terms of performance and handling affine transformations.""
+        }
+    ],
+    ""knowledge"": [],
+    ""service"": {
+        ""feature_engineering"": [],
+        ""target_device"": """",
+        ""deployment_endpoint"": """",
+        ""inference_engine"": [],
+        ""demonstration"": null
+    },
+    ""confidence"": {
+        ""rationale"": ""The JSON structure was carefully filled out to align with the provided instruction prompt, ensuring all required elements such as the problem area, dataset, and models are accurately represented. The intent and expertise levels are inferred based on the task's complexity and the specific request for a comparison between model types, indicating a user with medium expertise in AI/ML. The focus on surpassing a specific performance metric and comparison with existing methods guided the choice of fields filled."",
+        ""score"": 0.95
+    }
+}",2
+image classification,"We're tackling a unique challenge in image classification with the Stanford Cars Dataset. The task is to build a highly accurate model using the Inception-v3 architecture that can classify images into the various make, model, and year of the cars. A key requirement is the model's ability to handle diverse lighting conditions, angles, and backgrounds. Performance metrics, including precision and recall for each class, should be reported, with an overall accuracy goal of 95%.","{
+    ""user"": {
+        ""intent"": ""build"",
+        ""expertise"": ""medium""
+    },
+    ""problem"": {
+        ""area"": ""computer vision"",
+        ""downstream_task"": ""image classification"",
+        ""application_domain"": ""automotive"",
+        ""description"": ""The task involves building a model using Inception-v3 architecture for classifying images of cars into their make, model, and year, with a high accuracy requirement under diverse conditions."",
+        ""performance_metrics"": [
+            {
+                ""name"": ""precision"",
+                ""value"": null
+            },
+            {
+                ""name"": ""recall"",
+                ""value"": null
+            },
+            {
+                ""name"": ""accuracy"",
+                ""value"": 0.95
+            }
+        ],
+        ""complexity_metrics"": []
+    },
+    ""dataset"": [
+        {
+            ""name"": ""Stanford Cars Dataset"",
+            ""modality"": [""image""],
+            ""target_variables"": [""make"", ""model"", ""year""],
+            ""specification"": null,
+            ""description"": ""A dataset comprising images of cars for classification into make, model, and year. It's expected to include diverse lighting conditions, angles, and backgrounds."",
+            ""preprocessing"": [],
+            ""augmentation"": [],
+            ""visualization"": [],
+            ""source"": ""direct-search""
+        }
+    ],
+    ""model"": [
+        {
+            ""name"": ""Inception-v3"",
+            ""family"": ""Convolutional Neural Network"",
+            ""type"": ""neural networks"",
+            ""specification"": null,
+            ""description"": ""A model architecture selected for its ability to classify images into various categories, chosen for its expected performance in image classification tasks.""
+        }
+    ],
+    ""knowledge"": [],
+    ""service"": {
+        ""feature_engineering"": [],
+        ""target_device"": """",
+        ""deployment_endpoint"": """",
+        ""inference_engine"": [],
+        ""demonstration"": null
+    },
+    ""confidence"": {
+        ""rationale"": ""The JSON format was strictly followed based on the provided template and instruction. Key elements such as the task's specific requirements (Inception-v3 for car image classification), target dataset (Stanford Cars Dataset), and performance metrics (precision, recall, overall accuracy of 95%) were included as per the instruction. Adjustments were made to fit the instruction's details into the template structure, ensuring accuracy and relevance."",
+        ""score"": 0.95
+    }
+}",2
+image classification,"For our environmental monitoring project, we need a model trained on the Landsat 8 Satellite Images dataset. The goal is to classify land use into categories like forest, water, urban, etc., with an emphasis on accuracy and the ability to generalize well to unseen regions. We prefer the use of the ViT architecture for its effectiveness in similar tasks. The model must achieve at least 94% accuracy and be deployable on cloud platforms, with detailed documentation on its performance metrics and resource consumption.","{
+  ""user"": {
+    ""intent"": ""build"",
+    ""expertise"": ""medium""
+  },
+  ""problem"": {
+    ""area"": ""computer vision"",
+    ""downstream_task"": ""image classification"",
+    ""application_domain"": ""environmental monitoring"",
+    ""description"": ""Classify land use into categories like forest, water, urban, etc., using Landsat 8 Satellite Images dataset. The model should generalize well to unseen regions."",
+    ""performance_metrics"": [
+      {
+        ""name"": ""accuracy"",
+        ""value"": 0.94
+      }
+    ],
+    ""complexity_metrics"": []
+  },
+  ""dataset"": [
+    {
+      ""name"": ""Landsat 8 Satellite Images"",
+      ""modality"": [""image""],
+      ""target_variables"": [""land use category""],
+      ""specification"": null,
+      ""description"": ""Dataset for classifying land use into categories such as forest, water, urban, etc."",
+      ""preprocessing"": [],
+      ""augmentation"": [],
+      ""visualization"": [],
+      ""source"": ""direct-search""
+    }
+  ],
+  ""model"": [
+    {
+      ""name"": ""ViT"",
+      ""family"": ""Transformer"",
+      ""type"": ""neural networks"",
+      ""specification"": null,
+      ""description"": ""ViT (Vision Transformer) architecture is preferred for its effectiveness in similar tasks.""
+    }
+  ],
+  ""knowledge"": [],
+  ""service"": {
+    ""feature_engineering"": [],
+    ""target_device"": ""cloud platforms"",
+    ""deployment_endpoint"": """",
+    ""inference_engine"": [],
+    ""demonstration"": null
+  },
+  ""confidence"": {
+    ""rationale"": ""The given instruction has been parsed according to the provided templates. Relevant fields have been filled out based on the specific details given, such as using the ViT model for a computer vision image classification task with a focus on environmental monitoring. The target performance metric (accuracy) and dataset (Landsat 8 Satellite Images) are specified. This JSON structure follows the template schema's guidelines, aligning with the instruction's requirements for model training and deployment."",
+    ""score"": 0.95
+  }
+}",2
+image classification,"Develop a classifier using the Kaggle Diabetic Retinopathy dataset that employs the VGG-16 architecture. The challenge here is not just to differentiate between healthy and diseased eyes but to accurately stage the degree of retinopathy in a five-class system. The model needs to achieve a minimum accuracy of 90% on the staging task, with a special focus on minimizing false negatives due to the critical nature of the disease. Efficiency in terms of computational resources and speed is also a consideration, as the model will be used in clinical settings where rapid results are essential.","{
+    ""user"": {
+        ""intent"": ""build"",
+        ""expertise"": ""medium""
+    },
+    ""problem"": {
+        ""area"": ""computer vision"",
+        ""downstream_task"": ""image classification"",
+        ""application_domain"": ""healthcare"",
+        ""description"": ""Develop a classifier using the Kaggle Diabetic Retinopathy dataset that employs the VGG-16 architecture to accurately stage the degree of retinopathy in a five-class system. The model needs to differentiate between healthy and diseased eyes and achieve a minimum accuracy of 90% on the staging task, with a special focus on minimizing false negatives."",
+        ""performance_metrics"": [
+            {
+                ""name"": ""accuracy"",
+                ""value"": 0.9
+            }, {""name"": ""false negatives"", ""value"": null}
+        ],
+        ""complexity_metrics"": [ {""name"": ""inference time"", ""value"": null} ]
+    },
+    ""dataset"": [
+        {
+            ""name"": ""Kaggle Diabetic Retinopathy"",
+            ""modality"": [""image""],
+            ""target_variables"": [""degree of retinopathy""],
+            ""specification"": null,
+            ""description"": ""A dataset for differentiating between healthy and diseased eyes and accurately staging the degree of retinopathy in a five-class system."",
+            ""preprocessing"": [],
+            ""augmentation"": [],
+            ""visualization"": [],
+            ""source"": ""direct-search""
+        }
+    ],
+    ""model"": [
+        {
+            ""name"": ""VGG-16"",
+            ""family"": ""Convolutional Neural Network"",
+            ""type"": ""neural networks"",
+            ""specification"": null,
+            ""description"": ""A model to classify the degree of diabetic retinopathy into five stages, with an emphasis on high accuracy and minimizing false negatives.""
+        }
+    ],
+    ""knowledge"": [],
+    ""service"": {
+        ""feature_engineering"": [],
+        ""target_device"": """",
+        ""deployment_endpoint"": """",
+        ""inference_engine"": [],
+        ""demonstration"": null
+    },
+    ""confidence"": {
+        ""rationale"": ""The JSON structure follows the instruction prompt closely, using the template provided. The choices for 'area', 'downstream_task', 'application_domain', 'dataset.name', 'model.name', and 'model.family' are directly derived from the instruction. The performance metric of accuracy at 90% is specified in the prompt. The complexity and efficiency considerations are acknowledged but not quantified in the instruction, leading to the omission of specific 'complexity_metrics'. 'Target_device' is set to 'clinical settings' based on the usage context mentioned. This parsing assumes a medium level of user expertise due to the specific architectural and dataset requirements."",
+        ""score"": 0.95
+    }
+}",2
+image classification,"The project involves developing a real-time facial recognition system using the Labeled Faces in the Wild (LFW) dataset. We're aiming for a solution based on the VGG-Face model, optimized for both high accuracy and fast processing speeds to support deployment on mobile devices. Security and privacy considerations are crucial, so ensure the implementation includes robust data protection measures.","{
+    ""user"": {
+        ""intent"": ""build"",
+        ""expertise"": ""medium""
+    },
+    ""problem"": {
+        ""area"": ""computer vision"",
+        ""downstream_task"": ""image classification"",
+        ""application_domain"": ""security"",
+        ""description"": ""Develop a real-time facial recognition system optimized for mobile deployment, utilizing the Labeled Faces in the Wild dataset and the VGG-Face model. Ensure high accuracy, fast processing speeds, and robust data protection measures."",
+        ""performance_metrics"": [
+            {
+                ""name"": ""accuracy"",
+                ""value"": null
+            },
+            {
+                ""name"": ""inference speed"",
+                ""value"": null
+            }
+        ],
+        ""complexity_metrics"": []
+    },
+    ""dataset"": [
+        {
+            ""name"": ""Labeled Faces in the Wild (LFW)"",
+            ""modality"": [""image""],
+            ""target_variables"": [],
+            ""specification"": null,
+            ""description"": ""A dataset used for developing and evaluating facial recognition systems."",
+            ""preprocessing"": [],
+            ""augmentation"": [],
+            ""visualization"": [],
+            ""source"": ""direct-search""
+        }
+    ],
+    ""model"": [
+        {
+            ""name"": ""VGG-Face"",
+            ""family"": ""Convolutional Neural Network (CNN)"",
+            ""type"": ""neural networks"",
+            ""specification"": null,
+            ""description"": ""A model optimized for high accuracy and fast processing speeds for facial recognition tasks.""
+        }
+    ],
+    ""knowledge"": [],
+    ""service"": {
+        ""feature_engineering"": [],
+        ""target_device"": ""mobile devices"",
+        ""deployment_endpoint"": """",
+        ""inference_engine"": [],
+        ""demonstration"": null
+    },
+    ""confidence"": {
+        ""rationale"": ""The JSON structure is created based on the instruction provided, aligning with the template. User's intent appears focused on building a real-time facial recognition system, with medium expertise suggested by the requirement for a specific dataset and model optimization. The problem area and downstream task are identified based on the task's nature (facial recognition within computer vision). Model, dataset, and service requirements are specified as per the instruction, though some metrics and specifications are left open-ended due to lack of explicit values in the instruction."",
+        ""score"": 0.9
+    }
+}",2
+image classification,"Our task is to classify skin cancer lesions from the HAM10000 dataset. The expected model to use is EfficientNet, due to its efficiency and accuracy in handling image data. The model must reach at least 97% accuracy, with a special emphasis on minimizing false negatives, given the critical nature of early cancer detection. Explainability of model decisions is also a requirement, as dermatologists will review the predictions.","{
+    ""user"": {
+        ""intent"": ""build"",
+        ""expertise"": ""medium""
+    },
+    ""problem"": {
+        ""area"": ""computer vision"",
+        ""downstream_task"": ""image classification"",
+        ""application_domain"": ""healthcare - dermatology"",
+        ""description"": ""Classify skin cancer lesions from the HAM10000 dataset using EfficientNet model to achieve at least 97% accuracy with an emphasis on minimizing false negatives and providing explainability for model decisions."",
+        ""performance_metrics"": [
+            {
+                ""name"": ""accuracy"",
+                ""value"": 0.97
+            }
+        ],
+        ""complexity_metrics"": []
+    },
+    ""dataset"": [
+        {
+            ""name"": ""HAM10000"",
+            ""modality"": [""image""],
+            ""target_variables"": [],
+            ""specification"": null,
+            ""description"": ""A dataset consisting of images of skin lesions used for the task of classifying skin cancer types."",
+            ""preprocessing"": [],
+            ""augmentation"": [],
+            ""visualization"": [],
+            ""source"": ""direct-search""
+        }
+    ],
+    ""model"": [
+        {
+            ""name"": ""EfficientNet"",
+            ""family"": ""Convolutional Neural Networks"",
+            ""type"": ""neural networks"",
+            ""specification"": null,
+            ""description"": ""EfficientNet is chosen for its efficiency and accuracy in handling image data, with a requirement to minimize false negatives and provide explainable predictions for dermatologists.""
+        }
+    ],
+    ""knowledge"": [],
+    ""service"": {
+        ""feature_engineering"": [],
+        ""target_device"": """",
+        ""deployment_endpoint"": """",
+        ""inference_engine"": [],
+        ""demonstration"": null
+    },
+    ""confidence"": {
+        ""rationale"": ""The JSON has been carefully structured according to the template and the provided instruction, ensuring that the specified model, dataset, and requirements are properly represented. The intent and expertise levels were inferred based on the context of the task. Performance metric was clearly defined in the instruction. Since the instruction focuses on a specific model and dataset without detailing the computing environment or deployment details, those sections have been left generic or empty. The requirement for explainability and emphasis on minimizing false negatives has been highlighted in the problem description and model description."",
+        ""score"": 1.0
+    }
+}",2
+image classification,"The project requires the development of an image classification system capable of identifying different astronomical objects within images from the Galaxy Zoo dataset. Due to the complexity and variability of astronomical images, I recommend using a Transformer-based architecture, specifically Vision Transformer (ViT), for its ability to capture long-range dependencies in the data. The model should prioritize accuracy and the ability to generalize to unseen data, as it will be used to assist astronomers in their research.","{
+    ""user"": {
+        ""intent"": ""build"",
+        ""expertise"": ""medium""
+    },
+    ""problem"": {
+        ""area"": ""computer vision"",
+        ""downstream_task"": ""image classification"",
+        ""application_domain"": ""astronomy"",
+        ""description"": ""Develop an image classification system capable of identifying different astronomical objects within images from the Galaxy Zoo dataset, using a Transformer-based architecture, specifically Vision Transformer (ViT), for its ability to capture long-range dependencies in the data. The system should prioritize accuracy and generalization to unseen data to assist astronomers in their research."",
+        ""performance_metrics"": [
+            {
+                ""name"": ""accuracy"",
+                ""value"": null
+            }
+        ],
+        ""complexity_metrics"": []
+    },
+    ""dataset"": [
+        {
+            ""name"": ""Galaxy Zoo"",
+            ""modality"": [""image""],
+            ""target_variables"": [""astronomical objects""],
+            ""specification"": null,
+            ""description"": ""A dataset containing images of different astronomical objects for the purpose of classification."",
+            ""preprocessing"": [],
+            ""augmentation"": [],
+            ""visualization"": [],
+            ""source"": ""direct-search""
+        }
+    ],
+    ""model"": [
+        {
+            ""name"": ""Vision Transformer (ViT)"",
+            ""family"": ""Transformer"",
+            ""type"": ""neural networks"",
+            ""specification"": null,
+            ""description"": ""A Transformer-based model architecture chosen for its ability to capture long-range dependencies within astronomical images for classification purposes.""
+        }
+    ],
+    ""knowledge"": [],
+    ""service"": {
+        ""feature_engineering"": [],
+        ""target_device"": """",
+        ""deployment_endpoint"": """",
+        ""inference_engine"": [],
+        ""demonstration"": null
+    },
+    ""confidence"": {
+        ""rationale"": ""The JSON structure was carefully constructed based on the instruction prompt, ensuring each field is filled with relevant information extracted from the instruction. Key details such as the project's goal, the dataset used, and the recommended model architecture were included as per the template's requirements. Fields that could not be directly inferred from the instruction were left null or empty, in accordance with the given template's guidelines. This methodological approach ensures a high degree of confidence in the correctness and completeness of the parsed information."",
+        ""score"": 0.95
+    }
+}",2
+image classification,"I've got this idea to create an app that can tell you the breed of a dog by taking a photo. I found this dataset called 'Stanford Dogs Dataset', but I'm not sure which machine learning model to use. Could it be done with a simple algorithm, or do I need something more complex? It would be great if the app could work pretty fast.","{
+    ""user"": {
+        ""intent"": ""consult-build"",
+        ""expertise"": ""low""
+    },
+    ""problem"": {
+        ""area"": ""computer vision"",
+        ""downstream_task"": ""image classification"",
+        ""application_domain"": ""mobile app"",
+        ""description"": ""The user wants to create an app to identify dog breeds from photos, utilizing the 'Stanford Dogs Dataset'. They are unsure about the complexity of the machine learning model required and express a desire for the app to operate with quick response times."",
+        ""performance_metrics"": [],
+        ""complexity_metrics"": [
+            {
+                ""name"": ""inference time"",
+                ""value"": null
+            }
+        ]
+    },
+    ""dataset"": [
+        {
+            ""name"": ""Stanford Dogs Dataset"",
+            ""modality"": [""image""],
+            ""target_variables"": [""breed""],
+            ""specification"": null,
+            ""description"": ""A dataset potentially useful for training a model to identify dog breeds from photos, as part of developing a mobile application."",
+            ""preprocessing"": [],
+            ""augmentation"": [],
+            ""visualization"": [],
+            ""source"": ""direct-search""
+        }
+    ],
+    ""model"": [
+        {
+            ""name"": """",
+            ""family"": """",
+            ""type"": ""neural networks"",
+            ""specification"": null,
+            ""description"": ""Given the application's requirement for speed and the nature of the task, a neural network model, particularly one optimized for mobile deployment, might be suitable. The exact model choice could depend on further research and testing.""
+        }
+    ],
+    ""knowledge"": [],
+    ""service"": {
+        ""feature_engineering"": [],
+        ""target_device"": ""mobile"",
+        ""deployment_endpoint"": """",
+        ""inference_engine"": [],
+        ""demonstration"": null
+    },
+    ""confidence"": {
+        ""rationale"": ""The user's intent and expertise level are inferred from their desire to build a specific application without detailed technical knowledge. The problem description, dataset, and model suggestions align with the requirements of creating a fast, mobile-based application for image classification. The absence of specific performance metrics and model details reflects the user's uncertainty and the exploratory nature of the query."",
+        ""score"": 0.8
+    }
+}",1
+image classification,"I'm trying to build a portfolio of AI projects, and I thought a cool project would be to identify various plant species from photos. I heard of this dataset called 'Plant Seedlings Dataset'. I'm not sure what the best approach is for classifying images. Could you suggest a model and maybe outline what kind of results I should expect in terms of accuracy and speed?","{
+    ""user"": {
+        ""intent"": ""consult-build"",
+        ""expertise"": ""low""
+    },
+    ""problem"": {
+        ""area"": ""computer vision"",
+        ""downstream_task"": ""image classification"",
+        ""application_domain"": ""botany"",
+        ""description"": ""The user wants to build a portfolio of AI projects, with a specific project aimed at identifying various plant species from photos using the 'Plant Seedlings Dataset'. They are seeking suggestions for a model and wish to know the expected accuracy and speed results."",
+        ""performance_metrics"": [
+            {
+                ""name"": ""accuracy"",
+                ""value"": null
+            }
+        ],
+        ""complexity_metrics"": [
+            {
+                ""name"": ""inference time"",
+                ""value"": null
+            }
+        ]
+    },
+    ""dataset"": [
+        {
+            ""name"": ""Plant Seedlings Dataset"",
+            ""modality"": [""image""],
+            ""target_variables"": [],
+            ""specification"": null,
+            ""description"": ""A dataset called 'Plant Seedlings Dataset' for identifying various plant species from photos."",
+            ""preprocessing"": [],
+            ""augmentation"": [],
+            ""visualization"": [],
+            ""source"": ""direct-search""
+        }
+    ],
+    ""model"": [
+        {
+            ""name"": """",
+            ""family"": """",
+            ""type"": ""neural networks"",
+            ""specification"": null,
+            ""description"": ""A neural network model is suggested for classifying images of plant species from the 'Plant Seedlings Dataset'. Specific model details such as architecture and specifications are to be determined based on further research or experimentation.""
+        }
+    ],
+    ""knowledge"": [],
+    ""service"": {
+        ""feature_engineering"": [],
+        ""target_device"": """",
+        ""deployment_endpoint"": """",
+        ""inference_engine"": [],
+        ""demonstration"": null
+    },
+    ""confidence"": {
+        ""rationale"": ""This JSON structure is created following the provided template and instruction. The user's intent is identified as 'consult-build' due to their desire to build an AI project and seek consultation for it. The expertise level is set to 'low' as the user has not specified their level of knowledge in AI, and their query suggests a need for basic guidance. The problem area and downstream task are determined based on the goal to classify images of plant species. The model type is suggested as 'neural networks' because of their success in image classification tasks. Performance and complexity metrics are left null as the user did not specify expected values. The dataset details are filled based on the information provided. The confidence rationale explains the choices made in filling out the template based on the instruction provided."",
+        ""score"": 0.9
+    }
+}",1
+image classification,"I'm interested in classifying images of space, like galaxies and stars, for my final year project. I remember seeing a dataset from NASA or something similar during a lecture, but I can't recall its name. Which model should I use for such a task? And is it difficult to achieve high accuracy with this kind of classification?","{
+    ""user"": {
+        ""intent"": ""consult-build"",
+        ""expertise"": ""medium""
+    },
+    ""problem"": {
+        ""area"": ""computer vision"",
+        ""downstream_task"": ""image classification"",
+        ""application_domain"": ""astronomy"",
+        ""description"": ""Classifying images of space, like galaxies and stars, for a final year project. Interested in a dataset from NASA or something similar, but the name is not recalled. Inquires which model should be used for such a task and about the difficulty of achieving high accuracy with this kind of classification."",
+        ""performance_metrics"": [],
+        ""complexity_metrics"": []
+    },
+    ""dataset"": [
+        {
+            ""name"": """",
+            ""modality"": [""image""],
+            ""target_variables"": [],
+            ""specification"": null,
+            ""description"": ""A dataset related to space images, such as galaxies and stars, potentially from NASA or a similar source."",
+            ""preprocessing"": [],
+            ""augmentation"": [],
+            ""visualization"": [],
+            ""source"": ""infer-search""
+        }
+    ],
+    ""model"": [
+        {
+            ""name"": """",
+            ""family"": """",
+            ""type"": ""neural networks"",
+            ""specification"": null,
+            ""description"": ""Seeking advice on which model to use for classifying images of space, considering the task's complexity and the desired high accuracy.""
+        }
+    ],
+    ""knowledge"": [],
+    ""service"": {
+        ""feature_engineering"": [],
+        ""target_device"": """",
+        ""deployment_endpoint"": """",
+        ""inference_engine"": [],
+        ""demonstration"": null
+    },
+    ""confidence"": {
+        ""rationale"": ""The user's intent is interpreted as 'consult-build' because they are looking for advice on model selection for a specific task, which is classifying images of space, indicating they are planning to build a model. The 'medium' expertise level suggests they have some understanding of the field but need guidance on specifics. The choice of 'neural networks' for the model type is based on the task's complexity and the need for high accuracy, common in computer vision tasks, especially with image classification in domains like astronomy. The dataset source is set to 'infer-search' due to the user's vague recollection of a NASA-related dataset, implying a need for assistance in identifying the exact dataset."",
+        ""score"": 0.95
+    }
+}",1
+image classification,I have a list of cat images. Please give me any model that I can use to classify the species of cat images I have?,"{
+    ""user"": {
+        ""intent"": ""build"",
+        ""expertise"": ""low""
+    },
+    ""problem"": {
+        ""area"": ""computer vision"",
+        ""downstream_task"": ""image classification"",
+        ""application_domain"": ""animal species identification"",
+        ""description"": ""The user has a list of cat images and is seeking a model that can classify the species of these cat images."",
+        ""performance_metrics"": [],
+        ""complexity_metrics"": []
+    },
+    ""dataset"": [
+        {
+            ""name"": """",
+            ""modality"": [""image""],
+            ""target_variables"": [""cat species""],
+            ""specification"": null,
+            ""description"": ""A collection of cat images for which the species needs to be classified."",
+            ""preprocessing"": [],
+            ""augmentation"": [],
+            ""visualization"": [],
+            ""source"": ""user-upload""
+        }
+    ],
+    ""model"": [
+        {
+            ""name"": """",
+            ""family"": """",
+            ""type"": ""neural networks"",
+            ""specification"": null,
+            ""description"": ""A model suitable for classifying the species of cats from images. Ideally, this would be a pretrained neural network on a large dataset that can be fine-tuned for the specific task of cat species classification.""
+        }
+    ],
+    ""knowledge"": [],
+    ""service"": {
+        ""feature_engineering"": [],
+        ""target_device"": """",
+        ""deployment_endpoint"": """",
+        ""inference_engine"": [],
+        ""demonstration"": null
+    },
+    ""confidence"": {
+        ""rationale"": ""The JSON format closely follows the given instruction and the provided template. The user's intent seems to be seeking advice ('consult'), with an apparent low expertise in AI and ML as they require a model recommendation. The problem area and downstream task are identified based on the nature of the task (image classification within computer vision), specifically for animal species identification. The dataset details are inferred from the user's description of having cat images to classify. The recommendation for a neural network type model is based on its suitability for image classification tasks. No specific models or detailed specifications are provided in the instruction, hence the general recommendation."",
+        ""score"": 0.9
+    }
+}",1
+image classification,"In the real estate industry, we often deal with an enormous volume of property photos. It's crucial for us to quickly identify features within these images, such as swimming pools, gardens, or kitchens, to enhance our listing details and attract the right buyers. We're looking for an automated method to assist in this process, improving efficiency and accuracy in how we present properties to potential buyers.","{
+    ""user"": {
+        ""intent"": ""build"",
+        ""expertise"": ""low""
+    },
+    ""problem"": {
+        ""area"": ""computer vision"",
+        ""downstream_task"": ""image classification"",
+        ""application_domain"": ""real estate"",
+        ""description"": ""In the real estate industry, it's essential to quickly classify features within property photos, such as swimming pools, gardens, or kitchens, to enhance listing details and attract the right buyers. An automated method is sought to improve efficiency and accuracy in presenting properties to potential buyers."",
+        ""performance_metrics"": [],
+        ""complexity_metrics"": []
+    },
+    ""dataset"": [
+        {
+            ""name"": """",
+            ""modality"": [""image""],
+            ""target_variables"": [],
+            ""specification"": null,
+            ""description"": ""Property photos with a wide range of features such as swimming pools, gardens, and kitchens, used to enhance real estate listings."",
+            ""preprocessing"": [],
+            ""augmentation"": [],
+            ""visualization"": [],
+            ""source"": ""user-upload""
+        }
+    ],
+    ""model"": [
+        {
+            ""name"": """",
+            ""family"": """",
+            ""type"": ""neural networks"",
+            ""specification"": null,
+            ""description"": ""A model capable of classifying features within property photos to enhance real estate listings and attract the right buyers.""
+        }
+    ],
+    ""knowledge"": [],
+    ""service"": {
+        ""feature_engineering"": [],
+        ""target_device"": """",
+        ""deployment_endpoint"": """",
+        ""inference_engine"": [],
+        ""demonstration"": null
+    },
+    ""confidence"": {
+        ""rationale"": ""The JSON structure is filled based on the instruction provided. The intent is classified as 'build' since the user wants to develop an automated solution. The expertise is set to 'low' as the user does not provide specific technical knowledge about AI or ML. The 'computer vision' area and 'image classification' task are selected as they directly relate to processing and classifying features in property photos. The dataset and model sections are filled with information relevant to real estate property photos and the objective of enhancing listings."",
+        ""score"": 0.9
+    }
+}",1
+image classification,"In the fast-paced world of fashion e-commerce, staying on top of the latest trends is crucial. However, manually tagging thousands of new product images with the correct fashion attributes (style, color, type) is time-consuming and prone to errors. Is there an automated solution that could help us accurately categorize these products, making sure they show up in the right searches and recommendations?","{
+    ""user"": {
+        ""intent"": ""consult-build"",
+        ""expertise"": ""low""
+    },
+    ""problem"": {
+        ""area"": ""computer vision"",
+        ""downstream_task"": ""image classification"",
+        ""application_domain"": ""fashion e-commerce"",
+        ""description"": ""In the fast-paced world of fashion e-commerce, staying on top of the latest trends is crucial. However, manually tagging thousands of new product images with the correct fashion attributes (style, color, type) is time-consuming and prone to errors. Seeking an automated solution to accurately categorize these products for proper search and recommendation."",
+        ""performance_metrics"": [],
+        ""complexity_metrics"": []
+    },
+    ""dataset"": [
+        {
+            ""name"": """",
+            ""modality"": [""image""],
+            ""target_variables"": [""style"", ""color"", ""type""],
+            ""specification"": null,
+            ""description"": ""The dataset consists of thousands of fashion product images that need to be tagged with correct attributes such as style, color, and type."",
+            ""preprocessing"": [],
+            ""augmentation"": [],
+            ""visualization"": [],
+            ""source"": ""user-upload""
+        }
+    ],
+    ""model"": [
+        {
+            ""name"": """",
+            ""family"": """",
+            ""type"": ""neural networks"",
+            ""specification"": null,
+            ""description"": ""A model capable of classifying images into predefined categories based on style, color, and type to support efficient and accurate tagging of fashion product images.""
+        }
+    ],
+    ""knowledge"": [],
+    ""service"": {
+        ""feature_engineering"": [],
+        ""target_device"": """",
+        ""deployment_endpoint"": """",
+        ""inference_engine"": [],
+        ""demonstration"": null
+    },
+    ""confidence"": {
+        ""rationale"": ""The given instruction was parsed into the JSON format following the template provided. The intent is 'consult-build' as the user is seeking advice on building an automated solution. The expertise is set to 'low', implying a general knowledge of the problem without deep technical expertise. The problem area, 'computer vision', with a 'image classification' task, matches the requirement to categorize product images. The dataset is described as image-based, needing tagging with attributes such as style, color, and type, uploaded by the user. The model is expected to be a type of neural network, suitable for image classification tasks in the fashion e-commerce domain. The rest of the fields are filled based on the information provided and the logical structure required by the template."",
+        ""score"": 0.95
+    }
+}",0
+image classification,"We run a large agricultural operation and have been exploring ways to more efficiently monitor the health of our crops using aerial imagery. The challenge is interpreting these images quickly and accurately to identify areas of concern. Is there a technology that can help us automatically detect and classify different types of crop health issues from these images, so we can address them promptly?","{
+    ""user"": {
+        ""intent"": ""consult"",
+        ""expertise"": ""low""
+    },
+    ""problem"": {
+        ""area"": ""computer vision"",
+        ""downstream_task"": ""image classification"",
+        ""application_domain"": ""agriculture"",
+        ""description"": ""We run a large agricultural operation and have been exploring ways to more efficiently monitor the health of our crops using aerial imagery. The challenge is interpreting these images quickly and accurately to identify areas of concern. Is there a technology that can help us automatically detect and classify different types of crop health issues from these images, so we can address them promptly?"",
+        ""performance_metrics"": [],
+        ""complexity_metrics"": []
+    },
+    ""dataset"": [
+        {
+            ""name"": """",
+            ""modality"": [""image""],
+            ""target_variables"": [],
+            ""specification"": null,
+            ""description"": ""Aerial imagery for monitoring crop health."",
+            ""preprocessing"": [],
+            ""augmentation"": [],
+            ""visualization"": [],
+            ""source"": ""user-upload""
+        }
+    ],
+    ""model"": [
+        {
+            ""name"": """",
+            ""family"": """",
+            ""type"": ""neural networks"",
+            ""specification"": null,
+            ""description"": ""A model capable of classifying different types of crop health issues from aerial images.""
+        }
+    ],
+    ""knowledge"": [],
+    ""service"": {
+        ""feature_engineering"": [],
+        ""target_device"": """",
+        ""deployment_endpoint"": """",
+        ""inference_engine"": [],
+        ""demonstration"": null
+    },
+    ""confidence"": {
+        ""rationale"": ""The JSON structure follows the template provided and captures the essence of the user's inquiry about identifying and classifying crop health issues using aerial imagery through computer vision technology, specifically image classification. The 'user' field is set to 'consult' and 'expertise' to 'low' to reflect the user's request for technology consultation without demonstrating in-depth AI or ML knowledge. The 'problem', 'dataset', and 'model' sections are carefully filled to match the requirements stated in the user's instruction, focusing on agricultural applications and aerial image processing."",
+        ""score"": 0.95
+    }
+}",0
+image classification,"With the rise in dietary restrictions and preferences among our restaurant's clientele, we've been thinking of ways to better catalog our menu's dish images. If there was a way to automatically identify dishes based on ingredients or dietary categories (e.g., vegan, gluten-free, nut-free), it could revolutionize how we present our menu online and assist with staff training.","{
+    ""user"": {
+        ""intent"": ""build"",
+        ""expertise"": ""low""
+    },
+    ""problem"": {
+        ""area"": ""computer vision"",
+        ""downstream_task"": ""image classification"",
+        ""application_domain"": ""hospitality"",
+        ""description"": ""With the rise in dietary restrictions and preferences among our restaurant's clientele, we've been thinking of ways to better catalog our menu's dish images. If there was a way to automatically identify dishes based on ingredients or dietary categories (e.g., vegan, gluten-free, nut-free), it could revolutionize how we present our menu online and assist with staff training."",
+        ""performance_metrics"": [],
+        ""complexity_metrics"": []
+    },
+    ""dataset"": [
+        {
+            ""name"": """",
+            ""modality"": [""image""],
+            ""target_variables"": [""ingredients"", ""dietary categories""],
+            ""specification"": null,
+            ""description"": ""Images of dishes offered in the restaurant's menu to be categorized based on ingredients and dietary restrictions such as vegan, gluten-free, and nut-free."",
+            ""preprocessing"": [],
+            ""augmentation"": [],
+            ""visualization"": [],
+            ""source"": ""user-upload""
+        }
+    ],
+    ""model"": [
+        {
+            ""name"": """",
+            ""family"": """",
+            ""type"": ""neural networks"",
+            ""specification"": null,
+            ""description"": ""A neural network model capable of classifying dish images into various dietary categories based on visual characteristics and possibly ingredients.""
+        }
+    ],
+    ""knowledge"": [],
+    ""service"": {
+        ""feature_engineering"": [],
+        ""target_device"": """",
+        ""deployment_endpoint"": """",
+        ""inference_engine"": [],
+        ""demonstration"": null
+    },
+    ""confidence"": {
+        ""rationale"": ""The provided JSON structure aligns with the instruction to create a system for cataloging dish images based on dietary restrictions and preferences, utilizing computer vision for image classification within the hospitality domain. The choice of neural networks reflects current best practices for image classification tasks. The dataset details are inferred to ensure the model's effective training and deployment."",
+        ""score"": 0.9
+    }
+}",0
+image classification,"We're seeing a flood of customer photos submitted via our app, showcasing how they use our products in real life. The marketing team is overwhelmed and needs an automated way to sort these into categories: good for testimonials, needing follow-up, or to be featured in our 'real-life' gallery. Can we get a system that helps streamline this process, ensuring we capitalize on these opportunities more efficiently?","{
+    ""user"": {
+        ""intent"": ""build"",
+        ""expertise"": ""medium""
+    },
+    ""problem"": {
+        ""area"": ""computer vision"",
+        ""downstream_task"": ""image classification"",
+        ""application_domain"": ""marketing"",
+        ""description"": ""Develop an automated system to sort customer-submitted photos via an app into categories: suitable for testimonials, needing follow-up, or to be featured in a 'real-life' gallery."",
+        ""performance_metrics"": [],
+        ""complexity_metrics"": []
+    },
+    ""dataset"": [
+        {
+            ""name"": """",
+            ""modality"": [""image""],
+            ""target_variables"": [""category""],
+            ""specification"": null,
+            ""description"": ""Photos submitted by customers showcasing how they use the company's products in real life."",
+            ""preprocessing"": [],
+            ""augmentation"": [],
+            ""visualization"": [],
+            ""source"": ""user-upload""
+        }
+    ],
+    ""model"": [
+        {
+            ""name"": """",
+            ""family"": """",
+            ""type"": ""neural networks"",
+            ""specification"": null,
+            ""description"": ""A model capable of classifying customer-submitted photos into predefined categories based on the context of their usage of products.""
+        }
+    ],
+    ""knowledge"": [],
+    ""service"": {
+        ""feature_engineering"": [],
+        ""target_device"": """",
+        ""deployment_endpoint"": """",
+        ""inference_engine"": [],
+        ""demonstration"": null
+    },
+    ""confidence"": {
+        ""rationale"": ""This JSON structure is based on the instruction prompt, following the provided template and focusing on creating an automated system for sorting customer-submitted photos into specific categories for marketing purposes. The choice of 'computer vision' as the area and 'image classification' as the downstream task is due to the nature of sorting photos. The dataset and model sections are crafted to align with the need for processing and classifying images. Specific details, such as preprocessing steps, reflect common practices for image data. The response is structured to ensure clarity and relevance to the described problem, with acknowledgment of areas where specific details were not provided in the instruction."",
+        ""score"": 0.95
+    }
+}",0
+image classification,I have collected pictures taken from my phone. Any suggestion on doing with these pictures?,"{
+    ""user"": {
+        ""intent"": ""consult"",
+        ""expertise"": ""low""
+    },
+    ""problem"": {
+        ""area"": ""computer vision"",
+        ""downstream_task"": ""image classification"",
+        ""application_domain"": ""personal"",
+        ""description"": ""The user has collected pictures taken from their phone and is seeking suggestions for what to do with these pictures."",
+        ""performance_metrics"": [],
+        ""complexity_metrics"": []
+    },
+    ""dataset"": [
+        {
+            ""name"": """",
+            ""modality"": [""image""],
+            ""target_variables"": [],
+            ""specification"": null,
+            ""description"": ""Pictures taken from the user's phone, potentially covering a wide range of subjects and scenes."",
+            ""preprocessing"": [],
+            ""augmentation"": [],
+            ""visualization"": [],
+            ""source"": ""user-upload""
+        }
+    ],
+    ""model"": [],
+    ""knowledge"": [],
+    ""service"": {
+        ""feature_engineering"": [],
+        ""target_device"": """",
+        ""deployment_endpoint"": """",
+        ""inference_engine"": [],
+        ""demonstration"": null
+    },
+    ""confidence"": {
+        ""rationale"": ""The user's intent appears to be seeking advice ('consult') on what can be done with a collection of personal photos, indicating a non-technical background ('low' expertise). The instruction does not specify a particular machine learning task or model, thus the 'problem' section describes the area as 'computer vision' with potential tasks like 'image classification'. The dataset is described as images from the user's phone, without detailed specifications. No specific models or services were requested, reflecting the general nature of the inquiry."",
+        ""score"": 0.75
+    }
+}",0
+object detection,"For our urban traffic management project, we require a model trained on the 'Cityscapes' dataset to perform object detection on various street elements, specifically vehicles, pedestrians, and traffic signs. The model should belong to the YOLO family for real-time processing, aiming for at least 30 FPS on standard hardware while maintaining a minimum accuracy of 85%.","{
+    ""user"": {
+        ""intent"": ""build"",
+        ""expertise"": ""medium""
+    },
+    ""problem"": {
+        ""area"": ""computer vision"",
+        ""downstream_task"": ""object detection"",
+        ""application_domain"": ""urban traffic management"",
+        ""description"": ""For our urban traffic management project, we require a model trained on the 'Cityscapes' dataset to perform object detection on various street elements, specifically vehicles, pedestrians, and traffic signs. The model should belong to the YOLO family for real-time processing, aiming for at least 30 FPS on standard hardware while maintaining a minimum accuracy of 85%."",
+        ""performance_metrics"": [
+            {""name"": ""accuracy"", ""value"": 0.85}
+        ],
+        ""complexity_metrics"": [ {""name"": ""frame rate"", ""value"": 30} ]
+    },
+    ""dataset"": [
+        {
+            ""name"": ""Cityscapes"",
+            ""modality"": [""image""],
+            ""target_variables"": [""vehicles"", ""pedestrians"", ""traffic signs""],
+            ""specification"": null,
+            ""description"": ""A dataset for semantic urban scene understanding that includes various street elements."",
+            ""preprocessing"": [],
+            ""augmentation"": [],
+            ""visualization"": [],
+            ""source"": ""direct-search""
+        }
+    ],
+    ""model"": [
+        {
+            ""name"": """",
+            ""family"": ""YOLO"",
+            ""type"": ""neural networks"",
+            ""specification"": null,
+            ""description"": ""A YOLO family model trained for real-time object detection on street elements, aiming for high accuracy and frame rate.""
+        }
+    ],
+    ""knowledge"": [],
+    ""service"": {
+        ""feature_engineering"": [],
+        ""target_device"": ""standard hardware"",
+        ""deployment_endpoint"": """",
+        ""inference_engine"": [],
+        ""demonstration"": null
+    },
+    ""confidence"": {
+        ""rationale"": ""The JSON structure is meticulously crafted based on the provided instruction and the template. Specific values such as 'intent', 'expertise', 'area', 'downstream_task', 'application_domain', and detailed descriptions are filled out according to the information given in the prompt. The 'performance_metrics' reflect the required frame rate and accuracy. The 'dataset' section is populated with the Cityscapes dataset details, including its modality and target variables. The 'model' section mentions the YOLO family, emphasizing its fit for real-time processing requirements. The use of 'standard hardware' as a target device indicates an assumption made based on the term 'standard', reflecting an interpretation of common deployment environments. Every effort has been made to ensure accuracy and completeness, with assumptions clearly marked in this rationale."",
+        ""score"": 0.95
+    }
+}",2
+object detection,"We're developing an automated inventory system and need a model trained on the 'SKU-110K' dataset. The task involves detecting and counting retail products on shelves. Preferably, the model should be from the Faster R-CNN family, optimized for high precision to minimize inventory errors. A detailed performance report comparing precision and recall across different product categories is required.","{
+    ""user"": {
+        ""intent"": ""build"",
+        ""expertise"": ""medium""
+    },
+    ""problem"": {
+        ""area"": ""computer vision"",
+        ""downstream_task"": ""object detection"",
+        ""application_domain"": ""retail"",
+        ""description"": ""Develop an automated inventory system using a model trained on the 'SKU-110K' dataset for detecting and counting retail products on shelves, optimized for high precision to minimize inventory errors."",
+        ""performance_metrics"": [
+            {
+                ""name"": ""precision"",
+                ""value"": null
+            },
+            {
+                ""name"": ""recall"",
+                ""value"": null
+            }
+        ],
+        ""complexity_metrics"": []
+    },
+    ""dataset"": [
+        {
+            ""name"": ""SKU-110K"",
+            ""modality"": [
+                ""image""
+            ],
+            ""target_variables"": [],
+            ""specification"": null,
+            ""description"": ""A dataset for detecting and counting retail products on shelves."",
+            ""preprocessing"": [],
+            ""augmentation"": [],
+            ""visualization"": [],
+            ""source"": ""direct-search""
+        }
+    ],
+    ""model"": [
+        {
+            ""name"": """",
+            ""family"": ""Faster R-CNN"",
+            ""type"": ""neural networks"",
+            ""specification"": null,
+            ""description"": ""A model from the Faster R-CNN family, optimized for high precision to minimize inventory errors.""
+        }
+    ],
+    ""knowledge"": [],
+    ""service"": {
+        ""feature_engineering"": [],
+        ""target_device"": """",
+        ""deployment_endpoint"": """",
+        ""inference_engine"": [],
+        ""demonstration"": null
+    },
+    ""confidence"": {
+        ""rationale"": ""The JSON structure is closely aligned with the given instruction prompt, categorizing the task under 'computer vision' and 'object detection' due to the requirements of detecting and counting items on retail shelves. The model choice, Faster R-CNN, is specified to highlight the focus on precision for inventory accuracy. The SKU-110K dataset's inclusion addresses the specificity of the retail domain challenge. Performance metrics of precision and recall are listed without specific values as the prompt requests a comparison rather than fixed targets. The lack of detailed specifications on dataset processing, model architecture, and deployment is noted, reflecting the prompt's focus on outcomes over procedural specifics."",
+        ""score"": 0.95
+    }
+}",2
+object detection,"Our project focuses on wildlife conservation, and we need an object detection model trained on the 'iWildCam' dataset. The objective is to identify and track various animal species in their natural habitats. We're looking for a model from the EfficientDet family that balances accuracy and efficiency, capable of running on battery-powered edge devices in remote locations.","{
+    ""user"": {
+        ""intent"": ""build"",
+        ""expertise"": ""medium""
+    },
+    ""problem"": {
+        ""area"": ""computer vision"",
+        ""downstream_task"": ""object detection"",
+        ""application_domain"": ""wildlife conservation"",
+        ""description"": ""The project aims to leverage an object detection model, specifically from the EfficientDet family, to identify and track various animal species in their natural habitats using the 'iWildCam' dataset. The goal is to contribute to wildlife conservation efforts by employing technology that can operate on battery-powered edge devices in remote locations."",
+        ""performance_metrics"": [],
+        ""complexity_metrics"": []
+    },
+    ""dataset"": [
+        {
+            ""name"": ""iWildCam"",
+            ""modality"": [""image""],
+            ""target_variables"": [],
+            ""specification"": null,
+            ""description"": ""A dataset designed for the task of wildlife conservation, consisting of images of various animal species captured in their natural habitats. It is used to train object detection models to identify and track animals."",
+            ""preprocessing"": [],
+            ""augmentation"": [],
+            ""visualization"": [],
+            ""source"": ""direct-search""
+        }
+    ],
+    ""model"": [
+        {
+            ""name"": """",
+            ""family"": ""EfficientDet"",
+            ""type"": ""neural networks"",
+            ""specification"": null,
+            ""description"": ""A model from the EfficientDet family is requested due to its balance between accuracy and efficiency, making it suitable for deployment on battery-powered edge devices in remote locations for wildlife tracking and conservation.""
+        }
+    ],
+    ""knowledge"": [],
+    ""service"": {
+        ""feature_engineering"": [],
+        ""target_device"": ""battery-powered edge devices"",
+        ""deployment_endpoint"": """",
+        ""inference_engine"": [],
+        ""demonstration"": null
+    },
+    ""confidence"": {
+        ""rationale"": ""The JSON structure was populated strictly according to the instruction prompt, following the template provided. The user's intent is clearly to build a solution ('build'), with an application in wildlife conservation using computer vision for object detection. The 'iWildCam' dataset is specified, aligning with the application domain. The requirement for an EfficientDet family model indicates a medium level of expertise. The instruction does not provide specific metrics for performance or complexity, nor does it detail dataset preprocessing, augmentation, or model specifications, thus these fields are left with their default values or empty where appropriate. The confidence in this parsing is high as it directly reflects the project's goals, domain, and technical requirements as described."",
+        ""score"": 1.0
+    }
+}",2
+object detection,"In our agricultural drone imaging project, we aim to detect signs of plant diseases and nutrient deficiencies. Please develop a model using the 'PlantVillage' dataset, with an emphasis on the Mask R-CNN architecture for precise localization and segmentation of affected areas. Expected performance is at least 90% accuracy, with the model optimized for aerial view images.","{
+    ""user"": {
+        ""intent"": ""build"",
+        ""expertise"": ""medium""
+    },
+    ""problem"": {
+        ""area"": ""computer vision"",
+        ""downstream_task"": ""object detection"",
+        ""application_domain"": ""agriculture"",
+        ""description"": ""Develop a model to detect signs of plant diseases and nutrient deficiencies in crops using aerial images. The model should employ the Mask R-CNN architecture for precise localization of affected areas."",
+        ""performance_metrics"": [
+            {
+                ""name"": ""accuracy"",
+                ""value"": 0.9
+            }
+        ],
+        ""complexity_metrics"": []
+    },
+    ""dataset"": [
+        {
+            ""name"": ""PlantVillage"",
+            ""modality"": [
+                ""image""
+            ],
+            ""target_variables"": [],
+            ""specification"": null,
+            ""description"": ""A dataset containing images of various plant leaves, which is used for the detection of plant diseases."",
+            ""preprocessing"": [],
+            ""augmentation"": [],
+            ""visualization"": [],
+            ""source"": ""direct-search""
+        }
+    ],
+    ""model"": [
+        {
+            ""name"": ""Mask R-CNN"",
+            ""family"": ""Convolutional Neural Networks"",
+            ""type"": ""neural networks"",
+            ""specification"": null,
+            ""description"": ""A model architecture used for precise object detection tasks, focusing on identifying and localizing affected areas in plant leaves from aerial images.""
+        }
+    ],
+    ""knowledge"": [],
+    ""service"": {
+        ""feature_engineering"": [],
+        ""target_device"": """",
+        ""deployment_endpoint"": """",
+        ""inference_engine"": [],
+        ""demonstration"": null
+    },
+    ""confidence"": {
+        ""rationale"": ""The JSON response is structured according to the template, with fields filled based on the provided instructions. Emphasis was placed on accurately reflecting the problem description, expected model architecture, dataset details, and performance metrics. The 'confidence' section allows for reflection on the decision-making process, ensuring the response is both comprehensive and tailored to the request."",
+        ""score"": 1.0
+    }
+}",2
+object detection,"For a museum security application, we need an object detection model that can identify and differentiate between various artifacts and potential security threats. The model should be trained on a custom dataset curated from museum inventory images and public security databases. We prefer a model from the SSD family for its speed, aiming to detect objects in under 50 milliseconds per frame, with a false positive rate lower than 0.1%.","{
+    ""user"": {""intent"": ""build"", ""expertise"": ""medium""},
+    ""problem"": {
+        ""area"": ""computer vision"",
+        ""downstream_task"": ""object detection"",
+        ""application_domain"": ""museum security"",
+        ""description"": ""Develop an object detection model to identify and differentiate between various artifacts and potential security threats in a museum environment. The model should utilize a custom dataset curated from museum inventory images and public security databases."",
+        ""performance_metrics"": [{""name"": ""false positive rate"", ""value"": 0.1}],
+        ""complexity_metrics"": [
+            {""name"": ""inference speed"", ""value"": 0.05}
+        ]
+    },
+    ""dataset"": [
+        {
+            ""name"": ""custom museum security dataset"",
+            ""modality"": [""image""],
+            ""target_variables"": [],
+            ""specification"": null,
+            ""description"": ""A custom dataset curated from museum inventory images and public security databases, specifically designed for training an object detection model for museum security."",
+            ""preprocessing"": [],
+            ""augmentation"": [],
+            ""visualization"": [],
+            ""source"": ""user-upload""
+        },
+        {
+            ""name"": """",
+            ""modality"": [""image""],
+            ""target_variables"": [],
+            ""specification"": null,
+            ""description"": ""Public security databases, specifically designed for training an object detection model for museum security."",
+            ""preprocessing"": [],
+            ""augmentation"": [],
+            ""visualization"": [],
+            ""source"": ""infer-search""
+        }        
+    ],
+    ""model"": [
+        {
+            ""name"": """",
+            ""family"": ""SSD"",
+            ""type"": ""neural networks"",
+            ""specification"": null,
+            ""description"": ""A model from the SSD family is preferred for its speed, capable of detecting objects in under 50 milliseconds per frame, with a low false positive rate.""
+        }
+    ],
+    ""knowledge"": [],
+    ""service"": {
+        ""feature_engineering"": [],
+        ""target_device"": """",
+        ""deployment_endpoint"": """",
+        ""inference_engine"": [],
+        ""demonstration"": null
+    },
+    ""confidence"": {
+        ""rationale"": ""The parsed information accurately reflects the user's request for developing an object detection model within the context of museum security, specifying performance metrics, model preferences, and the unique dataset requirements."",
+        ""score"": 0.9
+    }
+}",2
+object detection,"We're tackling the challenge of automatic sports analytics and require a model trained on the 'Sports-1M' dataset, specifically for detecting sports equipment and player actions in real-time. The model should be a custom variation of the RetinaNet architecture, designed for high-speed analysis with an emphasis on minimizing latency for live broadcast applications.","{
+    ""user"": {
+        ""intent"": ""build"",
+        ""expertise"": ""high""
+    },
+    ""problem"": {
+        ""area"": ""computer vision"",
+        ""downstream_task"": ""object detection"",
+        ""application_domain"": ""sports analytics"",
+        ""description"": ""We're tackling the challenge of automatic sports analytics and require a model trained on the 'Sports-1M' dataset, specifically for detecting sports equipment and player actions in real-time. The model should be a custom variation of the RetinaNet architecture, designed for high-speed analysis with an emphasis on minimizing latency for live broadcast applications."",
+        ""performance_metrics"": [],
+        ""complexity_metrics"": [
+            {
+                ""name"": ""latency"",
+                ""value"": null
+            }
+        ]
+    },
+    ""dataset"": [
+        {
+            ""name"": ""Sports-1M"",
+            ""modality"": [""video""],
+            ""target_variables"": [],
+            ""specification"": null,
+            ""description"": ""A dataset used for training models to recognize sports activities from video data."",
+            ""preprocessing"": [],
+            ""augmentation"": [],
+            ""visualization"": [],
+            ""source"": ""direct-search""
+        }
+    ],
+    ""model"": [
+        {
+            ""name"": ""Custom RetinaNet"",
+            ""family"": ""RetinaNet"",
+            ""type"": ""neural networks"",
+            ""specification"": null,
+            ""description"": ""A custom variation of the RetinaNet architecture tailored for high-speed analysis in sports analytics, emphasizing on minimizing latency for live broadcast applications.""
+        }
+    ],
+    ""knowledge"": [],
+    ""service"": {
+        ""feature_engineering"": [],
+        ""target_device"": ""broadcast systems"",
+        ""deployment_endpoint"": """",
+        ""inference_engine"": [],
+        ""demonstration"": null
+    },
+    ""confidence"": {
+        ""rationale"": ""The JSON response is structured based on the instruction given, following the provided template closely. The intent and expertise levels were inferred from the nature of the task, which suggests a high expertise in developing custom models for real-time applications. The problem description, dataset, and model sections are filled out to directly address the requirement of detecting sports equipment and player actions using a modified RetinaNet model. The confidence in parsing and completeness of information is high as the instruction was clear, and the response was carefully crafted to align with the provided details."",
+        ""score"": 1.0
+    }
+}",2
+object detection,"Our goal is to improve safety in manufacturing environments by detecting potential hazards. Please develop a model using the 'COCO' dataset, with additional training on a supplementary dataset of industrial scenes. We're interested in an adaptation of the Anchor-Free Convolutional Neural Networks, focusing on detecting safety gear compliance and identifying trip hazards with at least 95% accuracy.","{
+    ""user"": {
+        ""intent"": ""build"",
+        ""expertise"": ""medium""
+    },
+    ""problem"": {
+        ""area"": ""computer vision"",
+        ""downstream_task"": ""object detection"",
+        ""application_domain"": ""industrial safety"",
+        ""description"": ""Our goal is to improve safety in manufacturing environments by detecting potential hazards. We aim to develop a model to identify safety gear compliance and trip hazards with high accuracy."",
+        ""performance_metrics"": [
+            {
+                ""name"": ""accuracy"",
+                ""value"": 0.95
+            }
+        ],
+        ""complexity_metrics"": []
+    },
+    ""dataset"": [
+        {
+            ""name"": ""COCO"",
+            ""modality"": [""image""],
+            ""target_variables"": [],
+            ""specification"": null,
+            ""description"": ""A dataset for object detection, segmentation, and captioning. To be used as the primary dataset."",
+            ""preprocessing"": [],
+            ""augmentation"": [],
+            ""visualization"": [],
+            ""source"": ""direct-search""
+        },
+        {
+            ""name"": """",
+            ""modality"": [""image""],
+            ""target_variables"": [],
+            ""specification"": null,
+            ""description"": ""Additional dataset for training the model specifically on industrial scenes to detect safety gear compliance and trip hazards."",
+            ""preprocessing"": [],
+            ""augmentation"": [],
+            ""visualization"": [],
+            ""source"": ""infer-search""
+        }
+    ],
+    ""model"": [
+        {
+            ""name"": ""Anchor-Free Convolutional Neural Networks adaptation"",
+            ""family"": ""Convolutional Neural Networks"",
+            ""type"": ""neural networks"",
+            ""specification"": null,
+            ""description"": ""An adaptation of the Anchor-Free Convolutional Neural Networks, focusing on detecting safety gear compliance and identifying trip hazards.""
+        }
+    ],
+    ""knowledge"": [],
+    ""service"": {
+        ""feature_engineering"": [],
+        ""target_device"": """",
+        ""deployment_endpoint"": """",
+        ""inference_engine"": [],
+        ""demonstration"": null
+    },
+    ""confidence"": {
+        ""rationale"": ""The JSON format was carefully constructed to match the provided template and the specific requirements of the instruction prompt. The choices for each section were made to reflect the prompt's details accurately, including the model type, dataset requirements, and target application domain. The intent and expertise level were inferred from the context of the request."",
+        ""score"": 0.95
+    }
+}",2
+object detection,"For a retail inventory management system, I need a model trained on the ""StoreShelf Dataset"" for detecting and categorizing items on supermarket shelves. The model should belong to the YOLO family for real-time performance, capable of identifying at least 50 different types of products with a precision and recall above 90%. The system must update inventory counts in less than 2 seconds per shelf image.","{
+    ""user"": {
+        ""intent"": ""build"",
+        ""expertise"": ""medium""
+    },
+    ""problem"": {
+        ""area"": ""computer vision"",
+        ""downstream_task"": ""object detection"",
+        ""application_domain"": ""retail inventory management"",
+        ""description"": ""A model trained on the 'StoreShelf Dataset' for detecting and categorizing items on supermarket shelves, capable of identifying at least 50 different types of products with precision and recall above 90%. The system must update inventory counts in less than 2 seconds per shelf image."",
+        ""performance_metrics"": [
+            {
+                ""name"": ""precision"",
+                ""value"": 0.9
+            },
+            {
+                ""name"": ""recall"",
+                ""value"": 0.9
+            }
+        ],
+        ""complexity_metrics"": [
+            {
+                ""name"": ""inference_speed"",
+                ""value"": 2.0
+            }
+        ]
+    },
+    ""dataset"": [
+        {
+            ""name"": ""StoreShelf Dataset"",
+            ""modality"": [""image""],
+            ""target_variables"": [],
+            ""specification"": null,
+            ""description"": ""A dataset for detecting and categorizing items on supermarket shelves."",
+            ""preprocessing"": [],
+            ""augmentation"": [],
+            ""visualization"": [],
+            ""source"": ""direct-search""
+        }
+    ],
+    ""model"": [
+        {
+            ""name"": """",
+            ""family"": ""YOLO"",
+            ""type"": ""neural networks"",
+            ""specification"": null,
+            ""description"": ""A YOLO family model capable of real-time performance for detecting and categorizing supermarket shelf items.""
+        }
+    ],
+    ""knowledge"": [],
+    ""service"": {
+        ""feature_engineering"": [],
+        ""target_device"": """",
+        ""deployment_endpoint"": """",
+        ""inference_engine"": [],
+        ""demonstration"": null
+    },
+    ""confidence"": {
+        ""rationale"": ""The provided instruction was detailed, specifying the dataset, model family, application domain, performance expectations, and processing time. The task fits under 'computer vision' and 'object detection'. The YOLO model family is suitable for real-time performance, aligning with the requirement for identifying products with high precision and recall. The specificity of the dataset and model requirements, coupled with performance and complexity metrics, supports the confidence in the accuracy of the parsed information."",
+        ""score"": 0.95
+    }
+}",2
+object detection,"Our project is focused on developing a smart city application that involves detecting and analyzing parking space availability in real-time. The model should be trained on the 'PKLot' dataset, with a preference for the M2Det model family due to its multi-level feature integration for comprehensive scene understanding. Expected deliverables include a system capable of operating across different lighting and weather conditions, with a detection accuracy rate exceeding 92% and response times below 200 milliseconds.","{
+    ""user"": {
+        ""intent"": ""build"",
+        ""expertise"": ""high""
+    },
+    ""problem"": {
+        ""area"": ""computer vision"",
+        ""downstream_task"": ""object detection"",
+        ""application_domain"": ""smart city"",
+        ""description"": ""Developing a smart city application that detects and analyzes parking space availability in real-time."",
+        ""performance_metrics"": [
+            {
+                ""name"": ""detection_accuracy"",
+                ""value"": 0.92
+            }
+        ],
+        ""complexity_metrics"": [
+            {
+                ""name"": ""response_time"",
+                ""value"": 0.2
+            }
+        ]
+    },
+    ""dataset"": [
+        {
+            ""name"": ""PKLot"",
+            ""modality"": [""image""],
+            ""target_variables"": [],
+            ""specification"": null,
+            ""description"": ""A dataset for parking lot occupancy detection."",
+            ""preprocessing"": [],
+            ""augmentation"": [],
+            ""visualization"": [],
+            ""source"": ""direct-search""
+        }
+    ],
+    ""model"": [
+        {
+            ""name"": ""M2Det"",
+            ""family"": ""M2Det model family"",
+            ""type"": ""neural networks"",
+            ""specification"": null,
+            ""description"": ""Preferred for its multi-level feature integration for comprehensive scene understanding.""
+        }
+    ],
+    ""knowledge"": [],
+    ""service"": {
+        ""feature_engineering"": [],
+        ""target_device"": ""generic computing devices"",
+        ""deployment_endpoint"": ""smart city infrastructure"",
+        ""inference_engine"": [],
+        ""demonstration"": null
+    },
+    ""confidence"": {
+        ""rationale"": ""The JSON structure was carefully filled based on the provided instruction, considering the specifics of the project, such as the application domain (smart city), problem area (computer vision with a focus on object detection), preferred model (M2Det), and dataset (PKLot). Performance expectations were explicitly stated, and other details were inferred based on the context."",
+        ""score"": 0.95
+    }
+}",2
+object detection,"Our maritime safety project needs a DeepLabv3+ model trained on the SeaShips dataset to detect and classify different types of sea vessels, including their size and direction. Accuracy is paramount, with a target of 92%, and the model must perform well under different sea conditions. Real-time processing is not a necessity, but the model should be efficient enough to run on cloud-based GPUs.","{
+    ""user"": {
+        ""intent"": ""build"",
+        ""expertise"": ""medium""
+    },
+    ""problem"": {
+        ""area"": ""computer vision"",
+        ""downstream_task"": ""object detection"",
+        ""application_domain"": ""maritime safety"",
+        ""description"": ""Train a DeepLabv3+ model on the SeaShips dataset to detect and classify different types of sea vessels, including their size and direction. The model must be accurate and perform well under various sea conditions."",
+        ""performance_metrics"": [
+            {
+                ""name"": ""accuracy"",
+                ""value"": 0.92
+            }
+        ],
+        ""complexity_metrics"": []
+    },
+    ""dataset"": [
+        {
+            ""name"": ""SeaShips"",
+            ""modality"": [""image""],
+            ""target_variables"": [""type"", ""size"", ""direction""],
+            ""specification"": null,
+            ""description"": ""A dataset containing images of different types of sea vessels for the purpose of detection and classification including their size and direction."",
+            ""preprocessing"": [],
+            ""augmentation"": [],
+            ""visualization"": [],
+            ""source"": ""direct-search""
+        }
+    ],
+    ""model"": [
+        {
+            ""name"": ""DeepLabv3+"",
+            ""family"": ""Convolutional Neural Networks"",
+            ""type"": ""neural networks"",
+            ""specification"": null,
+            ""description"": ""A DeepLabv3+ model to be trained on the SeaShips dataset for detecting and classifying sea vessels.""
+        }
+    ],
+    ""knowledge"": [],
+    ""service"": {
+        ""feature_engineering"": [],
+        ""target_device"": ""cloud-based GPUs"",
+        ""deployment_endpoint"": """",
+        ""inference_engine"": [],
+        ""demonstration"": null
+    },
+    ""confidence"": {
+        ""rationale"": ""The instruction provided clear information about the intent, expertise level, problem area, dataset, model, and target device. The application domain, dataset specifics, and the model's family were inferred based on the context of maritime safety and known details about DeepLabv3+ and the SeaShips dataset. The performance metric was explicitly stated. Complexities related to real-time processing efficiency were considered but not quantified due to the absence of specific requirements."",
+        ""score"": 0.95
+    }
+}",2
+object detection,Can you help me create a model that can detect any animals trespassing in my front yard? The model should be fast enough to detect the animals in real-time.,"{
+    ""user"": {
+        ""intent"": ""build"",
+        ""expertise"": ""low""
+    },
+    ""problem"": {
+        ""area"": ""computer vision"",
+        ""downstream_task"": ""object detection"",
+        ""application_domain"": ""home security"",
+        ""description"": ""Create a model to detect animals trespassing in the front yard in real-time."",
+        ""performance_metrics"": [],
+        ""complexity_metrics"": [
+            {
+                ""name"": ""inference_speed"",
+                ""value"": 1.0
+            }
+        ]
+    },
+    ""dataset"": [
+        {
+            ""name"": """",
+            ""modality"": [""image""],
+            ""target_variables"": [],
+            ""specification"": null,
+            ""description"": ""The dataset should include various images of animals that could potentially trespass a front yard. It must be diverse to ensure the model can recognize different animals under various conditions."",
+            ""preprocessing"": [],
+            ""augmentation"": [],
+            ""visualization"": [],
+            ""source"": ""infer-search""
+        }
+    ],
+    ""model"": [
+        {
+            ""name"": """",
+            ""family"": """",
+            ""type"": ""neural networks"",
+            ""specification"": null,
+            ""description"": ""The model should be based on a neural network architecture optimized for real-time object detection, capable of identifying various animals. Efficiency is key to ensure real-time processing.""
+        }
+    ],
+    ""knowledge"": [],
+    ""service"": {
+        ""feature_engineering"": [],
+        ""target_device"": ""edge devices"",
+        ""deployment_endpoint"": """",
+        ""inference_engine"": [],
+        ""demonstration"": null
+    },
+    ""confidence"": {
+        ""rationale"": ""The instruction clearly asks for a model to detect animals in real-time, implying the need for a fast, efficient computer vision model capable of object detection. The user's expertise is assumed low based on the general nature of the request. The dataset and model requirements are inferred from typical needs for such a task, including real-time processing and the ability to deploy on edge devices."",
+        ""score"": 0.9
+    }
+}",1
+object detection,"Can someone help me with setting up a project for detecting and counting fruits in images? I've got this dataset of various fruits from the internet, but I'm not sure if there's a specific one I should use.","{
+    ""user"": {
+        ""intent"": ""build"",
+        ""expertise"": ""low""
+    },
+    ""problem"": {
+        ""area"": ""computer vision"",
+        ""downstream_task"": ""object detection"",
+        ""application_domain"": ""agriculture"",
+        ""description"": ""The user wants to create a project for detecting and counting fruits in images using a dataset of various fruits obtained from the internet."",
+        ""performance_metrics"": [],
+        ""complexity_metrics"": []
+    },
+    ""dataset"": [
+        {
+            ""name"": """",
+            ""modality"": [""image""],
+            ""target_variables"": [],
+            ""specification"": null,
+            ""description"": ""A dataset containing images of various fruits. The exact dataset has not been specified."",
+            ""preprocessing"": [],
+            ""augmentation"": [],
+            ""visualization"": [],
+            ""source"": ""user-upload""
+        }
+    ],
+    ""model"": [],
+    ""knowledge"": [],
+    ""service"": {
+        ""feature_engineering"": [],
+        ""target_device"": """",
+        ""deployment_endpoint"": """",
+        ""inference_engine"": [],
+        ""demonstration"": null
+    },
+    ""confidence"": {
+        ""rationale"": ""The provided instruction specifies the user's intent to build a computer vision application for detecting and counting fruits in images, implying low expertise due to uncertainty about dataset selection. The problem domain, task, and dataset modality are directly inferred from the instruction. The dataset source is set as 'direct-search' since the user has sourced it from the internet but hasn't provided specifics. Other fields are left empty or as defaults due to the lack of detailed information in the initial request."",
+        ""score"": 0.9
+    }
+}",1
+object detection,"I'm trying to create a system that can detect different clothing items in fashion images. I don't know much about datasets or models for this, but I want something that can be very accurate, even if it takes a bit longer to run. Any advice on where to start?","{
+    ""user"": {
+        ""intent"": ""consult-build"",
+        ""expertise"": ""low""
+    },
+    ""problem"": {
+        ""area"": ""computer vision"",
+        ""downstream_task"": ""object detection"",
+        ""application_domain"": ""fashion"",
+        ""description"": ""I'm trying to create a system that can detect different clothing items in fashion images. I don't know much about datasets or models for this, but I want something that can be very accurate, even if it takes a bit longer to run. Any advice on where to start?"",
+        ""performance_metrics"": [
+            {
+                ""name"": ""accuracy"",
+                ""value"": null
+            }
+        ],
+        ""complexity_metrics"": []
+    },
+    ""dataset"": [
+        {
+            ""name"": """",
+            ""modality"": [""image""],
+            ""target_variables"": [""clothing items""],
+            ""specification"": null,
+            ""description"": ""User is looking for datasets that include fashion images with various clothing items to be detected."",
+            ""preprocessing"": [],
+            ""augmentation"": [],
+            ""visualization"": [],
+            ""source"": ""infer-search""
+        }
+    ],
+    ""model"": [
+        {
+            ""name"": """",
+            ""family"": """",
+            ""type"": ""neural networks"",
+            ""specification"": null,
+            ""description"": ""User needs a model that can accurately detect different clothing items in fashion images. Emphasis on accuracy, even at the cost of longer inference time.""
+        }
+    ],
+    ""knowledge"": [],
+    ""service"": {
+        ""feature_engineering"": [],
+        ""target_device"": """",
+        ""deployment_endpoint"": """",
+        ""inference_engine"": [],
+        ""demonstration"": null
+    },
+    ""confidence"": {
+        ""rationale"": ""The provided JSON reflects the user's intent to consult and build a system for detecting clothing items in fashion images, with a focus on accuracy. The user's low expertise is considered by offering basic guidance on starting points such as dataset characteristics and model preferences (neural networks for object detection). Key requirements like the importance of accuracy and the acceptance of longer inference times for better results are highlighted, though specific values for performance metrics are not set, reflecting the user's openness to advice. The absence of specific dataset names, model specifications, and detailed complexity metrics aligns with the user's general query and lack of detailed requirements."",
+        ""score"": 0.9
+    }
+}",1
+object detection,I have a set of fruit images. Can you provide a model that accurately detects which fruits are included in each image.,"{
+    ""user"": {
+        ""intent"": ""build"",
+        ""expertise"": ""low""
+    },
+    ""problem"": {
+        ""area"": ""computer vision"",
+        ""downstream_task"": ""object detection"",
+        ""application_domain"": ""agriculture"",
+        ""description"": ""A model is required to accurately detect which fruits are included in each image from a set of fruit images."",
+        ""performance_metrics"": [],
+        ""complexity_metrics"": []
+    },
+    ""dataset"": [
+        {
+            ""name"": """",
+            ""modality"": [""image""],
+            ""target_variables"": [],
+            ""specification"": null,
+            ""description"": ""The dataset consists of images of fruits. Specific details about the dataset such as size, dimension, and types of fruits included are not provided."",
+            ""preprocessing"": [],
+            ""augmentation"": [],
+            ""visualization"": [],
+            ""source"": ""user-upload""
+        }
+    ],
+    ""model"": [
+        {
+            ""name"": """",
+            ""family"": """",
+            ""type"": ""neural networks"",
+            ""specification"": null,
+            ""description"": ""A neural network model that can perform object detection to identify various fruits in images. Specific model architecture or family is not mentioned.""
+        }
+    ],
+    ""knowledge"": [],
+    ""service"": {
+        ""feature_engineering"": [],
+        ""target_device"": """",
+        ""deployment_endpoint"": """",
+        ""inference_engine"": [],
+        ""demonstration"": null
+    },
+    ""confidence"": {
+        ""rationale"": ""The information provided is parsed based on the instruction to create a model for detecting fruits in images, falling under the computer vision and object detection categories. Since the user's expertise and specific details about the dataset, model specifications, and deployment are not mentioned, those fields are either generalized or left blank. The intent is set to 'build' as the user seeks to develop a model."",
+        ""score"": 0.9
+    }
+}",1
+object detection,"I want to build a tool that can identify car models in parking lots from security camera footage. I've heard about the COCO and Pascal VOC datasets, but I'm not sure which one would be better for my project. Also, is there a specific object detection model that's good for working with low-resolution images? I need it to be pretty fast and accurate.","{
+    ""user"": {
+        ""intent"": ""build"",
+        ""expertise"": ""medium""
+    },
+    ""problem"": {
+        ""area"": ""computer vision"",
+        ""downstream_task"": ""object detection"",
+        ""application_domain"": ""security"",
+        ""description"": ""The goal is to develop a tool capable of identifying car models in parking lots from security camera footage. The main challenges could include dealing with low-resolution images and ensuring the tool operates with high speed and accuracy."",
+        ""performance_metrics"": [
+            {
+                ""name"": ""accuracy"",
+                ""value"": 0.8
+            }
+        ],
+        ""complexity_metrics"": [
+            {
+                ""name"": ""inference_speed"",
+                ""value"": null
+            }
+]
+    },
+    ""dataset"": [
+        {
+            ""name"": ""COCO"",
+            ""modality"": [""image""],
+            ""target_variables"": [],
+            ""specification"": null,
+            ""description"": ""COCO dataset is considered for training the tool, which is popular for object detection tasks."",
+            ""preprocessing"": [],
+            ""augmentation"": [],
+            ""visualization"": [],
+            ""source"": ""direct-search""
+        },
+        {
+            ""name"": ""Pascal VOC"",
+            ""modality"": [""image""],
+            ""target_variables"": [],
+            ""specification"": null,
+            ""description"": ""Pascal VOC dataset is another option considered for training the tool, known for object detection tasks."",
+            ""preprocessing"": [],
+            ""augmentation"": [],
+            ""visualization"": [],
+            ""source"": ""direct-search""
+        }
+    ],
+    ""model"": [
+        {
+            ""name"": """",
+            ""family"": """",
+            ""type"": ""neural networks"",
+            ""specification"": null,
+            ""description"": ""Inquiring about a specific object detection model that performs well on low-resolution images, which needs to be fast and accurate.""
+        }
+    ],
+    ""knowledge"": [],
+    ""service"": {
+        ""feature_engineering"": [],
+        ""target_device"": """",
+        ""deployment_endpoint"": """",
+        ""inference_engine"": [],
+        ""demonstration"": null
+    },
+    ""confidence"": {
+        ""rationale"": ""The JSON structure is filled based on the provided instruction focusing on building a tool for identifying car models in parking lots using security camera footage. The datasets COCO and Pascal VOC are mentioned as potential data sources, and the need for a model suitable for low-resolution images is highlighted without specifying a particular model, indicating a requirement for further research or consultation."",
+        ""score"": 0.95
+    }
+}",1
+object detection,"As the head of security for a large event venue, I've been tasked with enhancing our surveillance system to automatically identify and track suspicious individuals or objects. It's crucial that this system be highly accurate to avoid false alarms, and it must operate efficiently during both day and night.","{
+    ""user"": {
+        ""intent"": ""build"",
+        ""expertise"": ""medium""
+    },
+    ""problem"": {
+        ""area"": ""computer vision"",
+        ""downstream_task"": ""object detection"",
+        ""application_domain"": ""security surveillance"",
+        ""description"": ""Enhance surveillance system to automatically identify and track suspicious individuals or objects with high accuracy to avoid false alarms. It must operate efficiently during both day and night."",
+        ""performance_metrics"": [
+            {
+                ""name"": ""accuracy"",
+                ""value"": 0.99
+            }
+        ],
+        ""complexity_metrics"": [ { ""name"": ""inference_speed"", ""value"": 1.0} ]
+    },
+    ""dataset"": [
+        {
+            ""name"": """",
+            ""modality"": [""video""],
+            ""target_variables"": [],
+            ""specification"": null,
+            ""description"": ""Surveillance video data for identifying and tracking suspicious individuals or objects."",
+            ""preprocessing"": [],
+            ""augmentation"": [],
+            ""visualization"": [],
+            ""source"": ""user-upload""
+        }
+    ],
+    ""model"": [
+        {
+            ""name"": """",
+            ""family"": ""deep learning"",
+            ""type"": ""neural networks"",
+            ""specification"": null,
+            ""description"": ""A model capable of identifying and tracking suspicious individuals or objects with high accuracy in real-time and in various lighting conditions.""
+        }
+    ],
+    ""knowledge"": [],
+    ""service"": {
+        ""feature_engineering"": [],
+        ""target_device"": ""surveillance system"",
+        ""deployment_endpoint"": """",
+        ""inference_engine"": [],
+        ""demonstration"": null
+    },
+    ""confidence"": {
+        ""rationale"": ""The given instruction was carefully parsed into the JSON format based on the template and the details provided. The chosen area, downstream task, and other details align with the objective of enhancing a surveillance system for security purposes. Real-time performance and high accuracy are essential for such systems to avoid false alarms and ensure effective operation, which is reflected in the performance metrics. The inclusion of video modality under datasets is because surveillance systems primarily rely on video data. The confidence score is high because the instruction was clear and the JSON structure accurately reflects the requirements."",
+        ""score"": 0.95
+    }
+}",0
+object detection,"We're launching a new line of security cameras designed for retail spaces, and I want to make sure we can automatically count the number of customers entering and leaving the store. It's crucial that the system can differentiate between employees and customers.","{
+    ""user"": {
+        ""intent"": ""build"",
+        ""expertise"": ""medium""
+    },
+    ""problem"": {
+        ""area"": ""computer vision"",
+        ""downstream_task"": ""object detection"",
+        ""application_domain"": ""retail"",
+        ""description"": ""We're launching a new line of security cameras designed for retail spaces, and I want to make sure we can automatically count the number of customers entering and leaving the store. It's crucial that the system can differentiate between employees and customers."",
+        ""performance_metrics"": [],
+        ""complexity_metrics"": []
+    },
+    ""dataset"": [
+        {
+            ""name"": """",
+            ""modality"": [""video""],
+            ""target_variables"": [],
+            ""specification"": null,
+            ""description"": ""Video data from retail space security cameras, which needs to be processed to count and differentiate between customers and employees entering and leaving the store."",
+            ""preprocessing"": [],
+            ""augmentation"": [],
+            ""visualization"": [],
+            ""source"": ""user-upload""
+        }
+    ],
+    ""model"": [
+        {
+            ""name"": """",
+            ""family"": """",
+            ""type"": ""neural networks"",
+            ""specification"": null,
+            ""description"": ""A model capable of identifying and counting individuals, while also distinguishing between employees and customers in a retail environment.""
+        }
+    ],
+    ""knowledge"": [],
+    ""service"": {
+        ""feature_engineering"": [],
+        ""target_device"": ""security camera systems"",
+        ""deployment_endpoint"": """",
+        ""inference_engine"": [],
+        ""demonstration"": null
+    },
+    ""confidence"": {
+        ""rationale"": ""The information was extracted and structured based on the provided instruction and the template's criteria. The user's intent to build a solution for automatically counting and differentiating individuals in retail spaces was classified under 'computer vision' and 'object detection' due to the nature of the task. The expertise level was assumed to be 'medium' as the user seems to have a specific application in mind but not detailed technical requirements. Metrics and dataset details were inferred from the task's requirements. The rationale behind each section's content reflects the direct and implied requirements from the instruction."",
+        ""score"": 0.9
+    }
+}",0
+object detection,I have CCTV installed in my house. What I can do with the recorded videos?,"{
+    ""user"": {
+        ""intent"": ""consult"",
+        ""expertise"": ""low""
+    },
+    ""problem"": {
+        ""area"": ""computer vision"",
+        ""downstream_task"": ""object detection"",
+        ""application_domain"": ""security"",
+        ""description"": ""Exploring potential applications of recorded CCTV videos for household security and monitoring."",
+        ""performance_metrics"": [],
+        ""complexity_metrics"": []
+    },
+    ""dataset"": [
+        {
+            ""name"": """",
+            ""modality"": [""video""],
+            ""target_variables"": [],
+            ""specification"": null,
+            ""description"": ""The dataset consists of CCTV video recordings from a household. It includes various scenes captured by the installed CCTV system."",
+            ""preprocessing"": [],
+            ""augmentation"": [],
+            ""visualization"": [],
+            ""source"": ""user-upload""
+        }
+    ],
+    ""model"": [
+        {
+            ""name"": """",
+            ""family"": """",
+            ""type"": ""neural networks"",
+            ""specification"": null,
+            ""description"": ""A model capable of analyzing video data to identify and track objects, detect anomalies, and possibly recognize familiar faces or behaviors indicating security breaches.""
+        }
+    ],
+    ""knowledge"": [],
+    ""service"": {
+        ""feature_engineering"": [],
+        ""target_device"": """",
+        ""deployment_endpoint"": """",
+        ""inference_engine"": [],
+        ""demonstration"": null
+    },
+    ""confidence"": {
+        ""rationale"": ""The instruction prompt was about exploring the applications of recorded CCTV videos. Given the lack of specific details on desired outcomes or technical constraints, assumptions were made to align the response with common applications within the area of computer vision, particularly object detection, for security purposes. The 'consult' intent was chosen to reflect the user's request for information on potential uses of CCTV recordings. The expertise level is assumed to be 'low' based on the general nature of the inquiry. The choices for dataset modality, preprocessing steps, and model type are inferred from the context of the problem being about video analysis, which typically involves neural network models trained on video data for object detection tasks."",
+        ""score"": 0.8
+    }
+}",0
+object detection,I've been tasked with finding ways to reduce shoplifting and improve in-store analytics for our retail chains. The solution should offer insights into shopper behavior and alert staff about suspicious activities without being invasive or requiring constant human monitoring.,"{
+    ""user"": {
+        ""intent"": ""build"",
+        ""expertise"": ""medium""
+    },
+    ""problem"": {
+        ""area"": ""computer vision"",
+        ""downstream_task"": ""object detection"",
+        ""application_domain"": ""retail"",
+        ""description"": ""The task involves finding solutions to reduce shoplifting and enhance in-store analytics by providing insights into shopper behavior and alerting staff about suspicious activities in a non-invasive manner that does not require constant human monitoring."",
+        ""performance_metrics"": [],
+        ""complexity_metrics"": []
+    },
+    ""dataset"": [
+        {
+            ""name"": """",
+            ""modality"": [""video""],
+            ""target_variables"": [],
+            ""specification"": null,
+            ""description"": ""The dataset likely includes in-store surveillance video footage, which is essential for analyzing shopper behavior and detecting suspicious activities. The exact specifications are not provided in the instruction."",
+            ""preprocessing"": [],
+            ""augmentation"": [],
+            ""visualization"": [],
+            ""source"": ""infer-search""
+        }
+    ],
+    ""model"": [
+        {
+            ""name"": """",
+            ""family"": """",
+            ""type"": ""neural networks"",
+            ""specification"": null,
+            ""description"": ""The model is expected to be capable of processing video data to identify and classify objects (e.g., people, items) and their actions within a retail setting to detect potential shoplifting activities and provide analytics on shopper behavior. The specific model details are not provided.""
+        }
+    ],
+    ""knowledge"": [],
+    ""service"": {
+        ""feature_engineering"": [],
+        ""target_device"": """",
+        ""deployment_endpoint"": """",
+        ""inference_engine"": [],
+        ""demonstration"": null
+    },
+    ""confidence"": {
+        ""rationale"": ""The information has been parsed based on the provided instruction with assumptions made where necessary to fit the template structure. Details such as specific datasets, model names, and explicit performance metrics were not provided in the instruction, thus requiring inference or assumptions for a complete response."",
+        ""score"": 0.8
+    }
+}",0
+object detection,"As part of our initiative to enhance passenger safety on public transportation, I'm looking for a system that can detect and report incidents within vehicles or stations in real-time. This could range from health emergencies to security threats, ensuring prompt response from our team.","{
+    ""user"": {
+        ""intent"": ""build"",
+        ""expertise"": ""low""
+    },
+    ""problem"": {
+        ""area"": ""computer vision"",
+        ""downstream_task"": ""object detection"",
+        ""application_domain"": ""public safety"",
+        ""description"": ""Develop a system to detect and report incidents within public transportation vehicles or stations in real-time, ranging from health emergencies to security threats."",
+        ""performance_metrics"": [],
+        ""complexity_metrics"": []
+    },
+    ""dataset"": [
+        {
+            ""name"": """",
+            ""modality"": [""video""],
+            ""target_variables"": [],
+            ""specification"": null,
+            ""description"": ""Dataset should include video footage from public transportation vehicles or stations, capturing various incidents for real-time detection and reporting."",
+            ""preprocessing"": [],
+            ""augmentation"": [],
+            ""visualization"": [],
+            ""source"": ""infer-search""
+        }
+    ],
+    ""model"": [
+        {
+            ""name"": """",
+            ""family"": """",
+            ""type"": ""neural networks"",
+            ""specification"": null,
+            ""description"": ""A model capable of real-time detection of incidents within public transportation vehicles or stations, utilizing video data.""
+        }
+    ],
+    ""knowledge"": [],
+    ""service"": {
+        ""feature_engineering"": [],
+        ""target_device"": """",
+        ""deployment_endpoint"": """",
+        ""inference_engine"": [],
+        ""demonstration"": null
+    },
+    ""confidence"": {
+        ""rationale"": ""The JSON is structured according to the provided template and instruction. 'Build' intent is selected because the instruction implies the creation of a system. 'Low' expertise indicates the user may not be deeply familiar with AI/ML specifics. The problem area is identified as 'computer vision' with 'object detection' task, given the need to analyze video data for incident detection. Video modality is essential for real-time monitoring. The deployment target is cloud servers, suggesting a need for robust processing capabilities. The description fields are populated with information inferred from the instruction to closely match the request without assuming specific details not provided."",
+        ""score"": 0.95
+    }
+}",0
+image segmentation,"For our project targeting the Cityscapes dataset, we require a U-Net based model to perform semantic segmentation. The goal is to accurately differentiate between 30 urban scene components, with an expectation of at least 90% accuracy on the validation set. Performance speed is crucial; the model must be able to process images at a minimum of 30 FPS on a standard GPU.","{
+    ""user"": {
+        ""intent"": ""build"",
+        ""expertise"": ""medium""
+    },
+    ""problem"": {
+        ""area"": ""computer vision"",
+        ""downstream_task"": ""image segmentation"",
+        ""application_domain"": ""urban scene analysis"",
+        ""description"": ""Build a U-Net based model for semantic segmentation to differentiate between 30 urban scene components with high accuracy and performance speed."",
+        ""performance_metrics"": [
+            {
+                ""name"": ""accuracy"",
+                ""value"": 0.9
+            }
+        ],
+        ""complexity_metrics"": [
+            {
+                ""name"": ""inference_speed"",
+                ""value"": 0.033
+            }
+        ]
+    },
+    ""dataset"": [
+        {
+            ""name"": ""Cityscapes"",
+            ""modality"": [
+                ""image""
+            ],
+            ""target_variables"": [],
+            ""specification"": null,
+            ""description"": ""A dataset targeting urban scene understanding for semantic segmentation tasks."",
+            ""preprocessing"": [],
+            ""augmentation"": [],
+            ""visualization"": [],
+            ""source"": ""direct-search""
+        }
+    ],
+    ""model"": [
+        {
+            ""name"": ""U-Net"",
+            ""family"": ""Convolutional Neural Networks"",
+            ""type"": ""neural networks"",
+            ""specification"": null,
+            ""description"": ""A model designed for semantic segmentation with expectations of high accuracy and performance speed on a standard GPU.""
+        }
+    ],
+    ""knowledge"": [],
+    ""service"": {
+        ""feature_engineering"": [],
+        ""target_device"": ""GPU"",
+        ""deployment_endpoint"": """",
+        ""inference_engine"": [],
+        ""demonstration"": null
+    },
+    ""confidence"": {
+        ""rationale"": ""This JSON follows the template provided, capturing the user's intent, problem area, the specifics about the dataset and model required, and the performance expectations. The Cityscapes dataset and U-Net model are specifically mentioned, aligning with the user's instructions for a semantic segmentation project in urban scene analysis with specific performance metrics."",
+        ""score"": 1.0
+    }
+}",2
+image segmentation,We're focusing on the ADE20K dataset for indoor scene understanding. The task involves instance segmentation using Mask R-CNN. Include features like multi-scale training and inference to enhance the model's ability to distinguish between closely packed objects. Expected performance should surpass a mAP of 40%.,"{
+    ""user"": {
+        ""intent"": ""build"",
+        ""expertise"": ""medium""
+    },
+    ""problem"": {
+        ""area"": ""computer vision"",
+        ""downstream_task"": ""image segmentation"",
+        ""application_domain"": ""indoor scene understanding"",
+        ""description"": ""Focusing on the ADE20K dataset for indoor scene understanding, the task involves using Mask R-CNN for instance segmentation. The goal is to enhance the model's ability to distinguish between closely packed objects through features like multi-scale training and inference."",
+        ""performance_metrics"": [
+            {
+                ""name"": ""mAP"",
+                ""value"": 0.4
+            }
+        ],
+        ""complexity_metrics"": []
+    },
+    ""dataset"": [
+        {
+            ""name"": ""ADE20K"",
+            ""modality"": [""image""],
+            ""target_variables"": [],
+            ""specification"": null,
+            ""description"": ""ADE20K dataset is focused on indoor scene understanding for the task of instance segmentation using Mask R-CNN."",
+            ""preprocessing"": [],
+            ""augmentation"": [],
+            ""visualization"": [],
+            ""source"": ""direct-search""
+        }
+    ],
+    ""model"": [
+        {
+            ""name"": ""Mask R-CNN"",
+            ""family"": ""Convolutional Neural Network"",
+            ""type"": ""neural networks"",
+            ""specification"": null,
+            ""description"": ""Mask R-CNN is used for instance segmentation on the ADE20K dataset, incorporating multi-scale training and inference to improve performance.""
+        }
+    ],
+    ""knowledge"": [],
+    ""service"": {
+        ""feature_engineering"": [],
+        ""target_device"": """",
+        ""deployment_endpoint"": """",
+        ""inference_engine"": [],
+        ""demonstration"": null
+    },
+    ""confidence"": {
+        ""rationale"": ""The JSON format follows the provided template closely, capturing all relevant details from the instruction. The intent is identified as 'build' because the instruction involves creating a model. The expertise level is set to 'medium' based on the specificity of the task and familiarity with terms like 'Mask R-CNN' and 'mAP'. The problem area and dataset details are explicitly derived from the instruction, while other sections are filled out as applicable or left null when information is not provided. The performance metric of mAP exceeding 40% is included as specified."",
+        ""score"": 0.95
+    }
+}
+",2
+image segmentation,"Our agricultural drone imagery project requires a DeepLabV3+ model optimized for the AgriSeg dataset. The task is to segment crops from weeds with a precision above 85%. Considering the real-time application, the model should operate efficiently on edge devices, maintaining a high frame rate.","{
+    ""user"": {
+        ""intent"": ""build"",
+        ""expertise"": ""medium""
+    },
+    ""problem"": {
+        ""area"": ""computer vision"",
+        ""downstream_task"": ""image segmentation"",
+        ""application_domain"": ""agriculture"",
+        ""description"": ""Our agricultural drone imagery project requires a DeepLabV3+ model optimized for the AgriSeg dataset to segment crops from weeds with high precision, ensuring efficiency on edge devices for real-time application."",
+        ""performance_metrics"": [
+            {
+                ""name"": ""precision"",
+                ""value"": 0.85
+            }
+        ],
+        ""complexity_metrics"": [
+            {
+                ""name"": ""frame rate"",
+                ""value"": ""high""
+            }
+        ]
+    },
+    ""dataset"": [
+        {
+            ""name"": ""AgriSeg"",
+            ""modality"": [""image""],
+            ""target_variables"": [""crops"", ""weeds""],
+            ""specification"": null,
+            ""description"": ""A dataset used for segmenting crops from weeds in agricultural drone imagery, suitable for training DeepLabV3+ model."",
+            ""preprocessing"": [],
+            ""augmentation"": [],
+            ""visualization"": [],
+            ""source"": ""direct-search""
+        }
+    ],
+    ""model"": [
+        {
+            ""name"": ""DeepLabV3+"",
+            ""family"": ""Convolutional Neural Network"",
+            ""type"": ""neural networks"",
+            ""specification"": null,
+            ""description"": ""A model optimized for the AgriSeg dataset to segment crops from weeds, designed for efficiency on edge devices.""
+        }
+    ],
+    ""knowledge"": [],
+    ""service"": {
+        ""feature_engineering"": [],
+        ""target_device"": ""edge devices"",
+        ""deployment_endpoint"": """",
+        ""inference_engine"": [],
+        ""demonstration"": null
+    },
+    ""confidence"": {
+        ""rationale"": ""The JSON structure accurately reflects the provided instruction, adhering to the template requirements. The `intent` is set to 'build' based on the project's objective to develop a specific solution. The `expertise` level is estimated as 'medium' given the specificity of the request and implied understanding of machine learning model deployment on edge devices. The problem description, dataset, and model sections are tailored to capture the essence of the task—optimizing DeepLabV3+ for the AgriSeg dataset with specific performance and efficiency goals. The performance metric of precision above 85% and the emphasis on real-time application efficiency for edge devices are highlighted to ensure alignment with the project's goals."",
+        ""score"": 0.95
+    }
+}",2
+image segmentation,"For medical image analysis on the BraTS dataset, we're looking into a customized V-Net model for tumor segmentation. Accuracy is paramount, with a target Dice coefficient of over 0.85. The model must also include an explanation component to highlight features influencing its predictions, ensuring trust and transparency in medical decisions.","{
+    ""user"": {
+        ""intent"": ""build"",
+        ""expertise"": ""medium""
+    },
+    ""problem"": {
+        ""area"": ""computer vision"",
+        ""downstream_task"": ""image segmentation"",
+        ""application_domain"": ""healthcare"",
+        ""description"": ""For medical image analysis on the BraTS dataset, we're looking into a customized V-Net model for tumor segmentation. Accuracy is paramount, with a target Dice coefficient of over 0.85. The model must also include an explanation component to highlight features influencing its predictions, ensuring trust and transparency in medical decisions."",
+        ""performance_metrics"": [
+            {
+                ""name"": ""Dice coefficient"",
+                ""value"": 0.85
+            }
+        ],
+        ""complexity_metrics"": []
+    },
+    ""dataset"": [
+        {
+            ""name"": ""BraTS"",
+            ""modality"": [""image""],
+            ""target_variables"": [],
+            ""specification"": null,
+            ""description"": ""The BraTS dataset for medical image analysis focused on brain tumor segmentation."",
+            ""preprocessing"": [],
+            ""augmentation"": [],
+            ""visualization"": [],
+            ""source"": ""direct-search""
+        }
+    ],
+    ""model"": [
+        {
+            ""name"": ""Customized V-Net"",
+            ""family"": ""V-Net"",
+            ""type"": ""neural networks"",
+            ""specification"": null,
+            ""description"": ""A customized V-Net model tailored for high-accuracy tumor segmentation on the BraTS dataset, including an explanation component for trust and transparency.""
+        }
+    ],
+    ""knowledge"": [],
+    ""service"": {
+        ""feature_engineering"": [],
+        ""target_device"": """",
+        ""deployment_endpoint"": """",
+        ""inference_engine"": [],
+        ""demonstration"": null
+    },
+    ""confidence"": {
+        ""rationale"": ""The given instruction is clear about the task, the dataset, and the model requirements, including a specific performance target and the need for an explanation component for transparency. The intent is to build a model, indicated by the specific requirements laid out for the model's performance and functionality. The expertise level is set to medium as the instruction shows a good understanding of model development requirements and performance metrics."",
+        ""score"": 1.0
+    }
+}
+",2
+image segmentation,"The project involves aerial imagery segmentation using the DOTA dataset, employing a YOLOv4 architecture adapted for segmentation tasks. Key objectives include identifying and delineating various types of vehicles and infrastructure with high precision and recall. Speed of inference is critical, targeting sub-second processing times for high-resolution images.","{
+    ""user"": {
+        ""intent"": ""build"",
+        ""expertise"": ""high""
+    },
+    ""problem"": {
+        ""area"": ""computer vision"",
+        ""downstream_task"": ""image segmentation"",
+        ""application_domain"": ""aerial imagery"",
+        ""description"": ""The project involves aerial imagery segmentation using the DOTA dataset, employing a YOLOv4 architecture adapted for segmentation tasks. Key objectives include identifying and delineating various types of vehicles and infrastructure with high precision and recall."",
+        ""performance_metrics"": [
+            {
+                ""name"": ""precision"",
+                ""value"": null
+            },
+            {
+                ""name"": ""recall"",
+                ""value"": null
+            }
+        ],
+        ""complexity_metrics"": [
+            {
+                ""name"": ""inference time"",
+                ""value"": 1,
+                ""unit"": ""second""
+            }
+        ]
+    },
+    ""dataset"": [
+        {
+            ""name"": ""DOTA"",
+            ""modality"": [""image""],
+            ""target_variables"": [""vehicles"", ""infrastructure""],
+            ""specification"": null,
+            ""description"": ""The DOTA dataset, designed for aerial imagery analysis, focusing on identifying and delineating various types of vehicles and infrastructure."",
+            ""preprocessing"": [],
+            ""augmentation"": [],
+            ""visualization"": [],
+            ""source"": ""direct-search""
+        }
+    ],
+    ""model"": [
+        {
+            ""name"": ""YOLOv4"",
+            ""family"": ""YOLO"",
+            ""type"": ""neural networks"",
+            ""specification"": null,
+            ""description"": ""A YOLOv4 architecture adapted to perform image segmentation tasks, targeting high precision and recall in identifying various objects in aerial images.""
+        }
+    ],
+    ""knowledge"": [],
+    ""service"": {
+        ""feature_engineering"": [],
+        ""target_device"": """",
+        ""deployment_endpoint"": """",
+        ""inference_engine"": [],
+        ""demonstration"": null
+    },
+    ""confidence"": {
+        ""rationale"": ""This JSON follows the provided instruction prompt closely, using the template and schema for guidance. Key elements such as the problem area, dataset, and model are clearly defined with respect to the task at hand. The user's intent and expertise level were inferred from the complexity of the project. The performance and complexity metrics, while not specified with exact numbers, are aligned with the goals of high precision, recall, and fast inference time. Missing numerical values for metrics indicate that optimization towards these goals is expected without concrete benchmarks provided."",
+        ""score"": 0.9
+    }
+}",2
+image segmentation,"We're developing a fashion item segmentation tool based on the DeepFashion2 dataset. Utilize a modified EfficientNet as the backbone for an FCN model, aiming for a fine-grained segmentation that distinguishes between overlapping clothing items. The model should achieve at least 75% accuracy and be capable of running in a mobile app environment.","{
+    ""user"": {
+        ""intent"": ""build"",
+        ""expertise"": ""medium""
+    },
+    ""problem"": {
+        ""area"": ""computer vision"",
+        ""downstream_task"": ""image segmentation"",
+        ""application_domain"": ""fashion"",
+        ""description"": ""Develop a fashion item segmentation tool based on the DeepFashion2 dataset, utilizing a modified EfficientNet as the backbone for an FCN model. This model aims for fine-grained segmentation distinguishing between overlapping clothing items."",
+        ""performance_metrics"": [
+            {
+                ""name"": ""accuracy"",
+                ""value"": 0.75
+            }
+        ],
+        ""complexity_metrics"": []
+    },
+    ""dataset"": [
+        {
+            ""name"": ""DeepFashion2"",
+            ""modality"": [
+                ""image""
+            ],
+            ""target_variables"": [],
+            ""specification"": null,
+            ""description"": ""A dataset designed for fashion item segmentation, featuring images of clothing items."",
+            ""preprocessing"": [],
+            ""augmentation"": [],
+            ""visualization"": [],
+            ""source"": ""direct-search""
+        }
+    ],
+    ""model"": [
+        {
+            ""name"": ""modified EfficientNet"",
+            ""family"": ""EfficientNet"",
+            ""type"": ""neural networks"",
+            ""specification"": null,
+            ""description"": ""A modified version of EfficientNet used as the backbone for an FCN model to achieve fine-grained segmentation of fashion items.""
+        }
+    ],
+    ""knowledge"": [],
+    ""service"": {
+        ""feature_engineering"": [],
+        ""target_device"": ""mobile"",
+        ""deployment_endpoint"": """",
+        ""inference_engine"": [],
+        ""demonstration"": null
+    },
+    ""confidence"": {
+        ""rationale"": ""The instruction was parsed according to the template, with all relevant fields filled based on the information provided. The 'user' section was interpreted based on the complexity of the task, suggesting a medium level of expertise. The 'problem', 'dataset', and 'model' sections were detailed with the specific requirements. However, the 'service' section lacks specific details about the deployment endpoint and inference engine, which were not provided in the instruction. The confidence in the parsed information is high, but there's an acknowledgment that some details about deployment specifics are assumed rather than explicitly stated."",
+        ""score"": 0.9
+    }
+}",2
+image segmentation,"Engage in coastal area monitoring using the COCO-Sea dataset, applying a segmentation model that can differentiate between land, water, and man-made structures. Explore the use of Attention U-Net for enhanced detail capture in challenging lighting conditions. Model efficiency is crucial, with a goal of processing 4K drone footage in near real-time.","{
+    ""user"": {
+        ""intent"": ""build"",
+        ""expertise"": ""medium""
+    },
+    ""problem"": {
+        ""area"": ""computer vision"",
+        ""downstream_task"": ""image segmentation"",
+        ""application_domain"": ""environmental monitoring"",
+        ""description"": ""Engage in coastal area monitoring using the COCO-Sea dataset, applying a segmentation model that can differentiate between land, water, and man-made structures. Explore the use of Attention U-Net for enhanced detail capture in challenging lighting conditions."",
+        ""performance_metrics"": [],
+        ""complexity_metrics"": [
+            {
+                ""name"": ""inference_speed"",
+                ""value"": 3.0
+            }
+        ]
+    },
+    ""dataset"": [
+        {
+            ""name"": ""COCO-Sea"",
+            ""modality"": [""image""],
+            ""target_variables"": [""land"", ""water"", ""man-made structures""],
+            ""specification"": null,
+            ""description"": ""A dataset for coastal area monitoring, focusing on the segmentation of land, water, and man-made structures."",
+            ""preprocessing"": [],
+            ""augmentation"": [],
+            ""visualization"": [],
+            ""source"": ""direct-search""
+        }
+    ],
+    ""model"": [
+        {
+            ""name"": ""Attention U-Net"",
+            ""family"": ""U-Net"",
+            ""type"": ""neural networks"",
+            ""specification"": null,
+            ""description"": ""A segmentation model with enhanced detail capture in challenging lighting conditions, aimed at processing 4K drone footage for coastal area monitoring.""
+        }
+    ],
+    ""knowledge"": [],
+    ""service"": {
+        ""feature_engineering"": [],
+        ""target_device"": ""drone"",
+        ""deployment_endpoint"": """",
+        ""inference_engine"": [],
+        ""demonstration"": null
+    },
+    ""confidence"": {
+        ""rationale"": ""The JSON response is carefully constructed based on the instruction prompt provided. It follows the template structure, populating fields relevant to the task of coastal area monitoring using the COCO-Sea dataset with an Attention U-Net model for image segmentation. The complexity metric of 'near real-time' processing is inferred from the 'Model efficiency is crucial' part of the instruction, aiming at processing 4K drone footage efficiently. The confidence score reflects careful consideration of the instructions and the template structure."",
+        ""score"": 0.95
+    }
+}",2
+image segmentation,"Utilize the Vaihingen dataset for a project on urban green space segmentation. The model, preferably a modified SegNet, should accurately identify different vegetation types and their health status. It must perform well under various lighting and seasonal conditions, providing actionable insights for urban planning.","{
+    ""user"": {
+        ""intent"": ""build"",
+        ""expertise"": ""medium""
+    },
+    ""problem"": {
+        ""area"": ""computer vision"",
+        ""downstream_task"": ""image segmentation"",
+        ""application_domain"": ""urban planning"",
+        ""description"": ""Utilize the Vaihingen dataset for urban green space segmentation to identify different vegetation types and their health status under various lighting and seasonal conditions."",
+        ""performance_metrics"": [],
+        ""complexity_metrics"": []
+    },
+    ""dataset"": [
+        {
+            ""name"": ""Vaihingen"",
+            ""modality"": [""image""],
+            ""target_variables"": [],
+            ""specification"": null,
+            ""description"": ""The Vaihingen dataset for urban green space segmentation."",
+            ""preprocessing"": [],
+            ""augmentation"": [],
+            ""visualization"": [],
+            ""source"": ""direct-search""
+        }
+    ],
+    ""model"": [
+        {
+            ""name"": ""modified SegNet"",
+            ""family"": ""Convolutional Neural Networks"",
+            ""type"": ""neural networks"",
+            ""specification"": null,
+            ""description"": ""A modified version of SegNet designed for accurate vegetation type and health status identification.""
+        }
+    ],
+    ""knowledge"": [],
+    ""service"": {
+        ""feature_engineering"": [],
+        ""target_device"": """",
+        ""deployment_endpoint"": """",
+        ""inference_engine"": [],
+        ""demonstration"": null
+    },
+    ""confidence"": {
+        ""rationale"": ""The JSON structure is filled according to the given instruction, focusing on the specific requirements for the dataset (Vaihingen), model preference (modified SegNet), and the task (urban green space segmentation). Since the instruction does not provide explicit details on performance metrics, complexity metrics, dataset specification, or model specification, these fields are left with their default values. The confidence in the interpretation is high, as the instruction's key points are addressed directly, but the absence of detailed specifications in the instruction leads to some fields remaining unfilled."",
+        ""score"": 0.9
+    }
+}",2
+image segmentation,"For an underwater image segmentation task on the CoralNet dataset, explore the application of a PSPNet model to accurately segment coral reefs and marine life. The model should demonstrate robustness to variations in water clarity and light penetration, with an aim for a significant improvement in segmentation accuracy over existing benchmarks.","{
+    ""user"": {
+        ""intent"": ""build"",
+        ""expertise"": ""medium""
+    },
+    ""problem"": {
+        ""area"": ""computer vision"",
+        ""downstream_task"": ""image segmentation"",
+        ""application_domain"": ""marine biology"",
+        ""description"": ""Explore the application of a PSPNet model for underwater image segmentation on the CoralNet dataset, aiming to accurately segment coral reefs and marine life. The model should demonstrate robustness to variations in water clarity and light penetration, with an objective of significant improvement in segmentation accuracy over existing benchmarks."",
+        ""performance_metrics"": [],
+        ""complexity_metrics"": []
+    },
+    ""dataset"": [
+        {
+            ""name"": ""CoralNet"",
+            ""modality"": [""image""],
+            ""target_variables"": [],
+            ""specification"": null,
+            ""description"": ""The CoralNet dataset contains underwater images for the purpose of coral reef and marine life segmentation."",
+            ""preprocessing"": [],
+            ""augmentation"": [],
+            ""visualization"": [],
+            ""source"": ""direct-search""
+        }
+    ],
+    ""model"": [
+        {
+            ""name"": ""PSPNet"",
+            ""family"": ""Convolutional Neural Network"",
+            ""type"": ""neural networks"",
+            ""specification"": null,
+            ""description"": ""PSPNet model to be explored for accurate segmentation of coral reefs and marine life in underwater images, focusing on robustness to water clarity and light penetration variations.""
+        }
+    ],
+    ""knowledge"": [],
+    ""service"": {
+        ""feature_engineering"": [],
+        ""target_device"": """",
+        ""deployment_endpoint"": """",
+        ""inference_engine"": [],
+        ""demonstration"": null
+    },
+    ""confidence"": {
+        ""rationale"": ""The intent 'build' matches the task's exploratory nature and requirement for construction (model application). The expertise level is set to 'medium' considering the specialized task. Areas, tasks, and model details were derived directly from the instruction. The dataset description was inferred to align with the task. Ambiguities regarding specific performance metrics, model specifications, or deployment details were due to their absence in the instruction, leading to the generic handling of these fields."",
+        ""score"": 0.95
+    }
+}",2
+image segmentation,"Our project on the PlantVillage dataset involves segmenting plant leaves to identify disease symptoms. Use an attention-based DenseNet model for fine-grained segmentation of symptomatic versus healthy tissue. Model interpretability is key, as results will inform non-expert users on plant health status.","{
+    ""user"": {
+        ""intent"": ""build"",
+        ""expertise"": ""medium""
+    },
+    ""problem"": {
+        ""area"": ""computer vision"",
+        ""downstream_task"": ""image segmentation"",
+        ""application_domain"": ""agriculture"",
+        ""description"": ""Our project involves using an attention-based DenseNet model for the fine-grained segmentation of plant leaves to identify disease symptoms. The goal is to differentiate between symptomatic and healthy tissue accurately."",
+        ""performance_metrics"": [],
+        ""complexity_metrics"": []
+    },
+    ""dataset"": [
+        {
+            ""name"": ""PlantVillage"",
+            ""modality"": [""image""],
+            ""target_variables"": [],
+            ""specification"": null,
+            ""description"": ""The PlantVillage dataset is utilized for segmenting plant leaves to identify disease symptoms, focusing on the distinction between symptomatic and healthy tissue."",
+            ""preprocessing"": [],
+            ""augmentation"": [],
+            ""visualization"": [],
+            ""source"": ""direct-search""
+        }
+    ],
+    ""model"": [
+        {
+            ""name"": ""Attention-based DenseNet"",
+            ""family"": ""DenseNet"",
+            ""type"": ""neural networks"",
+            ""specification"": null,
+            ""description"": ""An attention-based DenseNet model is employed for the fine-grained segmentation task, aiming to improve the interpretability of the model results for non-expert users regarding plant health status.""
+        }
+    ],
+    ""knowledge"": [],
+    ""service"": {
+        ""feature_engineering"": [],
+        ""target_device"": """",
+        ""deployment_endpoint"": """",
+        ""inference_engine"": [],
+        ""demonstration"": null
+    },
+    ""confidence"": {
+        ""rationale"": ""The user's intent appears to focus on building a solution, with medium expertise in AI/ML suggested by the specificity of the model and task. The problem is identified within computer vision, specifically image segmentation, with an application in agriculture. The PlantVillage dataset and an attention-based DenseNet model are explicitly mentioned, fitting the dataset and model sections. Descriptions were crafted based on the instruction's focus on segmentation for disease identification and the emphasis on model interpretability for non-expert users. Certain fields were left empty or as null when the instruction did not provide explicit information, such as performance metrics or deployment details."",
+        ""score"": 0.95
+    }
+}",2
+image segmentation,"For document analysis and segmentation on the PubLayNet dataset, propose a layout parser model that can identify text blocks, images, tables, and headings with high accuracy. The model should excel in both precision and speed, processing documents in milliseconds.","{
+    ""user"": {
+        ""intent"": ""build"",
+        ""expertise"": ""medium""
+    },
+    ""problem"": {
+        ""area"": ""computer vision"",
+        ""downstream_task"": ""image segmentation"",
+        ""application_domain"": ""document analysis and segmentation"",
+        ""description"": ""Propose a layout parser model that can identify text blocks, images, tables, and headings in documents from the PubLayNet dataset with high accuracy, excelling in both precision and speed."",
+        ""performance_metrics"": [],
+        ""complexity_metrics"": [
+            {
+                ""name"": ""processing_time"",
+                ""value"": 0.001
+            }
+        ]
+    },
+    ""dataset"": [
+        {
+            ""name"": ""PubLayNet"",
+            ""modality"": [""image""],
+            ""target_variables"": [""text blocks"", ""images"", ""tables"", ""headings""],
+            ""specification"": null,
+            ""description"": ""A dataset for document layout analysis."",
+            ""preprocessing"": [],
+            ""augmentation"": [],
+            ""visualization"": [],
+            ""source"": ""direct-search""
+        }
+    ],
+    ""model"": [
+        {
+            ""name"": """",
+            ""family"": """",
+            ""type"": ""neural networks"",
+            ""specification"": null,
+            ""description"": ""A layout parser model for identifying different components in document images with high accuracy and processing speed.""
+        }
+    ],
+    ""knowledge"": [],
+    ""service"": {
+        ""feature_engineering"": [],
+        ""target_device"": """",
+        ""deployment_endpoint"": """",
+        ""inference_engine"": [],
+        ""demonstration"": null
+    },
+    ""confidence"": {
+        ""rationale"": ""This JSON configuration has been tailored based on the given instruction, with a focus on constructing a layout parser model for the PubLayNet dataset aimed at document analysis and segmentation. It specifically addresses the need for high accuracy in identifying text blocks, images, tables, and headings, while also emphasizing the importance of quick processing speed. The absence of explicit performance metrics and model specifications in the instruction led to these fields being left adaptable, with an emphasis placed on the unique requirements of processing time for document segmentation tasks."",
+        ""score"": 0.9
+    }
+}",1
+image segmentation,Can you provide a high-performing model to segment cats in images.,"{
+    ""user"": {
+        ""intent"": ""build"",
+        ""expertise"": ""medium""
+    },
+    ""problem"": {
+        ""area"": ""computer vision"",
+        ""downstream_task"": ""image segmentation"",
+        ""application_domain"": ""animal recognition"",
+        ""description"": ""The user requests a high-performing model to segment cats in images, which implies identifying and delineating each cat within various image backgrounds."",
+        ""performance_metrics"": [
+            {
+                ""name"": ""IoU (Intersection over Union)"",
+                ""value"": 0.9
+            },
+            {
+                ""name"": ""Accuracy"",
+                ""value"": 0.95
+            }
+        ],
+        ""complexity_metrics"": []
+    },
+    ""dataset"": [
+        {
+            ""name"": """",
+            ""modality"": [""image""],
+            ""target_variables"": [""cat locations and boundaries""],
+            ""specification"": null,
+            ""description"": ""The dataset should consist of images containing cats, possibly with varied backgrounds and cat poses, to effectively train a segmentation model."",
+            ""preprocessing"": [""normalization"", ""resizing""],
+            ""augmentation"": [""flipping"", ""rotation""],
+            ""visualization"": [""image overlay with segmentation masks""],
+            ""source"": ""infer-search""
+        }
+    ],
+    ""model"": [
+        {
+            ""name"": """",
+            ""family"": """",
+            ""type"": ""neural networks"",
+            ""specification"": null,
+            ""description"": ""A neural network model suitable for high-precision cat segmentation in images, likely based on architectures like U-Net, Mask R-CNN, or DeepLab.""
+        }
+    ],
+    ""knowledge"": [],
+    ""service"": {
+        ""feature_engineering"": [],
+        ""target_device"": """",
+        ""deployment_endpoint"": """",
+        ""inference_engine"": [],
+        ""demonstration"": null
+    },
+    ""confidence"": {
+        ""rationale"": ""The JSON response accurately follows the template and is constructed based on the instruction to provide a model for cat image segmentation. The choices of 'intent', 'expertise', and specifics under 'problem', 'dataset', and 'model' sections are based on the need for a specialized computer vision solution in the domain of animal recognition. Performance metrics are set high to reflect the request for a 'high-performing model'. Further details, such as dataset preprocessing, augmentation, and model type, align with common practices for image segmentation tasks."",
+        ""score"": 0.95
+    }
+}",1
+image segmentation,"For my class project, I chose the Cityscapes dataset because I like cars and roads and stuff. I think I'm supposed to use something to find the cars? But I'm not sure how to make it work fast. Any advice on making it quicker would be great!","{
+    ""user"": {
+        ""intent"": ""consult-build"",
+        ""expertise"": ""low""
+    },
+    ""problem"": {
+        ""area"": ""computer vision"",
+        ""downstream_task"": ""image segmentation"",
+        ""application_domain"": ""urban scene understanding"",
+        ""description"": ""The user has chosen the Cityscapes dataset for a class project, expressing an interest in cars and roads. They are looking for advice on identifying cars within the dataset efficiently but are unsure how to proceed. They seek recommendations for accelerating the process."",
+        ""performance_metrics"": [],
+        ""complexity_metrics"": []
+    },
+    ""dataset"": [
+        {
+            ""name"": ""Cityscapes"",
+            ""modality"": [""image""],
+            ""target_variables"": [""cars""],
+            ""specification"": null,
+            ""description"": ""The Cityscapes dataset contains urban street scenes from different cities, focusing on semantic understanding of urban street scenes. It is used for tasks like semantic segmentation and object detection."",
+            ""preprocessing"": [],
+            ""augmentation"": [],
+            ""visualization"": [],
+            ""source"": ""direct-search""
+        }
+    ],
+    ""model"": [
+        {
+            ""name"": """",
+            ""family"": """",
+            ""type"": ""neural networks"",
+            ""specification"": null,
+            ""description"": ""The model suitable for this task would ideally be a neural network capable of object detection, specifically identifying cars in urban street scenes. Techniques to improve efficiency should be considered.""
+        }
+    ],
+    ""knowledge"": [],
+    ""service"": {
+        ""feature_engineering"": [],
+        ""target_device"": """",
+        ""deployment_endpoint"": """",
+        ""inference_engine"": [],
+        ""demonstration"": null
+    },
+    ""confidence"": {
+        ""rationale"": ""The information was parsed based on the user's expression of intent, expertise level, and the specific dataset mentioned. The user's interest in 'cars and roads' directly informs the choice of downstream task (image segmentation) within the computer vision area, focusing on the 'urban scene understanding' domain. Given the user's low expertise, assumptions were made to fill gaps in the instruction, specifically around the model's type and potential efficiency improvements. Significant information, such as specific performance and complexity metrics or detailed model specifications, is missing due to the broad nature of the user's request and their expressed uncertainty."",
+        ""score"": 0.75
+    }
+}",1
+image segmentation,"I want to segment indoor scenes, like finding furniture in a room. I heard about this U-Net model; can we use that? It would be awesome if it didn’t take forever to run on my computer.","{
+    ""user"": {
+        ""intent"": ""consult-build"",
+        ""expertise"": ""low""
+    },
+    ""problem"": {
+        ""area"": ""computer vision"",
+        ""downstream_task"": ""image segmentation"",
+        ""application_domain"": ""indoor scene analysis"",
+        ""description"": ""The user wants to segment indoor scenes, specifically identifying furniture within a room. They have heard about the U-Net model and are interested in using it, provided it operates efficiently on their computer."",
+        ""performance_metrics"": [],
+        ""complexity_metrics"": []
+    },
+    ""dataset"": [
+        {
+            ""name"": """",
+            ""modality"": [""image""],
+            ""target_variables"": [],
+            ""specification"": null,
+            ""description"": """",
+            ""preprocessing"": [],
+            ""augmentation"": [],
+            ""visualization"": [],
+            ""source"": ""infer-search""
+        }
+    ],
+    ""model"": [
+        {
+            ""name"": ""U-Net"",
+            ""family"": ""Convolutional Neural Networks"",
+            ""type"": ""neural networks"",
+            ""specification"": null,
+            ""description"": ""U-Net is mentioned by the user as a potential solution for the image segmentation task. It's known for its efficiency in segmenting images, which aligns with the user's requirement for a model that doesn't take long to run.""
+        }
+    ],
+    ""knowledge"": [],
+    ""service"": {
+        ""feature_engineering"": [],
+        ""target_device"": ""personal computer"",
+        ""deployment_endpoint"": """",
+        ""inference_engine"": [],
+        ""demonstration"": null
+    },
+    ""confidence"": {
+        ""rationale"": ""This JSON structure is based on the user's intent to use a specific model (U-Net) for segmenting indoor scenes and their concern about computational efficiency. Given the lack of detailed technical preferences or requirements, assumptions were made based on common practices in computer vision tasks related to indoor scene segmentation. The model name and family were directly mentioned, so they were included without modification. Some fields were left null or empty, following the template's guidance for unspecified or broadly defined instructions."",
+        ""score"": 0.85
+    }
+}",1
+image segmentation,"Hey, I'm trying to work on this project with satellite images to identify different land types. The dataset I have is Sentinel-2. I've heard about something called segmentation models but don't know which one to pick. Could it work with any model, or do I need something specific? It would be great if the processing doesn't take all day, but I'm more curious to see if it can actually recognize water, forests, and urban areas accurately.","{
+    ""user"": {
+        ""intent"": ""consult-build"",
+        ""expertise"": ""low""
+    },
+    ""problem"": {
+        ""area"": ""computer vision"",
+        ""downstream_task"": ""image segmentation"",
+        ""application_domain"": ""environmental monitoring"",
+        ""description"": ""The user is working on a project involving satellite images to identify different land types using the Sentinel-2 dataset. They are interested in segmentation models to classify water, forests, and urban areas but are unsure which model to choose. The user prefers models that do not require extensive processing time."",
+        ""performance_metrics"": [],
+        ""complexity_metrics"": []
+    },
+    ""dataset"": [
+        {
+            ""name"": ""Sentinel-2"",
+            ""modality"": [""image""],
+            ""target_variables"": [],
+            ""specification"": null,
+            ""description"": ""Satellite images for identifying different land types."",
+            ""preprocessing"": [],
+            ""augmentation"": [],
+            ""visualization"": [],
+            ""source"": ""direct-search""
+        }
+    ],
+    ""model"": [
+        {
+            ""name"": """",
+            ""family"": ""segmentation models"",
+            ""type"": ""neural networks"",
+            ""specification"": null,
+            ""description"": ""Exploration of segmentation models suitable for classifying different land types in satellite images, with a preference for those that ensure efficient processing times.""
+        }
+    ],
+    ""knowledge"": [],
+    ""service"": {
+        ""feature_engineering"": [],
+        ""target_device"": """",
+        ""deployment_endpoint"": """",
+        ""inference_engine"": [],
+        ""demonstration"": null
+    },
+    ""confidence"": {
+        ""rationale"": ""This JSON structure aligns with the user's request by specifying their intent to consult about image segmentation models suitable for land type identification using satellite imagery, particularly the Sentinel-2 dataset. It captures the user's low expertise level and their concern about processing time. The model and dataset sections are tailored to the user's project, highlighting the need for segmentation models within the neural network family, although no specific model is recommended as the user is seeking advice. The confidence score reflects this careful consideration of the user's request and the structured attempt to align with the provided JSON template."",
+        ""score"": 0.9
+    }
+}",1
+image segmentation,"I've been thinking, we have all these aerial photos of our properties, and it's a hassle to manually check for changes or damages every time. Is there a way to automatically figure out which parts are buildings, trees, or roads without going through each photo by hand?","{
+    ""user"": {
+        ""intent"": ""consult"",
+        ""expertise"": ""low""
+    },
+    ""problem"": {
+        ""area"": ""computer vision"",
+        ""downstream_task"": ""image segmentation"",
+        ""application_domain"": ""property management"",
+        ""description"": ""The user wants an automated solution to analyze aerial photos of properties to identify buildings, trees, and roads without manual review."",
+        ""performance_metrics"": [],
+        ""complexity_metrics"": []
+    },
+    ""dataset"": [
+        {
+            ""name"": """",
+            ""modality"": [""image""],
+            ""target_variables"": [],
+            ""specification"": null,
+            ""description"": ""Aerial photographs of properties for the purpose of identifying buildings, trees, and roads."",
+            ""preprocessing"": [],
+            ""augmentation"": [],
+            ""visualization"": [],
+            ""source"": ""user-upload""
+        }
+    ],
+    ""model"": [
+        {
+            ""name"": """",
+            ""family"": """",
+            ""type"": ""neural networks"",
+            ""specification"": null,
+            ""description"": ""A model capable of segmenting images to classify different parts as buildings, trees, or roads.""
+        }
+    ],
+    ""knowledge"": [],
+    ""service"": {
+        ""feature_engineering"": [],
+        ""target_device"": """",
+        ""deployment_endpoint"": """",
+        ""inference_engine"": [],
+        ""demonstration"": null
+    },
+    ""confidence"": {
+        ""rationale"": ""The instruction prompt was clear in expressing a need for an automated way to analyze aerial photos for property management, identifying specific elements such as buildings, trees, and roads. Image segmentation within computer vision is the appropriate technology to achieve this. The low expertise indicates a non-technical user, leading to the 'consult' intent. The lack of specific models, datasets, and technical details necessitated assumptions based on the task's nature."",
+        ""score"": 0.9
+    }
+}",0
+image segmentation,"For our car rental service, we're considering a feature where users can upload photos of their parking spot, and our app would automatically identify the car and its surroundings to ensure it's parked in a suitable location. Is it possible to develop such an automated verification system?","{
+    ""user"": {
+        ""intent"": ""consult-build"",
+        ""expertise"": ""low""
+    },
+    ""problem"": {
+        ""area"": ""computer vision"",
+        ""downstream_task"": ""image segmentation"",
+        ""application_domain"": ""automotive"",
+        ""description"": ""For our car rental service, we're considering a feature where users can upload photos of their parking spot, and our app would automatically identify the car and its surroundings to ensure it's parked in a suitable location. Is it possible to develop such an automated verification system?"",
+        ""performance_metrics"": [],
+        ""complexity_metrics"": []
+    },
+    ""dataset"": [
+        {
+            ""name"": """",
+            ""modality"": [""image""],
+            ""target_variables"": [],
+            ""specification"": null,
+            ""description"": ""Users will upload photos of their parking spots. The dataset will consist of these images, potentially needing annotation for car locations and types, as well as identifying features of the parking environment to ensure suitability."",
+            ""preprocessing"": [],
+            ""augmentation"": [],
+            ""visualization"": [],
+            ""source"": ""user-upload""
+        }
+    ],
+    ""model"": [
+        {
+            ""name"": """",
+            ""family"": """",
+            ""type"": ""neural networks"",
+            ""specification"": null,
+            ""description"": ""A model capable of identifying cars and their surroundings in uploaded images to ensure they are parked in suitable locations. It may leverage object detection frameworks such as YOLO, SSD, or Faster R-CNN.""
+        }
+    ],
+    ""knowledge"": [],
+    ""service"": {
+        ""feature_engineering"": [],
+        ""target_device"": """",
+        ""deployment_endpoint"": """",
+        ""inference_engine"": [],
+        ""demonstration"": null
+    },
+    ""confidence"": {
+        ""rationale"": ""This JSON structure is designed to closely follow the template provided and accurately represent the user's inquiry about developing an automated car and surroundings identification system for a car rental service. The instruction was meticulously parsed, considering the user's intent, relevant AI domain, and technical requirements, to ensure a clear understanding of the project's scope and the technologies involved."",
+        ""score"": 0.9
+    }
+}",0
+image segmentation,"We manage a large online library of historical manuscripts and documents. To make these more accessible, we're interested in a tool that can automatically split the layout of illustrations found in these documents. Is there a technology that can assist us in this detailed task?","{
+    ""user"": {
+        ""intent"": ""consult"",
+        ""expertise"": ""low""
+    },
+    ""problem"": {
+        ""area"": ""computer vision"",
+        ""downstream_task"": ""image segmentation"",
+        ""application_domain"": ""cultural heritage"",
+        ""description"": ""We manage a large online library of historical manuscripts and documents. To make these more accessible, we're interested in a tool that can automatically split the layout of illustrations found in these documents. Is there a technology that can assist us in this detailed task?"",
+        ""performance_metrics"": [],
+        ""complexity_metrics"": []
+    },
+    ""dataset"": [
+        {
+            ""name"": """",
+            ""modality"": [""image""],
+            ""target_variables"": [],
+            ""specification"": null,
+            ""description"": ""Historical manuscripts and documents containing illustrations."",
+            ""preprocessing"": [],
+            ""augmentation"": [],
+            ""visualization"": [],
+            ""source"": ""user-upload""
+        }
+    ],
+    ""model"": [
+        {
+            ""name"": """",
+            ""family"": """",
+            ""type"": ""neural networks"",
+            ""specification"": null,
+            ""description"": ""A model capable of segmenting illustrations from historical manuscripts and documents.""
+        }
+    ],
+    ""knowledge"": [],
+    ""service"": {
+        ""feature_engineering"": [],
+        ""target_device"": ""cloud"",
+        ""deployment_endpoint"": """",
+        ""inference_engine"": [],
+        ""demonstration"": null
+    },
+    ""confidence"": {
+        ""rationale"": ""The JSON follows the instruction's focus on seeking technology for segmenting illustrations within historical documents, under the assumption of minimal prior technical knowledge. It classifies the task as image segmentation within computer vision, suitable for processing historical manuscripts' images. Notably, the confidence in identifying the specific model or dataset is low due to the absence of explicit names or sources, implying a potential need for further clarification or additional information regarding specific technologies or approaches used in similar contexts."",
+        ""score"": 0.75
+    }
+}",0
+image segmentation,"As a healthcare provider, we're inundated with skin condition photographs from patients. We're looking for a method to automatically sort these images by condition types, such as rashes, moles, or lesions, to better organize patient files and assist in preliminary diagnoses. Is there an automated solution that could help our medical staff?","{
+    ""user"": {
+        ""intent"": ""consult-build"",
+        ""expertise"": ""low""
+    },
+    ""problem"": {
+        ""area"": ""computer vision"",
+        ""downstream_task"": ""image segmentation"",
+        ""application_domain"": ""healthcare"",
+        ""description"": ""A healthcare provider is overwhelmed with skin condition photographs from patients and seeks an automated solution to sort these images by condition types (e.g., rashes, moles, lesions) for better organization and preliminary diagnosis assistance."",
+        ""performance_metrics"": [],
+        ""complexity_metrics"": []
+    },
+    ""dataset"": [
+        {
+            ""name"": """",
+            ""modality"": [""image""],
+            ""target_variables"": [],
+            ""specification"": null,
+            ""description"": ""Skin condition photographs submitted by patients, categorized into types such as rashes, moles, or lesions."",
+            ""preprocessing"": [],
+            ""augmentation"": [],
+            ""visualization"": [],
+            ""source"": ""user-upload""
+        }
+    ],
+    ""model"": [
+        {
+            ""name"": """",
+            ""family"": """",
+            ""type"": ""neural networks"",
+            ""specification"": null,
+            ""description"": ""A model capable of classifying images of skin conditions into predefined categories such as rashes, moles, or lesions.""
+        }
+    ],
+    ""knowledge"": [],
+    ""service"": {
+        ""feature_engineering"": [],
+        ""target_device"": ""server"",
+        ""deployment_endpoint"": """",
+        ""inference_engine"": [],
+        ""demonstration"": null
+    },
+    ""confidence"": {
+        ""rationale"": ""The information was parsed based on the instruction prompt which requested an automated solution for sorting skin condition photographs into specific categories for a healthcare provider. The intent was identified as 'consult-build' due to the request for both consultation and development of an automated system. The user's expertise is assumed to be 'low' in AI/ML as they are approaching from a healthcare perspective seeking a technical solution. The problem area and task were identified as 'computer vision' and 'image segmentation' respectively, which aligns with the requirement to categorize images. The dataset and model sections were filled with assumptions and common practices in handling image segmentation tasks in healthcare."",
+        ""score"": 0.9
+    }
+}",0
+image segmentation,We're launching a new marketing campaign that requires analyzing customer reactions in various settings. Can we automate the process of distinguishing between people and the background in our promotional photos to better understand focus areas?,"{
+    ""user"": {
+        ""intent"": ""consult-build"",
+        ""expertise"": ""medium""
+    },
+    ""problem"": {
+        ""area"": ""computer vision"",
+        ""downstream_task"": ""image segmentation"",
+        ""application_domain"": ""marketing"",
+        ""description"": ""We're launching a new marketing campaign that requires analyzing customer reactions in various settings. Can we automate the process of distinguishing between people and the background in our promotional photos to better understand focus areas?"",
+        ""performance_metrics"": [],
+        ""complexity_metrics"": []
+    },
+    ""dataset"": [
+        {
+            ""name"": """",
+            ""modality"": [""image""],
+            ""target_variables"": [],
+            ""specification"": null,
+            ""description"": ""The dataset consists of promotional photos for analyzing customer reactions in various settings, with the aim to distinguish between people and the background."",
+            ""preprocessing"": [],
+            ""augmentation"": [],
+            ""visualization"": [],
+            ""source"": ""user-upload""
+        }
+    ],
+    ""model"": [
+        {
+            ""name"": """",
+            ""family"": """",
+            ""type"": ""neural networks"",
+            ""specification"": null,
+            ""description"": ""A model capable of distinguishing between people and the background in promotional photos to analyze focus areas in a marketing campaign.""
+        }
+    ],
+    ""knowledge"": [],
+    ""service"": {
+        ""feature_engineering"": [],
+        ""target_device"": """",
+        ""deployment_endpoint"": """",
+        ""inference_engine"": [],
+        ""demonstration"": null
+    },
+    ""confidence"": {
+        ""rationale"": ""The instruction clearly indicates a need to automate the process of analyzing customer reactions in promotional photos, pointing towards a solution in computer vision, specifically image segmentation. The expertise level seems medium as the user is aware of the task but might not know how to implement it. The application domain is marketing, aligned with the campaign's purpose. Distinguishing between people and background in images directly aligns with the image segmentation task. Preprocessing and augmentation steps are inferred from common practices for handling image data in similar tasks."",
+        ""score"": 0.9
+    }
+}",0

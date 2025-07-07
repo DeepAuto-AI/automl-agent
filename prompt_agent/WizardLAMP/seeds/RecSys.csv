@@ -1,0 +1,659 @@
+task,instruction,response,quality
+matrix factorization,"Using the 'Zillow Economics Data' for a project aimed at recommending investment properties, apply Generalized Low Rank Models (GLRM) for matrix factorization. The system should identify high-potential properties based on user investment profiles and market trends, aiming for a high return on investment for our users.",,2
+matrix factorization,Create a content recommendation engine for our online news portal using the 'Articles Sharing and Reading' dataset. Opt for Coupled Matrix and Tensor Factorization (CMTF) to take advantage of both content attributes and user interaction data. The model should excel at presenting users with articles that increase page views and session duration.,,2
+matrix factorization,"Leverage the 'Steam Video Games' dataset to develop a game recommendation system using Deep Matrix Factorization Models. Focus on personalizing game suggestions based on user playtime patterns, aiming to increase user retention rates. Ensure the system can dynamically adjust to new game releases and user feedback.",,2
+matrix factorization,"Our project will focus on enhancing the user experience on our music streaming platform. Use the 'Last.fm Dataset' with Probabilistic Matrix Factorization (PMF) to craft personalized playlist recommendations. Aim for a model that balances accuracy and computational efficiency, with a specific emphasis on reducing the cold start problem for new users.",,2
+matrix factorization,"Employ the 'Anime Recommendations' dataset to create a system that suggests anime based on user ratings using Bayesian Personalized Ranking (BPR) matrix factorization. Aim for high precision and recall in the top 10 recommendations, with special attention to reducing the recommendation of niche or low-popularity items to new users.","{
+  ""user"": {
+    ""intent"": ""build"",
+    ""expertise"": ""medium""
+  },
+  ""problem"": {
+    ""area"": ""recommendation systems"",
+    ""downstream_task"": ""matrix factorization"",
+    ""application_domain"": ""entertainment"",
+    ""description"": ""Create a recommendation system for anime based on user ratings employing Bayesian Personalized Ranking (BPR) matrix factorization. Focus on achieving high precision and recall in the top 10 recommendations while minimizing the recommendation of niche or low-popularity items to new users."",
+    ""performance_metrics"": [
+      {
+        ""name"": ""precision@10"",
+        ""value"": null
+      },
+      {
+        ""name"": ""recall@10"",
+        ""value"": null
+      }
+    ],
+    ""complexity_metrics"": []
+  },
+  ""dataset"": [
+    {
+      ""name"": ""Anime Recommendations"",
+      ""modality"": [""tabular""],
+      ""target_variables"": [],
+      ""specification"": null,
+      ""description"": ""A dataset containing user ratings for various anime. Used to train a recommendation system to suggest anime based on user preferences."",
+      ""preprocessing"": [],
+      ""augmentation"": [],
+      ""visualization"": [],
+      ""source"": ""direct-search""
+    }
+  ],
+  ""model"": [
+    {
+      ""name"": ""Bayesian Personalized Ranking (BPR)"",
+      ""family"": ""matrix factorization"",
+      ""type"": ""statistical models"",
+      ""specification"": null,
+      ""description"": ""A matrix factorization model leveraging Bayesian Personalized Ranking for generating personalized recommendations.""
+    }
+  ],
+  ""knowledge"": [],
+  ""service"": {
+    ""feature_engineering"": [],
+    ""target_device"": """",
+    ""deployment_endpoint"": """",
+    ""inference_engine"": [""""],
+    ""demonstration"": null
+  },
+  ""confidence"": {
+    ""rationale"": ""The JSON structure provided matches the instruction prompt with adjustments to ensure compatibility with the schema's format and to cover all necessary aspects of building a recommendation system using the specified dataset and model approach. Details like precise values for performance metrics are left open as these would depend on the outcomes of model training and evaluation. The focus on reducing the recommendation of niche or low-popularity items, although not explicitly a metric, is implied through the system's design and objective."",
+    ""score"": 0.9
+  }
+}",2
+matrix factorization,"I need a recommendation model built on the Yelp dataset, focusing on restaurant suggestions. The model should use Probabilistic Matrix Factorization (PMF) and include user and item bias. Aim for a precision at k (P@K) metric of at least 0.8 for the top 10 recommendations.","{
+  ""user"": {
+    ""intent"": ""build"",
+    ""expertise"": ""medium""
+  },
+  ""problem"": {
+    ""area"": ""recommendation systems"",
+    ""downstream_task"": ""matrix factorization"",
+    ""application_domain"": ""restaurant recommendations"",
+    ""description"": ""Build a recommendation model for restaurant suggestions using the Yelp dataset. The model should leverage Probabilistic Matrix Factorization (PMF) and account for user and item bias."",
+    ""performance_metrics"": [
+      {
+        ""name"": ""precision at 10 (P@10)"",
+        ""value"": 0.8
+      }
+    ],
+    ""complexity_metrics"": []
+  },
+  ""dataset"": [
+    {
+      ""name"": ""Yelp"",
+      ""modality"": [""text"", ""tabular""],
+      ""target_variables"": [],
+      ""specification"": null,
+      ""description"": ""A dataset containing user reviews and ratings for various businesses, focusing on restaurants for this task."",
+      ""preprocessing"": [],
+      ""augmentation"": [],
+      ""visualization"": [],
+      ""source"": ""direct-search""
+    }
+  ],
+  ""model"": [
+    {
+      ""name"": ""Probabilistic Matrix Factorization (PMF) with bias"",
+      ""family"": """",
+      ""type"": ""statistical models"",
+      ""specification"": null,
+      ""description"": ""A matrix factorization model that incorporates both user and item biases to provide restaurant recommendations.""
+    }
+  ],
+  ""knowledge"": [],
+  ""service"": {
+    ""feature_engineering"": [],
+    ""target_device"": """",
+    ""deployment_endpoint"": """",
+    ""inference_engine"": [],
+    ""demonstration"": null
+  },
+  ""confidence"": {
+    ""rationale"": ""The JSON structure is strictly based on the provided instruction and templates. It includes all necessary information about the user, the problem domain, dataset, model specifications, and performance goals. The user's intent to build a model, the recommendation systems area, and specific task of matrix factorization with details like using the Yelp dataset for restaurant recommendations are clearly defined. Performance expectations are specified with a P@K metric goal of 0.8. Although the instruction does not provide explicit details on every aspect (e.g., complexity metrics, specific model family), the JSON is filled out to the best interpretation of the given instruction."",
+    ""score"": 0.9
+  }
+}",2
+matrix factorization,"For the Coursera course dataset, use Kernelized Matrix Factorization to recommend educational courses to learners. Incorporate user feedback and course completion rates into the model to refine predictions. Aim for a significant improvement in course completion rates as a measure of success.",,2
+matrix factorization,"Deploy a Deep Matrix Factorization model on the Spotify song playlist dataset to recommend songs to users. The model should integrate user and song metadata for improved accuracy. Strive for a hit rate of 20% for the top-10 recommended songs. Model interpretability is not a priority, but speed and accuracy are.",,2
+matrix factorization,"For our e-commerce website's user-item interaction dataset, implement a Hybrid Matrix Factorization model combining content-based and collaborative filtering techniques. Optimize for both recall@5 and precision@5, with a minimum threshold of 0.25. Your solution must be scalable to accommodate up to 1 million users.",,2
+matrix factorization,"For the academic papers dataset from ArXiv, deploy a Co-Clustering based matrix factorization model to recommend articles to researchers. The model should facilitate discovery across interdisciplinary boundaries. Aim for a 10% increase in cross-disciplinary citations as a metric of success.",,2
+matrix factorization,"For a gourmet food subscription service, use the 'Recipe Ratings' dataset with matrix factorization to recommend recipes to users. The system should adapt to seasonal ingredient availability and user dietary preferences, aiming for a high user trial rate of new recipes suggested.",,1
+matrix factorization,"I need to recommend fashion items using a dataset from an online store. I've heard about using matrix factorization but am unclear on the specifics, like which model is best for this case and how to tell if it's working properly.",,1
+matrix factorization,I'm trying to make a playlist recommender using Spotify data. Any advice on getting started?,"{
+    ""user"": {
+        ""intent"": ""consult-build"",
+        ""expertise"": ""low""
+    },
+    ""problem"": {
+        ""area"": ""recommendation systems"",
+        ""downstream_task"": ""matrix factorization"",
+        ""application_domain"": ""music"",
+        ""description"": ""The user is looking to create a playlist recommender using Spotify data and seeks advice on getting started."",
+        ""performance_metrics"": [],
+        ""complexity_metrics"": []
+    },
+    ""dataset"": [
+        {
+            ""name"": ""Spotify"",
+            ""modality"": [""audio"", ""text""],
+            ""target_variables"": [],
+            ""specification"": null,
+            ""description"": ""A dataset containing Spotify music tracks. Relevant data might include audio features, metadata (e.g., genre, artist), and user interaction data (e.g., plays, skips, likes)."",
+            ""preprocessing"": [""feature extraction from audio"", ""metadata processing""],
+            ""augmentation"": [],
+            ""visualization"": [],
+            ""source"": ""direct-search""
+        }
+    ],
+    ""model"": [
+        {
+            ""name"": """",
+            ""family"": """",
+            ""type"": ""neural networks"",
+            ""specification"": null,
+            ""description"": ""A model based on matrix factorization techniques for playlist recommendation. It should learn to recommend songs based on user preferences and song features.""
+        }
+    ],
+    ""knowledge"": [],
+    ""service"": {
+        ""feature_engineering"": [],
+        ""target_device"": ""cloud"",
+        ""deployment_endpoint"": """",
+        ""inference_engine"": [],
+        ""demonstration"": null
+    },
+    ""confidence"": {
+        ""rationale"": ""The response follows the structure of the template, adapting the instruction to fit the schema. Given the user's intent to build and seek advice for a playlist recommender using Spotify data, the problem area is correctly identified as 'recommendation systems' with 'matrix factorization' as the task. The dataset modality includes 'audio' and 'text' considering Spotify tracks' nature, and 'neural networks' is a suitable model type for this context. The application domain is accurately set to 'music'. However, details such as specific performance and complexity metrics, dataset specifications, and deployment details were not provided in the instruction, limiting the response completeness."",
+        ""score"": 0.8
+    }
+}",1
+matrix factorization,"I have the Yelp review dataset and want to recommend restaurants. What model should I pick, and what's a good result look like?",,1
+matrix factorization,I have a task to predict what movies people might like. I've heard of matrix factorization but don't know where to start. What's a good model and dataset for beginners?,,1
+matrix factorization,I'm interested in enhancing our online bookstore's ability to suggest titles to our customers based on what they've previously enjoyed. Can technology help personalize our service in a way that feels intuitive to the shopper?,,0
+matrix factorization,Our company wants to leverage the vast amount of user interaction data we have from our streaming service to better understand and predict what content to recommend next. Is there an automated system that can help us achieve this without having to manually analyze each user's behavior?,,0
+matrix factorization,I've noticed that some customers tend to buy certain types of products together. Is there a method to automatically identify these patterns and use this insight to recommend complementary products to future customers?,"{
+    ""user"": {
+        ""intent"": ""consult"",
+        ""expertise"": ""low""
+    },
+    ""problem"": {
+        ""area"": ""recommendation systems"",
+        ""downstream_task"": ""matrix factorization"",
+        ""application_domain"": ""e-commerce"",
+        ""description"": ""I've noticed that some customers tend to buy certain types of products together. Is there a method to automatically identify these patterns and use this insight to recommend complementary products to future customers?"",
+        ""performance_metrics"": [],
+        ""complexity_metrics"": []
+    },
+    ""dataset"": [
+        {
+            ""name"": """",
+            ""modality"": [""tabular""],
+            ""target_variables"": [],
+            ""specification"": null,
+            ""description"": ""The dataset likely consists of user purchase history, including user IDs, product IDs, and possibly ratings or frequencies of purchases."",
+            ""preprocessing"": [],
+            ""augmentation"": [],
+            ""visualization"": [],
+            ""source"": ""infer-search""
+        }
+    ],
+    ""model"": [
+        {
+            ""name"": """",
+            ""family"": """",
+            ""type"": ""classical machine learning"",
+            ""specification"": null,
+            ""description"": ""A model capable of identifying and leveraging patterns in customer purchase behavior to recommend complementary products.""
+        }
+    ],
+    ""knowledge"": [],
+    ""service"": {
+        ""feature_engineering"": [],
+        ""target_device"": """",
+        ""deployment_endpoint"": """",
+        ""inference_engine"": [],
+        ""demonstration"": null
+    },
+    ""confidence"": {
+        ""rationale"": ""The parsed instruction aligns with the template and adheres to the provided details. It translates the user's interest in understanding patterns of product purchases into a task of matrix factorization within recommendation systems, aiming at offering complementary product recommendations. The task's scope, dataset needs, and model type suggestions are made with the assumption of low user expertise, thus avoiding overly technical descriptions. Specific details like performance and complexity metrics were not provided, reflecting the 'consult' nature of the request rather than a 'build' scenario."",
+        ""score"": 0.9
+    }
+}",0
+matrix factorization,"As a travel agency, we're trying to find a better way to suggest destinations and packages to our clients based on their past trips and preferences. How can we implement a system that understands our clients' tastes without them having to explicitly tell us each time?",,0
+matrix factorization,We've gathered a lot of data on how users interact with songs in our music app. We want to use this information to suggest new songs to them that they haven't heard but will probably like. How can we make our app smarter in understanding user tastes?,,0
+click-through rate,"Could you work on a click-through rate prediction system using the Yelp Business Reviews dataset? Opt for a Gradient Boosting Machines (GBM) model. I'm particularly interested in how user reviews and business attributes influence the likelihood of clicking. The model needs to balance between speed and accuracy, targeting a ROC-AUC score above 0.8.",,2
+click-through rate,"Please utilize the Amazon Reviews dataset for this task. We're interested in applying a deep learning model, specifically a LSTM network, to predict the click-through rate of product recommendations. Focus on extracting user behavior patterns and item feature interactions. The model should aim for at least an 80% accuracy and respond within 200 milliseconds.",,2
+click-through rate,"For the MovieLens dataset, could you develop a recommendation system using a collaborative filtering approach? The goal is to enhance our click-through rate by personalizing movie recommendations. I expect the system to use matrix factorization techniques and to achieve a precision of at least 0.75. Consider incorporating user demographics for improved performance.",,2
+click-through rate,"We're targeting the Alibaba E-commerce dataset with an Ensemble Learning approach to tackle click-through rate prediction. This should merge insights from multiple model types, like Decision Trees, SVMs, and Neural Networks, to capture a broad spectrum of patterns. Aim for high scalability and a latency below 200 milliseconds, with an emphasis on handling peak traffic seamlessly.",,2
+click-through rate,"Let's explore the use of Autoencoders on the Last.fm Music Listening dataset for predicting click-through rates. The model should be capable of capturing deep user preferences and item characteristics. We're aiming for an innovative solution that prioritizes a high precision-recall balance, with an exceptional ability to recommend niche items effectively.","{
+  ""user"": {
+    ""intent"": ""build"",
+    ""expertise"": ""medium""
+  },
+  ""problem"": {
+    ""area"": ""recommendation systems"",
+    ""downstream_task"": ""click-through rate"",
+    ""application_domain"": ""music"",
+    ""description"": ""Let's explore the use of Autoencoders on the Last.fm Music Listening dataset for predicting click-through rates. The model should be capable of capturing deep user preferences and item characteristics. We're aiming for an innovative solution that prioritizes a high precision-recall balance, with an exceptional ability to recommend niche items effectively."",
+    ""performance_metrics"": [
+      {
+        ""name"": ""precision"",
+        ""value"": null
+      },
+      {
+        ""name"": ""recall"",
+        ""value"": null
+      }
+    ],
+    ""complexity_metrics"": []
+  },
+  ""dataset"": [
+    {
+      ""name"": ""Last.fm Music Listening"",
+      ""modality"": [""audio"", ""text""],
+      ""target_variables"": [],
+      ""specification"": null,
+      ""description"": ""Dataset containing user listening behaviors, preferences, and item characteristics from the Last.fm music service."",
+      ""preprocessing"": [],
+      ""augmentation"": [],
+      ""visualization"": [],
+      ""source"": ""direct-search""
+    }
+  ],
+  ""model"": [
+    {
+      ""name"": """",
+      ""family"": ""Autoencoders"",
+      ""type"": ""neural networks"",
+      ""specification"": null,
+      ""description"": ""Autoencoders model to capture deep user preferences and item characteristics for predicting click-through rates.""
+    }
+  ],
+  ""knowledge"": [],
+  ""service"": {
+    ""feature_engineering"": [],
+    ""target_device"": """",
+    ""deployment_endpoint"": """",
+    ""inference_engine"": [],
+    ""demonstration"": null
+  },
+  ""confidence"": {
+    ""rationale"": ""The JSON is structured to reflect the instruction's focus on building a recommendation system using Autoencoders for predicting click-through rates on the Last.fm dataset, emphasizing precision-recall balance and the ability to recommend niche items. The user's expertise is assumed to be 'medium' based on the task's complexity and specific model mention. However, precision and recall values are not specified, indicating flexibility or exploration in these metrics."",
+    ""score"": 0.95
+  }
+}",2
+click-through rate,"For the Kaggle Display Advertising Challenge dataset, implement a model using the Graph Neural Network (GNN) architecture. The focus is on predicting ad click-through rates by exploiting the relational structure between users and ads. The model must demonstrate the ability to handle complex interaction patterns and scale efficiently under heavy load conditions.","{
+    ""user"": {
+        ""intent"": ""build"",
+        ""expertise"": ""high""
+    },
+    ""problem"": {
+        ""area"": ""graph machine learning"",
+        ""downstream_task"": ""click-through rate"",
+        ""application_domain"": ""advertising"",
+        ""description"": ""For the Kaggle Display Advertising Challenge dataset, implement a model using the Graph Neural Network (GNN) architecture. The focus is on predicting ad click-through rates by exploiting the relational structure between users and ads. The model must demonstrate the ability to handle complex interaction patterns and scale efficiently under heavy load conditions."",
+        ""performance_metrics"": [],
+        ""complexity_metrics"": []
+    },
+    ""dataset"": [
+        {
+            ""name"": ""Kaggle Display Advertising Challenge"",
+            ""modality"": [""graph""],
+            ""target_variables"": [],
+            ""specification"": null,
+            ""description"": ""A dataset from the Kaggle Display Advertising Challenge, focusing on ad click-through rates."",
+            ""preprocessing"": [],
+            ""augmentation"": [],
+            ""visualization"": [],
+            ""source"": ""direct-search""
+        }
+    ],
+    ""model"": [
+        {
+            ""name"": """",
+            ""family"": ""Graph Neural Network"",
+            ""type"": ""neural networks"",
+            ""specification"": null,
+            ""description"": ""A Graph Neural Network (GNN) model designed to predict ad click-through rates by analyzing the relational structure between users and ads.""
+        }
+    ],
+    ""knowledge"": [],
+    ""service"": {
+        ""feature_engineering"": [],
+        ""target_device"": """",
+        ""deployment_endpoint"": """",
+        ""inference_engine"": [],
+        ""demonstration"": null
+    },
+    ""confidence"": {
+        ""rationale"": ""The JSON structure is filled out based on the given instruction, following the provided templates. The user's intent is clearly to build a model, with a high level of expertise implied by the task complexity. The problem area and downstream task are correctly identified as 'graph machine learning' and 'click-through rate', respectively, with a specific application in the advertising domain. The dataset is accurately described, with appropriate modality and source. The model section is aligned with the instruction, specifying a GNN architecture without over-specification. The absence of detailed performance and complexity metrics, preprocessing steps, and specific deployment details reflects the broad nature of the instruction, rather than an oversight. Therefore, this JSON is considered a comprehensive and accurate representation of the task as described, with high confidence."",
+        ""score"": 1.0
+    }
+}",2
+click-through rate,"Using the Airbnb Listing dataset, construct a Dual Learning model for click-through rate prediction. This model should simultaneously learn from listing features and user engagement patterns to enhance the personalization of recommendations. Focus on achieving a seamless user experience with rapid response times, aiming for sub-second latency in recommendation delivery.",,2
+click-through rate,Create a model to predict click-through rates for real estate listings using the Zillow dataset. The model should incorporate Geographic Information System (GIS) data to understand the influence of location on user engagement. Consider a Gradient Boosting Decision Tree (GBDT) approach for its effectiveness in dealing with heterogeneous data.,,2
+click-through rate,"Leveraging the Outbrain Click Prediction dataset, develop a gradient boosting model to forecast click-through rates for online advertising. It's crucial that the model performs well on sparse data and scales efficiently as new data comes in. Additionally, provide benchmarks on precision and recall metrics.",,2
+click-through rate,"I'd like a recommendation model built on the Spotify Songs dataset, employing the Wide & Deep learning architecture. The task is to predict song recommendation click-through rates, emphasizing the importance of both memorization of frequent co-occurrences and generalization from sparse data. Aim for a model that's both fast and accurate, with a latency no greater than 150ms.",,2
+click-through rate,I want to use the Zillow dataset for a project to predict which houses will get more clicks. I'm not sure about the models. I need it to be pretty accurate and not too slow.,,1
+click-through rate,I have a course project to predict movie click-through rates. I've heard of deep learning being used for recommendations. Can we apply that here somehow? It should be pretty quick too; no one likes to wait.,,1
+click-through rate,"I want to use the Netflix Prize dataset to recommend shows that will get a lot of clicks. I've read about collaborative filtering, but I'm not sure how to apply it. It would be great if the recommendations could be really personalized.","{
+  ""user"": {
+    ""intent"": ""consult-build"",
+    ""expertise"": ""medium""
+  },
+  ""problem"": {
+    ""area"": ""recommendation systems"",
+    ""downstream_task"": ""click-through rate"",
+    ""application_domain"": ""entertainment"",
+    ""description"": ""I want to use the Netflix Prize dataset to recommend shows that will get a lot of clicks. I've read about collaborative filtering, but I'm not sure how to apply it. It would be great if the recommendations could be really personalized."",
+    ""performance_metrics"": [],
+    ""complexity_metrics"": []
+  },
+  ""dataset"": [
+    {
+      ""name"": ""Netflix Prize"",
+      ""modality"": [""tabular""],
+      ""target_variables"": [],
+      ""specification"": null,
+      ""description"": ""A dataset containing user ratings for various shows, used for making personalized show recommendations."",
+      ""preprocessing"": [],
+      ""augmentation"": [],
+      ""visualization"": [],
+      ""source"": ""direct-search""
+    }
+  ],
+  ""model"": [
+    {
+      ""name"": """",
+      ""family"": """",
+      ""type"": ""neural networks"",
+      ""specification"": null,
+      ""description"": ""The model should employ collaborative filtering techniques to recommend shows with high click-through rates, ensuring recommendations are personalized.""
+    }
+  ],
+  ""knowledge"": [],
+  ""service"": {
+    ""feature_engineering"": [],
+    ""target_device"": """",
+    ""deployment_endpoint"": """",
+    ""inference_engine"": [],
+    ""demonstration"": null
+  },
+  ""confidence"": {
+    ""rationale"": ""The JSON structure accurately reflects the user's intent and requirements for building a personalized recommendation system using the Netflix Prize dataset. It correctly identifies the problem area as recommendation systems, with a focus on click-through rate optimization. The dataset details, including its source and necessary preprocessing steps, are appropriately captured. The model section suggests a neural network approach to collaborative filtering, aligning with best practices for personalized recommendations. However, specific performance and complexity metrics, model details, and deployment aspects are not provided in the instruction, leaving these fields blank or generic."",
+    ""score"": 0.8
+  }
+}",1
+click-through rate,I want to analyze click-through rates using some kind of regression model but don't know which one would be best suited for this task. Could you give me a pointer on where to begin?,,1
+click-through rate,"Could we use the Criteo dataset to predict ad clicks? I'm not sure what model to use. It needs to be really accurate, though; how do we make sure it is?",,1
+click-through rate,"I want to find a way to boost our online ad campaigns' effectiveness. We have lots of data on how customers interact with our ads, but I'm not sure how to use it to make our ads more appealing. Can we make our ads smarter somehow so they engage our target audience better?",,0
+click-through rate,"We're seeing a lot of traffic to our news portal, but it seems like readers are not clicking on articles as much as we expected. How can we analyze reader preferences to ensure the articles we display first are the ones they're most likely to be interested in?",,0
+click-through rate,"We run a real estate listing website, and we've been facing challenges in getting potential buyers to click on listings. Is there a way to automatically highlight properties to visitors based on what similar users have shown interest in?","{
+  ""user"": {
+    ""intent"": ""consult-build"",
+    ""expertise"": ""medium""
+  },
+  ""problem"": {
+    ""area"": ""recommendation systems"",
+    ""downstream_task"": ""click-through rate"",
+    ""application_domain"": ""real estate"",
+    ""description"": ""We run a real estate listing website, and we've been facing challenges in getting potential buyers to click on listings. Is there a way to automatically highlight properties to visitors based on what similar users have shown interest in?"",
+    ""performance_metrics"": [],
+    ""complexity_metrics"": []
+  },
+  ""dataset"": [
+    {
+      ""name"": """",
+      ""modality"": [""tabular""],
+      ""target_variables"": [],
+      ""specification"": null,
+      ""description"": ""The dataset likely includes information about user interactions with property listings, such as clicks, views, and possibly user demographic information or past interactions."",
+      ""preprocessing"": [],
+      ""augmentation"": [],
+      ""visualization"": [],
+      ""source"": ""user-upload""
+    }
+  ],
+  ""model"": [
+    {
+      ""name"": """",
+      ""family"": """",
+      ""type"": ""neural networks"",
+      ""specification"": null,
+      ""description"": ""The model is expected to predict click-through rates for property listings, by learning from user interaction data and possibly content features of the listings.""
+    }
+  ],
+  ""knowledge"": [],
+  ""service"": {
+    ""feature_engineering"": [],
+    ""target_device"": ""cloud"",
+    ""deployment_endpoint"": """",
+    ""inference_engine"": [],
+    ""demonstration"": null
+  },
+  ""confidence"": {
+    ""rationale"": ""The given instruction implies the need for a recommendation system to enhance click-through rates on a real estate listing website by leveraging user interaction data. The intent 'consult-build' fits as the user seeks both guidance and a build solution. The 'medium' expertise level is assumed based on the user's awareness of the problem's nature and the potential for an automated solution. The selection of 'recommendation systems' and 'click-through rate' for the area and task, respectively, directly aligns with the goal of predicting user engagement with listings. The dataset modality is 'tabular' given the typical structure of user interaction data. Other fields are filled out based on the instruction's implications and general practices in building recommendation systems."",
+    ""score"": 0.85
+  }
+}",0
+click-through rate,"We're looking to increase the engagement on our online shopping platform. Can you analyze user behavior to suggest which products might interest them more effectively? Ideally, we want to see a significant uplift in how often our recommendations are clicked and purchased.",,0
+click-through rate,"Our online advertising platform needs a boost in efficiency. We're looking for a strategy to present ads that users are more likely to find relevant and click on, without knowing their explicit preferences. Is there an approach that can help us achieve this?",,0
+sequential recommendation,We've collected a unique dataset of online shopping behaviors called 'ShopTrack'. Your task is to develop a sequential recommendation system using the Transformer model family to suggest the next item a customer might purchase. Focus on improving the click-through rate while ensuring the model's latency does not exceed 200ms.,,2
+sequential recommendation,"Using the 'Amazon Reviews' dataset, develop a hybrid model combining CNNs and RNNs for sequential recommendation. The goal is to predict the next category of products a user will be interested in. Ensure the model is scalable and can handle the dataset's vast size efficiently.",,2
+sequential recommendation,Our client needs a recommendation system based on the 'Goodreads Books' dataset. They want a model from the Graph Neural Network family to predict the next book a user will rate highly. A unique requirement is the model's ability to incorporate new books without retraining from scratch.,,2
+sequential recommendation,"For our fashion retail app, leveraging the 'Zalando Research' dataset, we require a Convolutional Sequence Embedding Recommendation Model (Caser) to predict the next item a user might want to buy. Focus on reducing model cold start time and achieving high accuracy in top-5 recommendations.",,2
+sequential recommendation,"The 'Bilibili Danmu' dataset is our focus, where we need a sequential recommendation system that predicts the next video a user will watch. Opt for a model within the Bert4Rec framework, ensuring it can handle the textual data from user comments for better prediction accuracy.","{
+    ""user"": {
+        ""intent"": ""build"",
+        ""expertise"": ""medium""
+    },
+    ""problem"": {
+        ""area"": ""recommendation systems"",
+        ""downstream_task"": ""sequential recommendation"",
+        ""application_domain"": ""video streaming"",
+        ""description"": ""The 'Bilibili Danmu' dataset is our focus, where we need a sequential recommendation system that predicts the next video a user will watch. Opt for a model within the Bert4Rec framework, ensuring it can handle the textual data from user comments for better prediction accuracy."",
+        ""performance_metrics"": [],
+        ""complexity_metrics"": []
+    },
+    ""dataset"": [
+        {
+            ""name"": ""Bilibili Danmu"",
+            ""modality"": [""text"", ""video""],
+            ""target_variables"": [],
+            ""specification"": null,
+            ""description"": ""Dataset containing video data along with user comments for each video."",
+            ""preprocessing"": [],
+            ""augmentation"": [],
+            ""visualization"": [],
+            ""source"": ""direct-search""
+        }
+    ],
+    ""model"": [
+        {
+            ""name"": ""Bert4Rec"",
+            ""family"": ""Transformer"",
+            ""type"": ""neural networks"",
+            ""specification"": null,
+            ""description"": ""A model within the Bert4Rec framework capable of handling textual data from user comments for better prediction accuracy in a sequential recommendation system.""
+        }
+    ],
+    ""knowledge"": [],
+    ""service"": {
+        ""feature_engineering"": [],
+        ""target_device"": """",
+        ""deployment_endpoint"": """",
+        ""inference_engine"": [],
+        ""demonstration"": null
+    },
+    ""confidence"": {
+        ""rationale"": ""The JSON structure is accurately filled based on the instruction given, adhering to the template format and including all relevant details specified. It's focused on building a recommendation system using the Bert4Rec model for the 'Bilibili Danmu' dataset, which is aligned with the user's intent. All necessary components like problem description, dataset details, and model information are included to ensure clarity and completeness."",
+        ""score"": 1.0
+    }
+}",2
+sequential recommendation,"Leverage the 'Trivago Hotel Recommendation' dataset to create a system that predicts a user's next likely destination. We prefer a model that integrates spatial-temporal dynamics using Graph Neural Networks, with an emphasis on quick response times for in-app recommendations.","{
+    ""user"": {
+        ""intent"": ""build"",
+        ""expertise"": ""medium""
+    },
+    ""problem"": {
+        ""area"": ""recommendation systems"",
+        ""downstream_task"": ""sequential recommendation"",
+        ""application_domain"": ""travel and hospitality"",
+        ""description"": ""Leverage the 'Trivago Hotel Recommendation' dataset to create a system that predicts a user's next likely destination. We prefer a model that integrates spatial-temporal dynamics using Graph Neural Networks, with an emphasis on quick response times for in-app recommendations."",
+        ""performance_metrics"": [],
+        ""complexity_metrics"": [
+            {
+                ""name"": ""response time"",
+                ""value"": null,
+                ""unit"": ""seconds""
+            }
+        ]
+    },
+    ""dataset"": [
+        {
+            ""name"": ""Trivago Hotel Recommendation"",
+            ""modality"": [""graph"", ""tabular""],
+            ""target_variables"": [],
+            ""specification"": null,
+            ""description"": ""A dataset consisting of user interactions and hotel bookings on the Trivago website, intended for building recommendation systems."",
+            ""preprocessing"": [],
+            ""augmentation"": [],
+            ""visualization"": [],
+            ""source"": ""direct-search""
+        }
+    ],
+    ""model"": [
+        {
+            ""name"": """",
+            ""family"": ""Graph Neural Networks"",
+            ""type"": ""neural networks"",
+            ""specification"": null,
+            ""description"": ""A model that integrates spatial-temporal dynamics using Graph Neural Networks for quick in-app recommendations.""
+        }
+    ],
+    ""knowledge"": [],
+    ""service"": {
+        ""feature_engineering"": [],
+        ""target_device"": ""mobile"",
+        ""deployment_endpoint"": """",
+        ""inference_engine"": [],
+        ""demonstration"": null
+    },
+    ""confidence"": {
+        ""rationale"": ""The instruction was thoroughly parsed according to the provided template and schema, focusing on the user's intent to build a recommendation system using the Trivago dataset and Graph Neural Networks. Spatial-temporal dynamics and quick response times were emphasized, aligning with the instruction's requirements for in-app recommendations. The 'medium' expertise level was inferred based on the specific request for advanced modeling techniques. However, performance metrics were not specified in the instruction, which could impact model evaluation strategies."",
+        ""score"": 0.9
+    }
+}",2
+sequential recommendation,"Using the 'Ali Mobile Recommendation' dataset, create a model based on the Capsule Network architecture to predict the next app a user might download. The system should efficiently handle the dynamic nature of app trends and user interests, with updates possible in real-time.",,2
+sequential recommendation,"With the 'Criteo Ad Click' dataset, we aim to predict the next ad a user is likely to click using a model from the Decision Tree family, specifically Gradient Boosted Trees. Ensure the model can handle the dataset's high dimensionality and provide predictions in under 100ms.",,2
+sequential recommendation,Our project involves the 'YooChoose' dataset for recommending e-commerce products. The challenge is to implement a LSTM-based model that not only suggests the next product but also provides explanations for its recommendations. Model interpretability is as important as its accuracy.,,2
+sequential recommendation,"For our upcoming personalization feature, we're targeting the MovieLens dataset. We expect a deep learning approach, specifically utilizing RNNs for sequential recommendation. The task is to predict the next set of movies a user might like, based on their history. Accuracy is key, but we also need a model that can update recommendations in real-time.",,2
+sequential recommendation,"For my project, I'm thinking about using something called GNNs because they sound cool. The goal is to predict what book someone will like next. Not sure about the details, though.",,1
+sequential recommendation,"Can we create a model using the 'MovieLens' dataset that suggests movies to users? It should be really quick, like, suggesting in real-time or something.",,1
+sequential recommendation,"For a class project, I want to use the 'Bilibili Danmu' dataset to recommend videos. I've only started learning about recommendation systems. The model should be able to deal with lots of text data and give suggestions fast, since people like to watch videos one after another.","{
+    ""user"": {
+        ""intent"": ""build"",
+        ""expertise"": ""low""
+    },
+    ""problem"": {
+        ""area"": ""recommendation systems"",
+        ""downstream_task"": ""sequential recommendation"",
+        ""application_domain"": ""entertainment"",
+        ""description"": ""For a class project, I want to use the 'Bilibili Danmu' dataset to recommend videos. I've only started learning about recommendation systems. The model should be able to deal with lots of text data and give suggestions fast, since people like to watch videos one after another."",
+        ""performance_metrics"": [],
+        ""complexity_metrics"": [
+            {
+                ""name"": ""response time"",
+                ""value"": null
+            }
+        ]
+    },
+    ""dataset"": [
+        {
+            ""name"": ""Bilibili Danmu"",
+            ""modality"": [""text"", ""video""],
+            ""target_variables"": [],
+            ""specification"": null,
+            ""description"": ""A dataset from Bilibili that includes user comments (Danmu) for video recommendation."",
+            ""preprocessing"": [],
+            ""augmentation"": [],
+            ""visualization"": [],
+            ""source"": ""direct-search""
+        }
+    ],
+    ""model"": [
+        {
+            ""name"": """",
+            ""family"": """",
+            ""type"": ""neural networks"",
+            ""specification"": null,
+            ""description"": ""A model that excels in processing large amounts of text data for fast video recommendation.""
+        }
+    ],
+    ""knowledge"": [],
+    ""service"": {
+        ""feature_engineering"": [],
+        ""target_device"": """",
+        ""deployment_endpoint"": """",
+        ""inference_engine"": [],
+        ""demonstration"": null
+    },
+    ""confidence"": {
+        ""rationale"": ""The user's intent appears to be building a recommendation system for a class project, with a focus on handling text data from the 'Bilibili Danmu' dataset. They have a low level of expertise and are concerned with the model's speed due to the sequential nature of video watching. The problem, dataset, and model sections are filled out according to the user's description. Some fields, like 'performance_metrics' and specific 'model.name', are left blank due to the lack of explicit instructions. The 'complexity_metrics' section includes 'response time' as an important factor, given the emphasis on speed, although a specific target value is not provided."",
+        ""score"": 0.9
+    }
+}",1
+sequential recommendation,"I found this dataset called 'Yelp Challenge' and thought it would be cool to recommend restaurants. I'm not sure how to start, though. It needs to be really good at guessing what I want to eat!",,1
+sequential recommendation,"I want to use the Netflix Prize dataset to make a recommendation system. I don't really know what metrics to look for, but I guess it should be fast and accurate?",,1
+sequential recommendation,"For our event planning app, is it possible to suggest follow-up events to users based on the events they've attended before? This could help maintain their interest and increase participation in future events.",,0
+sequential recommendation,"We're seeing a lot of repeat customers in our online store, but they seem to get lost in the sea of options. Can we create a system that intuitively knows what they might want next based on their past shopping behavior? Speed and accuracy in suggestions would keep them engaged and increase sales.",,0
+sequential recommendation,"For our fitness app, we've noticed that users who follow a tailored workout sequence tend to stay longer. Can we develop a feature that suggests the next workout based on their completed sessions, adapting to their preferences and performance over time?","{
+    ""user"": {
+        ""intent"": ""build"",
+        ""expertise"": ""medium""
+    },
+    ""problem"": {
+        ""area"": ""recommendation systems"",
+        ""downstream_task"": ""sequential recommendation"",
+        ""application_domain"": ""healthcare and fitness"",
+        ""description"": ""For our fitness app, we've noticed that users who follow a tailored workout sequence tend to stay longer. Can we develop a feature that suggests the next workout based on their completed sessions, adapting to their preferences and performance over time?"",
+        ""performance_metrics"": [],
+        ""complexity_metrics"": []
+    },
+    ""dataset"": [
+        {
+            ""name"": """",
+            ""modality"": [""tabular""],
+            ""target_variables"": [],
+            ""specification"": null,
+            ""description"": ""Workout sequence data with users' completion statuses."",
+            ""preprocessing"": [],
+            ""augmentation"": [],
+            ""visualization"": [],
+            ""source"": ""infer-search""
+        }
+    ],
+    ""model"": [
+        {
+            ""name"": """",
+            ""family"": """",
+            ""type"": ""neural networks"",
+            ""specification"": null,
+            ""description"": ""Sequential recommendation model that suggests the next workout based on the user completed sessions.""
+        }
+    ],
+    ""knowledge"": [],
+    ""service"": {
+        ""feature_engineering"": [],
+        ""target_device"": """",
+        ""deployment_endpoint"": """",
+        ""inference_engine"": [],
+        ""demonstration"": null
+    },
+    ""confidence"": {
+        ""rationale"": ""The information provided is structured according to the user's instruction, focusing on the development of a recommendation feature for a fitness app. The problem area is identified as 'recommendation systems' with a specific focus on 'sequential recommendation' to suggest workouts based on user behavior. The user's intent is 'build', indicating the development of a new feature, and their expertise level is set to 'medium', assuming they have some familiarity with AI/ML but are not experts. The dataset and model details are left broad due to the lack of specific details in the instruction, but the choice of 'neural networks' for the model type is informed by the common use of deep learning in developing sophisticated recommendation systems. The absence of specific performance and complexity metrics, as well as detailed dataset information, is noted, reflecting the high-level nature of the request."",
+        ""score"": 0.8
+    }
+}",0
+sequential recommendation,"In our educational platform, we'd like to guide students through learning paths that adapt to their pace and interests. Is it possible to have a system that suggests the next course or material they should engage with, making learning more personalized and effective?",,0
+sequential recommendation,"We're looking to improve our online music platform by having a feature that plays the next song based on what the listener has enjoyed so far, without them having to manually search. This seamless experience could really set us apart.",,0

@@ -1,0 +1,326 @@
+{
+    "type": "object",
+    "description": "User's requirements categorized into their corresponding modules.",
+    "required": [
+        "user",
+        "problem",
+        "dataset",
+        "model",
+        "confidence"
+    ],
+    "properties": {
+        "user": {
+            "type": "object",
+            "description": "Information about the user.",
+            "properties": {
+                "intent": {
+                    "type": "string",
+                    "description": "Underlying user intent of the given instruction. The possible options are ['build' indicates that the user wants to build a model, 'consult-build' indicates that the user wants to get some advice with the potential model, 'consult' indicates that the user wants to get some suggestions for a particular problem, 'inquire' indicates that the user wants to know something in general, 'unclear' indicates that the user does not specify anything informative to understand].",
+                    "enum": [
+                        "build",
+                        "consult-build",
+                        "consult",
+                        "inquire",
+                        "unclear"
+                    ]
+                },
+                "expertise": {
+                    "type": "string",
+                    "description": "User's expertise level regarding AI and ML in-depth technical knowledge. The possible options are ['low', 'medium', 'high'].",
+                    "enum": [
+                        "low",
+                        "medium",
+                        "high"
+                    ]
+                }
+            },
+            "required": [
+                "intent",
+                "expertise"
+            ]
+        },
+        "problem": {
+            "type": "object",
+            "description": "Information about user's problem and specific requirements for the given instruction.",
+            "required": [
+                "area",
+                "downstream_task",
+                "application_domain",
+                "description"
+            ],
+            "properties": {
+                "area": {
+                    "type": "string",
+                    "description": "Research area of the given instruction. The possible options are ['computer vision', 'graph machine learning', 'natural language processing', 'time-series analysis', 'tabular data analysis', 'recommendation systems', 'multimodal learning'].",
+                    "enum": [
+                        "computer vision",
+                        "graph machine learning",
+                        "natural language processing",
+                        "time-series analysis",
+                        "tabular data analysis",
+                        "recommendation systems",
+                        "multimodal learning"
+                    ]
+                },
+                "downstream_task": {
+                    "type": "string",
+                    "description": "Downstream task under the research area that the user wants to complete. Examples of possible options are: ['image classification', 'object detection', 'image segmentation'] for computer vision, [ 'text classification', 'machine translation', 'question answering'] for natural language processing, ['node classification', 'link prediction', 'community detection'] for graph machine learning, [ 'time-series forecasting', 'time-series classification', 'time-series anomaly detection'] for time-series analysis, [ 'tabular classification', 'tabular regression', 'tabular clustering'] for tabular data analysis, [ 'matrix factorization', 'click-through rate', 'sequential recommendation'] for recommendation systems, and [ 'visual question answering', 'multimodal emotion recognition', 'multimodal forgery detection'] for multimodal learning."
+                },
+                "application_domain": {
+                    "type": "string",
+                    "description": "Application, business, or industrial domain relvant to the given instruction."
+                },
+                "description": {
+                    "type": "string",
+                    "description": "Descriptive summary of the given instruction regarding the problem to be solved in detail."
+                },
+                "performance_metrics": {
+                    "type": "array",
+                    "description": "A list of performance-related metrics, such as accuracy, precision, recall, mean absolute error, and so on in {'name': metric_name, 'value': expected_value in decimals} format.",
+                    "items": {
+                        "type": "object",
+                        "description": "User specified metrics for model performance evalution. There may be multiple metrics. Each metric corresponds to a metric indicator and the desired value.",
+                        "properties": {
+                            "name": {
+                                "type": "string",
+                                "description": "metric name or type."
+                            },
+                            "value": {
+                                "type": "number",
+                                "description": "metric value in decimals."
+                            }
+                        }
+                    },
+                    "default": []
+                },
+                "complexity_metrics": {
+                    "type": "array",
+                    "description": "A list of time and space complexity metrics, such as inference time, response time, memory size, and so on in {'name': metric_name, 'value': expected_value in a specified unit, 'unit': unit of the metric} format.",
+                    "items": {
+                        "type": "object",
+                        "description": "User specified metrics for time and space complexity requirements. There may be multiple contraints. Each corresponds to a metric indicator and the desired value along with its unit.",
+                        "properties": {
+                            "name": {
+                                "type": "string",
+                                "description": "metric name or type."
+                            },
+                            "value": {
+                                "type": "number",
+                                "description": "metric value in decimals. Default: {} (indicating the optimization towards this metric)."
+                            },
+                            "unit": {
+                                "type": "string",
+                                "description": "unit of the metric value."
+                            }
+                        }
+                    },
+                    "default": []
+                }
+            }
+        },
+        "dataset": {
+            "type": "array",
+            "description": "User's requirements for datasets to be used for testing and probably training with the given tasks.",
+            "required": [
+                "name",
+                "description",
+                "modality",
+                "source"
+            ],
+            "items": {
+                "type": "object",
+                "description": "A list of datasets can be provided if the given instruction requires more than one specific dataset.",
+                "properties": {
+                    "name": {
+                        "type": "string",
+                        "description": "The dataset name (if provided) from the given instruction.",
+                        "default": ""
+                    },
+                    "modality": {
+                        "type": "array",
+                        "description": "A list of data modalities to be processed based on the given instruction.",
+                        "items": {
+                            "type": "string",
+                            "description": "The possible options are [ 'text', 'image', 'audio', 'video', 'multimodal', 'time series', 'graph', 'tabular'].",
+                            "enum": [
+                                "text",
+                                "image",
+                                "audio",
+                                "video",
+                                "multimodal",
+                                "time series",
+                                "graph",
+                                "tabular"
+                            ]
+                        }
+                    },
+                    "target_variables": {
+                        "type": "array",
+                        "description": "A list of target variable(s), such as target column name to be used for classification or regression. It is used to as the target objects that user wants to identify, classify, detect, or predict. It can be an empty list if the given downstream task does not require labeled instances or unknown.",
+                        "items": {
+                            "type": "string"
+                        },
+                        "default": []
+                    },
+                    "specification": {
+                        "type": "object",
+                        "description": "An object describing the specifications (e.g., dataset size, dimension, length, and so on) of the given datasets. It will be {} object if the dataset specification is not provided.",
+                        "default": {}
+                    },
+                    "description": {
+                        "type": "string",
+                        "description": "Descriptive summary of the given dataset in detail."
+                    },
+                    "preprocessing": {
+                        "type": "array",
+                        "description": "A list of required preprocessing steps for the given dataset specified by the user's instruction.",
+                        "items": {
+                            "type": "string"
+                        },
+                        "default": []
+                    },
+                    "augmentation": {
+                        "type": "array",
+                        "description": "A list of required data augmentation techniques for the given dataset specified by the user's instruction.",
+                        "items": {
+                            "type": "string"
+                        },
+                        "default": []
+                    },
+                    "visualization": {
+                        "type": "array",
+                        "description": "A list of required visualization steps for the given dataset specified by the user's instruction.",
+                        "items": {
+                            "type": "string"
+                        },
+                        "default": []
+                    },
+                    "source": {
+                        "type": "string",
+                        "description": "Source of the given dataset. The possible options are ['user-upload' indicates that the user will directly upload the dataset, 'user-link' indicates that the user will provide a URL link to fetch dataset from an external source, 'direct-search' indicates that the user provide the exact name of the dataset to search for, 'infer-search' indicates that the user only provide the descriptions or characteristics of the desired dataset].",
+                        "enum": [
+                            "user-upload",
+                            "user-link",
+                            "direct-search",
+                            "infer-search"
+                        ]
+                    }
+                }
+            }
+        },
+        "model": {
+            "type": "array",
+            "description": "User's expectations and/or requirements for the model development to be used for solving the given problem.",
+            "required": [
+                "name",
+                "family",
+                "description",
+                "type"
+            ],
+            "items": {
+                "type": "object",
+                "description": "A list of models can be provided if the given instruction requires more than one specific model.",
+                "properties": {
+                    "name": {
+                        "type": "string",
+                        "description": "The model name (if provided) from the given instruction.",
+                        "default": ""
+                    },
+                    "family": {
+                        "type": "string",
+                        "description": "The model family name (if provided) from the given instruction.",
+                        "default": ""
+                    },
+                    "type": {
+                        "type": "string",
+                        "description": "The model type (if provided) from the given instruction. The possible options are: ['neural networks', 'classical machine learning', 'ensemble models', 'statistical models']",
+                        "enum": [
+                            "neural networks",
+                            "classical machine learning",
+                            "ensemble models",
+                            "statistical models"
+                        ]
+                    },
+                    "specification": {
+                        "type": "object",
+                        "description": "An object describing the specifications (e.g., number of parameters, number of FLOPs, train speed, inference time, and so on) of the given model name (if provided) or the specifications of the expected model required by the user's instruction.",
+                        "default": {}
+                    },
+                    "description": {
+                        "type": "string",
+                        "description": "Descriptive summary of the given model or the expected model in detail.",
+                        "default": ""
+                    }
+                }
+            }
+        },
+        "knowledge": {
+            "type": "array",
+            "description": "Additional knowledge or insights useful for solving the given problem directly provided by the user's instruction.",
+            "items": {
+                "type": "string",
+                "description": "An useful knowledge peice for helping solving the given problem and task better.",
+                "default": []
+            }
+        },
+        "service": {
+            "type": "object",
+            "description": "User's requirements for final steps of the model, such as fine-tuning and deploying the selected model.",
+            "properties": {
+                "feature_engineering": {
+                    "type": "array",
+                    "description": "A list of required feature engineering steps before final model training and testing given by the user's instruction.",
+                    "items": {
+                        "type": "string",
+                        "description": "A name of feature engineering or feature selection technique."
+                    },
+                    "default": []
+                },
+                "target_device": {
+                    "type": "string",
+                    "description": "The target device name or target computing environment type (e.g., edge device, IoT device, mobile, cloud, PC, and so on) to deploy the model for the given problem and user's instruction.",
+                    "default": ""
+                },
+                "deployment_endpoint": {
+                    "type": "string",
+                    "description": "The potential deployment endpoint service.",
+                    "default": ""
+                },
+                "inference_engine": {
+                    "type": "array",
+                    "description": "A list of specific inference engines or methods given by the user's instruction and the target computing environment.",
+                    "items": {
+                        "type": "string",
+                        "description": "Am inference engine name."
+                    },
+                    "default": []
+                },
+                "demonstration": {
+                    "type": "string",
+                    "description": "The requirements about how to make a demonstration of the given problem and instruction.",
+                    "default": ""
+                }
+            }
+        },
+        "confidence": {
+            "type": "object",
+            "description": "Confidence based on the correctness and completeness of the above information with respect to the given user's instruction.",
+            "required": [
+                "rationale",
+                "score"
+            ],
+            "properties": {
+                "rationale": {
+                    "type": "string",
+                    "description": "Your rationales regarding the correctness and completeness of the parsed information. Please answer why you think the above information is correct and should be included in the response. If important significant information is missing, point it out here and tell me why the missing information is significant and how to complete it."
+                },
+                "score": {
+                    "type": "number",
+                    "description": "Your confidence score within range [0.0, 1.0] indicating how much you are confident that the above parsed information is valid, correct, and complete in order to successfully and effectively solve the given problem. It is totally okay to have a low confidence, which can help us indicate the ambiguity and incompleteness in the given instruction for the task and problem to be solved.",
+                    "minimum": 0.0,
+                    "maximum": 1.0
+                }
+            }
+        }
+    }
+}

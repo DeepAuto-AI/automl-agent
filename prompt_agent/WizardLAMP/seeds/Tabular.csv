@@ -1,0 +1,1915 @@
+task,instruction,response,quality
+tabular classification,"You are solving this data science tasks of multi-label classification: 
+The dataset presented here (the Cirrhosis Outcomes Dataset) comprises a lot of both categorical and numerical features. We have splitted the dataset into three parts of train, valid, and test. Your task is to predict the Status_C, Status_D, and Status_CL items, all of which have binary labels with 0 and 1. The evaluation metric is the negative log loss (NLL).
+Now train a multi-label classification model to get a good performance on this task.","{
+    ""user"": {
+        ""intent"": ""build"",
+        ""expertise"": ""medium""
+    },
+    ""problem"": {
+        ""area"": ""tabular data analysis"",
+        ""downstream_task"": ""tabular classification"",
+        ""application_domain"": ""healthcare"",
+        ""description"": ""You are solving this data science tasks of multi-label classification: The dataset presented here (the Cirrhosis Outcomes Dataset) comprises a lot of both categorical and numerical features. We have splitted the dataset into three parts of train, valid, and test. Your task is to predict the Status_C, Status_D, and Status_CL items, all of which have binary labels with 0 and 1. The evaluation metric is the negative log loss (NLL). Now train a multi-label classification model to get a good performance on this task."",
+        ""performance_metrics"": [
+            {
+                ""name"": ""negative log loss"",
+                ""value"": null
+            }
+        ],
+        ""complexity_metrics"": []
+    },
+    ""dataset"": [
+        {
+            ""name"": ""Cirrhosis Outcomes Dataset"",
+            ""modality"": [""tabular""],
+            ""target_variables"": [""Status_C"", ""Status_D"", ""Status_CL""],
+            ""specification"": null,
+            ""description"": ""The dataset presented here (the Cirrhosis Outcomes Dataset) comprises a lot of both categorical and numerical features."",
+            ""preprocessing"": [],
+            ""augmentation"": [],
+            ""visualization"": [],
+            ""source"": ""user-upload""
+        }
+    ],
+    ""model"": [
+        {
+            ""name"": """",
+            ""family"": """",
+            ""type"": ""neural networks"",
+            ""specification"": null,
+            ""description"": ""A multi-label classification model to predict binary labels of Status_C, Status_D, and Status_CL items based on a mix of categorical and numerical features from the Cirrhosis Outcomes Dataset.""
+        }
+    ],
+    ""knowledge"": [],
+    ""service"": {
+        ""feature_engineering"": [],
+        ""target_device"": """",
+        ""deployment_endpoint"": """",
+        ""inference_engine"": [],
+        ""demonstration"": null
+    },
+    ""confidence"": {
+        ""rationale"": ""The user's intent is identified as 'build' because they aim to construct a model. Their expertise level is assumed to be 'medium' given the specificity of the task described. The problem is classified under 'tabular data analysis' with a 'tabular classification' task, relevant to the healthcare domain. The performance metric specified is 'negative log loss', aligning with the task's evaluation criteria. Dataset details are filled based on the provided description, including its name, modality, target variables, and preprocessing steps. The model type is set to 'neural networks', anticipating the need for a sophisticated approach to handle multi-label classification. No specific feature engineering or deployment details were provided, thus those fields are left minimal. Confidence in the constructed JSON is high due to a clear understanding of the task requirements and adherence to the provided template."",
+        ""score"": 0.95
+    }
+}",2
+tabular classification,"You are solving this data science tasks of multi-label classification: 
+The dataset presented here (the Enzyme Substrate Dataset) comprises a lot of numerical features. We have splitted the dataset into three parts of train, valid and test. Your task is to predict the EC1 and EC2 item, both of which have binary labels with 0 and 1. The evaluation metric is the area under ROC curve (AUROC).
+Now train a multi-label classification model to get a good performance on this task.","{
+    ""user"": {
+        ""intent"": ""build"",
+        ""expertise"": ""medium""
+    },
+    ""problem"": {
+        ""area"": ""tabular data analysis"",
+        ""downstream_task"": ""tabular classification"",
+        ""application_domain"": ""bioinformatics"",
+        ""description"": ""The task involves predicting the binary labels for EC1 and EC2 items using the Enzyme Substrate Dataset. This dataset is numerical and has been divided into training, validation, and test sets. The objective is to train a multi-label classification model to achieve good performance."",
+        ""performance_metrics"": [
+            {
+                ""name"": ""AUROC"",
+                ""value"": null
+            }
+        ],
+        ""complexity_metrics"": []
+    },
+    ""dataset"": [
+        {
+            ""name"": ""Enzyme Substrate Dataset"",
+            ""modality"": [""tabular""],
+            ""target_variables"": [""EC1"", ""EC2""],
+            ""specification"": null,
+            ""description"": ""A dataset consisting of numerical features, split into training, validation, and test sets. It's used for predicting binary labels for EC1 and EC2 items."",
+            ""preprocessing"": [],
+            ""augmentation"": [],
+            ""visualization"": [],
+            ""source"": ""user-upload""
+        }
+    ],
+    ""model"": [
+        {
+            ""name"": """",
+            ""family"": """",
+            ""type"": ""neural networks"",
+            ""specification"": null,
+            ""description"": ""A multi-label classification model suitable for predicting binary labels on the Enzyme Substrate Dataset.""
+        }
+    ],
+    ""knowledge"": [],
+    ""service"": {
+        ""feature_engineering"": [],
+        ""target_device"": """",
+        ""deployment_endpoint"": """",
+        ""inference_engine"": [],
+        ""demonstration"": null
+    },
+    ""confidence"": {
+        ""rationale"": ""The JSON structure is filled based on the provided task description. Certain fields like 'name' in 'model' and 'value' in 'performance_metrics' are left null or empty because the specific model to be used or the target performance metric value is not explicitly mentioned. The confidence level reflects the direct mapping from the instruction to the JSON schema without assuming any information not provided in the instruction."",
+        ""score"": 0.9
+    }
+}",2
+tabular classification,"You are solving this data science tasks of binary classification: 
+The dataset presented here (the Smoker Status Dataset) comprises a lot of numerical features. We have splitted the dataset into three parts of train, valid, and test. Your task is to predict the smoking item, which is a binary label with 0 and 1. The evaluation metric is the area under ROC curve (AUROC).
+Now train a binary classification model to get a good performance on this task.","{
+    ""user"": {
+        ""intent"": ""build"",
+        ""expertise"": ""medium""
+    },
+    ""problem"": {
+        ""area"": ""tabular data analysis"",
+        ""downstream_task"": ""tabular classification"",
+        ""application_domain"": ""healthcare"",
+        ""description"": ""Predict the smoking status of individuals based on numerical features in the Smoker Status Dataset."",
+        ""performance_metrics"": [
+            {
+                ""name"": ""AUROC"",
+                ""value"": null
+            }
+        ],
+        ""complexity_metrics"": []
+    },
+    ""dataset"": [
+        {
+            ""name"": ""Smoker Status Dataset"",
+            ""modality"": [""tabular""],
+            ""target_variables"": [""smoking item""],
+            ""specification"": null,
+            ""description"": ""A dataset containing numerical features for the purpose of predicting smoking status, split into train, valid, and test parts."",
+            ""preprocessing"": [],
+            ""augmentation"": [],
+            ""visualization"": [],
+            ""source"": ""user-upload""
+        }
+    ],
+    ""model"": [
+        {
+            ""name"": """",
+            ""family"": """",
+            ""type"": ""classical machine learning"",
+            ""specification"": null,
+            ""description"": ""A binary classification model to predict smoking status.""
+        }
+    ],
+    ""knowledge"": [],
+    ""service"": {
+        ""feature_engineering"": [],
+        ""target_device"": """",
+        ""deployment_endpoint"": """",
+        ""inference_engine"": [],
+        ""demonstration"": null
+    },
+    ""confidence"": {
+        ""rationale"": ""The JSON structure is filled out according to the instruction prompt, focusing on building a model for tabular classification within the healthcare domain to predict smoking status. The dataset's description and the problem area are precisely defined. Since specific model details are not provided in the instruction, 'classical machine learning' is selected as a reasonable default for binary classification tasks with numerical features. AUROC is specified as the performance metric without a target value, aligning with the instruction's emphasis on model evaluation. Minor assumptions include the user's expertise level and intent based on the task's nature."",
+        ""score"": 0.9
+    }
+}",2
+tabular classification,"You are solving this data science tasks of binary classification: 
+The dataset presented here (the Software Defects Dataset) comprises a lot of numerical features. We have splitted the dataset into three parts of train, valid, and test. Your task is to predict the defects item, which is a binary label with 0 and 1. The evaluation metric is the area under ROC curve (AUROC).
+Now train a binary classification model to get a good performance on this task.","{
+    ""user"": {
+        ""intent"": ""build"",
+        ""expertise"": ""medium""
+    },
+    ""problem"": {
+        ""area"": ""tabular data analysis"",
+        ""downstream_task"": ""tabular classification"",
+        ""application_domain"": ""software engineering"",
+        ""description"": ""The task involves predicting binary labels indicating software defects in a dataset with numerous numerical features. The goal is to develop a model that can accurately classify software items as defective or not, using the AUROC metric for evaluation."",
+        ""performance_metrics"": [
+            {
+                ""name"": ""AUROC"",
+                ""value"": null
+            }
+        ],
+        ""complexity_metrics"": []
+    },
+    ""dataset"": [
+        {
+            ""name"": ""Software Defects Dataset"",
+            ""modality"": [
+                ""tabular""
+            ],
+            ""target_variables"": [
+                ""defects item""
+            ],
+            ""specification"": null,
+            ""description"": ""A dataset containing various numerical features related to software items, intended for binary classification of defects."",
+            ""preprocessing"": [],
+            ""augmentation"": [],
+            ""visualization"": [],
+            ""source"": ""user-upload""
+        }
+    ],
+    ""model"": [
+        {
+            ""name"": """",
+            ""family"": """",
+            ""type"": ""classical machine learning"",
+            ""specification"": null,
+            ""description"": ""A binary classification model aimed at predicting defects in software items based on numerical features.""
+        }
+    ],
+    ""knowledge"": [],
+    ""service"": {
+        ""feature_engineering"": [],
+        ""target_device"": """",
+        ""deployment_endpoint"": """",
+        ""inference_engine"": [],
+        ""demonstration"": null
+    },
+    ""confidence"": {
+        ""rationale"": ""The JSON representation closely follows the instruction prompt, aligning with the specified areas, tasks, dataset characteristics, and evaluation metrics. It assumes a medium expertise level for the user based on the task complexity. The choice of 'classical machine learning' as the model type is inferred from the context, as specific model types were not mentioned. The confidence in AUROC as a performance metric is high, given its direct mention. The rationale also accounts for ambiguities in model specifications and deployment details, which were not explicitly provided."",
+        ""score"": 0.95
+    }
+}",2
+tabular classification,"You are solving this data science tasks of binary classification: 
+The dataset presented here (the spaceship dataset) comprises a lot of features, including both numerical and categorical features. Some of the features are missing, with nan value. We have splitted the dataset into three parts of train, valid, and test. Your task is to predict the Transported item, which is a binary label with True and False. The evaluation metric is the classification accuracy.
+Now train a binary classification model to get a good performance on this task.","{
+  ""user"": {
+    ""intent"": ""build"",
+    ""expertise"": ""medium""
+  },
+  ""problem"": {
+    ""area"": ""tabular data analysis"",
+    ""downstream_task"": ""tabular classification"",
+    ""application_domain"": ""space exploration"",
+    ""description"": ""The task involves a binary classification problem where the goal is to predict the 'Transported' binary label (True or False) using the spaceship dataset, which includes both numerical and categorical features with some missing values. The dataset has been split into train, valid, and test parts."",
+    ""performance_metrics"": [
+      {
+        ""name"": ""accuracy"",
+        ""value"": null
+      }
+    ],
+    ""complexity_metrics"": []
+  },
+  ""dataset"": [
+    {
+      ""name"": ""spaceship dataset"",
+      ""modality"": [""tabular""],
+      ""target_variables"": [""Transported""],
+      ""specification"": null,
+      ""description"": ""The dataset comprises a variety of features, including numerical and categorical types, and contains missing values (nan). It has been divided into three parts: train, valid, and test."",
+      ""preprocessing"": [""handle missing values""],
+      ""augmentation"": [],
+      ""visualization"": [],
+      ""source"": ""user-upload""
+    }
+  ],
+  ""model"": [
+    {
+      ""name"": """",
+      ""family"": """",
+      ""type"": ""classical machine learning"",
+      ""specification"": null,
+      ""description"": ""The model should be a binary classification model capable of handling both numerical and categorical features and dealing with missing values.""
+    }
+  ],
+  ""knowledge"": [],
+  ""service"": {
+    ""feature_engineering"": [],
+    ""target_device"": """",
+    ""deployment_endpoint"": """",
+    ""inference_engine"": [],
+    ""demonstration"": null
+  },
+  ""confidence"": {
+    ""rationale"": ""The JSON structure was created based on the provided instructions and the schema template. The 'intent' is 'build' since the user wants to construct a model. The 'expertise' level is set to 'medium' based on the complexity of the task described. The problem area, dataset details, and model type were chosen based on the specifics of the task, such as tabular data analysis and binary classification. Since no specific performance target or model details were provided, those fields were filled with generic or null values where appropriate. The confidence score is not provided, but the structured information should closely align with the user's request."",
+    ""score"": 0.95
+  }
+}",2
+tabular classification,"Run data analysis on sklearn Wine recognition dataset, include a plot, and train a model to predict wine class with 20% as test set, and show prediction accuracy","{
+    ""user"": {
+        ""intent"": ""build"",
+        ""expertise"": ""medium""
+    },
+    ""problem"": {
+        ""area"": ""tabular data analysis"",
+        ""downstream_task"": ""tabular classification"",
+        ""application_domain"": ""wine quality prediction"",
+        ""description"": ""Run data analysis on sklearn Wine recognition dataset, include a plot, and train a model to predict wine class with 20% as test set, and show prediction accuracy"",
+        ""performance_metrics"": [
+            {
+                ""name"": ""accuracy"",
+                ""value"": null
+            }
+        ],
+        ""complexity_metrics"": []
+    },
+    ""dataset"": [
+        {
+            ""name"": ""sklearn Wine recognition"",
+            ""modality"": [""tabular""],
+            ""target_variables"": [""wine class""],
+            ""specification"": null,
+            ""description"": ""The sklearn Wine recognition dataset is used for training a model to predict wine class."",
+            ""preprocessing"": [""split dataset into training and test sets with 20% as test set""],
+            ""augmentation"": [],
+            ""visualization"": [""include a plot illustrating the dataset""],
+            ""source"": ""direct-search""
+        }
+    ],
+    ""model"": [
+        {
+            ""name"": """",
+            ""family"": """",
+            ""type"": ""classical machine learning"",
+            ""specification"": null,
+            ""description"": ""A model suitable for tabular classification to predict wine class from the sklearn Wine recognition dataset.""
+        }
+    ],
+    ""knowledge"": [],
+    ""service"": {
+        ""feature_engineering"": [],
+        ""target_device"": """",
+        ""deployment_endpoint"": """",
+        ""inference_engine"": [],
+        ""demonstration"": null
+    },
+    ""confidence"": {
+        ""rationale"": ""The instruction was parsed following the given JSON schema and template, ensuring all relevant information from the instruction was included. The 'direct-search' source for the dataset was selected because the instruction specifies the sklearn Wine recognition dataset, which is well-known and directly searchable. The 'classical machine learning' model type was chosen due to the tabular nature of the dataset and typical practices in similar tasks. The performance metric of accuracy is specified without a value as the instruction does not provide a specific target value."",
+        ""score"": 0.95
+    }
+}",2
+tabular classification,"This is a Titanic passenger survival dataset, and your goal is to predict passenger survival outcomes. The target column is Survived. Perform data analysis, data preprocessing, feature engineering, and modeling to predict the target. Report accuracy on the eval data.","{
+    ""user"": {
+        ""intent"": ""build"",
+        ""expertise"": ""medium""
+    },
+    ""problem"": {
+        ""area"": ""tabular data analysis"",
+        ""downstream_task"": ""tabular classification"",
+        ""application_domain"": ""healthcare"",
+        ""description"": ""This is a Titanic passenger survival dataset, and your goal is to predict passenger survival outcomes. The target column is Survived. Perform data analysis, data preprocessing, feature engineering, and modeling to predict the target. Report accuracy on the eval data."",
+        ""performance_metrics"": [
+            {
+                ""name"": ""accuracy"",
+                ""value"": null
+            }
+        ],
+        ""complexity_metrics"": []
+    },
+    ""dataset"": [
+        {
+            ""name"": ""Titanic passenger survival dataset"",
+            ""modality"": [
+                ""tabular""
+            ],
+            ""target_variables"": [
+                ""Survived""
+            ],
+            ""specification"": null,
+            ""description"": ""The dataset contains information about Titanic passengers. The goal is to use this data to predict survival outcomes."",
+            ""preprocessing"": [
+                ""data analysis"",
+                ""data preprocessing"", ""feature engineering""
+            ],
+            ""augmentation"": [],
+            ""visualization"": [],
+            ""source"": ""direct-search""
+        }
+    ],
+    ""model"": [
+        {
+            ""name"": """",
+            ""family"": """",
+            ""type"": ""classical machine learning"",
+            ""specification"": null,
+            ""description"": ""A model to predict the survival outcomes of Titanic passengers based on data analysis, preprocessing, and feature engineering.""
+        }
+    ],
+    ""knowledge"": [],
+    ""service"": {
+        ""feature_engineering"": [],
+        ""target_device"": """",
+        ""deployment_endpoint"": """",
+        ""inference_engine"": [],
+        ""demonstration"": null
+    },
+    ""confidence"": {
+        ""rationale"": ""The instruction is parsed following the provided template, ensuring that each section of the JSON structure is filled out according to the user's instruction. The 'area' is set to 'tabular data analysis' due to the nature of the dataset. The 'downstream_task' is identified as 'tabular classification' since the goal is to classify whether a passenger survived. The 'application_domain' is considered 'healthcare' due to the historical context and relevance to survival analysis. The 'model' section specifies 'classical machine learning' to indicate the expectation of employing conventional ML techniques for this problem. The 'performance_metrics' only specify 'accuracy' as it's directly mentioned to report accuracy on the eval data. Other fields are filled out based on the direct and implied requirements of the instruction. The confidence score is high, assuming that the parsed information closely aligns with the user's instruction."",
+        ""score"": 0.95
+    }
+}",2
+tabular classification,"This is a customer’s financial dataset. Your goal is to predict which customers will make a specific transaction in the future. The target column is the target. Perform data analysis, data preprocessing, feature engineering, and modeling to predict the target. Report AUC on the eval data.","{
+  ""user"": {
+    ""intent"": ""build"",
+    ""expertise"": ""medium""
+  },
+  ""problem"": {
+    ""area"": ""tabular data analysis"",
+    ""downstream_task"": ""tabular classification"",
+    ""application_domain"": ""finance"",
+    ""description"": ""Predict which customers will make a specific transaction in the future using a financial dataset. The target variable is 'target'."",
+    ""performance_metrics"": [
+      {
+        ""name"": ""AUC"",
+        ""value"": null
+      }
+    ],
+    ""complexity_metrics"": []
+  },
+  ""dataset"": [
+    {
+      ""name"": ""customer's financial dataset"",
+      ""modality"": [
+        ""tabular""
+      ],
+      ""target_variables"": [
+        ""target""
+      ],
+      ""specification"": null,
+      ""description"": ""A dataset containing financial information of customers for predicting future transactions."",
+      ""preprocessing"": [
+        ""data analysis"",
+        ""data preprocessing"", ""feature engineering""
+      ],
+      ""augmentation"": [],
+      ""visualization"": [],
+      ""source"": ""user-upload""
+    }
+  ],
+  ""model"": [
+    {
+      ""name"": """",
+      ""family"": """",
+      ""type"": ""classical machine learning"",
+      ""specification"": null,
+      ""description"": ""A model to be built for predicting the likelihood of future transactions by customers based on their financial data.""
+    }
+  ],
+  ""knowledge"": [],
+  ""service"": {
+    ""feature_engineering"": [],
+    ""target_device"": """",
+    ""deployment_endpoint"": """",
+    ""inference_engine"": [],
+    ""demonstration"": null
+  },
+  ""confidence"": {
+    ""rationale"": ""The JSON response accurately reflects the user's instruction to build a model for tabular classification in the finance domain, focusing on predicting future customer transactions. The 'user', 'problem', 'dataset', and 'model' sections are filled out according to the instruction. Some fields are intentionally left null or empty where the instruction does not provide explicit details (e.g., specific models, dataset specifications). This design choice is made to highlight areas where additional information or clarification from the user would be beneficial."",
+    ""score"": 0.95
+  }
+}",2
+tabular classification,"This is a medical dataset with over fifty anonymized health characteristics linked to three age-related conditions. Your goal is to predict whether a subject has or has not been diagnosed with one of these conditions. The target column is Class. Perform data analysis, data preprocessing, feature engineering, and modeling to predict the target. Report F1 Score on the eval data.","{
+    ""user"": {
+        ""intent"": ""build"",
+        ""expertise"": ""medium""
+    },
+    ""problem"": {
+        ""area"": ""tabular data analysis"",
+        ""downstream_task"": ""tabular classification"",
+        ""application_domain"": ""healthcare"",
+        ""description"": ""This is a medical dataset with over fifty anonymized health characteristics linked to three age-related conditions. The goal is to predict whether a subject has been diagnosed with one of these conditions."",
+        ""performance_metrics"": [
+            {
+                ""name"": ""F1 Score"",
+                ""value"": null
+            }
+        ],
+        ""complexity_metrics"": []
+    },
+    ""dataset"": [
+        {
+            ""name"": """",
+            ""modality"": [""tabular""],
+            ""target_variables"": [""Class""],
+            ""specification"": null,
+            ""description"": ""A dataset containing over fifty anonymized health characteristics linked to three age-related conditions."",
+            ""preprocessing"": [""data analysis"", ""data preprocessing"", ""feature engineering""],
+            ""augmentation"": [],
+            ""visualization"": [],
+            ""source"": ""user-upload""
+        }
+    ],
+    ""model"": [
+        {
+            ""name"": """",
+            ""family"": """",
+            ""type"": ""classical machine learning"",
+            ""specification"": null,
+            ""description"": ""Perform feature engineering and modeling to predict the target variable 'Class'.""
+        }
+    ],
+    ""knowledge"": [],
+    ""service"": {
+        ""feature_engineering"": [],
+        ""target_device"": """",
+        ""deployment_endpoint"": """",
+        ""inference_engine"": [],
+        ""demonstration"": null
+    },
+    ""confidence"": {
+        ""rationale"": ""The JSON structure follows the given instruction closely, capturing the essence of the task as a tabular data analysis problem in the healthcare domain, with a focus on classification. The intent is clearly to build a model, and the user's expertise level is assumed to be medium based on the complexity of the task. The target variable, data modalities, and a broad description of the dataset and model requirements are specified. The performance metric is F1 Score, but the expected value is not provided, hence it's set to null. This JSON is designed to be comprehensive yet flexible, allowing for further specifics to be filled in as the project progresses."",
+        ""score"": 0.95
+    }
+}",2
+tabular classification,"Airlines Dataset Inspired in the regression dataset from Elena Ikonomovska. The task is to predict whether a given flight will be delayed, given the information of the scheduled departure.
+
+Columns in the dataset(true feature dtypes listed here, categoricals encoded as int):
+Airline (int32): NaN-freq [0.0%], Samples [6, 4, 4, 15, 17, 4, 11, 4, 7, 17]
+Flight (float64): NaN-freq [0.0%], Samples [376.0, 2056.0, 1182.0, 1018.0, 1574.0, 1860.0, 2703.0, 2720.0, 6534.0, 223.0]
+AirportFrom (float64): NaN-freq [0.0%], Samples [225.0, 39.0, 5.0, 15.0, 4.0, 183.0, 102.0, 65.0, 6.0, 123.0]
+AirportTo (float64): NaN-freq [0.0%], Samples [11.0, 7.0, 60.0, 13.0, 41.0, 7.0, 86.0, 5.0, 261.0, 61.0]
+DayOfWeek (int32): NaN-freq [0.0%], Samples [4, 3, 1, 1, 3, 4, 2, 0, 1, 4]
+Time (float64): NaN-freq [0.0%], Samples [1195.0, 735.0, 1198.0, 1138.0, 1005.0, 1050.0, 1375.0, 981.0, 686.0, 375.0]
+Length (float64): NaN-freq [0.0%], Samples [30.0, 130.0, 166.0, 200.0, 270.0, 130.0, 59.0, 83.0, 100.0, 95.0]
+Delay (category): NaN-freq [0.0%], Samples [1.0, 1.0, 1.0, 1.0, 1.0, 0.0, 0.0, 1.0, 0.0, 0.0]
+
+Number of samples (rows) in training dataset: 1500
+    
+Please generate additional columns that are useful for a downstream classification algorithm (such as XGBoost) predicting ""Delay"".
+Additional columns add new semantic information, that is they use real world knowledge on the dataset. They can e.g. be feature combinations, transformations, aggregations where the new column is a function of the existing columns.
+The scale of columns and offset does not matter. Make sure all used columns exist. Follow the above description of columns closely and consider the datatypes and meanings of classes.
+Please also drops columns, if these may be redundant and hurt the predictive performance of the downstream classifier (Feature selection). Dropping columns may help as the chance of overfitting is lower, especially if the dataset is small.
+The classifier will be trained on the dataset with the generated columns and evaluated on a holdout set. The evaluation metric is accuracy. The best performing features will be selected.","{
+  ""user"": {
+    ""intent"": ""build"",
+    ""expertise"": ""high""
+  },
+  ""problem"": {
+    ""area"": ""tabular data analysis"",
+    ""downstream_task"": ""tabular classification"",
+    ""application_domain"": ""aviation"",
+    ""description"": ""Predict flight delays based on scheduled departure information using a regression dataset inspired by Elena Ikonomovska. Requires generating new columns for a classification algorithm and selecting the best performing features."",
+    ""performance_metrics"": [
+      {
+        ""name"": ""accuracy"",
+        ""value"": null
+      }
+    ],
+    ""complexity_metrics"": []
+  },
+  ""dataset"": [
+    {
+      ""name"": ""Airlines Dataset"",
+      ""modality"": [""tabular""],
+      ""target_variables"": [""Delay""],
+      ""specification"": {""number_of_samples"": 1500},
+      ""description"": ""A dataset containing information about flights, including airlines, flight number, airports, day of the week, scheduled time, length, and whether the flight was delayed."",
+      ""preprocessing"": [],
+      ""augmentation"": [],
+      ""visualization"": [],
+      ""source"": ""user-upload""
+    }
+  ],
+  ""model"": [
+    {
+      ""name"": """",
+      ""family"": """",
+      ""type"": ""classical machine learning"",
+      ""specification"": null,
+      ""description"": ""The model will use XGBoost for classification to predict flight delays.""
+    }
+  ],
+  ""knowledge"": [],
+  ""service"": {
+    ""feature_engineering"": [
+      ""feature generation"",
+      ""feature selection""
+    ],
+    ""target_device"": """",
+    ""deployment_endpoint"": """",
+    ""inference_engine"": [],
+    ""demonstration"": null
+  },
+  ""confidence"": {
+    ""rationale"": ""The JSON structure follows the instruction prompt and the schema template closely, providing a detailed breakdown of the problem, dataset, and model requirements. It specifies a focus on tabular data analysis for a classification task within the aviation domain, aiming to predict flight delays. Feature engineering techniques are outlined as a key step in preparing the dataset for the XGBoost classifier. The confidence score is high due to a clear understanding of the requirements and objectives stated in the instruction prompt."",
+    ""score"": 1.0
+  }
+}",2
+tabular classification,Can you build a classification model using deep neural networks for classifying user credit card status?,,1
+tabular classification,I want you to use the TabFPN model to classify heart disease. I do not sure which datasets to use for training. You may find one(s).,,1
+tabular classification,Can you help me predict student performance in secondary education (high school) by building a machine learning model for this task?,"{
+    ""user"": {
+        ""intent"": ""build"",
+        ""expertise"": ""medium""
+    },
+    ""problem"": {
+        ""area"": ""tabular data analysis"",
+        ""downstream_task"": ""tabular classification"",
+        ""application_domain"": ""education"",
+        ""description"": ""Predict student performance in secondary education (high school) by building a machine learning model."",
+        ""performance_metrics"": [],
+        ""complexity_metrics"": []
+    },
+    ""dataset"": [
+        {
+            ""name"": """",
+            ""modality"": [""tabular""],
+            ""target_variables"": [""student performance""],
+            ""specification"": null,
+            ""description"": ""A dataset containing information about students and their performance in secondary education."",
+            ""preprocessing"": [],
+            ""augmentation"": [],
+            ""visualization"": [],
+            ""source"": ""infer-search""
+        }
+    ],
+    ""model"": [
+        {
+            ""name"": """",
+            ""family"": """",
+            ""type"": ""classical machine learning"",
+            ""specification"": null,
+            ""description"": ""A machine learning model to predict student performance in high school.""
+        }
+    ],
+    ""knowledge"": [],
+    ""service"": {
+        ""feature_engineering"": [],
+        ""target_device"": """",
+        ""deployment_endpoint"": """",
+        ""inference_engine"": [],
+        ""demonstration"": null
+    },
+    ""confidence"": {
+        ""rationale"": ""The JSON structure is built based on the user's request to predict student performance in high school, which aligns with a 'tabular classification' problem in the 'tabular data analysis' area. The request lacks specific details about performance metrics, complexity metrics, dataset specifications, model specifications, and feature engineering requirements, hence these fields are left generic or empty. This structure assumes a medium level of AI and ML technical expertise implied by the nature of the task. Further information from the user could refine areas such as dataset source, model specifics, and deployment details."",
+        ""score"": 0.8
+    }
+}",1
+tabular classification,"I am trying to solve a data science task of binary classification for predicting the smoking item, which is a binary label with 0 and 1. Can you train any model on any dataset such that I can successfully solve this task?",,1
+tabular classification,"Hello, I am working on a project for my class where we have to predict customer churn from a dataset provided by our instructor. The dataset includes customer demographics, service usage patterns, and churn status. What steps should I take to ensure my model is robust and performs well? I'd also like to know how to measure the performance of my model accurately.",,1
+tabular classification,"As a school administrator, I'm interested in identifying students who may need additional support to meet academic standards. Can we use their current performance data to flag those at risk of falling behind?",,0
+tabular classification,"In the healthcare sector, we're trying to improve patient care by identifying which patients might face complications post-surgery. Can we look into historical patient records to foresee these cases?",,0
+tabular classification,"As a bank manager, I need to streamline the loan approval process. How can we quickly determine which applicants are likely to default on their loans without going through each application manually?","{
+    ""user"": {
+        ""intent"": ""consult-build"",
+        ""expertise"": ""medium""
+    },
+    ""problem"": {
+        ""area"": ""tabular data analysis"",
+        ""downstream_task"": ""tabular classification"",
+        ""application_domain"": ""banking"",
+        ""description"": ""As a bank manager, I need to streamline the loan approval process. How can we quickly determine which applicants are likely to default on their loans without going through each application manually?"",
+        ""performance_metrics"": [],
+        ""complexity_metrics"": []
+    },
+    ""dataset"": [
+        {
+            ""name"": """",
+            ""modality"": [""tabular""],
+            ""target_variables"": [""loan default likelihood""],
+            ""specification"": null,
+            ""description"": ""The dataset should contain information about loan applicants, including their financial history, credit score, employment status, and any other relevant data that could help predict their likelihood of defaulting on a loan."",
+            ""preprocessing"": [],
+            ""augmentation"": [],
+            ""visualization"": [],
+            ""source"": ""infer-search""
+        }
+    ],
+    ""model"": [
+        {
+            ""name"": """",
+            ""family"": """",
+            ""type"": ""classical machine learning"",
+            ""specification"": null,
+            ""description"": ""A model capable of classifying loan applicants based on their likelihood to default. The model should be efficient, with a focus on accuracy and the ability to handle a variety of input features.""
+        }
+    ],
+    ""knowledge"": [],
+    ""service"": {
+        ""feature_engineering"": [],
+        ""target_device"": """",
+        ""deployment_endpoint"": """",
+        ""inference_engine"": [],
+        ""demonstration"": null
+    },
+    ""confidence"": {
+        ""rationale"": ""The JSON response has been constructed to align closely with the user's request, following the provided template and instructions. The user's intent and expertise level were inferred based on the context of their request. Since the user's query involves streamlining a loan approval process through tabular data analysis, the specified areas, tasks, and methodologies were chosen accordingly. Essential details were filled out to the best of my understanding from the provided instructions. However, some fields, such as specific performance metrics and model specifications, were left blank due to the lack of explicit information in the user's request. The confidence score reflects the adherence to the provided instruction and template, with some assumptions made due to incomplete details in the request."",
+        ""score"": 0.8
+    }
+}",0
+tabular classification,"Running a customer service department, I'd like to automatically route customer complaints to the appropriate departments based on the nature of their issues. Can we sort these complaints without reading each one?",,0
+tabular classification,We're a logistics company trying to optimize our delivery routes. Can we predict which packages are most likely to experience delays?,,0
+tabular regression,"You are solving this data science tasks of regression: 
+The dataset presented here (the Concrete Strength Dataset) comprises a lot of numerical features. We have splitted the dataset into three parts of train, valid, and test. Your task is to predict the strength item. The evaluation metric is the root mean squared error (RMSE).
+Now train a regression model to get a good performance on this task.","{
+    ""user"": {
+        ""intent"": ""build"",
+        ""expertise"": ""medium""
+    },
+    ""problem"": {
+        ""area"": ""tabular data analysis"",
+        ""downstream_task"": ""tabular regression"",
+        ""application_domain"": ""material science"",
+        ""description"": ""Predict the strength of concrete based on its composition and processing parameters using regression analysis."",
+        ""performance_metrics"": [
+            {
+                ""name"": ""RMSE"",
+                ""value"": null
+            }
+        ],
+        ""complexity_metrics"": []
+    },
+    ""dataset"": [
+        {
+            ""name"": ""Concrete Strength Dataset"",
+            ""modality"": [""tabular""],
+            ""target_variables"": [""strength item""],
+            ""specification"": null,
+            ""description"": ""A dataset containing numerical features related to concrete composition and processing, split into training, validation, and testing parts."",
+            ""preprocessing"": [],
+            ""augmentation"": [],
+            ""visualization"": [],
+            ""source"": ""user-upload""
+        }
+    ],
+    ""model"": [
+        {
+            ""name"": """",
+            ""family"": """",
+            ""type"": ""classical machine learning"",
+            ""specification"": null,
+            ""description"": ""A regression model to predict concrete strength.""
+        }
+    ],
+    ""knowledge"": [],
+    ""service"": {
+        ""feature_engineering"": [],
+        ""target_device"": """",
+        ""deployment_endpoint"": """",
+        ""inference_engine"": [],
+        ""demonstration"": null
+    },
+    ""confidence"": {
+        ""rationale"": ""The instruction is clear on the task (regression analysis), the target variable (strength of concrete), and the evaluation metric (RMSE). However, the instruction does not specify any model or feature engineering requirements, hence the generic 'classical machine learning' type for model and empty fields where specifics might be required. The instruction's specificity on dataset and task makes it relatively straightforward to map to the provided template."",
+        ""score"": 0.9
+    }
+}",2
+tabular regression,"You are solving this data science tasks of regression: 
+The dataset presented here (the Crab Age Dataset) comprises a lot of both categorical and numerical features. We have splitted the dataset into three parts of train, valid, and test. Your task is to predict the age item. The evaluation metric is the mean absolute error (MAE).
+Now train a regression model to get a good performance on this task.","{
+    ""user"": {
+        ""intent"": ""build"",
+        ""expertise"": ""medium""
+    },
+    ""problem"": {
+        ""area"": ""tabular data analysis"",
+        ""downstream_task"": ""tabular regression"",
+        ""application_domain"": ""biostatistics"",
+        ""description"": ""Predict the age item in the Crab Age Dataset, which contains categorical and numerical features, using regression analysis."",
+        ""performance_metrics"": [
+            {
+                ""name"": ""mean absolute error"",
+                ""value"": null
+            }
+        ],
+        ""complexity_metrics"": []
+    },
+    ""dataset"": [
+        {
+            ""name"": ""Crab Age Dataset"",
+            ""modality"": [""tabular""],
+            ""target_variables"": [""age""],
+            ""specification"": null,
+            ""description"": ""The dataset includes a variety of categorical and numerical features and is split into three parts: train, valid, and test."",
+            ""preprocessing"": [],
+            ""augmentation"": [],
+            ""visualization"": [],
+            ""source"": ""user-upload""
+        }
+    ],
+    ""model"": [
+        {
+            ""name"": """",
+            ""family"": """",
+            ""type"": ""classical machine learning"",
+            ""specification"": null,
+            ""description"": ""A regression model suitable for predicting a numerical target variable based on a mixture of categorical and numerical inputs.""
+        }
+    ],
+    ""knowledge"": [],
+    ""service"": {
+        ""feature_engineering"": [],
+        ""target_device"": """",
+        ""deployment_endpoint"": """",
+        ""inference_engine"": [],
+        ""demonstration"": null
+    },
+    ""confidence"": {
+        ""rationale"": ""The instruction clearly outlines a task of building a regression model for predicting the age of crabs based on various features within the Crab Age Dataset. Given the nature of the data (tabular with a mix of feature types) and the specific goal (regression analysis), the JSON structure was tailored to reflect these specifics accurately. The user's intent to build a model, medium level of expertise, and the problem's domain (tabular data analysis within biostatistics) are inferred from the task's description. The performance metric was explicitly mentioned (MAE), but a target value was not provided, hence its value is set to null. The dataset details, including its name and modality, are included based on the instruction. The model type is set to 'classical machine learning' as the most likely approach for this task, without specifying a particular model, leaving room for the selection of an appropriate regression technique."",
+        ""score"": 0.95
+    }
+}",2
+tabular regression,"You are solving this data science tasks of regression: 
+The dataset presented here (the Media Campaign Cost Dataset) comprises a lot of numerical features. We have splitted the dataset into three parts of train, valid, and test. Your task is to predict the cost item. The evaluation metric is the root mean squared log error (RMSLE).
+Now train a regression model to get a good performance on this task.","{
+    ""user"": {
+        ""intent"": ""build"",
+        ""expertise"": ""medium""
+    },
+    ""problem"": {
+        ""area"": ""tabular data analysis"",
+        ""downstream_task"": ""tabular regression"",
+        ""application_domain"": ""marketing"",
+        ""description"": ""You are tasked with predicting the 'cost item' in the Media Campaign Cost Dataset using regression analysis. The dataset includes numerical features and is divided into train, validation, and test sets."",
+        ""performance_metrics"": [
+            {
+                ""name"": ""RMSLE"",
+                ""value"": null
+            }
+        ],
+        ""complexity_metrics"": []
+    },
+    ""dataset"": [
+        {
+            ""name"": ""Media Campaign Cost Dataset"",
+            ""modality"": [""tabular""],
+            ""target_variables"": [""cost""],
+            ""specification"": null,
+            ""description"": ""The dataset contains numerical features related to media campaigns, split into training, validation, and testing parts."",
+            ""preprocessing"": [],
+            ""augmentation"": [],
+            ""visualization"": [],
+            ""source"": ""user-upload""
+        }
+    ],
+    ""model"": [
+        {
+            ""name"": """",
+            ""family"": """",
+            ""type"": ""classical machine learning"",
+            ""specification"": null,
+            ""description"": ""A regression model to predict the cost item from numerical features in the Media Campaign Cost Dataset.""
+        }
+    ],
+    ""knowledge"": [],
+    ""service"": {
+        ""feature_engineering"": [],
+        ""target_device"": """",
+        ""deployment_endpoint"": """",
+        ""inference_engine"": [],
+        ""demonstration"": null
+    },
+    ""confidence"": {
+        ""rationale"": ""The JSON format accurately reflects the task's requirements, focusing on building a regression model for predicting the 'cost item' using the Media Campaign Cost Dataset. The user's intent is clear, and the task falls within the domain of tabular data analysis. The performance metric RMSLE is specified without a target value, as the instruction does not provide one. No specific preprocessing, augmentation, or visualization steps were mentioned, hence their absence. The confidence score is not explicitly mentioned; thus, it is left to interpretation. The template is followed closely, ensuring the response aligns with the user's instructions."",
+        ""score"": 0.9
+    }
+}",2
+tabular regression,"You are solving this data science tasks of regression: 
+The dataset presented here (the Mohs Hardness Dataset) comprises a lot of numerical features. We have splitted the dataset into three parts of train, valid, and test. Your task is to predict the strength item. The evaluation metric is the median absolute error (MedAE).
+Now train a regression model to get a good performance on this task.","{
+    ""user"": {
+        ""intent"": ""build"",
+        ""expertise"": ""medium""
+    },
+    ""problem"": {
+        ""area"": ""tabular data analysis"",
+        ""downstream_task"": ""tabular regression"",
+        ""application_domain"": ""materials science"",
+        ""description"": ""Predict the strength item in the Mohs Hardness Dataset using regression. The dataset contains numerous numerical features and is divided into train, valid, and test sets."",
+        ""performance_metrics"": [
+            {
+                ""name"": ""median absolute error"",
+                ""value"": null
+            }
+        ],
+        ""complexity_metrics"": []
+    },
+    ""dataset"": [
+        {
+            ""name"": ""Mohs Hardness Dataset"",
+            ""modality"": [""tabular""],
+            ""target_variables"": [""strength""],
+            ""specification"": null,
+            ""description"": ""A dataset containing numerous numerical features for predicting the strength item. It has been divided into training, validation, and testing sets."",
+            ""preprocessing"": [],
+            ""augmentation"": [],
+            ""visualization"": [],
+            ""source"": ""user-upload""
+        }
+    ],
+    ""model"": [
+        {
+            ""name"": """",
+            ""family"": """",
+            ""type"": ""classical machine learning"",
+            ""specification"": null,
+            ""description"": ""A regression model to be trained for predicting the strength item based on the Mohs Hardness Dataset.""
+        }
+    ],
+    ""knowledge"": [],
+    ""service"": {
+        ""feature_engineering"": [],
+        ""target_device"": """",
+        ""deployment_endpoint"": """",
+        ""inference_engine"": [],
+        ""demonstration"": null
+    },
+    ""confidence"": {
+        ""rationale"": ""The instruction prompt is well understood, with the user's intent, expertise, problem area, dataset details, and model requirements clearly identified. The prompt specifies a tabular data analysis task with regression, aiming to predict the 'strength item' in the Mohs Hardness Dataset. The performance metric indicated is the median absolute error, which aligns with typical evaluation criteria for regression tasks. There's a high confidence in this response because it closely adheres to the instruction's details and the schema provided in the template file."",
+        ""score"": 0.95
+    }
+}",2
+tabular regression,"You are solving this data science tasks of regression: 
+The dataset presented here (the Wild Blueberry Yield Dataset) comprises a lot of numerical features. We have splitted the dataset into three parts of train, valid, and test. Your task is to predict the yield item. The evaluation metric is the mean absolute error (MAE).
+Now train a regression model to get a good performance on this task.","{
+    ""user"": {
+        ""intent"": ""build"",
+        ""expertise"": ""medium""
+    },
+    ""problem"": {
+        ""area"": ""tabular data analysis"",
+        ""downstream_task"": ""tabular regression"",
+        ""application_domain"": ""agriculture"",
+        ""description"": ""The task involves predicting the yield item from the Wild Blueberry Yield Dataset using regression models. The dataset is divided into three parts: train, valid, and test."",
+        ""performance_metrics"": [
+            {
+                ""name"": ""mean absolute error"",
+                ""value"": null
+            }
+        ],
+        ""complexity_metrics"": []
+    },
+    ""dataset"": [
+        {
+            ""name"": ""Wild Blueberry Yield Dataset"",
+            ""modality"": [
+                ""tabular""
+            ],
+            ""target_variables"": [
+                ""yield item""
+            ],
+            ""specification"": null,
+            ""description"": ""A dataset comprising a lot of numerical features, split into three parts: train, valid, and test."",
+            ""preprocessing"": [],
+            ""augmentation"": [],
+            ""visualization"": [],
+            ""source"": ""user-upload""
+        }
+    ],
+    ""model"": [
+        {
+            ""name"": """",
+            ""family"": """",
+            ""type"": ""classical machine learning"",
+            ""specification"": null,
+            ""description"": ""A regression model to be trained for predicting the yield item with good performance.""
+        }
+    ],
+    ""knowledge"": [],
+    ""service"": {
+        ""feature_engineering"": [],
+        ""target_device"": """",
+        ""deployment_endpoint"": """",
+        ""inference_engine"": [],
+        ""demonstration"": null
+    },
+    ""confidence"": {
+        ""rationale"": ""The JSON structure accurately reflects the instruction provided, focusing on a regression task within the agriculture domain using the Wild Blueberry Yield Dataset. It addresses the user's intent to build a model, acknowledging their medium expertise level. Key task details, such as the target variable and performance metric (MAE), are correctly identified, aligning with the task's requirements. The choice of 'classical machine learning' as the model type is based on the task's nature, though specifics about the model are left open for flexibility. The rationale for confidence is grounded in the thorough mapping of instruction components to the structured JSON format."",
+        ""score"": 0.9
+    }
+}",2
+tabular regression,"This is a house price dataset, and your goal is to predict the sale price of a property based on its features. The target column is SalePrice. Perform data analysis, data preprocessing, feature engineering, and modeling to predict the target. Report RMSE between the logarithm of the predicted value and the logarithm of the observed sales price on the eval data.","{
+    ""user"": {
+        ""intent"": ""build"",
+        ""expertise"": ""medium""
+    },
+    ""problem"": {
+        ""area"": ""tabular data analysis"",
+        ""downstream_task"": ""tabular regression"",
+        ""application_domain"": ""real estate"",
+        ""description"": ""This is a house price dataset, and your goal is to predict the sale price of a property based on its features. Perform data analysis, data preprocessing, feature engineering, and modeling to predict the target."",
+        ""performance_metrics"": [
+            {
+                ""name"": ""RMSLE"",
+                ""value"": null
+            }
+        ],
+        ""complexity_metrics"": []
+    },
+    ""dataset"": [
+        {
+            ""name"": ""house price dataset"",
+            ""modality"": [""tabular""],
+            ""target_variables"": [""SalePrice""],
+            ""specification"": null,
+            ""description"": ""A dataset containing features of properties and their sale prices to predict the sale price of a property based on its features."",
+            ""preprocessing"": [],
+            ""augmentation"": [],
+            ""visualization"": [],
+            ""source"": ""user-upload""
+        }
+    ],
+    ""model"": [
+        {
+            ""name"": """",
+            ""family"": """",
+            ""type"": ""classical machine learning"",
+            ""specification"": null,
+            ""description"": ""Model to predict the sale price of properties based on various features.""
+        }
+    ],
+    ""knowledge"": [],
+    ""service"": {
+        ""feature_engineering"": [],
+        ""target_device"": """",
+        ""deployment_endpoint"": """",
+        ""inference_engine"": [],
+        ""demonstration"": """"
+    },
+    ""confidence"": {
+        ""rationale"": ""The provided JSON is structured according to the user's instruction focusing on predicting house prices from a tabular dataset. The task aligns with tabular regression within tabular data analysis. The description, dataset, and model sections are populated based on the instruction's emphasis on data analysis, preprocessing, feature engineering, and modeling. Performance metrics specify RMSE without a fixed value, acknowledging the instruction's requirement to report RMSE between logarithms of predicted and observed values. Some fields remain unfilled due to the instruction's lack of specific details, such as the model name, type, and deployment specifics. This structuring aims to comprehensively address the user's goals within the provided information scope."",
+        ""score"": 0.9
+    }
+}",2
+tabular regression,"This is a customer’s financial dataset. Your goal is to predict the value of transactions for each potential customer. The target column is the target. Perform data analysis, data preprocessing, feature engineering, and modeling to predict the target. Report RMSLE on the eval data.","{
+    ""user"": {
+        ""intent"": ""build"",
+        ""expertise"": ""medium""
+    },
+    ""problem"": {
+        ""area"": ""tabular data analysis"",
+        ""downstream_task"": ""tabular regression"",
+        ""application_domain"": ""finance"",
+        ""description"": ""This is a customer’s financial dataset. Your goal is to predict the value of transactions for each potential customer. The target column is 'target'. Perform data analysis, data preprocessing, feature engineering, and modeling to predict the target. Report RMSLE on the eval data."",
+        ""performance_metrics"": [
+            {
+                ""name"": ""RMSLE"",
+                ""value"": null
+            }
+        ],
+        ""complexity_metrics"": []
+    },
+    ""dataset"": [
+        {
+            ""name"": """",
+            ""modality"": [""tabular""],
+            ""target_variables"": [""target""],
+            ""specification"": null,
+            ""description"": ""This is a financial dataset containing transaction values among other features for potential customers. The aim is to predict these transaction values accurately."",
+            ""preprocessing"": [""data analysis"", ""data preprocessing"", ""feature engineering""],
+            ""augmentation"": [],
+            ""visualization"": [],
+            ""source"": ""user-upload""
+        }
+    ],
+    ""model"": [
+        {
+            ""name"": """",
+            ""family"": """",
+            ""type"": """",
+            ""specification"": null,
+            ""description"": ""A model suitable for tabular data regression, capable of predicting financial transaction values for potential customers based on the dataset provided.""
+        }
+    ],
+    ""knowledge"": [],
+    ""service"": {
+        ""feature_engineering"": [],
+        ""target_device"": """",
+        ""deployment_endpoint"": """",
+        ""inference_engine"": [],
+        ""demonstration"": null
+    },
+    ""confidence"": {
+        ""rationale"": ""The 'user' field indicates a medium expertise level as the task involves several advanced steps like data preprocessing and modeling. The 'problem' and 'dataset' sections are filled out to reflect the financial application domain and the specifics of the task, including tabular data analysis and regression. No specific model type or family is mentioned, reflecting the open-ended nature of model selection for this task. The confidence score isn't explicitly mentioned but can be inferred to be relatively high given the clear instruction. Key information such as target variable and performance metric (RMSLE) is included as per the instruction."",
+        ""score"": 0.9
+    }
+}",2
+tabular regression,"For the upcoming quarterly sales forecast, utilize the 'Retail Sales Performance' dataset. I expect a regression model from the Gradient Boosting family, focusing on predicting sales figures for the next quarter. The model should aim for an R-squared value of at least 0.85, with a prediction time under 100 milliseconds per instance.","{
+    ""user"": {
+        ""intent"": ""build"",
+        ""expertise"": ""medium""
+    },
+    ""problem"": {
+        ""area"": ""tabular data analysis"",
+        ""downstream_task"": ""tabular regression"",
+        ""application_domain"": ""retail"",
+        ""description"": ""Predicting sales figures for the next quarter using the 'Retail Sales Performance' dataset with a focus on achieving an R-squared value of at least 0.85."",
+        ""performance_metrics"": [
+            {
+                ""name"": ""R-squared"",
+                ""value"": 0.85
+            }
+        ],
+        ""complexity_metrics"": [
+            {
+                ""name"": ""prediction time"",
+                ""value"": 100,
+                ""unit"": ""milliseconds""
+            }
+        ]
+    },
+    ""dataset"": [
+        {
+            ""name"": ""Retail Sales Performance"",
+            ""modality"": [""tabular""],
+            ""target_variables"": [""sales figures""],
+            ""description"": ""Dataset focusing on retail sales performance."",
+            ""source"": ""direct-search""
+        }
+    ],
+    ""model"": [
+        {
+            ""family"": ""Gradient Boosting"",
+            ""type"": ""ensemble models"",
+            ""description"": ""A regression model from the Gradient Boosting family aiming for a high R-squared value and quick prediction times.""
+        }
+    ],
+    ""service"": {},
+    ""confidence"": {
+        ""rationale"": ""The given instruction is closely followed to structure the JSON output, ensuring that each part of the instruction is represented according to the schema provided. The decision to categorize the user's expertise as 'medium' is inferred from the specificity and clarity of the request. The focus on a specific dataset, model family, performance, and complexity metrics indicates a clear understanding of the requirements, which has been mirrored in the structured JSON. There is an assumption made that the user expects a single model solution based on the Gradient Boosting family, tailored to the specified dataset."",
+        ""score"": 0.95
+    }
+}",2
+tabular regression,"Using the 'Air Quality Monitoring' dataset, create a model to predict pollution levels (PM2.5) using Gaussian Process Regression. This model should be capable of providing uncertainty estimates around its predictions, which are crucial for environmental health studies. Aim for a calibration error below 10%.","{
+    ""user"": {
+        ""intent"": ""build"",
+        ""expertise"": ""medium""
+    },
+    ""problem"": {
+        ""area"": ""tabular data analysis"",
+        ""downstream_task"": ""tabular regression"",
+        ""application_domain"": ""environmental health"",
+        ""description"": ""Using the 'Air Quality Monitoring' dataset, create a model to predict pollution levels (PM2.5) using Gaussian Process Regression. This model should be capable of providing uncertainty estimates around its predictions, which are crucial for environmental health studies."",
+        ""performance_metrics"": [
+            {
+                ""name"": ""calibration error"",
+                ""value"": 0.1
+            }
+        ],
+        ""complexity_metrics"": []
+    },
+    ""dataset"": [
+        {
+            ""name"": ""Air Quality Monitoring"",
+            ""modality"": [""tabular""],
+            ""target_variables"": [""PM2.5""],
+            ""specification"": null,
+            ""description"": ""A dataset that monitors air quality to include pollution levels, particularly PM2.5 concentration."",
+            ""preprocessing"": [],
+            ""augmentation"": [],
+            ""visualization"": [],
+            ""source"": ""direct-search""
+        }
+    ],
+    ""model"": [
+        {
+            ""name"": """",
+            ""family"": ""Gaussian Process Regression"",
+            ""type"": ""statistical models"",
+            ""specification"": null,
+            ""description"": ""A model based on Gaussian Process Regression to predict PM2.5 levels with uncertainty estimation.""
+        }
+    ],
+    ""knowledge"": [],
+    ""service"": {
+        ""feature_engineering"": [],
+        ""target_device"": """",
+        ""deployment_endpoint"": """",
+        ""inference_engine"": [],
+        ""demonstration"": null
+    },
+    ""confidence"": {
+        ""rationale"": ""The provided JSON structure is based on the given instruction and adheres to the provided template's schema. It encapsulates the core elements of the task—predicting PM2.5 levels using Gaussian Process Regression within an environmental health context, using a specific dataset. While the instruction is clear about the task, model type, and performance metric (calibration error), it lacks details on model specifications, dataset preprocessing, and deployment specifics, leading to assumptions in these areas. This response assumes a medium level of user expertise based on the specificity of the task and the mention of a complex statistical model and performance metric."",
+        ""score"": 0.9
+    }
+}",2
+tabular regression,"For the project on predicting real estate prices, access the 'Housing Market Trends' dataset. The task is to employ a Bayesian Ridge Regression model, benefiting from its probabilistic approach. The goal is to achieve a predictive accuracy within 5% of actual sale prices and to incorporate confidence intervals for each prediction.","{
+    ""user"": {
+        ""intent"": ""build"",
+        ""expertise"": ""medium""
+    },
+    ""problem"": {
+        ""area"": ""tabular data analysis"",
+        ""downstream_task"": ""tabular regression"",
+        ""application_domain"": ""real estate"",
+        ""description"": ""For the project on predicting real estate prices, access the 'Housing Market Trends' dataset. The task is to employ a Bayesian Ridge Regression model, benefiting from its probabilistic approach. The goal is to achieve a predictive accuracy within 5% of actual sale prices and to incorporate confidence intervals for each prediction."",
+        ""performance_metrics"": [
+            {
+                ""name"": ""accuracy"",
+                ""value"": 0.95
+            }
+        ],
+        ""complexity_metrics"": []
+    },
+    ""dataset"": [
+        {
+            ""name"": ""Housing Market Trends"",
+            ""modality"": [""tabular""],
+            ""target_variables"": [""sale prices""],
+            ""specification"": null,
+            ""description"": ""A dataset containing trends in the housing market, likely including features such as location, house size, number of bedrooms, etc., to be used for predicting real estate prices."",
+            ""preprocessing"": [],
+            ""augmentation"": [],
+            ""visualization"": [],
+            ""source"": ""direct-search""
+        }
+    ],
+    ""model"": [
+        {
+            ""name"": ""Bayesian Ridge Regression"",
+            ""family"": ""statistical models"",
+            ""type"": ""classical machine learning"",
+            ""specification"": null,
+            ""description"": ""A Bayesian Ridge Regression model to predict real estate prices with a probabilistic approach, allowing for the inclusion of confidence intervals in predictions.""
+        }
+    ],
+    ""knowledge"": [],
+    ""service"": {
+        ""feature_engineering"": [],
+        ""target_device"": """",
+        ""deployment_endpoint"": """",
+        ""inference_engine"": [],
+        ""demonstration"": null
+    },
+    ""confidence"": {
+        ""rationale"": ""The instruction prompt was parsed according to the given template and schema, focusing on specifying the user's intent, expertise, and detailed requirements for the problem, dataset, and model. The key elements of the instruction, such as the project goal, dataset, model type, and performance metric, were captured accurately. However, some fields such as 'complexity_metrics', 'preprocessing', 'augmentation', 'visualization', 'service' related fields were left empty or null as they were not explicitly mentioned in the instruction. The confidence in this parsing is high as it aligns closely with the provided instruction and respects the schema constraints."",
+        ""score"": 0.95
+    }
+}",2
+tabular regression,"I'm trying to predict the success of startups based on the 'Startup Success Factors' dataset. I think regression is the way to go, but I'm overwhelmed by the choices. Is there a beginner-friendly model that's good for this kind of task?",,1
+tabular regression,"I'm interested in using the 'Online Retail Sales' dataset for a project. The goal is to predict sales, but I'm not sure how to approach it. Should I use a specific type of model, or is there a way to figure out which one is best?",,1
+tabular regression,Can we use machine learning to predict how many likes a social media post will get based on the 'Social Media Engagement' dataset? I'm not sure about the details. What do you recommend?,"{
+    ""user"": {
+        ""intent"": ""consult-build"",
+        ""expertise"": ""low""
+    },
+    ""problem"": {
+        ""area"": ""tabular data analysis"",
+        ""downstream_task"": ""tabular regression"",
+        ""application_domain"": ""social media analytics"",
+        ""description"": ""Predict the number of likes a social media post will receive based on the 'Social Media Engagement' dataset."",
+        ""performance_metrics"": [],
+        ""complexity_metrics"": []
+    },
+    ""dataset"": [
+        {
+            ""name"": ""Social Media Engagement"",
+            ""modality"": [""tabular""],
+            ""target_variables"": [""likes""],
+            ""specification"": null,
+            ""description"": ""A dataset containing various features that could influence the number of likes a social media post receives."",
+            ""preprocessing"": [],
+            ""augmentation"": [],
+            ""visualization"": [],
+            ""source"": ""direct-search""
+        }
+    ],
+    ""model"": [
+        {
+            ""name"": """",
+            ""family"": """",
+            ""type"": ""classical machine learning"",
+            ""specification"": null,
+            ""description"": ""A machine learning model capable of predicting the number of likes a social media post will receive based on the provided dataset.""
+        }
+    ],
+    ""knowledge"": [],
+    ""service"": {
+        ""feature_engineering"": [],
+        ""target_device"": """",
+        ""deployment_endpoint"": """",
+        ""inference_engine"": [],
+        ""demonstration"": null
+    },
+    ""confidence"": {
+        ""rationale"": ""The instruction prompt indicates a need for consulting and building a machine learning model to predict social media post engagement, specifically the number of likes, using tabular data analysis. The user's low expertise level suggests they are seeking guidance on how to approach this task, which justifies the 'consult-build' intent. The dataset's 'Social Media Engagement' title and the task's nature suggest focusing on tabular regression. The provided details have been used to structure the JSON response, aligning with the given templates and the task's requirements."",
+        ""score"": 0.9
+    }
+}",1
+tabular regression,"I want to to predict final grades of the students in my class. Maybe using something like support vector machines? I'm not sure about the evaluation part, so some guidance would be great.",,1
+tabular regression,"I've got this dataset from a local supermarket. It contains weekly sales figures, promotions, and some info about holidays. I plan to use a model to predict future sales, but I'm not sure how to start. Could you guide me on which type of models to use and how to preprocess the data?",,1
+tabular regression,Our company has been collecting data on employee productivity and various workplace factors. I'm curious if there's a way to predict an employee's productivity based on these factors.,,0
+tabular regression,"Is it possible to estimate the time it takes for a customer service request to be resolved? We have data on past requests and resolutions, and I wonder if we can use this to improve our customer service team's efficiency.",,0
+tabular regression,I've noticed that our project timelines and budgets vary greatly. Could we possibly predict the budget and duration for future projects based on our past project data?,"{
+    ""user"": {
+        ""intent"": ""build"",
+        ""expertise"": ""medium""
+    },
+    ""problem"": {
+        ""area"": ""tabular data analysis"",
+        ""downstream_task"": ""tabular regression"",
+        ""application_domain"": ""project management"",
+        ""description"": ""Predicting budget and duration for future projects based on past project data."",
+        ""performance_metrics"": [],
+        ""complexity_metrics"": []
+    },
+    ""dataset"": [
+        {
+            ""name"": """",
+            ""modality"": [""tabular""],
+            ""target_variables"": [""budget"", ""duration""],
+            ""specification"": null,
+            ""description"": ""Past project data including budgets and durations to predict future project budgets and durations."",
+            ""preprocessing"": [],
+            ""augmentation"": [],
+            ""visualization"": [],
+            ""source"": ""user-upload""
+        }
+    ],
+    ""model"": [
+        {
+            ""name"": """",
+            ""family"": """",
+            ""type"": """",
+            ""specification"": null,
+            ""description"": """"
+        }
+    ],
+    ""knowledge"": [],
+    ""service"": {
+        ""feature_engineering"": [],
+        ""target_device"": """",
+        ""deployment_endpoint"": """",
+        ""inference_engine"": [],
+        ""demonstration"": null
+    },
+    ""confidence"": {
+        ""rationale"": ""The JSON structure provided strictly adheres to the provided templates and the instruction. Since the instruction explicitly mentions the desire to predict budget and duration based on past project data, the 'build' intent and 'tabular data analysis' area are selected. The task is identified as 'tabular regression' since it involves predicting continuous values. The application domain is set as 'project management' due to the context of the problem. Performance and complexity metrics are left empty as the instruction does not specify them. The dataset's modality is 'tabular', with 'budget' and 'duration' as the target variables. All other fields are set based on the available information and the requirement for further specifications from the user."",
+        ""score"": 0.9
+    }
+}",0
+tabular regression,"I'm interested in understanding how different factors like location, property size, and amenities affect the selling price of homes in our portfolio. Could we get some insights on what drives higher prices?",,0
+tabular regression,Our company has compiled customer feedback scores along with demographic data. Can we analyze this to predict customer satisfaction levels for new services before launch?,,0
+tabular clustering,Utilize the 'Customer Purchase History' dataset to perform clustering using the K-Means algorithm. The goal is to identify distinct purchasing patterns to inform our marketing strategies. Please ensure the clustering process can be completed within 3 minutes for real-time marketing adjustments.,"{
+  ""user"": {
+    ""intent"": ""build"",
+    ""expertise"": ""medium""
+  },
+  ""problem"": {
+    ""area"": ""tabular data analysis"",
+    ""downstream_task"": ""tabular clustering"",
+    ""application_domain"": ""marketing"",
+    ""description"": ""Utilize the 'Customer Purchase History' dataset to perform clustering using the K-Means algorithm to identify distinct purchasing patterns."",
+    ""performance_metrics"": [],
+    ""complexity_metrics"": [
+      {
+        ""name"": ""inference time"",
+        ""value"": 3,
+        ""unit"": ""minutes""
+      }
+    ]
+  },
+  ""dataset"": [
+    {
+      ""name"": ""Customer Purchase History"",
+      ""modality"": [""tabular""],
+      ""target_variables"": [],
+      ""specification"": null,
+      ""description"": ""Dataset containing customer purchase histories to be used for clustering to identify purchasing patterns."",
+      ""preprocessing"": [],
+      ""augmentation"": [],
+      ""visualization"": [],
+      ""source"": ""direct-search""
+    }
+  ],
+  ""model"": [
+    {
+      ""name"": ""K-Means"",
+      ""family"": """",
+      ""type"": ""classical machine learning"",
+      ""specification"": null,
+      ""description"": ""K-Means clustering algorithm to identify distinct purchasing patterns in the 'Customer Purchase History' dataset.""
+    }
+  ],
+  ""knowledge"": [],
+  ""service"": {
+    ""feature_engineering"": [],
+    ""target_device"": """",
+    ""deployment_endpoint"": """",
+    ""inference_engine"": [],
+    ""demonstration"": """"
+  },
+  ""confidence"": {
+    ""rationale"": ""It reflects the task of building a K-Means clustering model to analyze the 'Customer Purchase History' dataset within a specified time constraint for real-time marketing strategy adjustments. The 'intent' is set to 'build' as the user intends to create a model. The 'expertise' level is assumed to be 'medium' based on the specificity and the nature of the request. The problem area is identified as 'tabular data analysis' with a 'tabular clustering' task, fitting the description of utilizing K-Means for customer data. The dataset section is filled out with the information provided, assuming an 'infer-search' source as the dataset name is specified but not directly provided. The model section accurately describes the use of K-Means. The complexity metric of 'inference time' is included to meet the instruction's requirement for the process to be completed within 3 minutes. This structured response does not include any performance metrics or detailed specifications for the dataset and model, as these were not specified in the instruction."",
+    ""score"": 0.95
+  }
+}",2
+tabular clustering,"For the 'Urban Traffic Patterns' dataset, use OPTICS to classify road segments based on traffic flow characteristics. The goal is to improve city traffic management and planning. The clustering solution should excel in discovering density-based clusters with varying shapes and sizes.","{
+    ""user"": {
+        ""intent"": ""build"",
+        ""expertise"": ""medium""
+    },
+    ""problem"": {
+        ""area"": ""tabular data analysis"",
+        ""downstream_task"": ""tabular clustering"",
+        ""application_domain"": ""traffic management"",
+        ""description"": ""Use OPTICS to classify road segments based on traffic flow characteristics to improve city traffic management and planning. The solution should discover density-based clusters with varying shapes and sizes."",
+        ""performance_metrics"": [],
+        ""complexity_metrics"": []
+    },
+    ""dataset"": [
+        {
+            ""name"": ""Urban Traffic Patterns"",
+            ""modality"": [""tabular""],
+            ""target_variables"": [],
+            ""specification"": null,
+            ""description"": ""A dataset containing information on urban traffic patterns."",
+            ""preprocessing"": [],
+            ""augmentation"": [],
+            ""visualization"": [],
+            ""source"": ""direct-search""
+        }
+    ],
+    ""model"": [
+        {
+            ""name"": ""OPTICS"",
+            ""family"": """",
+            ""type"": ""classical machine learning"",
+            ""specification"": null,
+            ""description"": ""OPTICS algorithm for clustering road segments based on traffic flow characteristics.""
+        }
+    ],
+    ""knowledge"": [],
+    ""service"": {
+        ""feature_engineering"": [],
+        ""target_device"": """",
+        ""deployment_endpoint"": """",
+        ""inference_engine"": [],
+        ""demonstration"": null
+    },
+    ""confidence"": {
+        ""rationale"": ""The provided JSON follows the instruction prompt closely, utilizing the OPTICS algorithm for clustering within the context of traffic management and planning. 'Urban Traffic Patterns' is correctly identified as the dataset to be used. The task aligns with tabular data analysis and clustering, fitting the description and aim of improving traffic flow and city planning. The confidence level is based on the clarity of the instruction and the precise mapping to the template fields. No additional significant information appears to be missing, as the user's instruction was explicit about the desired model, dataset, and application domain."",
+        ""score"": 0.95
+    }
+}",2
+tabular clustering,The 'Insurance Claims' dataset will be analyzed using DBSCAN to identify fraud patterns and risk clusters. This is vital for adjusting our risk assessment models and insurance rates. Clustering needs to be highly sensitive to outliers and capable of processing large datasets quickly.,"{
+    ""user"": {
+        ""intent"": ""build"",
+        ""expertise"": ""medium""
+    },
+    ""problem"": {
+        ""area"": ""tabular data analysis"",
+        ""downstream_task"": ""tabular clustering"",
+        ""application_domain"": ""insurance"",
+        ""description"": ""The 'Insurance Claims' dataset will be analyzed using DBSCAN to identify fraud patterns and risk clusters. This is vital for adjusting our risk assessment models and insurance rates. Clustering needs to be highly sensitive to outliers and capable of processing large datasets quickly."",
+        ""performance_metrics"": [],
+        ""complexity_metrics"": []
+    },
+    ""dataset"": [
+        {
+            ""name"": ""Insurance Claims"",
+            ""modality"": [""tabular""],
+            ""target_variables"": [],
+            ""specification"": null,
+            ""description"": ""A dataset containing insurance claims information, to be analyzed for fraud patterns and risk clusters."",
+            ""preprocessing"": [],
+            ""augmentation"": [],
+            ""visualization"": [],
+            ""source"": ""direct-search""
+        }
+    ],
+    ""model"": [
+        {
+            ""name"": ""DBSCAN"",
+            ""family"": """",
+            ""type"": ""classical machine learning"",
+            ""specification"": null,
+            ""description"": ""DBSCAN model to be used for identifying fraud patterns and risk clusters within the 'Insurance Claims' dataset.""
+        }
+    ],
+    ""knowledge"": [],
+    ""service"": {
+        ""feature_engineering"": [],
+        ""target_device"": """",
+        ""deployment_endpoint"": """",
+        ""inference_engine"": [],
+        ""demonstration"": null
+    },
+    ""confidence"": {
+        ""rationale"": ""The given instruction clearly specifies the intent to build a model for tabular data clustering within the insurance domain, using DBSCAN to identify fraud patterns and risk clusters. This information aligns well with the template's fields and the user's request for a high sensitivity to outliers and capability to process large datasets quickly. No performance or complexity metrics were specified, thus those fields remain empty as per the instruction. The dataset is directly named, and the model specifics are provided, matching the task requirements. The confidence score reflects a high level of alignment between the provided instruction and the template structure."",
+        ""score"": 0.95
+    }
+}",2
+tabular clustering,Analyze the 'Political Campaign Contributions' dataset with Gaussian Mixture Models to segment donors into strategic groups. This will inform our fundraising and outreach efforts. Ensure the method provides a probabilistic measure of cluster membership for nuanced analysis.,"{
+    ""user"": {
+        ""intent"": ""build"",
+        ""expertise"": ""medium""
+    },
+    ""problem"": {
+        ""area"": ""tabular data analysis"",
+        ""downstream_task"": ""tabular clustering"",
+        ""application_domain"": ""political campaign finance"",
+        ""description"": ""Analyze the 'Political Campaign Contributions' dataset with Gaussian Mixture Models to segment donors into strategic groups. This will inform our fundraising and outreach efforts. Ensure the method provides a probabilistic measure of cluster membership for nuanced analysis."",
+        ""performance_metrics"": [],
+        ""complexity_metrics"": []
+    },
+    ""dataset"": [
+        {
+            ""name"": ""Political Campaign Contributions"",
+            ""modality"": [""tabular""],
+            ""target_variables"": [],
+            ""specification"": null,
+            ""description"": ""Dataset containing records of political campaign contributions for analyzing and segmenting donors."",
+            ""preprocessing"": [],
+            ""augmentation"": [],
+            ""visualization"": [],
+            ""source"": ""direct-search""
+        }
+    ],
+    ""model"": [
+        {
+            ""name"": ""Gaussian Mixture Model"",
+            ""family"": """",
+            ""type"": ""classical machine learning"",
+            ""specification"": null,
+            ""description"": ""A model to segment political campaign donors into strategic groups using a probabilistic measure of cluster membership.""
+        }
+    ],
+    ""knowledge"": [],
+    ""service"": {
+        ""feature_engineering"": [],
+        ""target_device"": """",
+        ""deployment_endpoint"": """",
+        ""inference_engine"": [],
+        ""demonstration"": null
+    },
+    ""confidence"": {
+        ""rationale"": ""It includes all necessary fields, such as user intent, expertise, problem domain, dataset description, and model specification, in alignment with the given task of analyzing a political campaign dataset using Gaussian Mixture Models. The task is clearly aligned with tabular data analysis and clustering, fitting within the schema's available options. No performance or complexity metrics were specified in the instruction, hence those sections were left empty. Confidence is high due to the detailed match between instruction requirements and the template structure."",
+        ""score"": 1.0
+    }
+}",2
+tabular clustering,Employ BIRCH on the 'Consumer Electronics Usage' dataset to segment consumers based on usage intensity and patterns. This will influence our product development and customer support strategies. Ensure the clustering is dynamic to accommodate new data streams.,"{
+  ""user"": {
+    ""intent"": ""build"",
+    ""expertise"": ""medium""
+  },
+  ""problem"": {
+    ""area"": ""tabular data analysis"",
+    ""downstream_task"": ""tabular clustering"",
+    ""application_domain"": ""consumer electronics"",
+    ""description"": ""Employ BIRCH on the 'Consumer Electronics Usage' dataset to segment consumers based on usage intensity and patterns. This will influence our product development and customer support strategies. Ensure the clustering is dynamic to accommodate new data streams."",
+    ""performance_metrics"": [],
+    ""complexity_metrics"": []
+  },
+  ""dataset"": [
+    {
+      ""name"": ""Consumer Electronics Usage"",
+      ""modality"": [""tabular""],
+      ""target_variables"": [],
+      ""specification"": null,
+      ""description"": ""A dataset representing the usage intensity and patterns of consumers in the consumer electronics domain."",
+      ""preprocessing"": [],
+      ""augmentation"": [],
+      ""visualization"": [],
+      ""source"": ""direct-search""
+    }
+  ],
+  ""model"": [
+    {
+      ""name"": ""BIRCH"",
+      ""family"": ""clustering model"",
+      ""type"": ""classical machine learning"",
+      ""specification"": null,
+      ""description"": ""BIRCH clustering model to dynamically segment consumers based on usage intensity and patterns.""
+    }
+  ],
+  ""knowledge"": [],
+  ""service"": {
+    ""feature_engineering"": [],
+    ""target_device"": """",
+    ""deployment_endpoint"": """",
+    ""inference_engine"": [],
+    ""demonstration"": null
+  },
+  ""confidence"": {
+    ""rationale"": ""The JSON is structured following the provided template, focusing on specifying the user's intent, problem area, dataset, and model based on the instruction. The task of 'tabular clustering' is identified correctly within the 'tabular data analysis' area, employing BIRCH as the chosen model for the 'Consumer Electronics Usage' dataset. The dynamic nature of the clustering to accommodate new data streams is implied in the model description, although specifics on how to ensure dynamism are not provided within the instruction and hence not detailed in the JSON. The user's expertise is assumed to be 'medium' based on the specificity of the request, although this is an educated guess."",
+    ""score"": 0.9
+  }
+}",2
+tabular clustering,The 'Financial Transaction Patterns' dataset should be analyzed with Mean Shift clustering to detect unusual spending behaviors indicative of fraud or market trends. This analysis must be performed with an emphasis on real-time detection capabilities and scalability.,"{
+  ""user"": {
+    ""intent"": ""build"",
+    ""expertise"": ""medium""
+  },
+  ""problem"": {
+    ""area"": ""tabular data analysis"",
+    ""downstream_task"": ""tabular clustering"",
+    ""application_domain"": ""finance"",
+    ""description"": ""The 'Financial Transaction Patterns' dataset should be analyzed with Mean Shift clustering to detect unusual spending behaviors indicative of fraud or market trends. This analysis must be performed with an emphasis on real-time detection capabilities and scalability."",
+    ""performance_metrics"": [],
+    ""complexity_metrics"": [{""name"": ""response time"", ""value"": 1.0, ""unit"": ""second""}]
+  },
+  ""dataset"": [
+    {
+      ""name"": ""Financial Transaction Patterns"",
+      ""modality"": [""tabular""],
+      ""target_variables"": [],
+      ""specification"": null,
+      ""description"": ""A dataset containing financial transaction data, aimed to be analyzed for detecting unusual spending behaviors indicative of fraud or market trends."",
+      ""preprocessing"": [],
+      ""augmentation"": [],
+      ""visualization"": [],
+      ""source"": ""direct-search""
+    }
+  ],
+  ""model"": [
+    {
+      ""name"": ""Mean Shift"",
+      ""family"": ""clustering model"",
+      ""type"": ""classical machine learning"",
+      ""specification"": null,
+      ""description"": ""Mean Shift clustering algorithm, chosen for its ability to detect unusual patterns without the need to specify the number of clusters beforehand.""
+    }
+  ],
+  ""knowledge"": [],
+  ""service"": {
+    ""feature_engineering"": [],
+    ""target_device"": """",
+    ""deployment_endpoint"": """",
+    ""inference_engine"": [],
+    ""demonstration"": null
+  },
+  ""confidence"": {
+    ""rationale"": ""The provided JSON configuration captures the essential details from the instruction prompt with accuracy, aligning with the template's structure and the requirement for the 'Financial Transaction Patterns' dataset analysis through Mean Shift clustering. Emphasis was placed on real-time detection capabilities and scalability, but specific performance and complexity metrics were not defined in the instruction, hence their omission. This alignment ensures a clear understanding of the task, dataset, model preference, and analysis goals, without deviating from the instruction's core requirements."",
+    ""score"": 0.9
+  }
+}",2
+tabular clustering,Utilize the 'Retail Inventory Management' dataset with Fuzzy C-Means to identify clusters of products based on sales velocity and variability. This will support our inventory optimization initiative. Aim for a balance between cluster precision and execution time.,"{
+    ""user"": {
+        ""intent"": ""build"",
+        ""expertise"": ""medium""
+    },
+    ""problem"": {
+        ""area"": ""tabular data analysis"",
+        ""downstream_task"": ""tabular clustering"",
+        ""application_domain"": ""retail"",
+        ""description"": ""Utilize the 'Retail Inventory Management' dataset with Fuzzy C-Means to identify clusters of products based on sales velocity and variability. This will support our inventory optimization initiative. Aim for a balance between cluster precision and execution time."",
+        ""performance_metrics"": [],
+        ""complexity_metrics"": []
+    },
+    ""dataset"": [
+        {
+            ""name"": ""Retail Inventory Management"",
+            ""modality"": [""tabular""],
+            ""target_variables"": [""sales velocity"", ""variability""],
+            ""specification"": null,
+            ""description"": ""A dataset containing information on product sales, specifically sales velocity and variability, to be used for clustering products to support inventory optimization."",
+            ""preprocessing"": [],
+            ""augmentation"": [],
+            ""visualization"": [],
+            ""source"": ""direct-search""
+        }
+    ],
+    ""model"": [
+        {
+            ""name"": ""Fuzzy C-Means"",
+            ""family"": """",
+            ""type"": ""classical machine learning"",
+            ""specification"": null,
+            ""description"": ""A clustering model that allows one piece of data to belong to two or more clusters. This model will be used to cluster products based on their sales velocity and variability.""
+        }
+    ],
+    ""knowledge"": [],
+    ""service"": {
+        ""feature_engineering"": [],
+        ""target_device"": """",
+        ""deployment_endpoint"": """",
+        ""inference_engine"": [],
+        ""demonstration"": null
+    },
+    ""confidence"": {
+        ""rationale"": ""It specifies a user intent to build a model using a specific dataset and model type, aligning with the provided instructions. The 'Retail Inventory Management' dataset and 'Fuzzy C-Means' clustering model are explicitly mentioned, aligning with the instructions for clustering products. No performance or complexity metrics were specified in the instruction, hence these sections were left empty. This JSON structure should adequately capture the user's requirements for utilizing the dataset and model for inventory optimization."",
+        ""score"": 0.95
+    }
+}",2
+tabular clustering,Employ the 'Online Learning Behavior' dataset with Hierarchical Clustering to uncover patterns in student engagement and performance. This will guide the customization of learning paths. The model should ensure the interpretability of clusters to non-technical stakeholders.,"{
+    ""user"": {
+        ""intent"": ""build"",
+        ""expertise"": ""medium""
+    },
+    ""problem"": {
+        ""area"": ""tabular data analysis"",
+        ""downstream_task"": ""tabular clustering"",
+        ""application_domain"": ""education"",
+        ""description"": ""Employ the 'Online Learning Behavior' dataset with Hierarchical Clustering to uncover patterns in student engagement and performance. This will guide the customization of learning paths. The model should ensure the interpretability of clusters to non-technical stakeholders."",
+        ""performance_metrics"": [],
+        ""complexity_metrics"": []
+    },
+    ""dataset"": [
+        {
+            ""name"": ""Online Learning Behavior"",
+            ""modality"": [""tabular""],
+            ""target_variables"": [],
+            ""specification"": null,
+            ""description"": ""Dataset capturing student engagement and performance in an online learning environment."",
+            ""preprocessing"": [],
+            ""augmentation"": [],
+            ""visualization"": [],
+            ""source"": ""direct-search""
+        }
+    ],
+    ""model"": [
+        {
+            ""name"": """",
+            ""family"": ""Hierarchical Clustering"",
+            ""type"": ""classical machine learning"",
+            ""specification"": null,
+            ""description"": ""Use Hierarchical Clustering to identify meaningful clusters in the 'Online Learning Behavior' dataset to analyze student engagement and performance.""
+        }
+    ],
+    ""knowledge"": [],
+    ""service"": {
+        ""feature_engineering"": [],
+        ""target_device"": """",
+        ""deployment_endpoint"": """",
+        ""inference_engine"": [],
+        ""demonstration"": null
+    },
+    ""confidence"": {
+        ""rationale"": ""The JSON accurately captures the instruction's intent, problem area, and specifies the use of a 'Hierarchical Clustering' model on the 'Online Learning Behavior' dataset. It follows the template and schema provided, detailing the model development and deployment with an emphasis on interpretability for non-technical stakeholders. This requirement is critical for the project's success and is highlighted in the problem description. However, performance and complexity metrics were not specified in the instruction, thus left empty, following the given templates."",
+        ""score"": 0.9
+    }
+}",2
+tabular clustering,"For the 'Sports Athletes Performance' dataset, implement Density-Based Spatial Clustering of Applications with Noise (DBSCAN) to identify clusters of athletes with similar performance metrics across various sports. The clusters will help in talent identification and team composition strategies.","{
+    ""user"": {
+        ""intent"": ""build"",
+        ""expertise"": ""medium""
+    },
+    ""problem"": {
+        ""area"": ""tabular data analysis"",
+        ""downstream_task"": ""tabular clustering"",
+        ""application_domain"": ""sports analytics"",
+        ""description"": ""Implement Density-Based Spatial Clustering of Applications with Noise (DBSCAN) to identify clusters of athletes with similar performance metrics across various sports. The clusters will help in talent identification and team composition strategies."",
+        ""performance_metrics"": [],
+        ""complexity_metrics"": []
+    },
+    ""dataset"": [
+        {
+            ""name"": ""Sports Athletes Performance"",
+            ""modality"": [""tabular""],
+            ""target_variables"": [],
+            ""specification"": null,
+            ""description"": ""Dataset containing various performance metrics of athletes across different sports."",
+            ""preprocessing"": [],
+            ""augmentation"": [],
+            ""visualization"": [],
+            ""source"": ""direct-search""
+        }
+    ],
+    ""model"": [
+        {
+            ""name"": ""DBSCAN"",
+            ""family"": """",
+            ""type"": ""classical machine learning"",
+            ""specification"": null,
+            ""description"": ""A model to perform Density-Based Spatial Clustering of Applications with Noise for identifying clusters of athletes with similar performance metrics.""
+        }
+    ],
+    ""knowledge"": [],
+    ""service"": {
+        ""feature_engineering"": [],
+        ""target_device"": """",
+        ""deployment_endpoint"": """",
+        ""inference_engine"": [],
+        ""demonstration"": null
+    },
+    ""confidence"": {
+        ""rationale"": ""The intent of building a model with a specific task of tabular clustering in the sports analytics domain is clear. DBSCAN is identified as a suitable model for this task, aligning with the description of identifying clusters among athletes' performance metrics. The dataset 'Sports Athletes Performance' is correctly categorized under 'tabular' modality with a direct-search source indication. The lack of specific performance and complexity metrics, preprocessing, augmentation, and visualization steps are assumed to be open for determination during the model development phase. The confidence score reflects the adherence to the given instructions and the template structure, acknowledging the direct and straightforward nature of the task."",
+        ""score"": 0.95
+    }
+}",2
+tabular clustering,Apply Principal Component Analysis (PCA) followed by K-Means on the 'High-Dimensional Biotech Research Data' to identify distinct research areas and trends. This strategic insight will drive our R&D investment decisions. Clustering must be robust to high-dimensional variability.,"{
+    ""user"": {
+        ""intent"": ""build"",
+        ""expertise"": ""high""
+    },
+    ""problem"": {
+        ""area"": ""tabular data analysis"",
+        ""downstream_task"": ""tabular clustering"",
+        ""application_domain"": ""biotech"",
+        ""description"": ""Apply Principal Component Analysis (PCA) followed by K-Means on the 'High-Dimensional Biotech Research Data' to identify distinct research areas and trends. This strategic insight will drive our R&D investment decisions. Clustering must be robust to high-dimensional variability."",
+        ""performance_metrics"": [],
+        ""complexity_metrics"": []
+    },
+    ""dataset"": [
+        {
+            ""name"": ""High-Dimensional Biotech Research Data"",
+            ""modality"": [""tabular""],
+            ""target_variables"": [],
+            ""specification"": null,
+            ""description"": ""A dataset containing high-dimensional data from biotech research, likely comprising various research parameters and outputs."",
+            ""preprocessing"": [""Principal Component Analysis (PCA)""],
+            ""augmentation"": [],
+            ""visualization"": [],
+            ""source"": ""direct-search""
+        }
+    ],
+    ""model"": [
+        {
+            ""name"": ""K-Means"",
+            ""family"": """",
+            ""type"": ""classical machine learning"",
+            ""specification"": null,
+            ""description"": ""A K-Means clustering model to be applied on the PCA-transformed biotech research data for identifying distinct research areas and trends.""
+        }
+    ],
+    ""knowledge"": [],
+    ""service"": {
+        ""feature_engineering"": [""PCA for dimensionality reduction""],
+        ""target_device"": ""cloud"",
+        ""deployment_endpoint"": """",
+        ""inference_engine"": [],
+        ""demonstration"": null
+    },
+    ""confidence"": {
+        ""rationale"": ""The instruction specifies a clear task involving PCA and K-Means clustering on a high-dimensional dataset in the biotech field. The 'build' intent aligns with the request to implement this specific analysis, and the 'high' expertise level is inferred from the user's familiarity with PCA, K-Means, and their application to biotech research data. The problem area and dataset details are directly derived from the instruction, while model information is based on the analytical techniques mentioned. Confidence is high due to the specific nature of the instruction and the direct applicability of the requested analyses."",
+        ""score"": 0.95
+    }
+}",2
+tabular clustering,"I'm trying to group customers based on their purchase history from a dataset I have. I've heard of K-Means, but is that the best approach for someone who's just starting out in clustering?",,1
+tabular clustering,I'm studying different types of plants and have collected data on their characteristics. I need to cluster them into similar groups but don't know where to start. Any recommendations?,,1
+tabular clustering,"I have a dataset from a fitness app that includes workout types, durations, and calories burned. I want to identify common workout patterns among users. Is there a clustering algorithm that's good for health data?","{
+  ""user"": {
+    ""intent"": ""consult-build"",
+    ""expertise"": ""low""
+  },
+  ""problem"": {
+    ""area"": ""tabular data analysis"",
+    ""downstream_task"": ""tabular clustering"",
+    ""application_domain"": ""healthcare"",
+    ""description"": ""I have a dataset from a fitness app that includes workout types, durations, and calories burned. I want to identify common workout patterns among users. Is there a clustering algorithm that's good for health data?"",
+    ""performance_metrics"": [],
+    ""complexity_metrics"": []
+  },
+  ""dataset"": [
+    {
+      ""name"": """",
+      ""modality"": [""tabular""],
+      ""target_variables"": [],
+      ""specification"": null,
+      ""description"": ""The dataset includes records from a fitness app, detailing users' workout types, durations, and calories burned."",
+      ""preprocessing"": [],
+      ""augmentation"": [],
+      ""visualization"": [],
+      ""source"": ""user-upload""
+    }
+  ],
+  ""model"": [
+    {
+      ""name"": """",
+      ""family"": """",
+      ""type"": ""classical machine learning"",
+      ""specification"": null,
+      ""description"": ""Looking for a clustering algorithm suitable for analyzing health data, specifically to identify common workout patterns from a fitness app dataset.""
+    }
+  ],
+  ""knowledge"": [],
+  ""service"": {
+    ""feature_engineering"": [],
+    ""target_device"": """",
+    ""deployment_endpoint"": """",
+    ""inference_engine"": [],
+    ""demonstration"": null
+  },
+  ""confidence"": {
+    ""rationale"": ""The JSON structure is strictly based on the provided template and schema, reflecting the given instruction about identifying common workout patterns in health data using tabular clustering. The user's intent and expertise, problem area, dataset details, and model requirements are directly derived from the instruction. Some fields are left empty or with default values as they were not specified in the instruction, and making assumptions beyond the provided details would not be appropriate."",
+    ""score"": 0.95
+  }
+}",1
+tabular clustering,"I'm working with a dataset of university courses, including department, course level, and enrollment numbers. I want to cluster courses into categories. I'm new to this—what clustering technique should I start with?",,1
+tabular clustering,"I have data on various smartphone models, including their specs and prices. I want to group them into categories that reflect their overall value. Is there an easy clustering technique for a beginner like me?",,1
+tabular clustering,"Looking at our website traffic and user interaction data, can we segment our users into different categories based on their behavior? Understanding this could significantly enhance our web design and user experience strategies.",,0
+tabular clustering,Our healthcare facility has collected a vast amount of patient data over the years. It would be beneficial to see if we can group patients with similar conditions or treatment outcomes to improve care plans and patient management strategies.,,0
+tabular clustering,Our company has collected a lot of data on how different products perform across various regions. It would be useful to see if there are patterns or similarities in product performance that could inform our regional marketing and product development efforts.,"{
+    ""user"": {
+        ""intent"": ""consult"",
+        ""expertise"": ""medium""
+    },
+    ""problem"": {
+        ""area"": ""tabular data analysis"",
+        ""downstream_task"": ""tabular clustering"",
+        ""application_domain"": ""marketing and product development"",
+        ""description"": ""Our company has collected a lot of data on how different products perform across various regions. It would be useful to see if there are patterns or similarities in product performance that could inform our regional marketing and product development efforts."",
+        ""performance_metrics"": [],
+        ""complexity_metrics"": []
+    },
+    ""dataset"": [
+        {
+            ""name"": """",
+            ""modality"": [""tabular""],
+            ""target_variables"": [],
+            ""specification"": null,
+            ""description"": ""Dataset containing performance data of different products across various regions."",
+            ""preprocessing"": [],
+            ""augmentation"": [],
+            ""visualization"": [],
+            ""source"": ""user-upload""
+        }
+    ],
+    ""model"": [
+        {
+            ""name"": """",
+            ""family"": """",
+            ""type"": ""classical machine learning"",
+            ""specification"": null,
+            ""description"": ""A model that clusters products based on their performance in different regions to identify patterns or similarities.""
+        }
+    ],
+    ""knowledge"": [],
+    ""service"": {
+        ""feature_engineering"": [],
+        ""target_device"": """",
+        ""deployment_endpoint"": """",
+        ""inference_engine"": [],
+        ""demonstration"": null
+    },
+    ""confidence"": {
+        ""rationale"": ""The instruction is parsed following the template, focusing on the key aspects such as the need for tabular data analysis through clustering to identify patterns in product performance across regions. The user's medium expertise suggests they understand basic AI/ML concepts but may need guidance on specifics. The task falls under tabular data analysis, specifically clustering, which matches the user's intent to consult and possibly build a solution to inform marketing and product development strategies. Additional details, such as specific performance metrics, were not provided, aligning with the consultative nature of the request."",
+        ""score"": 0.95
+    }
+}",0
+tabular clustering,"In the realm of social media analysis, we're trying to understand if there are specific user behavior patterns that emerge based on the types of content they engage with. Identifying these patterns could help us create more targeted content strategies.",,0
+tabular clustering,"We have an extensive database of customer interactions and sales transactions. I'm curious if there's a way to identify distinct groups of customers based on their purchasing habits and preferences, which could help us tailor our marketing strategies more effectively.",,0
